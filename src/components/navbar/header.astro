@@ -1,11 +1,13 @@
 ---
-import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<Layout lang={lang}>
-  <h1>{ui.nav.contact}</h1>
-</Layout>
+<header>
+  <img src="/assets/icon.svg" alt="Logo NotAlias_" />
+  <nav>
+    <ul></ul>
+  </nav>
+</header>
