@@ -1,13 +1,32 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Navitem from "./navitem.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
+
+const options = Object.values(ui.nav);
 ---
 
 <header>
   <img src="/assets/icon.svg" alt="Logo NotAlias_" />
-  <nav>
-    <ul></ul>
+  <div
+    id="menu-overlay"
+    class="hidden fixed inset-0 z-40 bg-white/70 md:hidden"
+  >
+  </div>
+  <nav
+    class="flex flex-col items-center gap-8 bg-black rounded h-[90dvh] w-[95dvw] -translate-x-1/2 absolute bottom-10 left-1/2 py-20"
+  >
+    {
+      options.map((opt) => {
+        return (
+          <Navitem
+            url={`${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`}
+            label={opt}
+          />
+        );
+      })
+    }
   </nav>
 </header>
