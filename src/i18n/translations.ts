@@ -19,7 +19,7 @@ export const translations = {
     },
     selected_work: {
       title: "Trabajos seleccionados",
-    }
+    },
   },
   en: {
     nav: {
@@ -37,7 +37,51 @@ export const translations = {
     },
     selected_work: {
       title: "Selected Work",
-    }
+      projects: [
+        {
+          name: "Bubelle",
+          description:
+            "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+          url: "",
+          video_path: "/assets/videos/bubelle.mp4",
+        },
+        {
+          name: "Flor y fruto",
+          description:
+            "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+          url: "",
+          video_path: "/assets/videos/flor-y-fruto.mp4",
+        },
+        {
+          name: "Centinela Eterno",
+          description:
+            "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+          url: "",
+          video_path: "/assets/videos/centinela-eterno.mp4",
+        },
+        {
+          name: "Nonstop",
+          description:
+            "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+          url: "",
+          video_path: "/assets/videos/nonstop.mp4",
+        },
+        {
+          name: "Swappp",
+          description:
+            "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+          url: "",
+          video_path: "/assets/videos/swappp.mp4",
+        },
+        {
+          name: "Manna Foods",
+          description:
+            "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+          url: "",
+          video_path: "/assets/videos/manna-foods.mp4",
+        },
+      ],
+    },
   },
 };
 
