@@ -17,6 +17,9 @@ export const translations = {
       description:
         "®Not Alias es un estudio creativo boutique con talento global, pensamiento estratégico agudo y el oficio de diseño para hacer que las marcas sean imposibles de ignorar.",
     },
+    selected_work: {
+      title: "Trabajos seleccionados",
+    }
   },
   en: {
     nav: {
@@ -32,6 +35,9 @@ export const translations = {
       description:
         "®Not Alias is a boutique creative studio with global talent, sharp strategic thinking, and the design craft to make brands impossible to ignore.",
     },
+    selected_work: {
+      title: "Selected Work",
+    }
   },
 };
 
