@@ -7,38 +7,80 @@ const ui = useTranslations(lang);
 const options = Object.values(ui.nav);
 ---
 
-<header class="">
+<header class="flex flex-row justify-between px-4 py-10">
   <img src="/assets/icon.svg" alt="Logo NotAlias_" />
   <div
     id="menu-overlay"
-    class="fixed inset-0 z-40 bg-[#D9D9D9]/80 md:hidden"
+    class="fixed inset-0 z-40 bg-[#D9D9D9]/80 md:hidden transition-opacity"
+    data-is-active="false"
   >
+    <nav
+      class="flex flex-col items-center gap-7 bg-black rounded-lg h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 py-18"
+    >
+      <Navitem
+        url={`${lang === "en" ? "/en" : ""}/`}
+        label={"Home"}
+        className="md:hidden"
+      />
+      {
+        options.map((opt, i) => {
+          return (
+            <Navitem
+              url={`${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`}
+              label={opt}
+              className={
+                i === options.length - 1
+                  ? "text-primary hover:bg-white tracking-wider"
+                  : ""
+              }
+            />
+          );
+        })
+      }
+      <button id="close-menu">
+        <img src="/assets/icons/plus.svg" alt="X" />
+      </button>
+    </nav>
   </div>
-  <nav
-    class="flex flex-col items-center gap-7 bg-black rounded h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 py-18 z-45"
+  <button
+    id="open-menu"
+    class="bg-primary py-0.5 px-2.75 rounded-full uppercase text-white text-sm"
   >
-    <Navitem
-      url={`${lang === "en" ? "/en" : ""}/`}
-      label={"Home"}
-      className="md:hidden"
-    />
-    {
-      options.map((opt, i) => {
-        return (
-          <Navitem
-            url={`${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`}
-            label={opt}
-            className={
-              i === options.length - 1
-                ? "text-primary hover:bg-white tracking-wider"
-                : ""
-            }
-          />
-        );
-      })
-    }
-    <button>
-      <img src="/assets/icons/plus.svg" alt="X" />
-    </button>
-  </nav>
+    {ui.menu}
+  </button>
 </header>
+
+<style is:inline>
+  #menu-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #menu-overlay:not(.active) {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  const menu = document.querySelector("#menu-overlay") as HTMLDivElement;
+  const openBtn = document.querySelector("#open-menu") as HTMLButtonElement;
+  const closeBtn = document.querySelector("#close-menu") as HTMLButtonElement;
+
+  const toggleMenu = () => {
+    if (menu.getAttribute("data-is-active") === "false") {
+      menu.classList.remove("hidden");
+      menu.classList.add("active");
+      menu.setAttribute("data-is-active", "true");
+    } else {
+      menu.classList.remove("active");
+      menu.setAttribute("data-is-active", "false");
+      setTimeout(() => {
+        menu.classList.add("hidden");
+      }, 150);
+    }
+  };
+
+  openBtn?.addEventListener("click", toggleMenu);
+  closeBtn?.addEventListener("click", toggleMenu);
+</script>

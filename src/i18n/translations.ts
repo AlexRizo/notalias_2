@@ -7,6 +7,7 @@ export const translations = {
       contact: "Contacto",
       switcher: "ES | EN",
     },
+    menu: "Menú",
   },
   en: {
     nav: {
@@ -16,6 +17,7 @@ export const translations = {
       contact: "Contact",
       switcher: "ES | EN",
     },
+    menu: "Menu",
   },
 };
 
