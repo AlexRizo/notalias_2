@@ -1,0 +1,25 @@
+---
+import { cn } from "@/helpers/cn";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<section>
+  <img src="/assets/img/home/hero.gif" alt="Not Alias" class="w-full p-4" />
+  <article class="mt-6">
+    <h1 class="font-arvo text-3xl text-center w-76 mx-auto text-[#060606]">
+      {
+        ui.home.main_title.map((text, i) => {
+          return (
+            <span class={cn(i === 1 && "text-[#A0A0A0] italic tracking-tight")}>
+              {text}{" "}
+            </span>
+          );
+        })
+      }
+    </h1>
+    <p class="text-[#0A0A0A] text-sm mt-12 text-center mx-auto w-45 font-light">{ui.home.description}</p>
+  </article>
+</section>

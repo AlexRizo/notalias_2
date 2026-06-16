@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
-* {
-  font-family: "Inter", sans-serif;
-}
-
 @theme {
   --color-primary: #3e5ef2;
+  --font-arvo: 'Arvo', serif;
+  --default-font-family: 'Inter', sans-serif;
 }

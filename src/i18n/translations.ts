@@ -8,6 +8,15 @@ export const translations = {
       switcher: "ES | EN",
     },
     menu: "Menú",
+    home: {
+      main_title: [
+        "El socio creativo",
+        "estratégico",
+        "que tu marca necesita.",
+      ],
+      description:
+        "®Not Alias es un estudio creativo boutique con talento global, pensamiento estratégico agudo y el oficio de diseño para hacer que las marcas sean imposibles de ignorar.",
+    },
   },
   en: {
     nav: {
@@ -18,6 +27,11 @@ export const translations = {
       switcher: "ES | EN",
     },
     menu: "Menu",
+    home: {
+      main_title: ["The strategic creative", "partner", "your brand needs."],
+      description:
+        "®Not Alias is a boutique creative studio with global talent, sharp strategic thinking, and the design craft to make brands impossible to ignore.",
+    },
   },
 };
 
