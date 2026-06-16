@@ -1,14 +1,20 @@
 ---
+import { cn } from "@/helpers/cn";
+
 interface Props {
   url: string;
   label: string;
+  className?: string;
 }
 
-const { url, label } = Astro.props;
+const { url, label, className } = Astro.props;
 ---
 
 <a
   href={url}
-  class="text-white text-lg uppercase tracking-tighter text-center bg-transparent hover:bg-primary transition-colors w-26.5 rounded-2xl py-0.5"
+  class={cn(
+    "text-white text-lg uppercase tracking-tighter text-center bg-transparent hover:bg-primary transition-colors w-26.5 rounded-2xl py-0.5",
+    className
+  )}
   >{label}</a
 >
