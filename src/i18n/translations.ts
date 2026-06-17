@@ -19,6 +19,7 @@ export const translations = {
     },
     selected_work: {
       title: "Trabajos seleccionados",
+      project_button: "Ver más",
       projects: [
         {
           name: "Bubelle",
@@ -81,6 +82,7 @@ export const translations = {
     },
     selected_work: {
       title: "Selected Work",
+      project_button: "See more",
       projects: [
         {
           name: "Bubelle",

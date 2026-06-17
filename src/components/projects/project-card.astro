@@ -4,13 +4,20 @@ interface Props {
   description: string;
   url: string;
   videoPath: string;
+  button: string;
 }
 
-const { name, description, url, videoPath } = Astro.props;
+const { name, description, url, videoPath, button } = Astro.props;
 ---
 
 <div class="mx-auto w-min">
   <div class="relative w-91 h-111 overflow-hidden">
+    <button
+      class="glass-button absolute z-10 px-2 py-1 text-sm text-white right-3 top-2.5 flex items-center gap-1"
+      ><img src="/assets/icons/plus.svg" alt="+" class="rotate-45 size-3.5" />{
+        button
+      }</button
+    >
     <video
       autoplay
       muted
