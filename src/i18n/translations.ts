@@ -113,6 +113,68 @@ export const translations = {
       title: "Every great project starts with a conversation",
       contact_us: "Contact Us",
     },
+    footer: {
+      contact_us: {
+        title: "Contact Us",
+        texts: [
+          "New business inquiries:",
+          "hello@notalias.com",
+          "Call us / WhatsApp: +52 312 144 7976",
+        ],
+      },
+      social: {
+        title: "Social",
+        instagram: {
+          label: "Instagram",
+          url: "",
+        },
+        linkedin: {
+          label: "LinkedIn",
+          url: "",
+        },
+        behance: {
+          label: "Behance",
+          url: "",
+        },
+      },
+      guadalajara: {
+        title: "Guadalajara",
+        address:
+          "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
+      },
+      menu: {
+        label: "Menu",
+        home: {
+          label: "Home",
+          url: "/",
+        },
+        work: {
+          label: "Work",
+          url: "/work",
+        },
+        services: {
+          label: "Services",
+          url: "/services",
+        },
+        about: {
+          label: "About",
+          url: "/about",
+        },
+        contact: {
+          label: "Contact",
+          url: "/contact",
+        },
+      },
+      madrid: {
+        title: "Madrid",
+        address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
+      },
+      los_angeles: {
+        title: "Los Angeles",
+        address: "Not Alias LA address TBD Los Angeles, CA",
+        phone: "+1 XXX XXX XXXX",
+      },
+    },
   },
   en: {
     nav: {
@@ -219,6 +281,68 @@ export const translations = {
     contact: {
       title: "Every great project starts with a conversation",
       contact_us: "Contact Us",
+    },
+    footer: {
+      contact_us: {
+        title: "Contact Us",
+        texts: [
+          "New business inquiries:",
+          "hello@notalias.com",
+          "Call us / WhatsApp: +52 312 144 7976",
+        ],
+      },
+      social: {
+        title: "Social",
+        instagram: {
+          label: "Instagram",
+          url: "",
+        },
+        linkedin: {
+          label: "LinkedIn",
+          url: "",
+        },
+        behance: {
+          label: "Behance",
+          url: "",
+        },
+      },
+      guadalajara: {
+        title: "Guadalajara",
+        address:
+          "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
+      },
+      menu: {
+        label: "Menu",
+        home: {
+          label: "Home",
+          url: "/",
+        },
+        work: {
+          label: "Work",
+          url: "/work",
+        },
+        services: {
+          label: "Services",
+          url: "/services",
+        },
+        about: {
+          label: "About",
+          url: "/about",
+        },
+        contact: {
+          label: "Contact",
+          url: "/contact",
+        },
+      },
+      madrid: {
+        title: "Madrid",
+        address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
+      },
+      los_angeles: {
+        title: "Los Angeles",
+        address: "Not Alias LA address TBD Los Angeles, CA",
+        phone: "+1 XXX XXX XXXX",
+      },
     },
   },
 };
