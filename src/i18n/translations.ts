@@ -109,6 +109,10 @@ export const translations = {
         },
       ],
     },
+    contact: {
+      title: "Every great project starts with a conversation",
+      contact_us: "Contact Us",
+    },
   },
   en: {
     nav: {
@@ -211,6 +215,10 @@ export const translations = {
           open_label: "OPEN LINK",
         },
       ],
+    },
+    contact: {
+      title: "Every great project starts with a conversation",
+      contact_us: "Contact Us",
     },
   },
 };

@@ -1,0 +1,16 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<section class="bg-black flex flex-col justify-center items-center pt-10 pb-16">
+  <img src="/assets/icons/eye.svg" alt="Ojo" />
+  <h1 class="text-3xl font-arvo text-white text-center w-71 my-4">
+    {ui.contact.title}
+  </h1>
+  <a class="text-white text-sm underline underline-offset-6 uppercase"
+    >{ui.contact.contact_us}</a
+  >
+</section>
