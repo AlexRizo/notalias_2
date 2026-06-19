@@ -3,6 +3,7 @@ import Layout from "@/layout/layout.astro";
 import { getLangFromUrl } from "@/i18n/utils";
 import Hero from "@/views/hero.astro";
 import SelectedWork from "@/views/selected-work.astro";
+import Services from "@/views/services.astro";
 
 const lang = getLangFromUrl(Astro.url);
 --- 
@@ -10,4 +11,5 @@ const lang = getLangFromUrl(Astro.url);
 <Layout lang={lang}>
   <Hero />
   <SelectedWork />
+  <Services />
 </Layout>

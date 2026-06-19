@@ -1,0 +1,43 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<section class="bg-[#F3F3F3] py-20">
+  <h1 class="font-arvo text-3xl text-primary text-center w-60 mx-auto">
+    {
+      ui.services.title.map((text, i) => (
+        <span class={i == 1 ? "italic" : ""}>
+          {text}
+          <br />
+        </span>
+      ))
+    }
+  </h1>
+
+  <video
+    src={ui.services.videoPath}
+    autoplay
+    loop
+    muted
+    class="h-30 mx-auto my-18"></video>
+g
+  <h2 class="uppercase text-xl text-primary text-center font-semibold mb-4">
+    {ui.services.services}
+  </h2>
+
+  <ul class="mx-auto w-min space-y-6.5">
+    {
+      ui.services.items.map((item) => (
+        <li class="flex flex-row w-45 justify-between items-center">
+          <p class="underline underline-offset-6 text-primary font-light text-lg">
+            {item}
+          </p>
+          <img src="/assets/icons/arrow.svg" alt="->" />
+        </li>
+      ))
+    }
+  </ul>
+</section>

@@ -65,6 +65,21 @@ export const translations = {
         },
       ],
     },
+    services: {
+      title: [
+        "Creamos",
+        "sistemas de marca",
+        "para los que están subiendo el estándar",
+      ],
+      videoPath: "/assets/videos/ssd.mp4",
+      services: "Servicios",
+      items: [
+        "Estrategia de Marca",
+        "Identidad de Marca",
+        "Ejecución de Marca",
+        "Experiencia Digital",
+      ],
+    },
   },
   en: {
     nav: {
@@ -126,6 +141,17 @@ export const translations = {
           url: "",
           video_path: "/assets/videos/manna-foods.mp4",
         },
+      ],
+    },
+    services: {
+      title: ["We build", "brand systems,", "for those raising the standard"],
+      videoPath: "/assets/videos/ssd.mp4",
+      services: "Services",
+      items: [
+        "Brand Strategy",
+        "Brand Identity",
+        "Brand Execution",
+        "Digital Experience",
       ],
     },
   },
