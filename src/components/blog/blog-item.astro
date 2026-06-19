@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  openLabel: string;
+}
+
+const { title, description, image, url, openLabel } = Astro.props as Props;
+---
+
+<div class="flex flex-col w-[363px]">
+  <img src={image} alt={title} class="w-full h-111 object-cover rounded-xl" />
+  <article>
+    <h1 class="text-xl my-3.5">{title}</h1>
+    <p class="text-sm font-light w-77 mb-6">{description}</p>
+
+    <a class="text-sm text-primary underline underline-offset-6" href={url}
+      >{openLabel} ↗</a
+    >
+  </article>
+</div>

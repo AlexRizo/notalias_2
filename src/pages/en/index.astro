@@ -4,6 +4,7 @@ import { getLangFromUrl } from "@/i18n/utils";
 import Hero from "@/views/hero.astro";
 import SelectedWork from "@/views/selected-work.astro";
 import Services from "@/views/services.astro";
+import HomeBlog from "@/views/home-blog.astro";
 
 const lang = getLangFromUrl(Astro.url);
 --- 
@@ -12,4 +13,5 @@ const lang = getLangFromUrl(Astro.url);
   <Hero />
   <SelectedWork />
   <Services />
+  <HomeBlog />
 </Layout>

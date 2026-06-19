@@ -80,6 +80,35 @@ export const translations = {
         "Experiencia Digital",
       ],
     },
+    blog: {
+      title: "No es un diario",
+      entries: [
+        {
+          title: "Construido para Erewhon",
+          description:
+            "Desarrollamos el sistema de marca completo para un nuevo producto que se lanza exclusivamente en Erewhon este año. Más pronto.",
+          url: "#",
+          image: "/assets/img/home/erewhon.png",
+          open_label: "IR AL SITIO",
+        },
+        {
+          title: "La inteligencia humana primero",
+          description:
+            "La inteligencia artificial es una herramienta. Las decisiones reales — las que dan forma a una marca — todavía vienen de las personas. Esa es nuestra apuesta.",
+          url: "#",
+          image: "/assets/img/home/human_intelligence_first.jpg",
+          open_label: "IR AL SITIO",
+        },
+        {
+          title: "Siempre escuchando",
+          description:
+            "Tetragramaton de Rick Rubin — conversaciones sobre creatividad, oficio y proceso que mantienen nuestra mente ágil.",
+          url: "#",
+          image: "/assets/img/home/currently_listening.png",
+          open_label: "IR AL SITIO",
+        },
+      ],
+    },
   },
   en: {
     nav: {
@@ -152,6 +181,35 @@ export const translations = {
         "Brand Identity",
         "Brand Execution",
         "Digital Experience",
+      ],
+    },
+    blog: {
+      title: "Not a journal",
+      entries: [
+        {
+          title: "Built for Erewhon",
+          description:
+            "We developed the full brand system for a new product launching exclusively at Erewhon this year. More soon.",
+          url: "#",
+          image: "/assets/img/home/erewhon.png",
+          open_label: "OPEN LINK",
+        },
+        {
+          title: "Human intelligence first",
+          description:
+            "AI is a tool. The real decisions — the ones that shape a brand — still come from people. That's our bet.",
+          url: "#",
+          image: "/assets/img/home/human_intelligence_first.jpg",
+          open_label: "OPEN LINK",
+        },
+        {
+          title: "Currently listening",
+          description:
+            "Tetragramaton by Rick Rubin — conversations on creativity, craft and process that keep our thinking sharp.",
+          url: "#",
+          image: "/assets/img/home/currently_listening.png",
+          open_label: "OPEN LINK",
+        },
       ],
     },
   },
