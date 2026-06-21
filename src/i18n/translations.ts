@@ -171,9 +171,10 @@ export const translations = {
       },
       los_angeles: {
         title: "Los Angeles",
-        address: "Not Alias LA address TBD Los Angeles, CA",
+        address: ["Not Alias LA", "Address TBD", "Los Angeles, CA"],
         phone: "+1 XXX XXX XXXX",
       },
+      copyright: ["year", " Not Alias. Todos los derechos reservados."],
     },
   },
   en: {
@@ -340,9 +341,10 @@ export const translations = {
       },
       los_angeles: {
         title: "Los Angeles",
-        address: "Not Alias LA address TBD Los Angeles, CA",
+        address: ["Not Alias LA", "Address TBD", "Los Angeles, CA"],
         phone: "+1 XXX XXX XXXX",
       },
+      copyright: ["All contents copyright Not Alias ", "year", " Privacy Policy"],
     },
   },
 };

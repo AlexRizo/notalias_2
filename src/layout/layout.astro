@@ -1,4 +1,5 @@
 ---
+import Footer from "@/components/footer.astro";
 import Header from "@/components/navbar/header.astro";
 import type { Lang } from "@/i18n/translations";
 import "@/styles/global.css";
@@ -31,5 +32,6 @@ const { lang = "es", title } = Astro.props;
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
