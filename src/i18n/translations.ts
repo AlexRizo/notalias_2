@@ -88,7 +88,7 @@ export const translations = {
           description:
             "Desarrollamos el sistema de marca completo para un nuevo producto que se lanza exclusivamente en Erewhon este año. Más pronto.",
           url: "#",
-          image: "/assets/img/home/erewhon.png",
+          image: "/assets/img/home/erewhon.webp",
           open_label: "IR AL SITIO",
         },
         {
@@ -96,7 +96,7 @@ export const translations = {
           description:
             "La inteligencia artificial es una herramienta. Las decisiones reales — las que dan forma a una marca — todavía vienen de las personas. Esa es nuestra apuesta.",
           url: "#",
-          image: "/assets/img/home/human_intelligence_first.jpg",
+          image: "/assets/img/home/human_intelligence_first.webp",
           open_label: "IR AL SITIO",
         },
         {
@@ -104,7 +104,7 @@ export const translations = {
           description:
             "Tetragramaton de Rick Rubin — conversaciones sobre creatividad, oficio y proceso que mantienen nuestra mente ágil.",
           url: "#",
-          image: "/assets/img/home/currently_listening.png",
+          image: "/assets/img/home/currently_listening.webp",
           open_label: "IR AL SITIO",
         },
       ],
@@ -258,7 +258,7 @@ export const translations = {
           description:
             "We developed the full brand system for a new product launching exclusively at Erewhon this year. More soon.",
           url: "#",
-          image: "/assets/img/home/erewhon.png",
+          image: "/assets/img/home/erewhon.webp",
           open_label: "OPEN LINK",
         },
         {
@@ -266,7 +266,7 @@ export const translations = {
           description:
             "AI is a tool. The real decisions — the ones that shape a brand — still come from people. That's our bet.",
           url: "#",
-          image: "/assets/img/home/human_intelligence_first.jpg",
+          image: "/assets/img/home/human_intelligence_first.webp",
           open_label: "OPEN LINK",
         },
         {
@@ -274,7 +274,7 @@ export const translations = {
           description:
             "Tetragramaton by Rick Rubin — conversations on creativity, craft and process that keep our thinking sharp.",
           url: "#",
-          image: "/assets/img/home/currently_listening.png",
+          image: "/assets/img/home/currently_listening.webp",
           open_label: "OPEN LINK",
         },
       ],
