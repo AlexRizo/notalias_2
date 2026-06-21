@@ -238,6 +238,28 @@ export const translations = {
         title: "Our work services",
         description:
           "Our work is organized around four disciplines. Each one is independent, but they're designed to build on each other — strategy informs identity, identity defines execution, execution extends into digital.",
+        items: [
+          {
+            name: "Estrategia de Marca",
+            description:
+              "Definimos dónde está tu marca y hacia dónde va. Posicionamiento, naming, claridad de audiencia y diferenciación competitiva — las decisiones que hacen todo lo demás más nítido.",
+          },
+          {
+            name: "Identidad de Marca",
+            description:
+              "Sistemas visuales construidos para durar. Logo, tipografía, color, movimiento y el kit completo que tu marca necesita para aparecer de forma consistente en cada punto de contacto.",
+          },
+          {
+            name: "Ejecución de Marca",
+            description:
+              "Diseño que vive en el mundo real. Packaging, impresión, espacial y aplicaciones de marca que traducen tu identidad en materiales tangibles de alto impacto.",
+          },
+          {
+            name: "Experiencia Digital",
+            description:
+              "Sitios web, interfaces y puntos de contacto digitales diseñados con el mismo rigor estratégico que tu marca. Construidos para rendir, construidos para sentirse bien.",
+          },
+        ],
       },
     },
   },
@@ -379,6 +401,28 @@ export const translations = {
         title: "Our work services",
         description:
           "Our work is organized around four disciplines. Each one is independent, but they're designed to build on each other — strategy informs identity, identity defines execution, execution extends into digital.",
+        items: [
+          {
+            name: "Brand Strategy",
+            description:
+              "We define where your brand stands and where it's headed. Positioning, naming, audience clarity, and competitive framing — the decisions that make everything else sharper.",
+          },
+          {
+            name: "Brand Identity",
+            description:
+              "Visual systems built to last. Logo, typography, color, motion, and the full toolkit your brand needs to show up consistently across every touchpoint.",
+          },
+          {
+            name: "Brand Execution",
+            description:
+              "Design that lives in the real world. Packaging, print, spatial, and brand applications that translate your identity into tangible, high-impact materials.",
+          },
+          {
+            name: "Digital Experience",
+            description:
+              "Websites, interfaces, and digital touchpoints designed with the same strategic rigor as your brand. Built to perform, built to feel right.",
+          },
+        ],
       },
     },
   },

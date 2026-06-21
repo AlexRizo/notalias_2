@@ -1,0 +1,73 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<ul class="mt-12 border-t border-black/10">
+  {
+    ui.services_page.our_services.items.map((item, i) => (
+      <li class="accordion-item border-b border-black/10 transition-colors duration-300">
+        <button
+          class="accordion-trigger w-full flex justify-between items-center py-5 px-2 text-left"
+          aria-expanded="false"
+          data-index={i}
+        >
+          <span class="text-sm">
+            {"0" + (i + 1)} {item.name}
+          </span>
+          <img
+            src="/assets/icons/plus-black.svg"
+            class="accordion-icon"
+            alt="+"
+          />
+        </button>
+        <div class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
+          <p class="accordion-desc px-2 pb-6 text-[10px] leading-relaxed text-white">
+            {item.description}
+          </p>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .accordion-item.open {
+    background-color: var(--color-primary);
+  }
+  .accordion-item.open .accordion-trigger {
+    color: white;
+  }
+  .accordion-item.open .accordion-desc {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .accordion-item.open .accordion-icon {
+    filter: brightness(0) invert(1);
+  }
+</style>
+
+<script>
+  document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const item = trigger.closest(".accordion-item")!;
+      const content = item.querySelector(".accordion-content") as HTMLElement;
+      const icon = trigger.querySelector(".accordion-icon") as HTMLImageElement;
+      const isOpen = trigger.getAttribute("aria-expanded") === "true";
+
+      if (isOpen) {
+        content.style.maxHeight = "0px";
+        icon.src = "/assets/icons/plus-black.svg";
+        icon.alt = "+";
+        trigger.setAttribute("aria-expanded", "false");
+        item.classList.remove("open");
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.src = "/assets/icons/minus.svg";
+        icon.alt = "-";
+        trigger.setAttribute("aria-expanded", "true");
+        item.classList.add("open");
+      }
+    });
+  });
+</script>

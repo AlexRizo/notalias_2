@@ -1,12 +1,15 @@
 ---
 import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Droplist from "@/components/droplist/droplist.astro";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
   <section class="mt-2">
+    <Droplist />
+
     <div class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden">
       <video
         class="rounded-lg h-full object-cover object-[-200px] absolute left-0 top-0"
