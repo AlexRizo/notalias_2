@@ -1,0 +1,39 @@
+---
+import Layout from "@/layout/layout.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<Layout lang={lang}>
+  <section class="mt-2">
+    <div class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden">
+      <video
+        class="rounded-lg h-full object-cover object-[-200px] absolute left-0 top-0"
+        src="/assets/videos/services.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+    </div>
+  </section>
+
+  <section class="pt-18 pb-20">
+    <h1 class="font-arvo text-3xl text-center w-80 mx-auto leading-tight">
+      {ui.services_page.title}
+    </h1>
+    <img src="/assets/icons/jellyfish.svg" alt="Medusa" class="mx-auto my-9" />
+    <p class="text-center w-[209px] mx-auto font-light leading-tight">
+      {ui.services_page.description}
+    </p>
+  </section>
+
+  <section class="bg-[#F6F6F6] py-14">
+    <h1 class="font-arvo text-3xl text-center">
+      {ui.services_page.our_services.title}
+    </h1>
+    <p class="text-[10px] text-center w-72 mx-auto leading-tight mt-4">
+      {ui.services_page.our_services.description}
+    </p>
+  </section>
+</Layout>

@@ -230,6 +230,16 @@ export const translations = {
       },
       copyright: ["year", " Not Alias. Todos los derechos reservados."],
     },
+    services_page: {
+      title: "Where strategy meets craft",
+      description:
+        "We bring cultural understanding, critical thinking, and world-class creative talent to build brand systems that perform across markets and platforms. From naming to packaging, from positioning to digital experience — every decision is intentional, every detail is earned.",
+      our_services: {
+        title: "Our work services",
+        description:
+          "Our work is organized around four disciplines. Each one is independent, but they're designed to build on each other — strategy informs identity, identity defines execution, execution extends into digital.",
+      },
+    },
   },
   en: {
     nav: {
@@ -360,6 +370,16 @@ export const translations = {
         "year",
         " Privacy Policy",
       ],
+    },
+    services_page: {
+      title: "Where strategy meets craft",
+      description:
+        "We bring cultural understanding, critical thinking, and world-class creative talent to build brand systems that perform across markets and platforms. From naming to packaging, from positioning to digital experience — every decision is intentional, every detail is earned.",
+      our_services: {
+        title: "Our work services",
+        description:
+          "Our work is organized around four disciplines. Each one is independent, but they're designed to build on each other — strategy informs identity, identity defines execution, execution extends into digital.",
+      },
     },
   },
 };
