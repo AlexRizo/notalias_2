@@ -1,0 +1,36 @@
+---
+import Layout from "@/layout/layout.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<Layout lang={lang}>
+  <section class="pt-4 pb-24 bg-[#F6F6F6]">
+    <article class="text-center">
+      <h1 class="font-arvo text-3xl w-56 mx-auto leading-tight">
+        {ui.about_page.hero.title}
+      </h1>
+      <img
+        src="/assets/img/about/head-brain.gif"
+        class="h-25 mx-auto mt-16 mb-12"
+        alt="about"
+      />
+      <div class="font-light text-sm leading-tight">
+        <p class="w-38 mx-auto">{ui.about_page.hero.description[0]}</p>
+        <p class="w-42 mx-auto">{ui.about_page.hero.description[1]}</p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <div class="relative overflow-hidden h-93 max-w-91 mx-auto rounded-lg">
+      <video
+        class="object-cover absolute object-[center_-60px] left-0 top-0"
+        src="/assets/videos/about_character.mp4"
+        autoplay
+        muted
+        loop
+        playsinline></video>
+    </div>
+</Layout>

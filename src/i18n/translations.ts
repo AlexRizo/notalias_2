@@ -301,6 +301,13 @@ export const translations = {
         contact_us: "Contáctanos",
       },
     },
+    about_page: {
+      hero: {
+        title: "Qué creemos",
+        description:
+          "La creatividad es lo más humano que existe. En un mundo que corre a automatizarlo todo, nosotros elegimos sentir, cuestionar, crear. Cada marca que construimos es la prueba de que el pensamiento humano importa.",
+      },
+    },
   },
   en: {
     nav: {
@@ -503,6 +510,15 @@ export const translations = {
       contact: {
         title: "Let's figure out what your brand needs",
         contact_us: "Contact Us",
+      },
+    },
+    about_page: {
+      hero: {
+        title: "What we believe",
+        description: [
+          "Creativity is the most human thing there is. In a world racing to automate everything, we choose to feel, to question, to craft.",
+          "Every brand we build is proof that human thinking still matters.",
+        ],
       },
     },
   },
