@@ -307,6 +307,31 @@ export const translations = {
         description:
           "La creatividad es lo más humano que existe. En un mundo que corre a automatizarlo todo, nosotros elegimos sentir, cuestionar, crear. Cada marca que construimos es la prueba de que el pensamiento humano importa.",
       },
+      slide: {
+        slides: [
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Human intelligence first",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+          },
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Human intelligence first",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+          },
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Human intelligence first",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+          },
+        ],
+      },
     },
   },
   en: {
@@ -518,6 +543,31 @@ export const translations = {
         description: [
           "Creativity is the most human thing there is. In a world racing to automate everything, we choose to feel, to question, to craft.",
           "Every brand we build is proof that human thinking still matters.",
+        ],
+      },
+      slide: {
+        slides: [
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Human intelligence first",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+          },
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Human intelligence first",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+          },
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Human intelligence first",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+          },
         ],
       },
     },

@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import AboutCarrousel from "@/components/react/about-carrousel";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
@@ -24,13 +25,6 @@ const ui = useTranslations(lang);
   </section>
 
   <section>
-    <div class="relative overflow-hidden h-93 max-w-91 mx-auto rounded-lg">
-      <video
-        class="object-cover absolute object-[center_-60px] left-0 top-0"
-        src="/assets/videos/about_character.mp4"
-        autoplay
-        muted
-        loop
-        playsinline></video>
-    </div>
+    <AboutCarrousel client:visible slides={ui.about_page.slide.slides} />
+  </section>
 </Layout>
