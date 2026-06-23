@@ -241,23 +241,58 @@ export const translations = {
         items: [
           {
             name: "Estrategia de Marca",
+            subtitle: "La estrategia antes del diseño.",
             description:
               "Definimos dónde está tu marca y hacia dónde va. Posicionamiento, naming, claridad de audiencia y diferenciación competitiva — las decisiones que hacen todo lo demás más nítido.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
           {
             name: "Identidad de Marca",
+            subtitle: "Del sistema a la superficie.",
             description:
               "Sistemas visuales construidos para durar. Logo, tipografía, color, movimiento y el kit completo que tu marca necesita para aparecer de forma consistente en cada punto de contacto.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
           {
             name: "Ejecución de Marca",
+            subtitle: "Del sistema a la superficie.",
             description:
               "Diseño que vive en el mundo real. Packaging, impresión, espacial y aplicaciones de marca que traducen tu identidad en materiales tangibles de alto impacto.",
+            list: [
+              "Branding",
+              "Packaging",
+              "Impresión",
+              "Espacial",
+              "Aplicaciones de Marca",
+            ],
           },
           {
             name: "Experiencia Digital",
+            subtitle: "Más allá del pixel.",
             description:
               "Sitios web, interfaces y puntos de contacto digitales diseñados con el mismo rigor estratégico que tu marca. Construidos para rendir, construidos para sentirse bien.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
         ],
       },
@@ -404,23 +439,60 @@ export const translations = {
         items: [
           {
             name: "Brand Strategy",
+            subtitle: "The thinking before the design.",
+
             description:
-              "We define where your brand stands and where it's headed. Positioning, naming, audience clarity, and competitive framing — the decisions that make everything else sharper.",
+              "We define what the brand needs to say, to whom, and why it matters — before anyone opens a design file. Research, cultural context, positioning, and competitive clarity. The foundation that makes every creative decision solid.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
           {
             name: "Brand Identity",
+            subtitle: "The thinking before the design.",
             description:
               "Visual systems built to last. Logo, typography, color, motion, and the full toolkit your brand needs to show up consistently across every touchpoint.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
           {
             name: "Brand Execution",
+            subtitle: "From system to surface.",
             description:
               "Design that lives in the real world. Packaging, print, spatial, and brand applications that translate your identity into tangible, high-impact materials.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
           {
             name: "Digital Experience",
+            subtitle: "Beyond the pixel.",
             description:
               "Websites, interfaces, and digital touchpoints designed with the same strategic rigor as your brand. Built to perform, built to feel right.",
+            list: [
+              "Brand DNA & Positioning",
+              "Research & Benchmarking",
+              "Cultural Strategy",
+              "Naming & Brand Architecture",
+              "Go-to-Market Strategy",
+              "Strategic Workshops",
+            ],
           },
         ],
       },

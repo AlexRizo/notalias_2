@@ -13,20 +13,24 @@ const ui = useTranslations(lang);
           aria-expanded="false"
           data-index={i}
         >
-          <span class="text-sm">
-            {"0" + (i + 1)} {item.name}
-          </span>
+          <p class="text-sm flex items-center gap-2">
+            <span class="w-8 text-center">{"0" + (i + 1)}</span> {item.name}
+          </p>
           <img
             src="/assets/icons/plus-black.svg"
             class="accordion-icon"
             alt="+"
           />
         </button>
-        <div class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out">
-          <p class="accordion-desc px-2 pb-6 text-[10px] leading-relaxed text-white">
-            {item.description}
-          </p>
-        </div>
+        <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed text-white">
+          <p class="pl-12">{item.subtitle}</p>
+          <p class="pl-12 mb-5 max-w-76">{item.description}</p>
+          <ul class="pl-15 mb-7">
+            {item.list.map((li) => (
+              <li class="list-disc leading-snug marker:text-[6px]">{li}</li>
+            ))}
+          </ul>
+        </article>
       </li>
     ))
   }
@@ -39,7 +43,7 @@ const ui = useTranslations(lang);
   .accordion-item.open .accordion-trigger {
     color: white;
   }
-  .accordion-item.open .accordion-desc {
+  .accordion-item.open {
     color: rgba(255, 255, 255, 0.75);
   }
   .accordion-item.open .accordion-icon {
