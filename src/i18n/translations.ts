@@ -296,6 +296,10 @@ export const translations = {
           },
         ],
       },
+      contact: {
+        title: "Descubramos qué necesita tu marca",
+        contact_us: "Contáctanos",
+      },
     },
   },
   en: {
@@ -495,6 +499,10 @@ export const translations = {
             ],
           },
         ],
+      },
+      contact: {
+        title: "Let's figure out what your brand needs",
+        contact_us: "Contact Us",
       },
     },
   },

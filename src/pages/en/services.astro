@@ -8,8 +8,6 @@ const ui = useTranslations(lang);
 
 <Layout lang={lang}>
   <section class="mt-2">
-    <Droplist />
-
     <div class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden">
       <video
         class="rounded-lg h-full object-cover object-[-200px] absolute left-0 top-0"
@@ -38,5 +36,19 @@ const ui = useTranslations(lang);
     <p class="text-[10px] text-center w-72 mx-auto leading-tight mt-4">
       {ui.services_page.our_services.description}
     </p>
+  </section>
+
+  <Droplist />
+
+  <section
+    class="bg-black flex flex-col justify-center items-center p-14"
+  >
+    <img src="/assets/icons/espiral.svg" alt="Spiral" />
+    <h1 class="text-3xl font-arvo text-white text-center w-80 mt-5 mb-6">
+      {ui.services_page.contact.title}
+    </h1>
+    <a class="text-white text-sm underline underline-offset-6 uppercase"
+      >{ui.services_page.contact.contact_us}</a
+    >
   </section>
 </Layout>
