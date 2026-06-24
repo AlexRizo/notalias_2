@@ -15,7 +15,7 @@ const ui = useTranslations(lang);
       <img
         src="/assets/img/about/head-brain.gif"
         class="h-25 mx-auto mt-16 mb-12"
-        alt="about"g
+        alt="about"
       />
       <div class="font-light text-sm leading-tight">
         <p class="w-38 mx-auto">{ui.about_page.hero.description[0]}</p>
@@ -26,5 +26,11 @@ const ui = useTranslations(lang);
 
   <section>
     <AboutCarrousel client:visible slides={ui.about_page.slide.slides} />
+  </section>
+
+  <section class="text-center py-8 bg-[#F6F6F6]">
+    <h1 class="font-arvo text-3xl w-56 mx-auto leading-tight">
+      {ui.about_page.how_work.title}
+    </h1>
   </section>
 </Layout>

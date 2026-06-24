@@ -332,6 +332,9 @@ export const translations = {
           },
         ],
       },
+      how_work: {
+        title: "Así trabajamos",
+      },
     },
   },
   en: {
@@ -569,6 +572,9 @@ export const translations = {
               "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
           },
         ],
+      },
+      how_work: {
+        title: "How we work",
       },
     },
   },

@@ -16,3 +16,17 @@
     0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
+.swiper-pagination {
+  background-color: #F6F6F6;
+  bottom: 0 !important;
+  padding: 35px 0 15px 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #D1D1D1;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
