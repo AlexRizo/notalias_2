@@ -4,3 +4,5 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - astro@6.4.7
   - '@astrojs/react@6.0.0'
+overrides:
+  vite: 7.3.5

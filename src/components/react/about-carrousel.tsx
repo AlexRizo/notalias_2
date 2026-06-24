@@ -1,9 +1,7 @@
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { AboutCarrouselSlide } from "./about-carrousel-slide";
+import "swiper/css";
 
 export type Slide = {
   icon: string;
@@ -18,16 +16,19 @@ interface Props {
 
 export const AboutCarrousel = ({ slides }: Props) => {
   return (
-    <section className="max-w-91 mx-auto">
+    <section className="">
       <Swiper
+        className="mySwiper"
         modules={[Pagination, Autoplay]}
-        spaceBetween={50}
         slidesPerView={1}
+        centeredSlides={true}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
       >
-        {slides.map((slide) => (
-          <AboutCarrouselSlide key={slide.media_path} slide={slide} />
+        {slides.map((slide, index) => (
+          <SwiperSlide>
+            <AboutCarrouselSlide key={`slide-${index}`} slide={slide} />
+          </SwiperSlide>
         ))}
       </Swiper>
     </section>
