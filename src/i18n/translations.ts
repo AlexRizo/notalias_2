@@ -361,6 +361,26 @@ export const translations = {
           },
         ],
       },
+      team: {
+        title: "OUR LEADERS",
+        slides: [
+          {
+            name: "Marco Leyva",
+            role: "Co-founder & Creative Director",
+            image_path: "/assets/img/about/team/marco_leyva.webp",
+          },
+          {
+            name: "Marco Leyva",
+            role: "Co-founder & Creative Director",
+            image_path: "/assets/img/about/team/marco_leyva.webp",
+          },
+          {
+            name: "Marco Leyva",
+            role: "Co-founder & Creative Director",
+            image_path: "/assets/img/about/team/marco_leyva.webp",
+          },
+        ],
+      },
     },
   },
   en: {
@@ -625,6 +645,26 @@ export const translations = {
             description:
               "We listen before we lead. Deep dive into business, market, audience, ambition.",
             image_path: "/assets/img/about/immersion.webp",
+          },
+        ],
+      },
+      team: {
+        title: "OUR LEADERS",
+        slides: [
+          {
+            name: "Marco Leyva",
+            role: "Co-founder & Creative Director",
+            image_path: "/assets/img/about/team/marco_leyva.webp",
+          },
+          {
+            name: "Marco Leyva",
+            role: "Co-founder & Creative Director",
+            image_path: "/assets/img/about/team/marco_leyva.webp",
+          },
+          {
+            name: "Marco Leyva",
+            role: "Co-founder & Creative Director",
+            image_path: "/assets/img/about/team/marco_leyva.webp",
           },
         ],
       },

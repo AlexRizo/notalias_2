@@ -1,8 +1,9 @@
 ---
 import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import AboutCarrousel from "@/components/react/about-carrousel";
+import AboutCarrousel from "@/components/react/about-carrousel/about-carrousel";
 import ImageDroplist from "@/components/droplist-with-image/image-droplist.astro";
+import { TeamSlider } from "@/components/react/team-slider/team-slider";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
@@ -38,4 +39,10 @@ const ui = useTranslations(lang);
   <section>
     <ImageDroplist />
   </section>
+
+  <TeamSlider
+    client:visible
+    title={ui.about_page.team.title}
+    slides={ui.about_page.team.slides}
+  />
 </Layout>

@@ -4,10 +4,10 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<ul class="border-t border-black/10">
+<ul class="">
   {
     ui.about_page.how_work.modes.map((item, i) => (
-      <li class="accordion-item border-b border-black/10 transition-colors duration-300">
+      <li class="accordion-item border-t border-black/10 transition-colors duration-300">
         <button
           class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left"
           aria-expanded="false"
