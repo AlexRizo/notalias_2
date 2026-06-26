@@ -2,6 +2,7 @@
 import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import AboutCarrousel from "@/components/react/about-carrousel";
+import ImageDroplist from "@/components/droplist-with-image/image-droplist.astro";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
@@ -32,5 +33,9 @@ const ui = useTranslations(lang);
     <h1 class="font-arvo text-3xl w-56 mx-auto leading-tight">
       {ui.about_page.how_work.title}
     </h1>
+  </section>
+
+  <section>
+    <ImageDroplist />
   </section>
 </Layout>

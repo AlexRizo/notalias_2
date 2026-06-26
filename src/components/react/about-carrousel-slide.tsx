@@ -6,7 +6,7 @@ interface Props {
 
 export const AboutCarrouselSlide = ({ slide }: Props) => {
   return (
-    <div className="flex flex-col mb-20 max-w-91 mx-auto pb-6">
+    <div className="flex flex-col mb-20 max-w-91 mx-auto pb-4">
       <div className="relative overflow-hidden h-93 w-full max-w-91 mx-auto rounded-lg">
         <video
           className="object-cover absolute w-full h-full object-[center_-60px] left-0 top-0"

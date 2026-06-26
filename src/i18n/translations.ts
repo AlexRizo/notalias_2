@@ -334,6 +334,32 @@ export const translations = {
       },
       how_work: {
         title: "Así trabajamos",
+        modes: [
+          {
+            name: "Inmersión",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+          {
+            name: "Diagnóstico",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+          {
+            name: "Creación",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+          {
+            name: "Entrega",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+        ],
       },
     },
   },
@@ -575,6 +601,32 @@ export const translations = {
       },
       how_work: {
         title: "How we work",
+        modes: [
+          {
+            name: "Immersion",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+          {
+            name: "Diagnosis",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+          {
+            name: "Creation",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+          {
+            name: "Delivery",
+            description:
+              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+            image_path: "/assets/img/about/immersion.webp",
+          },
+        ],
       },
     },
   },
