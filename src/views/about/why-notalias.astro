@@ -1,5 +1,27 @@
 ---
+import Article from "@/components/why-notalias/article.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+
+const items = ui.about_page.why_notalias.items;
 ---
 
-<section></section>
+<section class="bg-primary py-10 h-[536px] flex items-center justify-center">
+  <article
+    class="flex flex-col items-center justify-center text-white relative"
+  >
+    <Article
+      title={items[0].title}
+      description={items[0].description}
+      align="center"
+      className={["-top-44"]}
+    />
+    <h1 class="font-arvo text-xl text-center tracking-tighter leading-[1.15]">
+      {ui.about_page.why_notalias.title[0]}<br />{
+        ui.about_page.why_notalias.title[1]
+      }
+    </h1>
+  </article>
+</section>

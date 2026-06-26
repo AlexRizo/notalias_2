@@ -1,0 +1,34 @@
+---
+import { cn } from "@/helpers/cn";
+
+interface Props {
+  title: string;
+  description: string;
+  align: "left" | "right" | "center";
+  className?: string[];
+}
+const { title, description, align, className } = Astro.props as Props;
+---
+
+<div
+  class={cn("absolute -top-48 space-y-2", className && className[0])}
+  class:list={{
+    "text-center": align === "center",
+    "text-left": align === "left",
+    "text-right": align === "right",
+  }}
+>
+  <h2
+    class={cn("text-sm leading-tight w-36 mx-auto", className && className[1])}
+  >
+    {title}
+  </h2>
+  <p
+    class={cn(
+      "text-xs font-light leading-tight w-42 mx-auto",
+      className && className[2],
+    )}
+  >
+    {description}
+  </p>
+</div>

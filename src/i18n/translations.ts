@@ -381,7 +381,32 @@ export const translations = {
           },
         ],
       },
-      why_notalias: {},
+      why_notalias: {
+        title: "Why Not Alias?",
+        locations: "Guadalajara - Madrid - Los Angeles",
+        items: [
+          {
+            title: "Clients discover themselves through our process.",
+            description: '"You helped us understand our own brand."',
+          },
+          {
+            title: "Culturally fluent",
+            description: "We read cultural codes, not just market data.",
+          },
+          {
+            title: "Boutique attention, global standards.",
+            description: "Small enough to care, experienced enough to thrive.",
+          },
+          {
+            title: "Systems, not deliverables.",
+            description: "We hand you a system your team can run with.",
+          },
+          {
+            title: "Strategy and design under one roof.",
+            description: "No handoffs between firms.",
+          },
+        ],
+      },
     },
   },
   en: {
@@ -670,12 +695,12 @@ export const translations = {
         ],
       },
       why_notalias: {
-        title: "Why Not Alias?",
+        title: ["Why", "Not Alias?"],
         locations: "Guadalajara - Madrid - Los Angeles",
         items: [
           {
             title: "Clients discover themselves through our process.",
-            description: "You helped us understand our own brand.",
+            description: '"You helped us understand our own brand."',
           },
           {
             title: "Culturally fluent",

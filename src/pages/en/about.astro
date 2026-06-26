@@ -4,6 +4,7 @@ import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import AboutCarrousel from "@/components/react/about-carrousel/about-carrousel";
 import ImageDroplist from "@/components/droplist-with-image/image-droplist.astro";
 import { TeamSlider } from "@/components/react/team-slider/team-slider";
+import WhyNotalias from "@/views/about/why-notalias.astro";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
@@ -45,4 +46,6 @@ const ui = useTranslations(lang);
     title={ui.about_page.team.title}
     slides={ui.about_page.team.slides}
   />
+
+  <WhyNotalias />
 </Layout>
