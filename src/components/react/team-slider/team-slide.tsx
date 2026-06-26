@@ -15,3 +15,4 @@ export const TeamSlide = ({ slide }: Props) => {
     </div>
   );
 };
+
