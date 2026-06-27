@@ -407,6 +407,10 @@ export const translations = {
           },
         ],
       },
+      work_together: {
+        title: "Let's work together",
+        contact_us: "Contact Us",
+      },
     },
   },
   en: {
@@ -719,6 +723,10 @@ export const translations = {
             description: "No handoffs between firms.",
           },
         ],
+      },
+      work_together: {
+        title: "Let's work together",
+        contact_us: "Contact Us",
       },
     },
   },
