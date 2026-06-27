@@ -412,6 +412,34 @@ export const translations = {
         contact_us: "Contact Us",
       },
     },
+    contact_page: {
+      title: "Let’s build something they can’t ignore",
+      description: "Tell us what you're working on.",
+      form: {
+        name_field: {
+          label: "Name*",
+          placeholder: "Your name",
+        },
+        phone_field: {
+          label: "Phone / WhatsApp*",
+          placeholder: "12 3456 7890",
+        },
+        email_field: {
+          label: "Work email*",
+          placeholder: "your@company.com",
+        },
+        business_field: {
+          label: "Business name*",
+          placeholder: "Your business name",
+        },
+        description_field: {
+          label: "How Can We Help?*",
+          placeholder:
+            "Tell us about your project, budget, challenge, idea, etc.",
+        },
+        button: "Submit",
+      },
+    },
   },
   en: {
     nav: {
@@ -727,6 +755,34 @@ export const translations = {
       work_together: {
         title: "Let's work together",
         contact_us: "Contact Us",
+      },
+    },
+    contact_page: {
+      title: "Let’s Build Something They Can’t Ignore",
+      description: "Tell us what you're working on.",
+      form: {
+        name_field: {
+          label: "Name*",
+          placeholder: "Your name",
+        },
+        phone_field: {
+          label: "Phone / WhatsApp*",
+          placeholder: "12 3456 7890",
+        },
+        email_field: {
+          label: "Work email*",
+          placeholder: "your@company.com",
+        },
+        business_field: {
+          label: "Business name*",
+          placeholder: "Your business name",
+        },
+        description_field: {
+          label: "How Can We Help?*",
+          placeholder:
+            "Tell us about your project, budget, challenge, idea, etc.",
+        },
+        button: "Submit",
       },
     },
   },

@@ -1,0 +1,19 @@
+---
+import Layout from "@/layout/layout.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<Layout lang={lang}>
+  <section class="flex flex-col items-center justify-center pb-28">
+    <h1 class="text-3xl font-arvo text-center w-96">{ui.contact_page.title}</h1>
+    <p class="text-sm text-center mt-3">{ui.contact_page.description}</p>
+    <div class="relative size-24">
+      <img src="/assets/icons/bactery.svg" class="absolute -left-34.5 top-3" />
+      <img src="/assets/icons/ovni.svg" class="absolute top-7.5" />
+      <img src="/assets/icons/planet.svg" class="absolute -right-32 -top-9" />
+    </div>
+  </section>
+</Layout>
