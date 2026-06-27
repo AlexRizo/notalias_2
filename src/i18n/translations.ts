@@ -439,6 +439,29 @@ export const translations = {
         },
         button: "Submit",
       },
+      contact_data: {
+        title: "Contáctanos directamente",
+        items: [
+          {
+            label: "Email",
+            value: "hello@notalias.com",
+            copy: "Copy",
+            url: "mailto:hello@notalias.com",
+          },
+          {
+            label: "Call / WhatsApp",
+            value: "+523121447976",
+            copy: "Copy",
+            url: "https://wa.me/3121447976",
+          },
+          {
+            label: "Find Us",
+            value: "Dirección Guadalajara",
+            copy: "Copy",
+            url: "#",
+          },
+        ],
+      },
     },
   },
   en: {
@@ -783,6 +806,29 @@ export const translations = {
             "Tell us about your project, budget, challenge, idea, etc.",
         },
         button: "Submit",
+      },
+      contact_data: {
+        title: "Contact us directly",
+        items: [
+          {
+            label: "Email",
+            value: "hello@notalias.com",
+            copy: "Copy",
+            url: "mailto:hello@notalias.com",
+          },
+          {
+            label: "Call / WhatsApp",
+            value: "+523121447976",
+            copy: "Copy",
+            url: "https://wa.me/3121447976",
+          },
+          {
+            label: "Find Us",
+            value: "Dirección Guadalajara",
+            copy: "Copy",
+            url: "#",
+          },
+        ],
       },
     },
   },

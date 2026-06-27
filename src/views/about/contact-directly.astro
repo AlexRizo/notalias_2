@@ -1,0 +1,26 @@
+---
+interface ContactItem {
+  label: string;
+  value: string;
+  copy: string;
+  url: string;
+}
+
+interface Props {
+  contact_items: ContactItem[];
+}
+
+const { contact_items } = Astro.props;
+---
+
+<article class="flex flex-col gap-2 w-fit mx-auto py-10 text-sm">
+  {
+    contact_items.map(({ label, value, copy, url }) => (
+      <a href={url} class="grid grid-cols-[max-content_max-content_max-content] gap-5" target="_blank" rel="noopener noreferrer">
+        <p class="text-right w-31">{label} -></p>
+        <p class="w-37">{value}</p>
+        <p class="text-primary">{copy}</p>
+      </a>
+    ))
+  }
+</article>
