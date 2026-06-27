@@ -1,13 +1,14 @@
 ---
 import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import FormField from "@/components/form/form-field.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
-  <section class="flex flex-col items-center justify-center pb-28">
+  <section class="flex flex-col items-center justify-center pb-28 bg-[#F6F6F6]">
     <h1 class="text-3xl font-arvo text-center w-96">{ui.contact_page.title}</h1>
     <p class="text-sm text-center mt-3">{ui.contact_page.description}</p>
     <div class="relative size-24">
@@ -15,5 +16,63 @@ const ui = useTranslations(lang);
       <img src="/assets/icons/ovni.svg" class="absolute top-7.5" />
       <img src="/assets/icons/planet.svg" class="absolute -right-32 -top-9" />
     </div>
+  </section>
+
+  <section class="bg-[#F6F6F6]">
+    <form class="max-w-96 mx-auto space-y-5">
+      <FormField name="name" label={ui.contact_page.form.name_field.label}>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder={ui.contact_page.form.name_field.placeholder}
+        />
+      </FormField>
+
+      <FormField name="phone" label={ui.contact_page.form.phone_field.label}>
+        <input
+          type="number"
+          id="phone"
+          name="phone"
+          placeholder={ui.contact_page.form.phone_field.placeholder}
+        />
+      </FormField>
+      <FormField name="email" label={ui.contact_page.form.email_field.label}>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder={ui.contact_page.form.email_field.placeholder}
+        />
+      </FormField>
+      <FormField
+        name="business"
+        label={ui.contact_page.form.business_field.label}
+      >
+        <input
+          type="text"
+          id="business"
+          name="business"
+          placeholder={ui.contact_page.form.business_field.placeholder}
+        />
+      </FormField>
+      <FormField
+        name="message"
+        label={ui.contact_page.form.description_field.label}
+      >
+        <textarea
+          id="message"
+          class="resize-none"
+          name="message"
+          placeholder={ui.contact_page.form.description_field.placeholder}
+          rows={4}></textarea>
+      </FormField>
+      <button
+        type="submit"
+        class="text-white uppercase px-7.5 py-1 rounded-2xl bg-primary hover:opacity-95 cursor-pointer"
+      >
+        {ui.contact_page.form.button}
+      </button>
+    </form>
   </section>
 </Layout>
