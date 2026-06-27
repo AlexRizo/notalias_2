@@ -3,13 +3,14 @@ import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import FormField from "@/components/form/form-field.astro";
 import ContactDirectly from "@/views/about/contact-directly.astro";
+import FormSended from "@/components/form/form-sended.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
-  <section class="flex flex-col items-center justify-center pb-28 bg-[#F6F6F6]">
+  <section class="flex flex-col items-center justify-center pb-18 bg-[#F6F6F6]">
     <h1 class="text-3xl font-arvo text-center w-96">{ui.contact_page.title}</h1>
     <p class="text-sm text-center mt-3">{ui.contact_page.description}</p>
     <div class="relative size-24">
@@ -20,13 +21,14 @@ const ui = useTranslations(lang);
   </section>
 
   <section class="bg-[#F6F6F6]">
-    <form class="max-w-96 mx-auto space-y-5">
+    <form class="max-w-96 mx-auto space-y-5" id="contact-form">
       <FormField name="name" label={ui.contact_page.form.name_field.label}>
         <input
           type="text"
           id="name"
           name="name"
           placeholder={ui.contact_page.form.name_field.placeholder}
+          required
         />
       </FormField>
 
@@ -36,6 +38,7 @@ const ui = useTranslations(lang);
           id="phone"
           name="phone"
           placeholder={ui.contact_page.form.phone_field.placeholder}
+          required
         />
       </FormField>
       <FormField name="email" label={ui.contact_page.form.email_field.label}>
@@ -44,6 +47,7 @@ const ui = useTranslations(lang);
           id="email"
           name="email"
           placeholder={ui.contact_page.form.email_field.placeholder}
+          required
         />
       </FormField>
       <FormField
@@ -55,6 +59,7 @@ const ui = useTranslations(lang);
           id="business"
           name="business"
           placeholder={ui.contact_page.form.business_field.placeholder}
+          required
         />
       </FormField>
       <FormField
@@ -66,7 +71,8 @@ const ui = useTranslations(lang);
           class="resize-none"
           name="message"
           placeholder={ui.contact_page.form.description_field.placeholder}
-          rows={4}></textarea>
+          rows={4}
+          required></textarea>
       </FormField>
       <button
         type="submit"
@@ -83,4 +89,50 @@ const ui = useTranslations(lang);
     </h1>
     <ContactDirectly contact_items={ui.contact_page.contact_data.items} />
   </section>
+
+  <FormSended />
 </Layout>
+
+<script>
+  const form = document.querySelector("#contact-form") as HTMLFormElement;
+
+  const nameInput = document.querySelector("#name") as HTMLInputElement;
+  const phoneInput = document.querySelector("#phone") as HTMLInputElement;
+  const emailInput = document.querySelector("#email") as HTMLInputElement;
+  const businessInput = document.querySelector("#business") as HTMLInputElement;
+  const messageInput = document.querySelector(
+    "#message",
+  ) as HTMLTextAreaElement;
+
+  const overlay = document.querySelector("#form-overlay") as HTMLDivElement;
+  const closeBtn = document.querySelector("#close-modal") as HTMLButtonElement;
+
+  const validateForm = () => {
+    if (!nameInput.value || !emailInput.value || !messageInput.value) {
+      return false;
+    }
+    return true;
+  };
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      const formData = {
+        name: nameInput.value,
+        phone: phoneInput.value,
+        email: emailInput.value,
+        business: businessInput.value,
+        message: messageInput.value,
+      };
+
+      overlay.style.display = "block";
+    }
+  });
+
+  const closeModal = () => {
+    overlay.style.display = "none";
+  };
+
+  closeBtn.addEventListener("click", closeModal);
+</script>

@@ -413,8 +413,8 @@ export const translations = {
       },
     },
     contact_page: {
-      title: "Let’s build something they can’t ignore",
-      description: "Tell us what you're working on.",
+      title: "Hagamos algo que llame la atención",
+      description: "Dime en qué estás trabajando.",
       form: {
         name_field: {
           label: "Name*",
@@ -461,6 +461,11 @@ export const translations = {
             url: "#",
           },
         ],
+      },
+      form_modal: {
+        title: "Nos pondremos en contacto contigo",
+        description:
+          "Revisamos cada solicitud personalmente. Espéranos en las próximas 48 horas.",
       },
     },
   },
@@ -829,6 +834,11 @@ export const translations = {
             url: "#",
           },
         ],
+      },
+      form_modal: {
+        title: "We’ll be in touch",
+        description:
+          "We Review Every Inquiry Personally. Expect To Hear From Us Within 48 Hours.",
       },
     },
   },

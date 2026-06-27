@@ -1,0 +1,28 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<div
+  id="form-overlay"
+  class="fixed inset-0 z-40 bg-[#D9D9D9]/80 hidden"
+>
+  <div
+    class="bg-black rounded-lg h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 pb-16 pt-24"
+  >
+    <article
+      class="text-white text-center flex flex-col items-center justify-center gap-16 h-full"
+    >
+      <h1 class="text-3xl">{ui.contact_page.form_modal.title}</h1>
+      <p class="text-sm w-64 leading-[1.15]">
+        {ui.contact_page.form_modal.description}
+      </p>
+      <img src="/assets/icons/stars.svg" />
+      <button id="close-modal">
+        <img src="/assets/icons/plus.svg" class="mt-auto" />
+      </button>
+    </article>
+  </div>
+</div>
