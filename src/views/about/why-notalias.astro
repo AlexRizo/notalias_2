@@ -8,7 +8,9 @@ const ui = useTranslations(lang);
 const items = ui.about_page.why_notalias.items;
 ---
 
-<section class="bg-primary py-10 h-[536px] flex items-center justify-center">
+<section
+  class="bg-primary pt-6 pb-14 h-[536px] flex flex-col items-center justify-center relative"
+>
   <article
     class="flex flex-col items-center justify-center text-white relative"
   >
@@ -16,12 +18,46 @@ const items = ui.about_page.why_notalias.items;
       title={items[0].title}
       description={items[0].description}
       align="center"
-      className={["-top-44"]}
+      className={["-top-42", "w-38", "w-36"]}
     />
-    <h1 class="font-arvo text-xl text-center tracking-tighter leading-[1.15]">
+    <Article
+      title={items[1].title}
+      description={items[1].description}
+      align="right"
+      className={["-top-10 -right-32", "w-20", "w-25"]}
+    />
+    <Article
+      title={items[2].title}
+      description={items[2].description}
+      align="right"
+      className={["-bottom-40 -right-23", "w-30", "w-26"]}
+    />
+    <img
+      src="/assets/img/about/circle.svg"
+      class="absolute h-39.5 max-w-[155.5px] animate-spin"
+      style="animation-duration: 35s;"
+    />
+    <h1
+      class="font-arvo text-[19px] text-center tracking-tighter leading-[1.15]"
+    >
       {ui.about_page.why_notalias.title[0]}<br />{
         ui.about_page.why_notalias.title[1]
       }
     </h1>
+    <Article
+      title={items[3].title}
+      description={items[3].description}
+      align="left"
+      className={["-bottom-35.5 -left-25", "w-30", "w-24"]}
+    />
+    <Article
+      title={items[4].title}
+      description={items[4].description}
+      align="left"
+      className={["-top-12 -left-32", "w-28", "w-24"]}
+    />
   </article>
+  <p class="text-center text-[10px] absolute font-light text-white bottom-9">
+    {ui.about_page.why_notalias.locations}
+  </p>
 </section>
