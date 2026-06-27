@@ -10,18 +10,18 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<Layout lang={lang}>
-  <section class="flex flex-col items-center justify-center pb-18 bg-[#F6F6F6]">
+<Layout lang={lang} className="bg-[#F6F6F6]">
+  <section class="flex flex-col items-center justify-center pb-18">
     <h1 class="text-3xl font-arvo text-center w-96">{ui.contact_page.title}</h1>
     <p class="text-sm text-center mt-3">{ui.contact_page.description}</p>
     <div class="relative size-24">
-      <img src="/assets/icons/bactery.svg" class="absolute -left-34.5 top-3" />
+      <img src="/assets/icons/bactery.svg" class="absolute -left-33 top-3" />
       <img src="/assets/icons/ovni.svg" class="absolute top-7.5" />
       <img src="/assets/icons/planet.svg" class="absolute -right-32 -top-9" />
     </div>
   </section>
 
-  <section class="bg-[#F6F6F6]">
+  <section>
     <form class="max-w-96 mx-auto space-y-5" id="contact-form">
       <FormField name="name" label={ui.contact_page.form.name_field.label}>
         <input
@@ -90,7 +90,7 @@ const ui = useTranslations(lang);
     </form>
   </section>
 
-  <section class="bg-[#F6F6F6] pt-16 pb-14">
+  <section class="pt-16 pb-14">
     <h1 class="text-3xl font-arvo text-center">
       {ui.contact_page.contact_data.title}
     </h1>

@@ -1,15 +1,17 @@
 ---
 import Footer from "@/components/footer.astro";
 import Header from "@/components/navbar/header.astro";
+import { cn } from "@/helpers/cn";
 import type { Lang } from "@/i18n/translations";
 import "@/styles/global.css";
 
 interface Props {
   lang: Lang;
   title?: string;
+  className?: string;
 }
 
-const { lang = "es", title } = Astro.props;
+const { lang = "es", title, className } = Astro.props;
 ---
 
 <html lang={lang}>
@@ -27,7 +29,7 @@ const { lang = "es", title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title ? title : "Not Alias_"}</title>
   </head>
-  <body>
+  <body class={cn(className)}>
     <Header />
     <main>
       <slot />

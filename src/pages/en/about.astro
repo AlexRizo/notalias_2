@@ -9,8 +9,8 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<Layout lang={lang}>
-  <section class="pt-4 pb-24 bg-[#F6F6F6]">
+<Layout lang={lang} className="bg-[#F6F6F6]">
+  <section class="pt-4 pb-24">
     <article class="text-center">
       <h1 class="font-arvo text-3xl w-56 mx-auto leading-tight">
         {ui.about_page.hero.title}
@@ -31,7 +31,7 @@ const ui = useTranslations(lang);
     <AboutCarrousel client:visible slides={ui.about_page.slide.slides} />
   </section>
 
-  <section class="text-center py-8 bg-[#F6F6F6]">
+  <section class="text-center py-8">
     <h1 class="font-arvo text-3xl w-56 mx-auto leading-tight">
       {ui.about_page.how_work.title}
     </h1>
@@ -49,7 +49,7 @@ const ui = useTranslations(lang);
 
   <WhyNotalias />
 
-  <section class="bg-[#F6F6F6] flex flex-col justify-center items-center p-20">
+  <section class="flex flex-col justify-center items-center p-20">
     <img src="/assets/icons/work-together.svg" alt="Spiral" />
     <h1 class="text-3xl font-arvo text-center w-60 mt-5 mb-6">
       {ui.about_page.work_together.title}

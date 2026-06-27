@@ -16,7 +16,7 @@ interface Props {
 
 export const TeamSlider = ({ title, slides }: Props) => {
   return (
-    <section className="bg-[#F6F6F6]">
+    <section>
       <h1 className="text-sm text-center text-[#7B7B7B] py-10">{title}</h1>
       <Swiper
         className="mySwiper"
