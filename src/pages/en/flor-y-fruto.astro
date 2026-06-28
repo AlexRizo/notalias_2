@@ -1,0 +1,163 @@
+---
+import Attributes from "@/components/interiors/attributes.astro";
+import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
+import Layout from "@/layout/layout.astro";
+
+const attributes: AttributesType[] = [
+  {
+    label: "Client",
+    value: ["Grupo AGR"],
+  },
+  {
+    label: "Services",
+    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+  },
+  {
+    label: "Industry",
+    value: ["Wine & Spirits"],
+  },
+];
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout lang={lang} className="bg-[#f6f6f6]">
+  <section class="max-w-96 mx-auto px-2">
+    <div>
+      <h1 class="text-center text-xl my-6">Flor y Fruto</h1>
+      <div
+        class="flex items-center justify-center relative w-full h-54 overflow-hidden my-6 rounded"
+      >
+        <video
+          src="/assets/img/interiors/flor-y-fruto/media-01.mp4"
+          autoplay
+          loop
+          muted
+          class="absolute inset-0 object-cover size-full scale-[1.1] object-center"
+        ></video>
+        <img
+          src="/assets/img/interiors/flor-y-fruto/video-icon.webp"
+          alt="FLOR Y FRUTO"
+          class="absolute size-[129px]"
+        />
+      </div>
+    </div>
+
+    <article class="mt-4">
+      <h2 class="font-arvo text-3xl tracking-tight leading-[1.10]">
+        Hacer que una nueva generación eligiera un legado de 120 años.
+      </h2>
+      <Attributes attributes={attributes} />
+    </article>
+
+    <div class="content">
+      <img src="/assets/img/interiors/flor-y-fruto/media-02.webp" />
+      <article>
+        <h1>Context</h1>
+        <p>
+          Grupo AGR lleva más de quince años operando en la industria citrícola
+          mexicana. Campo, proceso, volumen —todo estaba ahí. Lo que no existía
+          era la marca: un nombre, una identidad, una razón para que el
+          consumidor final los eligiera sobre cualquier otra botella en el
+          anaquel.
+          <br />
+          El mercado de jugos de limón embotellados en México estaba dominado por
+          marcas genéricas o productos con concentrado artificial. Ninguna había construido
+          carácter. Había una oportunidad real para el primer jugo de limón 100% natural
+          que también supiera quién era.
+        </p>
+      </article>
+
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-03.webp"
+        class="my-6"
+      />
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-04.webp"
+        class="my-6"
+      />
+
+      <article>
+        <h1>Challenge</h1>
+        <p>
+          El reto no era el producto — era el salto. Pasar de proveedor anónimo
+          de la cadena agroindustrial a marca de consumo con presencia en retail
+          y HORECA al mismo tiempo. Dos canales con lógicas distintas: el chef
+          que necesita funcionalidad y volumen, y el consumidor en el
+          supermercado que necesita confianza y carácter.
+          <br />
+          La marca tenía que comunicar origen mexicano —Tecomán, el campo, el limonero—
+          sin caer en lo folclórico. Tenía que sonar natural y honesta sin sonar artesanal
+          o regional. Y tenía que construirse con escalabilidad: Flor y Fruto no era
+          solo jugo de limón, era la plataforma de marca de un grupo con visión de
+          expandirse a otros productos.
+        </p>
+      </article>
+
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-05.webp"
+        class="my-6"
+      />
+
+      <article>
+        <h1>The Work</h1>
+        <p>
+          <span
+            >El primer acto fue el naming. Antes de cualquier decisión visual,
+            encontramos el nombre en el árbol mismo: el limonero es el único
+            frutal que florece y fructifica de manera simultánea y continua.
+            Flor y fruto conviven en la misma rama al mismo tiempo —un ciclo que
+            no para, que no tiene estación. Ese insight no era botánico: era la
+            metáfora exacta de lo que la marca necesitaba ser.</span
+          >
+          <br /><br />
+          <span
+            >"Flor y Fruto" no describe el producto, lo contextualiza. Trae el
+            campo adentro antes de que abras la botella. Sus dos mitades tienen
+            peso propio: Flor es la promesa, el aroma, lo emocional; Fruto es la
+            verdad tangible, la precisión natural, el resultado. Juntas
+            construyen una marca en equilibrio entre lo bello y lo útil.</span
+          >
+          <br /><br />
+          <span
+            >Desde ese núcleo se construyó el sistema completo: identidad visual
+            con símbolo del limonero (raíz y fruto <br />como una sola unidad),
+            paleta que refleja el origen —verde campo, verde lima, crema cálida—
+            y tipografía que comunica elegancia sin distancia. El packaging fue
+            diseñado para operar en ambos canales sin bifurcar la identidad:
+            misma marca, misma voz, mismo símbolo. El Brand Book cierra el
+            sistema con lineamientos que permiten incorporar futuros productos
+            sin perder el carácter.</span
+          >
+        </p>
+      </article>
+
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-06.webp"
+        class="my-6"
+      />
+      <img
+        src="/assets/img/interiors/flor-y-fruto/mobile/media-07.webp"
+        class="my-6"
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @reference "@/styles/global.css";
+
+  img,
+  video {
+    @apply rounded;
+  }
+
+  .content h1 {
+    @apply text-lg mt-6 mb-2;
+  }
+
+  .content p {
+    @apply text-sm font-light tracking-tight leading-tight;
+  }
+</style>
