@@ -1,0 +1,54 @@
+---
+import { cn } from "@/helpers/cn";
+
+interface Props {
+  prev_path: string;
+  next_path: string;
+}
+
+const others = [
+  {
+    video_path: "/assets/img/interiors/nonstop/media-03.mp4",
+    name: "Nonstop",
+    description:
+      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+  },
+  {
+    video_path: "/assets/videos/swappp.mp4",
+    name: "Swappp",
+    description:
+      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+  },
+];
+
+const { prev_path, next_path } = Astro.props;
+---
+
+<aside class="grid grid-cols-2 gap-4 mb-16 my-18">
+  {
+    others.map((project, i) => (
+      <div>
+        <div class="relative h-[212px] rounded">
+          <video
+            src={project.video_path}
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute object-cover object-center rounded size-full"
+          />
+        </div>
+        <article class="mb-10">
+          <h1 class="text-lg mb-3 mt-5 leading-none">{project.name}</h1>
+          <p class="text-sm font-light leading-tight">{project.description}</p>
+        </article>
+        <a
+          href={i === 0 ? prev_path : next_path}
+          class={cn("flex underline underline-offset-5", i && "justify-end")}
+        >
+          {i === 0 ? "PREVIUS PROJECTS" : "NEXT PROJECTS"}
+        </a>
+      </div>
+    ))
+  }
+</aside>

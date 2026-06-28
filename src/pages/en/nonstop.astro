@@ -1,5 +1,6 @@
 ---
 import Attributes from "@/components/interiors/attributes.astro";
+import OtherProyects from "@/components/interiors/other-proyects.astro";
 import type { Attributes as AttributesType } from "@/i18n/interiors";
 import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
 import Layout from "@/layout/layout.astro";
@@ -25,7 +26,7 @@ const lang = getLangFromUrl(Astro.url);
 <Layout lang={lang} className="bg-[#f6f6f6]">
   <section class="max-w-96 mx-auto px-2">
     <div>
-      <h1 class="text-center text-xl my-6">Flor y Fruto</h1>
+      <h1 class="text-center text-xl my-6">Nonstop</h1>
 
       <video
         src="/assets/img/interiors/nonstop/media-01.mp4"
@@ -147,6 +148,8 @@ const lang = getLangFromUrl(Astro.url);
       </div>
       <img src="/assets/img/interiors/nonstop/media-07.webp" class="my-6" />
     </div>
+
+    <OtherProyects prev_path="/" next_path="/" />
   </section>
 </Layout>
 
