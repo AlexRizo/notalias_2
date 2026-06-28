@@ -1,3 +1,4 @@
+import { interiors } from "./interiors";
 import { translations, type Lang, type UI } from "./translations";
 
 export const defaultLang: Lang = "es";
@@ -16,4 +17,9 @@ export const useTranslations = (lang: Lang): UI => {
 export const getLocalizedPath = (url: URL, targetLang: Lang): string => {
   const [, , ...rest] = url.pathname.split("/");
   return `/${targetLang}/${rest.join("/")}`;
+};
+
+export const useInteriorTranslations = (lang: Lang) => {
+  const t = interiors[lang];
+  return t;
 };

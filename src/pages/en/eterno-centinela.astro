@@ -1,0 +1,123 @@
+---
+import Attributes from "@/components/interiors/attributes.astro";
+import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
+import Layout from "@/layout/layout.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const [eterno_centinela] = useInteriorTranslations(lang);
+---
+
+<Layout lang={lang} className="bg-[#f6f6f6]">
+  <section class="max-w-96 mx-auto px-2">
+    <div>
+      <h1 class="text-center text-xl my-6">{eterno_centinela.title}</h1>
+      {
+        eterno_centinela.hero_path.split(".").at(-1)?.includes("mp4") ? (
+          <video
+            src={eterno_centinela.hero_path}
+            autoplay
+            loop
+            muted
+            class="object-cover"
+          />
+        ) : (
+          <img
+            src="/assets/img/interiors/eterno-centinela/mobile/media-01.webp"
+            alt={eterno_centinela.title}
+          />
+        )
+      }
+    </div>
+
+    <article class="mt-4">
+      <h2 class="font-arvo text-3xl tracking-tight leading-[1.10]">
+        {eterno_centinela.description}
+      </h2>
+      <Attributes attributes={eterno_centinela.attributes} />
+    </article>
+
+    <div>
+      <img src="/assets/img/interiors/eterno-centinela/mobile/media-02.webp" />
+      <article>
+        <h1>Context</h1>
+        <p>
+          Tequila Centinela tiene 120 años de historia. Eterno es su entrada al
+          cristalino — la categoría que hoy define el crecimiento del tequila
+          premium. El mercado estaba saturado de marcas gritando legado,
+          tradición y herencia. Pero la generación que hoy impulsa el consumo ya
+          no compraba discursos de historia — pedía significado, presencia,
+          pertenencia a un momento.
+        </p>
+      </article>
+
+      <video
+        class="rounded my-6"
+        autoplay
+        loop
+        muted
+        src="/assets/img/interiors/eterno-centinela/media-03.mp4"></video>
+
+      <img src="/assets/img/interiors/eterno-centinela/media-04.webp" />
+
+      <article>
+        <h1>Challenge</h1>
+        <p>
+          La marca existía pero con presencia mínima y sin una identidad que
+          levantara la mano en premium. El reto no era contar la historia otra
+          vez — era encontrar el territorio donde pudiera vivir hoy, sin
+          disfrazarse de juventud ni renunciar a lo que ya era.
+        </p>
+      </article>
+
+      <img
+        src="/assets/img/interiors/eterno-centinela/media-05.webp"
+        class="my-6"
+      />
+
+      <article>
+        <h1>The Work</h1>
+        <p>
+          <span
+            >Ese territorio era la noche. Leímos el high energy y la nightlife
+            no como canal de activación, sino como el lugar donde Eterno tenía
+            que existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto
+            que ancla el peso del legado en la energía del ahora, en el momento,
+            en la cultura nocturna.</span
+          >
+          <br /><br />
+          <span class="tracking-tighter"
+            >El sistema visual se construyó desde el entorno, no desde la
+            botella. Cristales, metal, luz. El rojo como pulso. Un lenguaje que
+            no describe la noche — la habita. Todo materializado en un Creative
+            Book ejecutable desde el día uno.</span
+          >
+        </p>
+      </article>
+
+      <img
+        src="/assets/img/interiors/eterno-centinela/media-06.webp"
+        class="my-6"
+      />
+      <img
+        src="/assets/img/interiors/eterno-centinela/media-07.webp"
+        class="my-6"
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  @reference "@/styles/global.css";
+
+  img {
+    @apply rounded;
+  }
+
+  h1 {
+    @apply text-lg mt-6 mb-2;
+  }
+
+  p {
+    @apply text-sm font-light tracking-tight leading-tight;
+  }
+</style>

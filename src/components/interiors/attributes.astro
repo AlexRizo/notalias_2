@@ -1,0 +1,24 @@
+---
+import type { Attributes } from "@/i18n/interiors";
+
+interface Props {
+  attributes: Attributes[];
+}
+
+const { attributes }: Props = Astro.props;
+---
+
+<div
+  class="grid grid-cols-[repeat(3,1fr)] gap-3 pt-2 pb-4 mt-5 mb-8 border-b border-t border-black/30"
+>
+  {
+    attributes.map((attribute) => (
+      <article class="flex flex-col w-max">
+        <h3 class="text-lg mb-2">{attribute.label}</h3>
+        {attribute.value.map((value) => (
+          <p class="text-sm text-[#7b7b7b] leading-tight">{value}</p>
+        ))}
+      </article>
+    ))
+  }
+</div>
