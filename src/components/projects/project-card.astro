@@ -10,8 +10,8 @@ interface Props {
 const { name, description, url, videoPath, button } = Astro.props;
 ---
 
-<div class="mx-auto w-min">
-  <div class="relative w-91 h-111 overflow-hidden">
+<div class="mx-auto w-min lg:w-full">
+  <div class="relative w-91 h-111 overflow-hidden lg:w-full lg:h-[845px]">
     <button
       class="glass-button absolute z-10 px-2 py-1 text-sm text-white right-3 top-2.5 flex items-center gap-1"
       ><img src="/assets/icons/plus.svg" alt="+" class="rotate-45 size-3.5" />{
@@ -26,6 +26,6 @@ const { name, description, url, videoPath, button } = Astro.props;
       class="object-cover absolute w-full h-full rounded-lg"
       src={videoPath}></video>
   </div>
-  <h2 class="text-xl tracking-tight mt-6 mb-2">{name}</h2>
+  <h2 class="text-xl tracking-tight mt-6 lg:mt-4 mb-2">{name}</h2>
   <p class="text-sm font-light tracking-tight">{description}</p>
 </div>

@@ -6,11 +6,15 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<section class="my-18">
-  <h2 class="text-[#7B7B7B] text-center font-normal uppercase mb-6">
+<section class="my-18 lg:container lg:mx-auto lg:px-4">
+  <h2
+    class="text-[#7B7B7B] text-center lg:text-left font-normal uppercase mb-6 lg:text-[15px]"
+  >
     {ui.selected_work.title}
   </h2>
-  <div class="flex flex-col gap-12">
+  <div
+    class="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-x-3 lg:gap-y-20"
+  >
     {
       ui.selected_work.projects.map((project) => (
         <ProjectCard
