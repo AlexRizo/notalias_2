@@ -7,11 +7,34 @@ const ui = useTranslations(lang);
 const options = Object.values(ui.nav);
 ---
 
-<header class="flex flex-row justify-between px-4 py-10">
-  <img src="/assets/icon.svg" alt="Logo NotAlias_" />
+<header class="sticky top-0 z-50 flex flex-row justify-between items-center px-4 py-10 lg:py-6">
+  <div id="logo-wrapper" style="position: relative; width: 116px; height: 33px;">
+    <img id="logo-icon" src="/assets/icon.svg" alt="Logo NotAlias_" />
+    <img id="logo-wordmark" src="/assets/icons/notalias.svg" alt="NotAlias_" />
+  </div>
+
+  <!-- ? Navbar Desktop -->
+  <nav
+    class="hidden lg:flex lg:flex-row gap-3 items-center bg-black/10 px-8 py-2 rounded-full backdrop-blur-xl"
+  >
+    {
+      options.map((opt, i) => {
+        if (i === options.length - 1) return;
+
+        return (
+          <Navitem
+            url={`${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`}
+            label={opt}
+          />
+        );
+      })
+    }
+  </nav>
+
+  <!-- ? Navbar Mobile -->
   <div
     id="menu-overlay"
-    class="fixed inset-0 z-40 bg-[#D9D9D9]/80 md:hidden transition-opacity"
+    class="fixed inset-0 z-40 bg-[#D9D9D9]/80 lg:hidden transition-opacity"
     data-is-active="false"
   >
     <nav
@@ -44,10 +67,17 @@ const options = Object.values(ui.nav);
   </div>
   <button
     id="open-menu"
-    class="bg-primary py-0.5 px-2.75 rounded-full uppercase text-white text-sm"
+    class="bg-primary py-0.5 px-2.75 rounded-full uppercase text-white text-sm lg:hidden"
   >
     {ui.menu}
   </button>
+
+  <a
+    href={`${lang === "en" ? "/" : "/en"}`}
+    class="hidden lg:block text-sm tracking-wide"
+  >
+    ES | EN
+  </a>
 </header>
 
 <style is:inline>
@@ -59,6 +89,36 @@ const options = Object.values(ui.nav);
   #menu-overlay:not(.active) {
     opacity: 0;
     pointer-events: none;
+  }
+
+  #logo-icon,
+  #logo-wordmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition:
+      opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  #logo-icon {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+
+  #logo-wordmark {
+    transform: translateY(calc(-50% + 8px));
+    opacity: 0;
+  }
+
+  #logo-wrapper.scrolled #logo-icon {
+    transform: translateY(calc(-50% - 8px)) scale(0.85);
+    opacity: 0;
+  }
+
+  #logo-wrapper.scrolled #logo-wordmark {
+    transform: translateY(-50%);
+    opacity: 1;
   }
 </style>
 
@@ -83,4 +143,10 @@ const options = Object.values(ui.nav);
 
   openBtn?.addEventListener("click", toggleMenu);
   closeBtn?.addEventListener("click", toggleMenu);
+
+  const logoWrapper = document.querySelector("#logo-wrapper") as HTMLDivElement;
+
+  window.addEventListener("scroll", () => {
+    logoWrapper.classList.toggle("scrolled", window.scrollY > 60);
+  }, { passive: true });
 </script>

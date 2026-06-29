@@ -13,8 +13,7 @@ const { url, label, className } = Astro.props;
 <a
   href={url}
   class={cn(
-    "text-white text-lg uppercase tracking-tighter text-center bg-transparent hover:bg-primary transition-colors w-26.5 rounded-2xl py-0.5",
-    className
-  )}
-  >{label}</a
+    "text-white text-lg uppercase tracking-tighter text-center bg-transparent hover:bg-primary transition-colors w-26.5 rounded-2xl py-0.5 lg:text-xs lg:font-medium lg:w-16 lg:py-0.75 lg:text-black lg:tracking-wide lg:hover:text-white",
+    className,
+  )}>{label}</a
 >
