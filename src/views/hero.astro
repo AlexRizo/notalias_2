@@ -6,10 +6,21 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<section class="max-w-96 mx-auto">
-  <img src="/assets/img/home/hero.gif" alt="Not Alias" class="w-full p-4" />
-  <article class="mt-6">
-    <h1 class="font-arvo text-3xl text-center w-76 mx-auto text-[#060606]">
+<section class="max-w-96 lg:container mx-auto">
+  <img
+    src="/assets/img/home/hero.gif"
+    alt="Not Alias"
+    class="w-full p-4 lg:hidden"
+  />
+  <img
+    src="/assets/img/home/hero-d.gif"
+    alt="Not Alias"
+    class="mx-auto hidden lg:block"
+  />
+  <article class="mt-6 lg:flex lg:flex-row lg:max-w-[1150px] lg:mx-auto">
+    <h1
+      class="font-arvo text-3xl text-center lg:text-left lg:text-6xl w-76 lg:w-134 mx-auto text-[#060606] lg:tracking-tight"
+    >
       {
         ui.home.main_title.map((text, i) => {
           return (
@@ -20,6 +31,10 @@ const ui = useTranslations(lang);
         })
       }
     </h1>
-    <p class="text-[#0A0A0A] text-sm mt-12 text-center mx-auto w-45 font-light">{ui.home.description}</p>
+    <p
+      class="text-[#0A0A0A] text-sm lg:text-xl mt-12 lg:mt-0 text-center lg:text-left mx-auto lg:mx-0 lg:ml-auto w-45 lg:w-96 font-light"
+    >
+      {ui.home.description}
+    </p>
   </article>
 </section>
