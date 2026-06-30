@@ -6,9 +6,9 @@ const lang = getLangFromUrl(Astro.url)
 const ui = useTranslations(lang)
 ---
 
-<section class="pb-20">
+<section class="pb-20 lg:container lg:mx-auto lg:px-3">
   <h1 class="font sm text-[#7B7B7B] uppercase py-10 text-center">{ui.blog.title}</h1>
-  <div class="flex flex-col items-center justify-center gap-16 mx-auto">
+  <div class="flex flex-col items-center justify-center gap-16 mx-auto lg:grid lg:grid-cols-3 lg:gap-2">
     {
       ui.blog.entries.map((entry) => (
         <BlogItem title={entry.title} description={entry.description} image={entry.image} url={entry.url} openLabel={entry.open_label} />
