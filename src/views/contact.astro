@@ -5,12 +5,12 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<section class="bg-black flex flex-col justify-center items-center pt-10 pb-18">
-  <img src="/assets/icons/eye.svg" alt="Ojo" />
-  <h1 class="text-3xl font-arvo text-white text-center w-71 mt-3.5 mb-6">
+<section class="bg-black flex flex-col justify-center items-center pt-10 pb-18 lg:pt-22 lg:pb-30">
+  <img src="/assets/icons/eye.svg" alt="Ojo" class="lg:w-37" />
+  <h1 class="text-3xl font-arvo text-white text-center w-71 mt-3.5 mb-6 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.15]">
     {ui.contact.title}
   </h1>
-  <a class="text-white text-sm underline underline-offset-6 uppercase"
+  <a class="text-white text-sm underline underline-offset-6 uppercase lg:text-base"
     >{ui.contact.contact_us}</a
   >
 </section>
