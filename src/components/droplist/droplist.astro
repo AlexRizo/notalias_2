@@ -8,7 +8,7 @@ const ui = useTranslations(lang);
   {
     ui.services_page.our_services.items.map((item, i) => (
       <li class="accordion-item border-b border-black/10 transition-colors duration-300">
-        <div class="lg:container lg:mx-auto lg:px-14">
+        <div class="lg:container lg:mx-auto xl:pl-8 xl:pr-4">
           <button
             class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left lg:py-7"
             aria-expanded="false"
@@ -23,19 +23,22 @@ const ui = useTranslations(lang);
               alt="+"
             />
           </button>
-          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed text-white lg:text-lg lg:flex lg:justify-between lg:leading-tight">
-            <div class="lg:pb-12">
-              <p class="pl-12 lg:pl-14">{item.subtitle}</p>
-              <p class="pl-12 mb-5 max-w-76 lg:max-w-[388px] lg:pl-14">
-                {item.description}
+          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed text-white lg:text-lg lg:leading-tight ">
+            <div class="lg:pb-12 lg:flex lg:justify-between lg:items-center">
+              <p class="pl-12 mb-5 max-w-76 lg:max-w-[388px] lg:pl-14 lg:mb-0">
+                <span>{item.subtitle}</span>
+                <br />
+                <span>{item.description}</span>
               </p>
+              <img src="/assets/icons/planet-white.svg" />
+              <ul class="pl-15 mb-7 lg:pl-0 lg:mb-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 xl:gap-x-18 2xl:gap-x-26">
+                {item.list.map((li) => (
+                  <li class="list-disc leading-snug marker:text-[6px] lg:marker:text-sm">
+                    {li}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <img src="/assets/icons/planet-white.svg" />
-            <ul class="pl-15 mb-7 lg:pl-0 lg:mb-0">
-              {item.list.map((li) => (
-                <li class="list-disc leading-snug marker:text-[6px]">{li}</li>
-              ))}
-            </ul>
           </article>
         </div>
       </li>
