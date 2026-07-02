@@ -7,10 +7,12 @@ const ui = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
-  <section class="mt-2 max-w-96 mx-auto">
-    <div class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden">
+  <section class="mt-2 max-w-96 mx-auto lg:container">
+    <div
+      class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden lg:max-w-full lg:h-[664px]"
+    >
       <video
-        class="rounded-lg h-full object-cover object-[-200px] absolute left-0 top-0"
+        class="rounded-lg h-full object-cover object-[-200px] absolute left-0 top-0 lg:object-center lg:size-full"
         src="/assets/videos/services.mp4"
         autoplay
         muted
@@ -19,32 +21,42 @@ const ui = useTranslations(lang);
     </div>
   </section>
 
-  <section class="pt-18 pb-20">
-    <h1 class="font-arvo text-3xl text-center w-80 mx-auto leading-tight">
+  <section class="pt-18 pb-20 lg:pb-24">
+    <h1
+      class="font-arvo text-3xl text-center w-80 mx-auto leading-tight lg:text-6xl lg:w-120 lg:leading-none"
+    >
       {ui.services_page.title}
     </h1>
-    <img src="/assets/icons/jellyfish.svg" alt="Medusa" class="mx-auto my-9" />
-    <p class="text-center w-[209px] mx-auto font-light leading-tight">
+    <img
+      src="/assets/icons/jellyfish.svg"
+      alt="Medusa"
+      class="mx-auto my-9 lg:w-24 lg:my-4"
+    />
+    <p
+      class="text-center w-[209px] mx-auto font-light leading-tight lg:text-xl lg:w-[667px]"
+    >
       {ui.services_page.description}
     </p>
   </section>
 
-  <section class="bg-[#F6F6F6] py-14">
-    <h1 class="font-arvo text-3xl text-center">
+  <section class="bg-[#F6F6F6] py-14 lg:grid lg:grid-cols-2 lg:justify-around lg:gap-2">
+    <h1
+      class="font-arvo text-3xl text-center lg:text-6xl lg:w-96 lg:ml-auto lg:leading-none lg:text-left"
+    >
       {ui.services_page.our_services.title}
     </h1>
-    <p class="text-[10px] text-center w-72 mx-auto leading-tight mt-4">
+    <p
+      class="text-[10px] text-center w-72 mx-auto leading-tight mt-4 lg:text-lg lg:w-[455px] lg:mt-0 lg:text-left lg:mr-auto lg:ml-0"
+    >
       {ui.services_page.our_services.description}
     </p>
   </section>
 
-  <section class="max-w-96 mx-auto">
+  <section class="max-w-96 mx-auto lg:max-w-full">
     <Droplist />
   </section>
 
-  <section
-    class="bg-black flex flex-col justify-center items-center p-14"
-  >
+  <section class="bg-black flex flex-col justify-center items-center p-14">
     <img src="/assets/icons/espiral.svg" alt="Spiral" />
     <h1 class="text-3xl font-arvo text-white text-center w-80 mt-5 mb-6">
       {ui.services_page.contact.title}

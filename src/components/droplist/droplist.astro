@@ -8,29 +8,36 @@ const ui = useTranslations(lang);
   {
     ui.services_page.our_services.items.map((item, i) => (
       <li class="accordion-item border-b border-black/10 transition-colors duration-300">
-        <button
-          class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left"
-          aria-expanded="false"
-          data-index={i}
-        >
-          <p class="text-sm flex items-center gap-2">
-            <span class="w-8 text-center">{"0" + (i + 1)}</span> {item.name}
-          </p>
-          <img
-            src="/assets/icons/plus-black.svg"
-            class="accordion-icon mr-3"
-            alt="+"
-          />
-        </button>
-        <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed text-white">
-          <p class="pl-12">{item.subtitle}</p>
-          <p class="pl-12 mb-5 max-w-76">{item.description}</p>
-          <ul class="pl-15 mb-7">
-            {item.list.map((li) => (
-              <li class="list-disc leading-snug marker:text-[6px]">{li}</li>
-            ))}
-          </ul>
-        </article>
+        <div class="lg:container lg:mx-auto lg:px-14">
+          <button
+            class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left lg:py-7"
+            aria-expanded="false"
+            data-index={i}
+          >
+            <p class="text-sm flex items-center gap-2 lg:text-3xl lg:gap-4">
+              <span class="w-8 text-center">{"0" + (i + 1)}</span> {item.name}
+            </p>
+            <img
+              src="/assets/icons/plus-black.svg"
+              class="accordion-icon mr-3 lg:m-0 lg:w-[37px]"
+              alt="+"
+            />
+          </button>
+          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed text-white lg:text-lg lg:flex lg:justify-between lg:leading-tight">
+            <div class="lg:pb-12">
+              <p class="pl-12 lg:pl-14">{item.subtitle}</p>
+              <p class="pl-12 mb-5 max-w-76 lg:max-w-[388px] lg:pl-14">
+                {item.description}
+              </p>
+            </div>
+            <img src="/assets/icons/planet-white.svg" />
+            <ul class="pl-15 mb-7 lg:pl-0 lg:mb-0">
+              {item.list.map((li) => (
+                <li class="list-disc leading-snug marker:text-[6px]">{li}</li>
+              ))}
+            </ul>
+          </article>
+        </div>
       </li>
     ))
   }
@@ -52,6 +59,10 @@ const ui = useTranslations(lang);
 </style>
 
 <script>
+  const isLG: boolean = window.innerWidth >= 1024;
+
+  const paddingLG: number = isLG ? 48 : 0;
+
   document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
     trigger.addEventListener("click", () => {
       const item = trigger.closest(".accordion-item")!;
@@ -66,7 +77,7 @@ const ui = useTranslations(lang);
         trigger.setAttribute("aria-expanded", "false");
         item.classList.remove("open");
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = content.scrollHeight + paddingLG + "px";
         icon.src = "/assets/icons/minus.svg";
         icon.alt = "-";
         trigger.setAttribute("aria-expanded", "true");
