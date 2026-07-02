@@ -16,7 +16,7 @@ interface Props {
 
 export const AboutCarrousel = ({ slides }: Props) => {
   return (
-    <section className="">
+    <section className="lg:container lg:mx-auto">
       <Swiper
         className="mySwiper"
         modules={[Pagination, Autoplay]}
