@@ -300,59 +300,68 @@ export const translations = {
     about_page: {
       hero: {
         title: "Qué creemos",
-        description:
-          "La creatividad es lo más humano que existe. En un mundo que corre a automatizarlo todo, nosotros elegimos sentir, cuestionar, crear. Cada marca que construimos es la prueba de que el pensamiento humano importa.",
+        description: [
+          "La creatividad es lo más humano que existe. En un mundo que corre por automatizarlo todo, nosotros elegimos sentir, cuestionar, crear.",
+          "Cada marca que construimos es prueba de que el pensamiento humano sigue importando.",
+        ],
       },
       slide: {
         slides: [
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Human intelligence first",
+            icon: "/assets/icons/about/brand-identity.svg",
             media_path: "/assets/videos/about_character.mp4",
             description:
-              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+              "La AI amplifica, pero no reemplaza. Las decisiones que definen una marca nacen de la sensibilidad humana — intuición, empatía, lectura cultural, criterio creativo.",
           },
           {
             icon: "/assets/icons/about/brand-identity.svg",
-            title: "Human intelligence first",
+            title: "Better questions, better brands",
             media_path: "/assets/videos/about_character.mp4",
             description:
-              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+              "La calidad del resultado depende de la calidad del entendimiento. Invertimos en hacer las preguntas correctas antes de empezar a diseñar.",
           },
           {
             icon: "/assets/icons/about/brand-identity.svg",
-            title: "Human intelligence first",
+            title: "Culture is the brief",
             media_path: "/assets/videos/about_character.mp4",
             description:
-              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+              "Toda marca vive dentro de un contexto cultural. Los códigos, comportamientos y tensiones de ese contexto son la verdadera materia prima de la estrategia.",
+          },
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Brands are systems, not logos",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "Toda marca vive dentro de un contexto cultural. Los códigos, comportamientos y tensiones de ese contexto son la verdadera materia prima de la estrategia.",
           },
         ],
       },
       how_work: {
-        title: "Así trabajamos",
+        title: "How we work",
         modes: [
           {
-            name: "Inmersión",
+            name: "Immersion",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "Escuchamos antes de liderar. Inmersión profunda en el negocio, mercado, audiencia y ambición.",
             image_path: "/assets/img/about/immersion.webp",
           },
           {
-            name: "Diagnóstico",
+            name: "Diagnosis",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "Sintetizamos todo en una foto clara: dónde estás, hacia dónde necesitas ir y qué hay en el camino.",
             image_path: "/assets/img/about/immersion.webp",
           },
           {
-            name: "Creación",
+            name: "Creation",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "La estrategia toma forma. Conceptos, sistemas visuales, identidad verbal — sprints enfocados, retroalimentación ágil.",
             image_path: "/assets/img/about/immersion.webp",
           },
           {
-            name: "Entrega",
+            name: "Delivery",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "Todo lo que tu equipo necesita para ejecutar: lineamientos, activos, creative books. Listo desde el día uno.",
             image_path: "/assets/img/about/immersion.webp",
           },
         ],
@@ -366,46 +375,52 @@ export const translations = {
             image_path: "/assets/img/about/team/marco_leyva.webp",
           },
           {
-            name: "Marco Leyva",
-            role: "Co-founder & Creative Director",
-            image_path: "/assets/img/about/team/marco_leyva.webp",
+            name: "Miguel de la Madrid",
+            role: "Co-founder & Business Director",
+            image_path: "/assets/img/about/team/miguel_de_la_madrid.webp",
           },
           {
-            name: "Marco Leyva",
-            role: "Co-founder & Creative Director",
-            image_path: "/assets/img/about/team/marco_leyva.webp",
+            name: "Brando Rosales",
+            role: "Chief Growth Officer & Partner",
+            image_path: "/assets/img/about/team/brando_rosales.webp",
+          },
+          {
+            name: "Ed Carrasco",
+            role: "Strategy Director",
+            image_path: "/assets/img/about/team/ed_carrasco.webp",
           },
         ],
       },
       why_notalias: {
-        title: "Why Not Alias?",
-        locations: "Guadalajara - Madrid - Los Angeles",
+        title: ["Why", "Not Alias?"],
+        locations: "Guadalajara - Madrid",
         items: [
           {
-            title: "Clients discover themselves through our process.",
-            description: '"You helped us understand our own brand."',
+            title: "Nuestros clientes se descubren en el proceso.",
+            description: '"Nos ayudaron a entender nuestra propia marca."',
           },
           {
-            title: "Culturally fluent",
-            description: "We read cultural codes, not just market data.",
+            title: "Fluidez cultural.",
+            description: "Leemos códigos culturales, no solo datos de mercado.",
           },
           {
-            title: "Boutique attention, global standards.",
-            description: "Small enough to care, experienced enough to thrive.",
+            title: "Atención boutique, estándares globales.",
+            description:
+              "Lo suficientemente cercanos para cuidar cada detalle. Con la experiencia para competir con cualquiera.",
           },
           {
-            title: "Systems, not deliverables.",
-            description: "We hand you a system your team can run with.",
+            title: "Sistemas, no entregables.",
+            description: "Te entregamos un sistema que tu equipo puede operar desde el día uno.",
           },
           {
-            title: "Strategy and design under one roof.",
-            description: "No handoffs between firms.",
+            title: "Estrategia y diseño bajo un mismo techo. ",
+            description: "Sin intermediarios, sin traspasos entre firmas.",
           },
         ],
       },
       work_together: {
-        title: "Let's work together",
-        contact_us: "Contact Us",
+        title: "Trabajemos juntos",
+        contact_us: "Contáctanos",
       },
     },
     contact_page: {
