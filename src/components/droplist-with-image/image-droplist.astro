@@ -4,34 +4,36 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<ul class="">
+<ul>
   {
     ui.about_page.how_work.modes.map((item, i) => (
       <li class="accordion-item border-t border-black/10 transition-colors duration-300">
-        <button
-          class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left"
-          aria-expanded="false"
-          data-index={i}
-        >
-          <p class="text-sm flex items-center gap-2">
-            <span class="w-8 text-center">{"0" + (i + 1)}</span> {item.name}
-          </p>
-          <img
-            src="/assets/icons/plus-black.svg"
-            class="accordion-icon mr-3"
-            alt="+"
-          />
-        </button>
-        <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] flex flex-row justify-between gap-4">
-          <p class="pl-12 mb-5 max-w-40 leading-relaxed text-white">
-            {item.description}
-          </p>
-          <img
-            src={item.image_path}
-            alt={item.name}
-            class="w-48 min-h-32 object-cover rounded mb-6 mr-4"
-          />
-        </article>
+        <div class="lg:container lg:mx-auto lg:pl-25 lg:pr-10">
+          <button
+            class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left lg:py-7"
+            aria-expanded="false"
+            data-index={i}
+          >
+            <p class="text-sm flex items-center gap-2 lg:text-3xl lg:gap-6">
+              <span class="w-8 text-center">{"0" + (i + 1)}</span> {item.name}
+            </p>
+            <img
+              src="/assets/icons/plus-black.svg"
+              class="accordion-icon mr-3 lg:size-[37px]"
+              alt="+"
+            />
+          </button>
+          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] flex flex-row justify-between gap-4 lg:text-lg">
+            <p class="pl-12 mb-5 max-w-40 leading-relaxed text-white lg:max-w-86 lg:pl-16">
+              {item.description}
+            </p>
+            <img
+              src={item.image_path}
+              alt={item.name}
+              class="w-48 min-h-32 object-cover rounded mb-6 mr-4 lg:w-[725px] lg:min-h-none lg:h-[476px]"
+            />
+          </article>
+        </div>
       </li>
     ))
   }

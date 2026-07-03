@@ -1,11 +1,9 @@
-<svg width="156" height="158" viewBox="0 0 156 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.12">
-<circle cx="77.7761" cy="80.2239" r="51.7483" stroke="white" stroke-width="0.386308"/>
-<circle cx="77.7762" cy="80.224" r="77.5831" stroke="white" stroke-width="0.386308"/>
-<circle cx="77.912" cy="2.58348" r="2.58348" fill="white"/>
-<circle cx="2.58348" cy="60.7795" r="2.58348" fill="white"/>
-<circle cx="28.4181" cy="141.003" r="2.58348" fill="white"/>
-<circle cx="123.055" cy="143.451" r="2.58348" fill="white"/>
-<circle cx="152.969" cy="60.7795" r="2.58348" fill="white"/>
-</g>
+<svg width="403" height="409" viewBox="0 0 403 409" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="201.332" cy="207.668" r="133.956" stroke="white"/>
+<circle cx="201.332" cy="207.668" r="200.832" stroke="white"/>
+<circle cx="201.684" cy="6.68761" r="6.68761" fill="white"/>
+<circle cx="6.68761" cy="157.335" r="6.68761" fill="white"/>
+<circle cx="73.5636" cy="365.003" r="6.68761" fill="white"/>
+<circle cx="318.541" cy="371.338" r="6.68761" fill="white"/>
+<circle cx="395.977" cy="157.335" r="6.68761" fill="white"/>
 </svg>

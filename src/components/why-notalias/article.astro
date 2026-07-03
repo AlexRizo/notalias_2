@@ -14,29 +14,29 @@ const { title, description, align, className } = Astro.props as Props;
   class={cn("absolute space-y-2", className && className[0])}
   class:list={{
     "text-center": align === "center",
-    "text-left": align === "left",
-    "text-right": align === "right",
+    "text-left lg:text-right": align === "left",
+    "text-right lg:text-left": align === "right",
   }}
 >
   <h2
-    class={cn("text-sm leading-tight", className && className[1])}
+    class={cn("text-sm leading-tight lg:text-3xl lg:leading-none", className && className[1])}
     class:list={{
       "mx-auto": align === "center",
-      "mr-0 ml-auto": align === "right",
-      "ml-0 mr-auto": align === "left",
+      "mr-0 ml-auto lg:ml-0 lg:mr-auto": align === "right",
+      "ml-0 mr-auto lg:mr-0 lg:ml-auto": align === "left",
     }}
   >
     {title}
   </h2>
   <p
     class={cn(
-      "text-[10px] font-light leading-tight",
+      "text-[10px] font-light leading-tight lg:text-lg",
       className && className[2],
     )}
     class:list={{
       "mx-auto": align === "center",
-      "mr-0 ml-auto": align === "right",
-      "ml-0 mr-auto": align === "left",
+      "mr-0 ml-auto lg:ml-0 lg:mr-auto": align === "right",
+      "ml-0 mr-auto lg:mr-0 lg:ml-auto": align === "left",
     }}
   >
     {description}

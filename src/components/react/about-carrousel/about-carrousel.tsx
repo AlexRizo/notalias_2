@@ -21,9 +21,15 @@ export const AboutCarrousel = ({ slides }: Props) => {
         className="mySwiper"
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
+        breakpoints={{
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+        }}
         centeredSlides={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        // autoplay={{ delay: 3000, disableOnInteraction: false }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide>

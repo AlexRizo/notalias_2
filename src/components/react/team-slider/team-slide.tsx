@@ -6,13 +6,12 @@ interface Props {
 
 export const TeamSlide = ({ slide }: Props) => {
   return (
-    <div className="flex flex-col max-w-91 mx-auto pb-12">
-      <div className="w-full h-[390px] bg-gray-300">
+    <div className="flex flex-col max-w-91 mx-auto pb-12 lg:max-w-[600px] lg:mx-0">
+      <div className="w-full h-[390px] bg-gray-300 lg:h-[645px]">
         <img src={slide.image_path} alt={slide.name} className="w-full" />
       </div>
-      <h2 className="text-lg leading-none mt-4">{slide.name}</h2>
-      <p className="text-xs font-light">{slide.role}</p>
+      <h2 className="text-lg leading-none mt-4 lg:text-3xl">{slide.name}</h2>
+      <p className="text-xs font-light lg:text-lg">{slide.role}</p>
     </div>
   );
 };
-

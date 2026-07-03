@@ -9,7 +9,7 @@ const items = ui.about_page.why_notalias.items;
 ---
 
 <section
-  class="bg-primary pt-6 pb-14 h-[536px] flex flex-col items-center justify-center relative"
+  class="bg-primary pt-6 pb-14 h-[536px] flex flex-col items-center justify-center relative lg:h-[932px] lg:pb-8"
 >
   <article
     class="flex flex-col items-center justify-center text-white relative"
@@ -18,27 +18,35 @@ const items = ui.about_page.why_notalias.items;
       title={items[0].title}
       description={items[0].description}
       align="center"
-      className={["-top-42", "w-38", "w-36"]}
+      className={["-top-42 lg:-top-79", "w-38 lg:w-70", "w-36 lg:w-72"]}
     />
     <Article
       title={items[1].title}
       description={items[1].description}
       align="right"
-      className={["-top-10 -right-32", "w-20", "w-25"]}
+      className={[
+        "-top-10 -right-32 lg:-top-15 lg:-right-85",
+        "w-20 lg:w-52",
+        "w-25 lg:w-57",
+      ]}
     />
     <Article
       title={items[2].title}
       description={items[2].description}
       align="right"
-      className={["-bottom-40 -right-23", "w-30", "w-26"]}
+      className={[
+        "-bottom-40 -right-23 lg:-bottom-50 lg:-right-86",
+        "w-30 lg:w-70",
+        "w-26 lg:w-72",
+      ]}
     />
     <img
       src="/assets/img/about/circle.svg"
-      class="absolute h-39.5 max-w-[155.5px] animate-spin"
+      class="absolute h-39.5 max-w-[155.5px] animate-spin lg:max-w-none lg:h-auto"
       style="animation-duration: 35s;"
     />
     <h1
-      class="font-arvo text-[19px] text-center tracking-tighter leading-[1.15]"
+      class="font-arvo text-[19px] text-center tracking-tighter leading-[1.15] lg:text-5xl"
     >
       {ui.about_page.why_notalias.title[0]}<br />{
         ui.about_page.why_notalias.title[1]
@@ -48,16 +56,24 @@ const items = ui.about_page.why_notalias.items;
       title={items[3].title}
       description={items[3].description}
       align="left"
-      className={["-bottom-35.5 -left-25", "w-30", "w-24"]}
+      className={[
+        "-bottom-35.5 -left-25 lg:-bottom-48 lg:-left-84",
+        "w-30 lg:w-68",
+        "w-24 lg:w-60",
+      ]}
     />
     <Article
       title={items[4].title}
       description={items[4].description}
       align="left"
-      className={["-top-12 -left-32", "w-28", "w-24"]}
+      className={[
+        "-top-12 -left-32 lg:-top-15 lg:-left-96",
+        "w-28 lg:w-68",
+        "w-24 lg:w-68",
+      ]}
     />
   </article>
-  <p class="text-center text-[10px] absolute font-light text-white bottom-9">
+  <p class="text-center text-[10px] absolute font-light text-white bottom-9 lg:text-lg">
     {ui.about_page.why_notalias.locations}
   </p>
 </section>
