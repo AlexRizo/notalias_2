@@ -410,7 +410,8 @@ export const translations = {
           },
           {
             title: "Sistemas, no entregables.",
-            description: "Te entregamos un sistema que tu equipo puede operar desde el día uno.",
+            description:
+              "Te entregamos un sistema que tu equipo puede operar desde el día uno.",
           },
           {
             title: "Estrategia y diseño bajo un mismo techo. ",
@@ -424,31 +425,31 @@ export const translations = {
       },
     },
     contact_page: {
-      title: "Hagamos algo que llame la atención",
-      description: "Dime en qué estás trabajando.",
+      title: "Construyamos algo imposible de ignorar",
+      description: "Cuéntanos sobre tu proyecto.",
       form: {
         name_field: {
-          label: "Name*",
-          placeholder: "Your name",
+          label: "Nombre*",
+          placeholder: "Tu nombre",
         },
         phone_field: {
-          label: "Phone / WhatsApp*",
+          label: "Teléfono / WhatsApp*",
           placeholder: "12 3456 7890",
         },
         email_field: {
-          label: "Work email*",
-          placeholder: "your@company.com",
+          label: "Email de trabajo*",
+          placeholder: "tu@empresa.com",
         },
         business_field: {
-          label: "Business name*",
-          placeholder: "Your business name",
+          label: "Nombre de tu empresa*",
+          placeholder: "Tu empresa",
         },
         description_field: {
-          label: "How Can We Help?*",
+          label: "¿Cómo podemos ayudarte?*",
           placeholder:
-            "Tell us about your project, budget, challenge, idea, etc.",
+            "Cuéntanos sobre tu proyecto, presupuesto, reto, idea, etc.",
         },
-        button: "Submit",
+        button: "Enviar",
       },
       contact_data: {
         title: "Contáctanos directamente",
@@ -456,27 +457,28 @@ export const translations = {
           {
             label: "Email",
             value: "hello@notalias.com",
-            copy: "Copy",
-            url: "mailto:hello@notalias.com",
+            copy: "Copiar",
+            copy_value: "hello@notalias.com",
           },
           {
             label: "Call / WhatsApp",
             value: "+523121447976",
-            copy: "Copy",
-            url: "https://wa.me/3121447976",
+            copy: "Copiar",
+            copy_value: "+523121447976",
           },
           {
-            label: "Find Us",
+            label: "Encuéntranos",
             value: "Dirección Guadalajara",
-            copy: "Copy",
-            url: "#",
+            copy: "Copiar",
+            copy_value:
+              "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
           },
         ],
       },
       form_modal: {
-        title: "Nos pondremos en contacto contigo",
+        title: "Estaremos en contacto",
         description:
-          "Revisamos cada solicitud personalmente. Espéranos en las próximas 48 horas.",
+          "Revisamos cada mensaje personalmente. Espera noticias nuestras en menos de 48 horas.",
       },
     },
   },
@@ -834,19 +836,20 @@ export const translations = {
             label: "Email",
             value: "hello@notalias.com",
             copy: "Copy",
-            url: "mailto:hello@notalias.com",
+            copy_value: "hello@notalias.com",
           },
           {
             label: "Call / WhatsApp",
             value: "+523121447976",
             copy: "Copy",
-            url: "https://wa.me/3121447976",
+            copy_value: "+523121447976",
           },
           {
-            label: "Find Us",
-            value: "Dirección Guadalajara",
+            label: "Find us",
+            value: "Guadalajara Location",
             copy: "Copy",
-            url: "#",
+            copy_value:
+              "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
           },
         ],
       },
