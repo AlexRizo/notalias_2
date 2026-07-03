@@ -111,57 +111,57 @@ export const translations = {
         "®Not Alias es un estudio creativo boutique que cuenta con talento internacional, una visión estratégica sólida y la maestría en el diseño necesaria para crear marcas que no pasan desapercibidas.",
     },
     selected_work: {
-      title: "Trabajos Recientes",
+      title: "Proyectos Destacados",
       project_button: "Ver más",
       projects: projects.es.items,
+      contact: {
+        title: "La próxima podría ser tu marca",
+        contact_us: "Contáctanos",
+      },
     },
     services: {
-      title: [
-        "Creamos",
-        "sistemas de marca",
-        "para los que están subiendo el estándar",
-      ],
+      title: ["We build", "brand systems,", "for those raising the standard"],
       videoPath: "/assets/videos/ssd.mp4",
-      services: "Servicios",
+      services: "Services",
       items: [
-        "Estrategia de Marca",
-        "Identidad de Marca",
-        "Ejecución de Marca",
-        "Experiencia Digital",
+        "Brand Strategy",
+        "Brand Identity",
+        "Brand Execution",
+        "Digital Experience",
       ],
     },
     blog: {
-      title: "No es un diario",
+      title: "Not a Journal",
       entries: [
         {
-          title: "Construido para Erewhon",
+          title: "Built for Erewhon",
           description:
-            "Desarrollamos el sistema de marca completo para un nuevo producto que se lanza exclusivamente en Erewhon este año. Más pronto.",
+            "Desarrollamos el sistema de marca completo para un nuevo producto que lanzará exclusivamente en Erewhon este año. Pronto más.",
           url: "#",
           image: "/assets/img/home/erewhon.webp",
-          open_label: "IR AL SITIO",
+          open_label: "VER MÁS",
         },
         {
-          title: "La inteligencia humana primero",
+          title: "Human Intelligence First",
           description:
-            "La inteligencia artificial es una herramienta. Las decisiones reales — las que dan forma a una marca — todavía vienen de las personas. Esa es nuestra apuesta.",
+            "La AI es una herramienta. Las decisiones que definen una marca siguen siendo humanas. Esa es nuestra apuesta.",
           url: "#",
           image: "/assets/img/home/human_intelligence_first.webp",
-          open_label: "IR AL SITIO",
+          open_label: "VER MÁS",
         },
         {
           title: "Siempre escuchando",
           description:
-            "Tetragramaton de Rick Rubin — conversaciones sobre creatividad, oficio y proceso que mantienen nuestra mente ágil.",
+            "Tetragramaton de Rick Rubin — conversaciones sobre creatividad, oficio y proceso que mantienen nuestro pensamiento afilado.",
           url: "#",
           image: "/assets/img/home/currently_listening.webp",
-          open_label: "IR AL SITIO",
+          open_label: "VER MÁS",
         },
       ],
     },
     contact: {
-      title: "Every great project starts with a conversation",
-      contact_us: "Contact Us",
+      title: "Todo gran proyecto comienza con una conversación ",
+      contact_us: "Contáctanos",
     },
     footer: {
       contact_us: {
@@ -483,6 +483,10 @@ export const translations = {
       title: "Recent Work",
       project_button: "See more",
       projects: projects.en.items,
+      contact: {
+        title: "This could be your brand next",
+        contact_us: "Contact us",
+      },
     },
     services: {
       title: ["We build", "brand systems,", "for those raising the standard"],

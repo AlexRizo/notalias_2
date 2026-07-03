@@ -11,10 +11,14 @@ const ui = useTranslations(lang);
 
 <Layout lang={lang}>
   <section class="lg:container lg:mx-auto lg:px-3">
-    <h2 class="text-[#7B7B7B] text-center font-normal uppercase mb-10 lg:text-left">
+    <h2
+      class="text-[#7B7B7B] text-center font-normal uppercase mb-10 lg:text-left"
+    >
       {ui.selected_work.title}
     </h2>
-    <div class="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-3 lg:gap-y-22">
+    <div
+      class="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-3 lg:gap-y-22"
+    >
       {
         ui.selected_work.projects.map((project) => (
           <ProjectCard
@@ -29,5 +33,18 @@ const ui = useTranslations(lang);
     </div>
     <Paginator pages={[1, 2, 3, 4]} />
   </section>
-  <Contact />
+  <section
+    class="bg-black flex flex-col justify-center items-center pt-10 pb-18 lg:pt-22 lg:pb-30"
+  >
+    <img src="/assets/icons/eye.svg" alt="Ojo" class="lg:w-37" />
+    <h1
+      class="text-3xl font-arvo text-white text-center w-71 mt-3.5 mb-6 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.15]"
+    >
+      {ui.selected_work.contact.title}
+    </h1>
+    <a
+      class="text-white text-sm underline underline-offset-6 uppercase lg:text-base"
+      >{ui.selected_work.contact.contact_us}</a
+    >
+  </section>
 </Layout>
