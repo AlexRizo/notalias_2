@@ -1,5 +1,6 @@
 ---
 import Attributes from "@/components/interiors/attributes.astro";
+import OtherProyects from "@/components/interiors/other-proyects.astro";
 import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
 import Layout from "@/layout/layout.astro";
 
@@ -104,6 +105,8 @@ const [eterno_centinela] = useInteriorTranslations(lang);
       />
     </div>
   </section>
+
+  <OtherProyects prev_path="/" next_path="/" />
 </Layout>
 
 <style>

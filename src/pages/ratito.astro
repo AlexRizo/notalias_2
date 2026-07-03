@@ -1,5 +1,6 @@
 ---
 import Attributes from "@/components/interiors/attributes.astro";
+import OtherProyects from "@/components/interiors/other-proyects.astro";
 import type { Attributes as AttributesType } from "@/i18n/interiors";
 import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
 import Layout from "@/layout/layout.astro";
@@ -71,10 +72,7 @@ const lang = getLangFromUrl(Astro.url);
         </p>
       </article>
 
-      <img
-        src="/assets/img/interiors/ratito/media-05.webp"
-        class="my-6"
-      />
+      <img src="/assets/img/interiors/ratito/media-05.webp" class="my-6" />
 
       <article>
         <h1>The Work</h1>
@@ -96,16 +94,15 @@ const lang = getLangFromUrl(Astro.url);
         </p>
       </article>
 
-      <img
-        src="/assets/img/interiors/ratito/media-06.webp"
-        class="my-6"
-      />
+      <img src="/assets/img/interiors/ratito/media-06.webp" class="my-6" />
       <img
         src="/assets/img/interiors/ratito/mobile/media-07.webp"
         class="my-6"
       />
     </div>
   </section>
+
+  <OtherProyects prev_path="/" next_path="/" />
 </Layout>
 
 <style>
