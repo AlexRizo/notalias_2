@@ -229,17 +229,17 @@ export const translations = {
     services_page: {
       title: "Where strategy meets craft",
       description:
-        "We bring cultural understanding, critical thinking, and world-class creative talent to build brand systems that perform across markets and platforms. From naming to packaging, from positioning to digital experience — every decision is intentional, every detail is earned.",
+        "Combinamos entendimiento cultural, pensamiento crítico y talento creativo de clase mundial para construir sistemas de marca que funcionan en cualquier mercado y plataforma. Del naming al packaging, del posicionamiento a la experiencia digital — cada decisión es intencional, cada detalle se gana.",
       our_services: {
         title: "Our work services",
         description:
-          "Our work is organized around four disciplines. Each one is independent, but they're designed to build on each other — strategy informs identity, identity defines execution, execution extends into digital.",
+          "Nuestro trabajo se categoriza en cuatro pilares. Cada uno es independiente, pero están diseñados para construirse entre sí — la estrategia informa la identidad, la identidad define la ejecución, la ejecución se extiende a lo digital.",
         items: [
           {
             name: "Estrategia de Marca",
-            subtitle: "La estrategia antes del diseño.",
+            subtitle: "El pensamiento antes del diseño.",
             description:
-              "Definimos dónde está tu marca y hacia dónde va. Posicionamiento, naming, claridad de audiencia y diferenciación competitiva — las decisiones que hacen todo lo demás más nítido.",
+              "Definimos lo que tu marca necesita decir, a quién y por qué importa — antes de que alguien abra un archivo de diseño. Investigación, contexto cultural, posicionamiento y claridad competitiva. La base que hace sólida cada decisión creativa.",
             list: [
               "Brand DNA & Positioning",
               "Research & Benchmarking",
@@ -251,49 +251,49 @@ export const translations = {
           },
           {
             name: "Identidad de Marca",
-            subtitle: "Del sistema a la superficie.",
+            subtitle: "Donde la estrategia se vuelve visible.",
             description:
-              "Sistemas visuales construidos para durar. Logo, tipografía, color, movimiento y el kit completo que tu marca necesita para aparecer de forma consistente en cada punto de contacto.",
+              "La estrategia se convierte en sistema: lenguaje visual, tono verbal, dirección creativa y un conjunto de reglas que mantienen la marca coherente en cada punto de contacto. No es un logo — es una identidad completa, construida para adaptarse y escalar.",
             list: [
-              "Brand DNA & Positioning",
-              "Research & Benchmarking",
-              "Cultural Strategy",
+              "Visual Identity System",
+              "Naming & Verbal Identity",
+              "Creative & Art Direction",
               "Naming & Brand Architecture",
-              "Go-to-Market Strategy",
-              "Strategic Workshops",
+              "Rebranding",
+              "Brand Guidelines",
             ],
           },
           {
             name: "Ejecución de Marca",
-            subtitle: "Del sistema a la superficie.",
+            subtitle: "Los activos que dan vida a tu marca.",
             description:
-              "Diseño que vive en el mundo real. Packaging, impresión, espacial y aplicaciones de marca que traducen tu identidad en materiales tangibles de alto impacto.",
+              "La identidad sale de la pantalla y entra al mundo real. Packaging, campañas, materiales de lanzamiento, piezas editoriales — cada activo diseñado para construir reconocimiento y consistencia donde cuenta.",
             list: [
-              "Branding",
-              "Packaging",
-              "Impresión",
-              "Espacial",
-              "Aplicaciones de Marca",
+              "Packaging Design",
+              "Key Visual & Campaign Concept",
+              "Brand Launch Kit",
+              "Brand Applications",
+              "Merch Design",
             ],
           },
           {
             name: "Experiencia Digital",
-            subtitle: "Más allá del pixel.",
+            subtitle: "Tu marca, online.",
             description:
-              "Sitios web, interfaces y puntos de contacto digitales diseñados con el mismo rigor estratégico que tu marca. Construidos para rendir, construidos para sentirse bien.",
+              "Diseñamos y construimos la capa digital del sistema de marca: sitios web, ecommerce y activos digitales que trabajan tan duro como la marca lo hace offline. Alineados con la estrategia, construidos para rendir.",
             list: [
-              "Brand DNA & Positioning",
+              "UX/UI Design",
               "Research & Benchmarking",
-              "Cultural Strategy",
-              "Naming & Brand Architecture",
+              "Web Development",
+              "E-commerce",
               "Go-to-Market Strategy",
-              "Strategic Workshops",
+              "Digital Brand Systems",
             ],
           },
         ],
       },
       contact: {
-        title: "Descubramos qué necesita tu marca",
+        title: "Descubramos juntos lo que tu marca necesita",
         contact_us: "Contáctanos",
       },
     },
