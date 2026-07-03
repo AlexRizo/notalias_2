@@ -165,11 +165,11 @@ export const translations = {
     },
     footer: {
       contact_us: {
-        title: "Contact Us",
+        title: "Contacto",
         texts: [
-          "New business inquiries:",
+          "Nuevos proyectos:",
           "hello@notalias.com",
-          "Call us / WhatsApp: +52 312 144 7976",
+          "Llámanos / WhatsApp: +52 312 144 7976",
         ],
       },
       social: {
@@ -193,38 +193,42 @@ export const translations = {
           "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
       },
       menu: {
-        label: "Menu",
+        label: "Menú",
         home: {
-          label: "Home",
+          label: "Inicio",
           url: "/",
         },
         work: {
-          label: "Work",
-          url: "/work",
+          label: "Proyectos",
+          url: "/proyectos",
         },
         services: {
-          label: "Services",
-          url: "/services",
+          label: "Servicios",
+          url: "/servicios",
         },
         about: {
-          label: "About",
-          url: "/about",
+          label: "Nosotros",
+          url: "/nosotros",
         },
         contact: {
-          label: "Contact",
-          url: "/contact",
+          label: "Contacto",
+          url: "/contacto",
         },
       },
       madrid: {
         title: "Madrid",
         address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
       },
-      los_angeles: {
-        title: "Los Angeles",
-        address: ["Not Alias LA", "Address TBD", "Los Angeles, CA"],
-        phone: "+1 XXX XXX XXXX",
-      },
-      copyright: ["year", " Not Alias. Todos los derechos reservados."],
+      // los_angeles: {
+      //   title: "Los Angeles",
+      //   address: ["Not Alias LA", "Address TBD", "Los Angeles, CA"],
+      //   phone: "+1 XXX XXX XXXX",
+      // },
+      copyright: [
+        "Todos los contenidos son propiedad de Not Alias",
+        "year",
+        "© / Aviso de Privacidad",
+      ],
     },
     services_page: {
       title: "Where strategy meets craft",
@@ -605,11 +609,11 @@ export const translations = {
         title: "Madrid",
         address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
       },
-      los_angeles: {
-        title: "Los Angeles",
-        address: ["Not Alias LA", "Address TBD", "Los Angeles, CA"],
-        phone: "+1 XXX XXX XXXX",
-      },
+      // los_angeles: {
+      //   title: "Los Angeles",
+      //   address: ["Not Alias LA", "Address TBD", "Los Angeles, CA"],
+      //   phone: "+1 XXX XXX XXXX",
+      // },
       copyright: [
         "All contents copyright Not Alias ",
         "year",

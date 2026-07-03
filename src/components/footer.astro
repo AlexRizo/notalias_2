@@ -20,26 +20,56 @@ const ui = useTranslations(lang);
       <div class="w-44">
         <h1 class="footer-s-title">{ui.footer.contact_us.title}</h1>
         {
-          ui.footer.contact_us.texts.map((t) => (
-            <p class="footer-s-text">{t}</p>
-          ))
+          ui.footer.contact_us.texts.map((t, i) => {
+            if (i === 1) {
+              return (
+                <a href={`mailto:${t}`} class="footer-s-text block">
+                  {t}
+                </a>
+              );
+            } else if (i === 2) {
+              return (
+                <a href={`tel:+523121447976`} class="footer-s-text block">
+                  {t}
+                </a>
+              );
+            } else {
+              return <p class="footer-s-text block">{t}</p>;
+            }
+          })
         }
       </div>
 
       <div class="hidden lg:block">
         <h1 class="footer-s-title">{ui.footer.social.title}</h1>
-        <p class="footer-s-text">{ui.footer.social.instagram.label}</p>
-        <p class="footer-s-text">{ui.footer.social.linkedin.label}</p>
-        <p class="footer-s-text">{ui.footer.social.behance.label}</p>
+        <a href={ui.footer.social.instagram.url} class="footer-s-text"
+          >{ui.footer.social.instagram.label}</a
+        >
+        <a href={ui.footer.social.linkedin.url} class="footer-s-text"
+          >{ui.footer.social.linkedin.label}</a
+        >
+        <a href={ui.footer.social.behance.url} class="footer-s-text"
+          >{ui.footer.social.behance.label}</a
+        >
       </div>
 
       <div class="hidden lg:block">
         <h1 class="footer-s-title">{ui.footer.menu.label}</h1>
-        <p class="footer-s-text">{ui.footer.menu.home.label}</p>
-        <p class="footer-s-text">{ui.footer.menu.work.label}</p>
-        <p class="footer-s-text">{ui.footer.menu.services.label}</p>
-        <p class="footer-s-text">{ui.footer.menu.about.label}</p>
-        <p class="footer-s-text">{ui.footer.menu.contact.label}</p>
+        <a href={ui.footer.menu.home.url} class="footer-s-text"
+          >{ui.footer.menu.home.label}</a
+        >
+        <a href={ui.footer.menu.work.url} class="footer-s-text"
+          >{ui.footer.menu.work.label}</a
+        >
+        <a href={ui.footer.menu.services.url} class="footer-s-text"
+          >{ui.footer.menu.services.label}</a
+        >
+        <a href={ui.footer.menu.about.url} class="footer-s-text"
+          >{ui.footer.menu.about.label}</a
+        >
+        <a href={ui.footer.menu.contact.url} class="footer-s-text"
+          >{ui.footer.menu.contact.label}</a
+        >
       </div>
 
       <div class="w-44">
@@ -52,7 +82,7 @@ const ui = useTranslations(lang);
         <p class="footer-s-text">{ui.footer.madrid.address}</p>
       </div>
 
-      <div class="w-44 mt-3 lg:w-auto lg:mt-0">
+      <!-- <div class="w-44 mt-3 lg:w-auto lg:mt-0">
         <h1 class="footer-s-title">{ui.footer.los_angeles.title}</h1>
         {
           ui.footer.los_angeles.address.map((t) => (
@@ -60,13 +90,13 @@ const ui = useTranslations(lang);
           ))
         }
         <p class="footer-s-text">{ui.footer.los_angeles.phone}</p>
-      </div>
+      </div> -->
 
-      <p class="w-42 mt-8 footer-s-text lg:hidden">
+      <p class="w-42 mt-8 footer-s-text lg:hidden!">
         {
           ui.footer.copyright.map((ext) => {
             return ext === "year" ? (
-              <span id="footer-year">{ext}</span>
+              <span class="footer-year">{ext}</span>
             ) : (
               <span>{ext}</span>
             );
@@ -97,7 +127,7 @@ const ui = useTranslations(lang);
       {
         ui.footer.copyright.map((ext) => {
           return ext === "year" ? (
-            <span id="footer-year">{ext}</span>
+            <span class="footer-year">{ext}</span>
           ) : (
             <span>{ext}</span>
           );
@@ -115,12 +145,14 @@ const ui = useTranslations(lang);
   }
 
   .footer-s-text {
-    @apply text-[12px] font-light leading-3.5 lg:text-[15px] lg:leading-tight;
+    @apply text-[12px] font-light leading-3.5 lg:text-[15px] lg:leading-tight block;
   }
 </style>
 
 <script>
-  const yearEl = document.getElementById("footer-year") as HTMLSpanElement;
+  const yearEl = document.querySelectorAll(".footer-year");
 
-  yearEl.textContent = new Date().getFullYear().toString() + " ©";
+  yearEl.forEach((el) => {
+    el.textContent = new Date().getFullYear().toString() + " ©";
+  });
 </script>
