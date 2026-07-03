@@ -7,11 +7,18 @@ const ui = useTranslations(lang);
 const options = Object.values(ui.nav);
 ---
 
-<header class="sticky top-0 z-50 flex flex-row justify-between items-center px-4 py-10 lg:py-6">
-  <div id="logo-wrapper" style="position: relative; width: 116px; height: 33px;">
+<header
+  class="sticky top-0 z-50 flex flex-row justify-between items-center px-4 py-10 lg:py-6"
+>
+  <a
+    href={`/${lang === "en" ? "en" : ""}`}
+    id="logo-wrapper"
+    style="position: relative; width: 116px; height: 33px;"
+    class="cursor-pointer"
+  >
     <img id="logo-icon" src="/assets/icon.svg" alt="Logo NotAlias_" />
     <img id="logo-wordmark" src="/assets/icons/notalias.svg" alt="NotAlias_" />
-  </div>
+  </a>
 
   <!-- ? Navbar Desktop -->
   <nav
@@ -146,7 +153,11 @@ const options = Object.values(ui.nav);
 
   const logoWrapper = document.querySelector("#logo-wrapper") as HTMLDivElement;
 
-  window.addEventListener("scroll", () => {
-    logoWrapper.classList.toggle("scrolled", window.scrollY > 60);
-  }, { passive: true });
+  window.addEventListener(
+    "scroll",
+    () => {
+      logoWrapper.classList.toggle("scrolled", window.scrollY > 60);
+    },
+    { passive: true },
+  );
 </script>

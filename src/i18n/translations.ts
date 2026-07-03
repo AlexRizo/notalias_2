@@ -98,9 +98,9 @@ export const projects = {
 export const translations = {
   es: {
     nav: {
-      work: "Trabajo",
+      work: "Proyectos",
       services: "Servicios",
-      about: "Sobre",
+      about: "Nosotros",
       contact: "Contacto",
       switcher: "ES | EN",
     },
