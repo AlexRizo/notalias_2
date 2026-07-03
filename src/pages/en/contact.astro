@@ -5,6 +5,7 @@ import FormField from "@/components/form/form-field.astro";
 import ContactDirectly from "@/views/about/contact-directly.astro";
 import FormSended from "@/components/form/form-sended.astro";
 import PhoneLadaSelector from "@/components/form/phone-lada-selector.astro";
+import { ContactForm } from "@/components/react/form/contact-form";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
@@ -23,8 +24,11 @@ const ui = useTranslations(lang);
     </div>
   </section>
 
-  <section>
-    <form class="max-w-96 mx-auto space-y-5" id="contact-form">
+
+  <ContactForm client:load lang={lang} />
+
+  <!-- <section>
+    <form class="max-w-96 mx-auto space-y-5 lg:max-w-[1045px]" id="contact-form">
       <FormField name="name" label={ui.contact_page.form.name_field.label}>
         <input
           type="text"
@@ -90,7 +94,7 @@ const ui = useTranslations(lang);
         {ui.contact_page.form.button}
       </button>
     </form>
-  </section>
+  </section> -->
 
   <section class="pt-16 pb-14">
     <h1 class="text-3xl font-arvo text-center">
@@ -99,10 +103,10 @@ const ui = useTranslations(lang);
     <ContactDirectly contact_items={ui.contact_page.contact_data.items} />
   </section>
 
-  <FormSended />
+  <!-- <FormSended /> -->
 </Layout>
 
-<script>
+<!-- <script>
   const form = document.querySelector("#contact-form") as HTMLFormElement;
 
   const nameInput = document.querySelector("#name") as HTMLInputElement;
@@ -143,8 +147,6 @@ const ui = useTranslations(lang);
         message: messageInput.value,
       };
 
-      console.log(formData);
-
       overlay.style.display = "block";
     }
   });
@@ -154,4 +156,4 @@ const ui = useTranslations(lang);
   };
 
   closeBtn.addEventListener("click", closeModal);
-</script>
+</script> -->
