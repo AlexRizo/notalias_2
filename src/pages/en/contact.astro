@@ -25,79 +25,10 @@ const ui = useTranslations(lang);
   </section>
 
 
-  <ContactForm client:load lang={lang} />
-
-  <!-- <section>
-    <form class="max-w-96 mx-auto space-y-5 lg:max-w-[1045px]" id="contact-form">
-      <FormField name="name" label={ui.contact_page.form.name_field.label}>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder={ui.contact_page.form.name_field.placeholder}
-          required
-        />
-      </FormField>
-
-      <FormField name="phone" label={ui.contact_page.form.phone_field.label}>
-        <div class="grid grid-cols-2 gap-4">
-          <PhoneLadaSelector />
-          <input
-            type="number"
-            id="phone"
-            name="phone"
-            min={0}
-            minlength="10"
-            placeholder={ui.contact_page.form.phone_field.placeholder}
-            required
-          />
-        </div>
-      </FormField>
-
-      <FormField name="email" label={ui.contact_page.form.email_field.label}>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder={ui.contact_page.form.email_field.placeholder}
-          required
-        />
-      </FormField>
-      <FormField
-        name="business"
-        label={ui.contact_page.form.business_field.label}
-      >
-        <input
-          type="text"
-          id="business"
-          name="business"
-          placeholder={ui.contact_page.form.business_field.placeholder}
-          required
-        />
-      </FormField>
-      <FormField
-        name="message"
-        label={ui.contact_page.form.description_field.label}
-      >
-        <textarea
-          id="message"
-          class="resize-none"
-          name="message"
-          placeholder={ui.contact_page.form.description_field.placeholder}
-          rows={4}
-          required></textarea>
-      </FormField>
-      <button
-        type="submit"
-        class="text-white uppercase px-7.5 py-1 rounded-2xl bg-primary hover:opacity-95 cursor-pointer"
-      >
-        {ui.contact_page.form.button}
-      </button>
-    </form>
-  </section> -->
+  <ContactForm client:visible lang={lang} />
 
   <section class="pt-16 pb-14">
-    <h1 class="text-3xl font-arvo text-center">
+    <h1 class="text-3xl font-arvo text-center lg:text-6xl tracking-tighter">
       {ui.contact_page.contact_data.title}
     </h1>
     <ContactDirectly contact_items={ui.contact_page.contact_data.items} />
@@ -105,55 +36,3 @@ const ui = useTranslations(lang);
 
   <!-- <FormSended /> -->
 </Layout>
-
-<!-- <script>
-  const form = document.querySelector("#contact-form") as HTMLFormElement;
-
-  const nameInput = document.querySelector("#name") as HTMLInputElement;
-  const ladaInput = document.querySelector("#lada") as HTMLSelectElement;
-  const phoneInput = document.querySelector("#phone") as HTMLInputElement;
-  const emailInput = document.querySelector("#email") as HTMLInputElement;
-  const businessInput = document.querySelector("#business") as HTMLInputElement;
-  const messageInput = document.querySelector(
-    "#message",
-  ) as HTMLTextAreaElement;
-
-  const overlay = document.querySelector("#form-overlay") as HTMLDivElement;
-  const closeBtn = document.querySelector("#close-modal") as HTMLButtonElement;
-
-  const validateForm = () => {
-    if (
-      !nameInput.value ||
-      !emailInput.value ||
-      !messageInput.value ||
-      !phoneInput.value
-    ) {
-      return false;
-    }
-    return true;
-  };
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    if (validateForm()) {
-      const formData = {
-        name: nameInput.value,
-        phone:
-          ladaInput.options[ladaInput.selectedIndex].dataset.dialCode +
-          phoneInput.value,
-        email: emailInput.value,
-        business: businessInput.value,
-        message: messageInput.value,
-      };
-
-      overlay.style.display = "block";
-    }
-  });
-
-  const closeModal = () => {
-    overlay.style.display = "none";
-  };
-
-  closeBtn.addEventListener("click", closeModal);
-</script> -->

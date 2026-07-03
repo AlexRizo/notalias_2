@@ -10,7 +10,7 @@ export const FormSended = ({ lang, onClose }: Props) => {
 
   return (
     <div
-      className="fixed inset-0 z-40 bg-[#D9D9D9]/80 hidden"
+      className="fixed inset-0 z-60 bg-[#D9D9D9]/80"
     >
       <div className="bg-black rounded-lg h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 pb-16 pt-24">
         <article className="text-white text-center flex flex-col items-center justify-center gap-16 h-full">

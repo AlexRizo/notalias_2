@@ -13,14 +13,75 @@ interface Props {
 const { contact_items } = Astro.props;
 ---
 
-<article class="flex flex-col gap-2 w-fit mx-auto py-10 text-sm">
+<article class="flex flex-col gap-2 w-fit mx-auto py-10 text-sm lg:text-[15px]">
   {
     contact_items.map(({ label, value, copy, url }) => (
-      <a href={url} class="grid grid-cols-[max-content_max-content_max-content] gap-5" target="_blank" rel="noopener noreferrer">
-        <p class="text-right w-31">{label} -></p>
-        <p class="w-37">{value}</p>
-        <p class="text-primary">{copy}</p>
-      </a>
+      <p class="grid grid-cols-[max-content_max-content_max-content] gap-5 lg:gap-6">
+        <span class="text-right w-31 lg:w-33">{label} -></span>
+        <span class="w-37 lg:w-39">{value}</span>
+        <span
+          class="text-primary cursor-pointer copy-btn transition-colors duration-200"
+          data-value={value}
+          data-original-text={copy}>
+          {copy}
+        </span>
+      </p>
     ))
   }
 </article>
+
+<script>
+  const copyToClipboard = async (text: string) => {
+    // Secure contexts (HTTPS or localhost)
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (err) {
+        console.error('Failed to copy using API: ', err);
+      }
+    }
+
+    // Fallback for insecure contexts (HTTP on local network IP, etc.)
+    try {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.top = '-9999px';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      textarea.setSelectionRange(0, 99999); // Mobile compatibility
+
+      const success = document.execCommand('copy');
+      document.body.removeChild(textarea);
+      return success;
+    } catch (err) {
+      console.error('Fallback copy failed: ', err);
+      return false;
+    }
+  };
+
+  const copyButtons = document.querySelectorAll('.copy-btn');
+
+  copyButtons.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const textToCopy = btn.getAttribute('data-value');
+      const originalText = btn.getAttribute('data-original-text') || btn.textContent || '';
+      const feedbackText = originalText.toLowerCase() === 'copy' ? 'Copied!' : '¡Copiado!';
+
+      if (textToCopy) {
+        const success = await copyToClipboard(textToCopy);
+        if (success) {
+          btn.textContent = feedbackText;
+          btn.classList.add('text-green-600');
+
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.classList.remove('text-green-600');
+          }, 2000);
+        }
+      }
+    });
+  });
+</script>

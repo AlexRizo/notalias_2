@@ -31,7 +31,7 @@ export const PhoneLadaSelector = ({ id, register, ref }: Props) => {
       id={id}
       ref={ref}
       defaultValue={'MX'}
-      className="appearance-none bg-[url(/assets/icons/chevron.svg)] bg-no-repeat bg-position-[center_right_1rem]"
+      className="appearance-none bg-[url(/assets/icons/chevron.svg)] bg-no-repeat bg-position-[center_right_1rem] lg:col-span-1"
     >
       {countryCodes.map((country) => (
         <option

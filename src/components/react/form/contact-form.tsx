@@ -67,12 +67,16 @@ export const ContactForm = ({ lang }: Props) => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log(sended)
+  }, [sended])
+
   return (
     <>
       <section>
         {screenWidth > 1024 ? (
           <form
-            className="max-w-[1045px] mx-auto space-y-4"
+            className="max-w-[1045px] mx-auto space-y-4 hidden lg:flex flex-col"
             id="contact-form"
             onSubmit={onSubmit}
           >
@@ -109,7 +113,7 @@ export const ContactForm = ({ lang }: Props) => {
                 name="phone"
                 label={ui.contact_page.form.phone_field.label}
               >
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-3 gap-4">
                   <PhoneLadaSelector
                     id="lada"
                     register={register}
@@ -122,6 +126,7 @@ export const ContactForm = ({ lang }: Props) => {
                     minLength={10}
                     placeholder={ui.contact_page.form.phone_field.placeholder}
                     required
+                    className="col-span-2"
                     {...register("phone")}
                   />
                 </div>
@@ -156,14 +161,14 @@ export const ContactForm = ({ lang }: Props) => {
             </FormField>
             <button
               type="submit"
-              className="text-white uppercase px-7.5 py-1 rounded-2xl bg-primary hover:opacity-95 cursor-pointer"
+              className="text-white uppercase px-12 py-2.5 rounded-full bg-primary hover:opacity-95 cursor-pointer ml-auto mt-1"
             >
               {ui.contact_page.form.button}
             </button>
           </form>
         ) : (
           <form
-            className="max-w-96 mx-auto space-y-5"
+            className="max-w-96 mx-auto space-y-5 lg:hidden"
             id="contact-form"
             onSubmit={onSubmit}
           >
