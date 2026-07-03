@@ -12,11 +12,12 @@ const { name, description, url, videoPath, button } = Astro.props;
 
 <div class="mx-auto w-min lg:w-full">
   <div class="relative w-91 h-111 overflow-hidden lg:w-full lg:h-[845px]">
-    <button
+    <a
+      href={url}
       class="glass-button absolute z-10 px-2 py-1 text-sm text-white right-3 top-2.5 flex items-center gap-1 lg:flex-row-reverse lg:gap-0 lg:text-xl lg:px-4.5"
       ><img src="/assets/icons/plus.svg" alt="+" class="rotate-45 size-3.5 lg:size-5" />{
         button
-      }</button
+      }</a
     >
     <video
       autoplay

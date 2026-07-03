@@ -6,42 +6,42 @@ export const projects = {
         name: "Bubelle",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/en/bubelle",
         video_path: "/assets/videos/bubelle.mp4",
       },
       {
         name: "Flor y fruto",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/en/flor-y-fruto",
         video_path: "/assets/videos/flor-y-fruto.mp4",
       },
       {
         name: "Centinela Eterno",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/en/eterno-centinela",
         video_path: "/assets/videos/centinela-eterno.mp4",
       },
       {
         name: "Nonstop",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/en/nonstop",
         video_path: "/assets/videos/nonstop.mp4",
       },
       {
         name: "Swappp",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/en/swappp",
         video_path: "/assets/videos/swappp.mp4",
       },
       {
         name: "Manna Foods",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/en/manna-foods",
         video_path: "/assets/videos/manna-foods.mp4",
       },
     ],
@@ -53,42 +53,42 @@ export const projects = {
         name: "Bubelle",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/bubelle",
         video_path: "/assets/videos/bubelle.mp4",
       },
       {
         name: "Flor y fruto",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/flor-y-fruto",
         video_path: "/assets/videos/flor-y-fruto.mp4",
       },
       {
         name: "Centinela Eterno",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/eterno-centinela",
         video_path: "/assets/videos/centinela-eterno.mp4",
       },
       {
         name: "Nonstop",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/nonstop",
         video_path: "/assets/videos/nonstop.mp4",
       },
       {
         name: "Swappp",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/swappp",
         video_path: "/assets/videos/swappp.mp4",
       },
       {
         name: "Manna Foods",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "",
+        url: "/manna-foods",
         video_path: "/assets/videos/manna-foods.mp4",
       },
     ],
@@ -106,16 +106,12 @@ export const translations = {
     },
     menu: "Menú",
     home: {
-      main_title: [
-        "El socio creativo",
-        "estratégico",
-        "que tu marca necesita.",
-      ],
+      main_title: ["The strategic creative", "partner", "your brand needs."],
       description:
-        "®Not Alias es un estudio creativo boutique con talento global, pensamiento estratégico agudo y el oficio de diseño para hacer que las marcas sean imposibles de ignorar.",
+        "®Not Alias es un estudio creativo boutique que cuenta con talento internacional, una visión estratégica sólida y la maestría en el diseño necesaria para crear marcas que no pasan desapercibidas.",
     },
     selected_work: {
-      title: "Trabajos seleccionados",
+      title: "Trabajos Recientes",
       project_button: "Ver más",
       projects: projects.es.items,
     },
@@ -484,7 +480,7 @@ export const translations = {
         "®Not Alias is a boutique creative studio with global talent, sharp strategic thinking, and the design craft to make brands impossible to ignore.",
     },
     selected_work: {
-      title: "Selected Work",
+      title: "Recent Work",
       project_button: "See more",
       projects: projects.en.items,
     },
