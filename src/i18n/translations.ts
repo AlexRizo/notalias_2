@@ -227,7 +227,7 @@ export const translations = {
       copyright: [
         "Todos los contenidos son propiedad de Not Alias",
         "year",
-        "© / Aviso de Privacidad",
+        " / Aviso de Privacidad",
       ],
     },
     services_page: {

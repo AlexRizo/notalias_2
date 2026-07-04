@@ -123,6 +123,7 @@ const ui = useTranslations(lang);
         <p class="footer-s-text">{ui.footer.menu.contact.label}</p>
       </div>
     </div>
+
     <p class="mt-8 footer-s-text hidden lg:flex">
       {
         ui.footer.copyright.map((ext) => {
@@ -153,6 +154,6 @@ const ui = useTranslations(lang);
   const yearEl = document.querySelectorAll(".footer-year");
 
   yearEl.forEach((el) => {
-    el.textContent = new Date().getFullYear().toString() + " ©";
+    el.textContent = " " + new Date().getFullYear().toString() + "©";
   });
 </script>
