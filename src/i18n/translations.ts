@@ -646,44 +646,41 @@ export const translations = {
           },
           {
             name: "Brand Identity",
-            subtitle: "The thinking before the design.",
+            subtitle: "Where strategy becomes visible.",
             description:
-              "Visual systems built to last. Logo, typography, color, motion, and the full toolkit your brand needs to show up consistently across every touchpoint.",
+              "Strategy becomes a system: visual language, verbal tone, creative direction, and a set of rules that keep the brand coherent across every touchpoint. Not a logo — a complete identity built to adapt and scale.",
             list: [
-              "Brand DNA & Positioning",
-              "Research & Benchmarking",
-              "Cultural Strategy",
-              "Naming & Brand Architecture",
-              "Go-to-Market Strategy",
-              "Strategic Workshops",
+              "Visual Identity System",
+              "Naming & Verbal Identity",
+              "Creative & Art Direction",
+              "Rebranding",
+              "Brand Guidelines",
             ],
           },
           {
             name: "Brand Execution",
-            subtitle: "From system to surface.",
+            subtitle: "The assets that bring your brand to life.",
             description:
-              "Design that lives in the real world. Packaging, print, spatial, and brand applications that translate your identity into tangible, high-impact materials.",
+              "The identity leaves the screen and enters the real world. Packaging, campaigns, launch materials, editorial pieces — every asset designed to build recognition and consistency where it counts.",
             list: [
-              "Brand DNA & Positioning",
-              "Research & Benchmarking",
-              "Cultural Strategy",
-              "Naming & Brand Architecture",
-              "Go-to-Market Strategy",
-              "Strategic Workshops",
+              "Packaging Design",
+              "Key Visual & Campaign Concept",
+              "Brand Launch Kit",
+              "Brand Applications",
+              "Editorial Design",
+              "Merch Design",
             ],
           },
           {
             name: "Digital Experience",
-            subtitle: "Beyond the pixel.",
+            subtitle: "Your brand, online.",
             description:
-              "Websites, interfaces, and digital touchpoints designed with the same strategic rigor as your brand. Built to perform, built to feel right.",
+              "We design and build the digital layer of the brand system: websites, ecommerce, and digital assets that work as hard as the brand does offline. Aligned with strategy, built for performance.",
             list: [
-              "Brand DNA & Positioning",
-              "Research & Benchmarking",
-              "Cultural Strategy",
-              "Naming & Brand Architecture",
-              "Go-to-Market Strategy",
-              "Strategic Workshops",
+              "UX/UI Design",
+              "Web Development",
+              "E-commerce",
+              "Digital brand Systems",
             ],
           },
         ],
@@ -712,17 +709,24 @@ export const translations = {
           },
           {
             icon: "/assets/icons/about/brand-identity.svg",
-            title: "Human intelligence first",
+            title: "Better questions, better brands",
             media_path: "/assets/videos/about_character.mp4",
             description:
-              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+              "The quality of the outcome depends on the quality of the understanding. We invest in asking the right questions before we start designing.",
           },
           {
             icon: "/assets/icons/about/brand-identity.svg",
-            title: "Human intelligence first",
+            title: "Culture is the brief",
             media_path: "/assets/videos/about_character.mp4",
             description:
-              "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+              "Every brand lives inside a cultural context. The codes, behaviors, and tensions of that context are the real raw material for strategy.",
+          },
+          {
+            icon: "/assets/icons/about/brand-identity.svg",
+            title: "Brands are systems, not logos",
+            media_path: "/assets/videos/about_character.mp4",
+            description:
+              "A brand that works is a connected system — visual, verbal, strategic, digital — where every detail is coherent and every decision is intentional.",
           },
         ],
       },
@@ -738,19 +742,19 @@ export const translations = {
           {
             name: "Diagnosis",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "We synthesize into a clear picture: where you are, where you need to go, what's in the way.",
             image_path: "/assets/img/about/immersion.webp",
           },
           {
             name: "Creation",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "Strategy becomes form. Concepts, visual systems, verbal identity — focused sprints, tight feedback.",
             image_path: "/assets/img/about/immersion.webp",
           },
           {
             name: "Delivery",
             description:
-              "We listen before we lead. Deep dive into business, market, audience, ambition.",
+              "Everything your team needs to execute: guidelines, assets, creative books. Ready from day one.",
             image_path: "/assets/img/about/immersion.webp",
           },
         ],
@@ -764,14 +768,19 @@ export const translations = {
             image_path: "/assets/img/about/team/marco_leyva.webp",
           },
           {
-            name: "Marco Leyva",
-            role: "Co-founder & Creative Director",
-            image_path: "/assets/img/about/team/marco_leyva.webp",
+            name: "Miguel de la Madrid",
+            role: "Co-founder & Business Director",
+            image_path: "/assets/img/about/team/miguel_de_la_madrid.webp",
           },
           {
-            name: "Marco Leyva",
-            role: "Co-founder & Creative Director",
-            image_path: "/assets/img/about/team/marco_leyva.webp",
+            name: "Brando Rosales",
+            role: "Chief Growth Officer & Partner",
+            image_path: "/assets/img/about/team/brando_rosales.webp",
+          },
+          {
+            name: "Ed Carrasco",
+            role: "Strategy Director",
+            image_path: "/assets/img/about/team/ed_carrasco.webp",
           },
         ],
       },
