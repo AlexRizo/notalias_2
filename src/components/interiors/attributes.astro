@@ -14,9 +14,9 @@ const { attributes }: Props = Astro.props;
   {
     attributes.map((attribute) => (
       <article class="flex flex-col w-max">
-        <h3 class="text-lg mb-2 lg:text-3xl">{attribute.label}</h3>
+        <h3 class="text-lg mb-2 lg:text-3xl lg:font-light">{attribute.label}</h3>
         {attribute.value.map((value) => (
-          <p class="text-sm text-[#7b7b7b] leading-tight lg:text-xl max-w-[150px] lg:max-w-none">{value}</p>
+          <p class="text-sm text-[#7b7b7b] leading-tight lg:text-xl max-w-[150px] lg:max-w-none lg:font-light">{value}</p>
         ))}
       </article>
     ))
