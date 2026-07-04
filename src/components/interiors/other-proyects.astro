@@ -30,7 +30,7 @@ const others = [
 const { prev_path, next_path } = Astro.props;
 ---
 
-<aside class="grid grid-cols-2 gap-4 mb-16 my-18 lg:my-30 lg:grid-cols-3 lg:container lg:mx-auto">
+<aside class="grid grid-cols-2 gap-4 mb-16 my-18 px-3 lg:my-30 lg:grid-cols-3 lg:container lg:mx-auto">
   {
     others.map((project, i) => (
       <div class={cn(i === others.length - 1 && "hidden lg:block")}>
@@ -52,24 +52,24 @@ const { prev_path, next_path } = Astro.props;
             {project.description}
           </p>
         </article>
-        {i !== 1 && (
+        {project.name !== "Flor y Fruto" && (
           <a
             href={i === 0 ? prev_path : i === 2 ? next_path : "#"}
             class={cn(
-              "flex underline underline-offset-5 lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
+              "flex underline underline-offset-5 text-sm lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
               i && "justify-end",
               i === 0 && "flex-row-reverse justify-end",
             )}
           >
-            {i === 0 ? "PREVIUS PROJECTS" : "NEXT PROJECTS"}
+            {i === 0 ? "↖︎ PREVIUS PROJECTS" : "NEXT PROJECTS ↗"}
             {i === 0 ? (
               <img
                 src="/assets/icons/gray-arrow.svg"
                 alt="<-"
-                class="rotate-180"
+                class="rotate-180 hidden lg:block"
               />
             ) : (
-              <img src="/assets/icons/gray-arrow.svg" alt="->" />
+              <img src="/assets/icons/gray-arrow.svg" alt="->" class="hidden lg:block"/>
             )}
           </a>
         )}
