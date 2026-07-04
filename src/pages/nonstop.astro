@@ -8,15 +8,15 @@ import Layout from "@/layout/layout.astro";
 const attributes: AttributesType[] = [
   {
     label: "Client",
-    value: ["Grupo AGR"],
+    value: ["Nonstop"],
   },
   {
     label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+    value: ["Brand Strategy", "Brand Identity", "Packaging"],
   },
   {
     label: "Industry",
-    value: ["Wine & Spirits"],
+    value: ["Health & Performance / Consumer Goods"],
   },
 ];
 
@@ -24,9 +24,9 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <Layout lang={lang} className="bg-[#f6f6f6]">
-  <section class="max-w-96 mx-auto px-2">
+  <section class="max-w-96 mx-auto px-2 lg:container">
     <div>
-      <h1 class="text-center text-xl my-6">Nonstop</h1>
+      <h1 class="text-center text-xl my-6 lg:text-3xl">Nonstop</h1>
 
       <video
         src="/assets/img/interiors/nonstop/media-01.mp4"
@@ -35,46 +35,63 @@ const lang = getLangFromUrl(Astro.url);
         muted></video>
     </div>
 
-    <article class="mt-4">
-      <h2 class="font-arvo text-3xl tracking-tight leading-[1.10]">
-        Del campo a la botella: convertir quince años de agroindustria en una
-        marca que el consumidor elige por nombre.
+    <article class="mt-4 lg:mt-26">
+      <h2
+        class="font-arvo text-3xl tracking-tight leading-[1.10] lg:text-5xl lg:max-w-[745px]"
+      >
+        Construir la primera marca de electrolitos en México que la gente no
+        solo consume, sino que lleva puesta
       </h2>
       <Attributes attributes={attributes} />
     </article>
 
     <div class="content">
-      <div class="relative flex items-center justify-center h-[546px]">
+      <div
+        class="relative flex items-center justify-center h-[546px] lg:h-[831px]"
+      >
         <img
           src="/assets/img/interiors/nonstop/media-02.webp"
-          class="object-cover size-full"
+          class="object-cover size-full lg:object-top"
         />
         <img
           src="/assets/img/interiors/nonstop/bars.webp"
-          class="absolute translate-x-16 h-[350px]"
+          class="absolute translate-x-16 h-[350px] lg:h-[700px] lg:translate-x-32"
         />
         <img
           src="/assets/img/interiors/nonstop/bars.webp"
-          class="absolute -translate-x-16 h-[350px]"
+          class="absolute -translate-x-16 h-[350px] lg:h-[700px] lg:-translate-x-32"
         />
       </div>
-      <article>
+      <article class="lg:my-38">
         <h1>Context</h1>
         <p>
-          Grupo AGR lleva más de quince años operando en la industria citrícola
-          mexicana. Campo, proceso, volumen —todo estaba ahí. Lo que no existía
-          era la marca: un nombre, una identidad, una razón para que el
-          consumidor final los eligiera sobre cualquier otra botella en el
-          anaquel.
+          <span>
+            El mercado mexicano de electrolitos en polvo estaba creciendo pero
+            nadie lo estaba construyendo bien. Las opciones existentes caían en
+            uno de dos extremos: marcas genéricas sin personalidad propia, o
+            productos importados con precios fuera de alcance y sin conexión con
+            el consumidor local. La categoría tenía producto pero no tenía
+            cultura. El consumidor al que apuntaba nonstop - entre 20 y 45 años,
+            activo, disciplinado, con intención de mejora constante - ya
+            existía. Corría, entrenaba, cuidaba lo que comía, pero no tenía una
+            marca propia; usaba lo que conseguía, no lo que elegía.
+          </span>
           <br />
-          El mercado de jugos de limón embotellados en México estaba dominado por
-          marcas genéricas o productos con concentrado artificial. Ninguna había construido
-          carácter. Había una oportunidad real para el primer jugo de limón 100% natural
-          que también supiera quién era.
+          <br />
+          <span>
+            Hay un perfil de persona en México que ya existe: entrena de lunes a
+            lunes, cuida lo que come, busca rendir más y recuperarse mejor.
+            Tiene entre 20 y 45 años, compra por convicción y no por precio, y
+            cuánto encuentra algo que se siente suyo, lo adopta como identidad.
+            Esa persona no tenía una marca propia de electrolitos. Usaba lo que
+            encontraba: importados caros, genéricos sin personalidad, o
+            productos pensados para otro mercado. La categoría estaba vacante no
+            por falta de producto, sino por falta de carácter/ identidad.
+          </span>
         </p>
       </article>
 
-      <div class="relative w-full h-[444px] my-6">
+      <div class="relative w-full h-[444px] my-6 lg:h-[1698px]">
         <video
           src="/assets/img/interiors/nonstop/media-03.mp4"
           autoplay
@@ -83,70 +100,87 @@ const lang = getLangFromUrl(Astro.url);
           class="object-cover size-full"></video>
       </div>
 
-      <img src="/assets/img/interiors/nonstop/media-04.webp" class="my-6" />
+      <img
+        src="/assets/img/interiors/nonstop/media-04.webp"
+        class="my-6 lg:my-10"
+      />
 
-      <article>
+      <article class="lg:my-38">
         <h1>Challenge</h1>
         <p>
-          El reto no era el producto — era el salto. Pasar de proveedor anónimo
-          de la cadena agroindustrial a marca de consumo con presencia en retail
-          y HORECA al mismo tiempo. Dos canales con lógicas distintas: el chef
-          que necesita funcionalidad y volumen, y el consumidor en el
-          supermercado que necesita confianza y carácter.
+          <span>
+            El reto no era formular un buen electrolito - eso ya estaba
+            resuelto. Era construir una marca para que esa persona se sintiera
+            suya. Una marca que no pareciera un suplemento de farmacia copia de
+            Cadence o LMNT. Que tuviera identidad propia, carácter y la
+            capacidad de crecer hacia otros productos sin romperse.
+          </span>
           <br />
-          La marca tenía que comunicar origen mexicano —Tecomán, el campo, el limonero—
-          sin caer en lo folclórico. Tenía que sonar natural y honesta sin sonar artesanal
-          o regional. Y tenía que construirse con escalabilidad: Flor y Fruto no era
-          solo jugo de limón, era la plataforma de marca de un grupo con visión de
-          expandirse a otros productos.
+          <br />
+          <span>
+            El nombre lo decía todo desde el inicio: Nonstop. No es una
+            descripción del producto, es una declaración de quien lo toma. El
+            reto era que la identidad visual y verbal estuviera a la altura de
+            ese nombre: directo, limpio y sin ruido. Y que el sistema funcionará
+            desde el primer día en packaging, digital, eventos y merchandising
+            al mismo tiempo.
+          </span>
         </p>
       </article>
 
       <img
         src="/assets/img/interiors/nonstop/mobile/media-05.webp"
-        class="my-6"
+        class="my-6 lg:h-[1394px] lg:mx-auto"
       />
 
-      <article>
+      <article class="lg:my-38">
         <h1>The Work</h1>
         <p>
           <span
-            >El primer acto fue el naming. Antes de cualquier decisión visual,
-            encontramos el nombre en el árbol mismo: el limonero es el único
-            frutal que florece y fructifica de manera simultánea y continua.
-            Flor y fruto conviven en la misma rama al mismo tiempo —un ciclo que
-            no para, que no tiene estación. Ese insight no era botánico: era la
-            metáfora exacta de lo que la marca necesitaba ser.</span
+            >Empezamos por definir la narrativa de marca/ el concepto rector
+            antes de tocar el diseño. Nonstop no es una marca de hidratación, es
+            una afirmación silenciosa. “For the non stop crow”. Ese insght
+            ordeno todas las decisiones: tono de voz directo y sin adornos,
+            estetica que elmina lo innecesario, un sistema visual construido
+            sobre el negro y el blanco con un unico acento de colr que
+            identifica cada sabor.</span
           >
           <br /><br />
           <span
-            >"Flor y Fruto" no describe el producto, lo contextualiza. Trae el
-            campo adentro antes de que abras la botella. Sus dos mitades tienen
-            peso propio: Flor es la promesa, el aroma, lo emocional; Fruto es la
-            verdad tangible, la precisión natural, el resultado. Juntas
-            construyen una marca en equilibrio entre lo bello y lo útil.</span
+            >El símbolo nace de la letra N: dos formas orgánicas que representan
+            movimiento continuo, ritmo, flujo sin interrupción. Funciona solo o
+            junto al logotipo, nunca combinado - una decisión deliberada para
+            dar flexibilidad sin perder precisión. El logotipo en tipografía
+            sans serif sólida refuerza lo mismo: disciplina, constancia, lo
+            esencial. El packaging fue diseñado para ser transparente antes de
+            ser bonito. Los ingredientes al frente, las dosis claras, sin
+            promesas vacias. El stick individual como formato principal porque
+            ese es el momento de la marca: antes del entreno, en la bolsa, en la
+            mano, después de la meta. La pleca de color en la parte inferior es
+            el unico elemento que diferncia sabores, manteniendo el sistema
+            limpio y escalable para las versiones que vendran.</span
           >
           <br /><br />
           <span
-            >Desde ese núcleo se construyó el sistema completo: identidad visual
-            con símbolo del limonero (raíz y fruto <br />como una sola unidad),
-            paleta que refleja el origen —verde campo, verde lima, crema cálida—
-            y tipografía que comunica elegancia sin distancia. El packaging fue
-            diseñado para operar en ambos canales sin bifurcar la identidad:
-            misma marca, misma voz, mismo símbolo. El Brand Book cierra el
-            sistema con lineamientos que permiten incorporar futuros productos
-            sin perder el carácter.</span
+            >El resultado es un sistema que puede vivir en un anaquel, en un
+            evento de running, en una playera y en un billboard, con el mismo
+            carácter que en todos.</span
           >
         </p>
       </article>
 
-      <div class="relative w-full h-[335px]">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-4">
+        <div class="relative w-full h-[335px] lg:h-[687px]">
+          <img
+            src="/assets/img/interiors/nonstop/media-06.webp"
+            class="my-6 object-cover size-full lg:my-0"
+          />
+        </div>
         <img
-          src="/assets/img/interiors/nonstop/media-06.webp"
-          class="my-6 object-cover size-full"
+          src="/assets/img/interiors/nonstop/media-07.webp"
+          class="my-6 lg:my-0 lg:w-full lg:h-[687px]"
         />
       </div>
-      <img src="/assets/img/interiors/nonstop/media-07.webp" class="my-6" />
     </div>
 
     <OtherProyects prev_path="/" next_path="/" />
@@ -162,10 +196,10 @@ const lang = getLangFromUrl(Astro.url);
   }
 
   .content h1 {
-    @apply text-lg mt-6 mb-2;
+    @apply text-lg mt-6 mb-2 lg:text-center lg:text-3xl lg:mb-6 lg:font-light;
   }
 
   .content p {
-    @apply text-sm font-light tracking-tight leading-tight;
+    @apply text-sm font-light tracking-tight leading-tight lg:text-lg lg:text-center lg:max-w-[540px] lg:mx-auto lg:font-light;
   }
 </style>
