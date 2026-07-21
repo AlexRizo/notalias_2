@@ -1,10 +1,15 @@
 ---
-import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import {
+  getAlternateLangUrl,
+  getLangFromUrl,
+  useTranslations,
+} from "@/i18n/utils";
 import Navitem from "./navitem.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 const options = Object.values(ui.nav);
+const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
 ---
 
 <header
@@ -54,14 +59,17 @@ const options = Object.values(ui.nav);
       />
       {
         options.map((opt, i) => {
+          const isSwitcher = i === options.length - 1;
           return (
             <Navitem
-              url={`${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`}
+              url={
+                isSwitcher
+                  ? switcherUrl
+                  : `${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`
+              }
               label={opt}
               className={
-                i === options.length - 1
-                  ? "text-primary hover:bg-white tracking-wider"
-                  : ""
+                isSwitcher ? "text-primary hover:bg-white tracking-wider" : ""
               }
             />
           );
@@ -79,10 +87,7 @@ const options = Object.values(ui.nav);
     {ui.menu}
   </button>
 
-  <a
-    href={`${lang === "en" ? "/" : "/en"}`}
-    class="hidden lg:block text-sm tracking-wide"
-  >
+  <a href={switcherUrl} class="hidden lg:block text-sm tracking-wide">
     ES | EN
   </a>
 </header>
