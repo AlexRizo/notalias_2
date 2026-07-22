@@ -55,7 +55,21 @@ const ui = useTranslations(lang);
 </style>
 
 <script>
-  document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
+  const closeItem = (item: Element) => {
+    const content = item.querySelector(".accordion-content") as HTMLElement;
+    const trigger = item.querySelector(".accordion-trigger") as HTMLElement;
+    const icon = item.querySelector(".accordion-icon") as HTMLImageElement;
+
+    content.style.maxHeight = "0px";
+    icon.src = "/assets/icons/plus-black.svg";
+    icon.alt = "+";
+    trigger.setAttribute("aria-expanded", "false");
+    item.classList.remove("open");
+  };
+
+  const triggers = document.querySelectorAll(".accordion-trigger");
+
+  triggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
       const item = trigger.closest(".accordion-item")!;
       const content = item.querySelector(".accordion-content") as HTMLElement;
@@ -63,12 +77,15 @@ const ui = useTranslations(lang);
       const isOpen = trigger.getAttribute("aria-expanded") === "true";
 
       if (isOpen) {
-        content.style.maxHeight = "0px";
-        icon.src = "/assets/icons/plus-black.svg";
-        icon.alt = "+";
-        trigger.setAttribute("aria-expanded", "false");
-        item.classList.remove("open");
+        closeItem(item);
       } else {
+        triggers.forEach((other) => {
+          const otherItem = other.closest(".accordion-item")!;
+          if (otherItem !== item && otherItem.classList.contains("open")) {
+            closeItem(otherItem);
+          }
+        });
+
         content.style.maxHeight = content.scrollHeight + "px";
         icon.src = "/assets/icons/minus.svg";
         icon.alt = "-";
