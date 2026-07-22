@@ -182,10 +182,10 @@ export const translations = {
           label: "LinkedIn",
           url: "",
         },
-        behance: {
-          label: "Behance",
-          url: "",
-        },
+        // behance: {
+        //   label: "Behance",
+        //   url: "",
+        // },
       },
       guadalajara: {
         title: "Guadalajara",
@@ -572,10 +572,10 @@ export const translations = {
           label: "LinkedIn",
           url: "",
         },
-        behance: {
-          label: "Behance",
-          url: "",
-        },
+        // behance: {
+        //   label: "Behance",
+        //   url: "",
+        // },
       },
       guadalajara: {
         title: "Guadalajara",
