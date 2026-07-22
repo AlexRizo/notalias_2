@@ -1,5 +1,6 @@
 ---
 import Attributes from "@/components/interiors/attributes.astro";
+import OtherProyects from "@/components/interiors/other-proyects.astro";
 import type { Attributes as AttributesType } from "@/i18n/interiors";
 import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
 import Layout from "@/layout/layout.astro";
@@ -7,15 +8,15 @@ import Layout from "@/layout/layout.astro";
 const attributes: AttributesType[] = [
   {
     label: "Client",
-    value: ["Bubelle"],
+    value: ["Grupo AGR", "Bubelle"],
   },
   {
     label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+    value: ["Naming", "Brand Identity", "Packaging"],
   },
   {
     label: "Industry",
-    value: ["Wine & Spirits"],
+    value: ["Bevarages / Bebida sin alcohol"],
   },
 ];
 
@@ -23,20 +24,22 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <Layout lang={lang} className="bg-[#f6f6f6]">
-  <section class="max-w-96 mx-auto px-2">
+  <section class="max-w-96 mx-auto px-2 lg:container">
     <div>
-      <h1 class="text-center text-xl my-6">Bubelle</h1>
+      <h1 class="text-center text-xl my-6 lg:text-3xl">Bubelle</h1>
       <video
         src="/assets/img/interiors/bubelle/media-01.mp4"
         preload="none" data-lazy-video loop
-        muted
         playsinline
-        class="object-cover"></video>
+        muted
+        class="object-cover lg:w-full"></video>
     </div>
 
-    <article class="mt-4">
-      <h2 class="font-arvo text-3xl tracking-tight leading-[1.10]">
-        Hacer que una nueva generación eligiera un legado de 120 años.
+    <article class="mt-4 lg:mt-26">
+      <h2
+        class="font-arvo text-3xl tracking-tight leading-[1.10] lg:text-5xl lg:max-w-[745px] lg:leading-tight"
+      >
+        La bebida que faltaba a la hora del brunch
       </h2>
       <Attributes attributes={attributes} />
     </article>
@@ -46,67 +49,134 @@ const lang = getLangFromUrl(Astro.url);
       <video
         src="/assets/img/interiors/bubelle/media-03.mp4"
         preload="none" data-lazy-video loop
-        muted
         playsinline
-        class="my-6"></video>
-      <article>
+        muted
+        class="my-6 lg:w-full lg:max-h-[828px] lg:object-cover"></video>
+      <article class="lg:my-38">
         <h1>Context</h1>
         <p>
-          Tequila Centinela tiene 120 años de historia. Eterno es su entrada al
-          cristalino — la categoría que hoy define el crecimiento del tequila
-          premium. El mercado estaba saturado de marcas gritando legado,
-          tradición y herencia. Pero la generación que hoy impulsa el consumo ya
-          no compraba discursos de historia — pedía significado, presencia,
-          pertenencia a un momento.
+          <span>
+            Las 12:00 del mediodía del domingo tienen un ritual propio. El
+            brunch no es desayuno tardío ni almuerzo temprano — es una pausa
+            intencional, una excusa para juntarse, para que la mesa dure más de
+            lo necesario. Y en ese momento, la Mimosa siempre tuvo un lugar
+            reservado.
+          </span>
+          <br />
+          <br />
+          <span>
+            El problema es que ese lugar lo ocupaba el alcohol. Quien no tomaba,
+            se quedaba fuera del ritual: agua, refresco, jugo. Nada que
+            estuviera a la altura del momento. Bubelle nació para cubrir ese
+            espacio vacío: una bebida con la elegancia y la efervescencia de una
+            Mimosa, sin el alcohol que la excluye de muchas mesas.
+          </span>
         </p>
       </article>
 
-      <img src="/assets/img/interiors/bubelle/media-04.webp" />
+      <img
+        src="/assets/img/interiors/bubelle/media-04.webp"
+        class="mt-6 lg:w-full"
+      />
 
-      <article>
+      <article class="lg:my-38">
         <h1>Challenge</h1>
         <p>
-          La marca existía pero con presencia mínima y sin una identidad que
-          levantara la mano en premium. El reto no era contar la historia otra
-          vez — era encontrar el territorio donde pudiera vivir hoy, sin
-          disfrazarse de juventud ni renunciar a lo que ya era.
+          <span
+            >El reto era doble y contradictorio. Por un lado, Bubelle necesitaba
+            evocar la Mimosa — su textura, su ocasión, su aura — sin copiarla ni
+            depender de ella. Por otro, tenía que construir identidad propia
+            desde cero en una categoría que en México prácticamente no existía:
+            la bebida sin alcohol que se toma porque quiere tomarse, no porque
+            no queda de otra.</span
+          >
+          <br />
+          <br />
+          <span>
+            Nombrarla era el primer nudo. "Sin alcohol" como atributo siempre
+            suena a resta, a lo que no tiene. El nombre tenía que traer lo que
+            sí tiene: burbuja, belleza, ligereza, la belle époque. Bubelle
+            resolvió eso en dos sílabas: bubble + belle. El producto y el mundo
+            en el que vive, juntos en una sola palabra que suena francesa sin
+            serlo y elegante sin esforzarse.</span
+          >
         </p>
       </article>
 
-      <img src="/assets/img/interiors/bubelle/media-05.webp" class="my-6" />
-      <img src="/assets/img/interiors/bubelle/media-06.webp" class="my-6" />
+      <img
+        src="/assets/img/interiors/bubelle/media-05.webp"
+        class="my-6 lg:hidden"
+      />
+      <img
+        src="/assets/img/interiors/bubelle/mobile/media-05.webp"
+        class="my-6 lg:w-full hidden lg:block"
+      />
+      <img
+        src="/assets/img/interiors/bubelle/media-06.webp"
+        class="my-6 lg:w-full"
+      />
 
-      <article>
+      <article class="lg:my-38">
         <h1>The Work</h1>
         <p>
           <span
-            >Ese territorio era la noche. Leímos el high energy y la nightlife
-            no como canal de activación, sino como el lugar donde Eterno tenía
-            que existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto
-            que ancla el peso del legado en la energía del ahora, en el momento,
-            en la cultura nocturna.</span
+            >Construir Bubelle fue construir un mundo antes que un producto. La
+            referencia no era ningún refresco ni ningún jugo — era el Hotel Ritz
+            de París. Sus fachadas, sus lámparas, su barra. Un lujo accesible,
+            una elegancia sin pretensión. Las ilustraciones de elementos
+            arquitectónicos que recorren el packaging no son decoración: son el
+            territorio donde Bubelle existe.</span
           >
           <br /><br />
           <span class="tracking-tighter"
-            >El sistema visual se construyó desde el entorno, no desde la
-            botella. Cristales, metal, luz. El rojo como pulso. Un lenguaje que
-            no describe la noche — la habita. Todo materializado en un Creative
-            Book ejecutable desde el día uno.</span
+            >El isotipo resuelve la marca en una sola unidad: tipografía script
+            con carácter propio, contenida en un marco que recuerda a las
+            etiquetas de bebida europea clásica. La paleta parte del verde
+            oscuro como base institucional — seria, limpia — y deja que el color
+            de cada sabor entre como fondo de etiqueta: azul para la Clásica,
+            rosa para Frambuesa, lila para Maracuyá. El verde permanece. El
+            mundo cambia de ánimo según lo que hay dentro.</span
           >
+          <br />
+          <br />
+          <span>
+            El packaging opera en dos formatos desde el lanzamiento — botella de
+            vidrio — con el mismo sistema gráfico sin forzarlo. La botella tiene
+            presencia en mesa, en hielera, en foto. La botella tiene movilidad,
+            inmediatez, anaquel. Juntas cubren todos los momentos del brunch: el
+            que se sirve con calma y el que se agarra al vuelo.
+          </span>
+          <br />
+          <br />
+          <span>
+            El nombre, el mundo y el sistema se diseñaron para que Bubelle no
+            tenga que explicar qué es. Quien la ve, ya sabe en qué momento va.
+          </span>
         </p>
       </article>
 
-      <div class="relative w-full h-86.5 overflow-hidden my-6 rounded">
+      <div
+        class="relative w-full h-86.5 overflow-hidden my-6 rounded lg:h-[794px]"
+      >
+        <video
+          src="/assets/videos/bubelle-desktop.mp4"
+          preload="none" data-lazy-video loop
+          muted
+          playsinline
+          class="absolute inset-0 object-cover size-full object-[center_-200px] hidden lg:block"
+        ></video>
         <video
           src="/assets/img/interiors/bubelle/media-07.mp4"
           preload="none" data-lazy-video loop
           muted
           playsinline
-          class="absolute inset-0 object-cover size-[200%] object-[-100px_-60px]"
+          class="absolute inset-0 object-cover size-[200%] object-[-100px_-60px] lg:hidden"
         ></video>
       </div>
     </div>
   </section>
+
+  <OtherProyects prev_path="/" next_path="/" />
 </Layout>
 
 <style>
@@ -118,10 +188,10 @@ const lang = getLangFromUrl(Astro.url);
   }
 
   .content h1 {
-    @apply text-lg mt-6 mb-2;
+    @apply text-lg mt-6 mb-2 lg:text-center lg:text-3xl lg:mb-6;
   }
 
   .content p {
-    @apply text-sm font-light tracking-tight leading-tight;
+    @apply text-sm font-light tracking-tight leading-tight lg:text-lg lg:text-center lg:max-w-[550px] lg:mx-auto;
   }
 </style>
