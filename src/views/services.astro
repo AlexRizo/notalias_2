@@ -5,10 +5,10 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<section class="bg-[#F3F3F3] py-20">
+<section class="bg-[#F4F4F4] py-20">
   <div class="lg:flex lg:container lg:mx-auto lg:items-center lg:px-3">
     <h1
-      class="font-arvo text-3xl text-primary text-center w-60 mx-auto lg:text-6xl lg:w-120 lg:text-left lg:mx-0"
+      class="font-arvo text-3xl text-primary text-center w-60 mx-auto lg:text-6xl lg:w-120 lg:text-left lg:mx-0 tracking-tighter"
     >
       {
         ui.services.title.map((text, i) => (

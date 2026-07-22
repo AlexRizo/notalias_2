@@ -16,7 +16,7 @@ const ui = useTranslations(lang);
   </h1>
   <a
     href={lang === "en" ? "/en/contact" : "/contacto"}
-    class="text-white text-sm underline underline-offset-6 uppercase lg:text-base"
-    >{ui.contact.contact_us} ↗</a
+    class="text-white text-sm uppercase lg:text-base flex items-center gap-4"
+    >{ui.contact.contact_us} <img src="/assets/icons/arrow-white.svg" alt="" class="lg:w-3" /></a
   >
 </section>

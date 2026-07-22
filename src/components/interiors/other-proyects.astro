@@ -55,7 +55,7 @@ const { prev_path, next_path } = Astro.props;
           <a
             href={i === 0 ? prev_path : i === 2 ? next_path : "#"}
             class={cn(
-              "flex underline underline-offset-5 text-sm lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
+              "flex text-sm lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
               i && "justify-end",
               i === 0 && "flex-row-reverse justify-end",
             )}
