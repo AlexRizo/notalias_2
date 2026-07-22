@@ -10,7 +10,7 @@ export const projects = {
         video_path: "/assets/videos/bubelle.mp4",
       },
       {
-        name: "Flor y fruto",
+        name: "Flor y Fruto",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
         url: "/en/flor-y-fruto",
@@ -57,7 +57,7 @@ export const projects = {
         video_path: "/assets/videos/bubelle.mp4",
       },
       {
-        name: "Flor y fruto",
+        name: "Flor y Fruto",
         description:
           "Brand Identity · Brand Execution (Packaging, Brand Applications)",
         url: "/flor-y-fruto",
