@@ -167,7 +167,7 @@ export const ContactForm = ({ lang }: Props) => {
             </FormField>
             <button
               type="submit"
-              className="text-white uppercase px-12 py-2.5 rounded-full bg-primary hover:opacity-95 cursor-pointer ml-auto mt-1"
+              className="uppercase px-12 py-2.5 rounded-full bg-primary hover:opacity-95 cursor-pointer ml-auto mt-1"
             >
               {ui.contact_page.form.button}
             </button>
@@ -258,7 +258,7 @@ export const ContactForm = ({ lang }: Props) => {
             </FormField>
             <button
               type="submit"
-              className="text-white uppercase px-7.5 py-1 rounded-2xl bg-primary hover:opacity-95 cursor-pointer"
+              className="uppercase px-7.5 py-1 rounded-2xl bg-primary hover:opacity-95 cursor-pointer"
             >
               {ui.contact_page.form.button}
             </button>
