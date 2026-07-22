@@ -120,7 +120,7 @@ export const translations = {
       },
     },
     services: {
-      title: ["We build", "brand systems,", "for those raising the standard"],
+      title: ["We build", "brand systems.", "for those raising the standard"],
       videoPath: "/assets/videos/ssd.mp4",
       services: "Services",
       items: [
@@ -510,7 +510,7 @@ export const translations = {
       },
     },
     services: {
-      title: ["We build", "brand systems,", "for those raising the standard"],
+      title: ["We build", "brand systems.", "for those raising the standard"],
       videoPath: "/assets/videos/ssd.mp4",
       services: "Services",
       items: [
