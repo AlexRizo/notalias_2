@@ -111,7 +111,7 @@ export const translations = {
         "®Not Alias es un estudio creativo boutique que cuenta con talento internacional, una visión estratégica sólida y la maestría en el diseño necesaria para crear marcas que no pasan desapercibidas.",
     },
     selected_work: {
-      title: "Proyectos Destacados",
+      title: "Proyectos Recientes",
       project_button: "Ver más",
       projects: projects.es.items,
       contact: {
