@@ -3,7 +3,7 @@ interface ContactItem {
   label: string;
   value: string;
   copy: string;
-  url: string;
+  url?: string;
 }
 
 interface Props {
@@ -18,7 +18,7 @@ const { contact_items } = Astro.props;
     contact_items.map(({ label, value, copy, url }) => (
       <p class="grid grid-cols-[max-content_max-content_max-content] gap-5 lg:gap-6">
         <span class="text-right w-31 lg:w-33">{label} -></span>
-        <span class="w-37 lg:w-39">{value}</span>
+        <span class="w-44 lg:w-46">{value}</span>
         <span
           class="text-primary cursor-pointer copy-btn transition-colors duration-200"
           data-value={value}

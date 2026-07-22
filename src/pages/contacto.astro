@@ -1,10 +1,7 @@
 ---
 import Layout from "@/layout/layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import FormField from "@/components/form/form-field.astro";
 import ContactDirectly from "@/views/about/contact-directly.astro";
-import FormSended from "@/components/form/form-sended.astro";
-import PhoneLadaSelector from "@/components/form/phone-lada-selector.astro";
 import { ContactForm } from "@/components/react/form/contact-form";
 
 const lang = getLangFromUrl(Astro.url);

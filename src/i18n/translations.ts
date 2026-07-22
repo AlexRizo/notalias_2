@@ -472,7 +472,7 @@ export const translations = {
           },
           {
             label: "Encuéntranos",
-            value: "Dirección Guadalajara",
+            value: "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
             copy: "Copiar",
             copy_value:
               "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
@@ -816,7 +816,7 @@ export const translations = {
       },
     },
     contact_page: {
-      title: "Let’s Build Something They Can’t Ignore",
+      title: "Let’s build something they can’t ignore",
       description: "Tell us what you're working on.",
       form: {
         name_field: {
@@ -859,7 +859,7 @@ export const translations = {
           },
           {
             label: "Find us",
-            value: "Guadalajara Location",
+            value: "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
             copy: "Copy",
             copy_value:
               "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
