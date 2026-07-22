@@ -23,11 +23,18 @@ const ui = useTranslations(lang);
     >
       {
         ui.home.main_title.map((text, i) => {
-          return (
-            <span class={cn(i === 1 && "text-[#A0A0A0] italic tracking-tight")}>
-              {text}{" "}
-            </span>
-          );
+          if (i === 1) {
+            return (
+              <span class="text-[#A0A0A0] italic tracking-tight inline-block lg:min-w-64 min-w-33 text-left ">
+                <span id="rotating-word">{text}</span>
+                <span id="rotating-cursor" aria-hidden="true">
+                  |
+                </span>
+                {" "}
+              </span>
+            );
+          }
+          return <span>{text} </span>;
         })
       }
     </h1>
@@ -38,3 +45,52 @@ const ui = useTranslations(lang);
     </p>
   </article>
 </section>
+
+<script>
+  import gsap from "gsap";
+
+  const word = document.getElementById("rotating-word");
+  const cursor = document.getElementById("rotating-cursor");
+
+  if (word) {
+    const words = ["partner", "director", "team"];
+    const state = { count: words[0].length };
+
+    const render = (text: string) => {
+      word.textContent = text.slice(0, Math.round(state.count));
+    };
+
+    const tl = gsap.timeline({ repeat: -1 });
+
+    words.forEach((current, i) => {
+      const next = words[(i + 1) % words.length];
+      tl
+        // mantener la palabra completa un momento
+        .to({}, { duration: 1.6 })
+        // borrar la palabra actual
+        .to(state, {
+          count: 0,
+          duration: current.length * 0.05,
+          ease: "none",
+          onUpdate: () => render(current),
+        })
+        // escribir la siguiente palabra
+        .to(state, {
+          count: next.length,
+          duration: next.length * 0.09,
+          ease: "none",
+          onUpdate: () => render(next),
+        });
+    });
+  }
+
+  if (cursor) {
+    gsap.to(cursor, {
+      opacity: 0,
+      duration: 0.5,
+      repeat: -1,
+      yoyo: true,
+      ease: "power2.inOut",
+    });
+  }
+</script>
