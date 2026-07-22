@@ -248,7 +248,6 @@ export const translations = {
               "Brand DNA & Positioning",
               "Research & Benchmarking",
               "Cultural Strategy",
-              "Naming & Brand Architecture",
               "Go-to-Market Strategy",
               "Strategic Workshops",
             ],
@@ -262,7 +261,6 @@ export const translations = {
               "Visual Identity System",
               "Naming & Verbal Identity",
               "Creative & Art Direction",
-              "Naming & Brand Architecture",
               "Rebranding",
               "Brand Guidelines",
             ],
@@ -278,6 +276,7 @@ export const translations = {
               "Brand Launch Kit",
               "Brand Applications",
               "Merch Design",
+              "Editorial Design",
             ],
           },
           {
@@ -287,10 +286,8 @@ export const translations = {
               "Diseñamos y construimos la capa digital del sistema de marca: sitios web, ecommerce y activos digitales que trabajan tan duro como la marca lo hace offline. Alineados con la estrategia, construidos para rendir.",
             list: [
               "UX/UI Design",
-              "Research & Benchmarking",
               "Web Development",
               "E-commerce",
-              "Go-to-Market Strategy",
               "Digital Brand Systems",
             ],
           },
@@ -669,6 +666,7 @@ export const translations = {
               "Brand Applications",
               "Editorial Design",
               "Merch Design",
+              "Editorial Design",
             ],
           },
           {
