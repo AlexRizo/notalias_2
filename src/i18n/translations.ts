@@ -30,20 +30,20 @@ export const projects = {
         url: "/en/nonstop",
         video_path: "/assets/videos/nonstop.mp4",
       },
-      {
-        name: "Swappp",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/en/swappp",
-        video_path: "/assets/videos/swappp.mp4",
-      },
-      {
-        name: "Manna Foods",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/en/manna-foods",
-        video_path: "/assets/videos/manna-foods.mp4",
-      },
+      // {
+      //   name: "Swappp",
+      //   description:
+      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      //   url: "/en/swappp",
+      //   video_path: "/assets/videos/swappp.mp4",
+      // },
+      // {
+      //   name: "Manna Foods",
+      //   description:
+      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      //   url: "/en/manna-foods",
+      //   video_path: "/assets/videos/manna-foods.mp4",
+      // },
     ],
   },
   es: {
@@ -77,20 +77,20 @@ export const projects = {
         url: "/nonstop",
         video_path: "/assets/videos/nonstop.mp4",
       },
-      {
-        name: "Swappp",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/swappp",
-        video_path: "/assets/videos/swappp.mp4",
-      },
-      {
-        name: "Manna Foods",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/manna-foods",
-        video_path: "/assets/videos/manna-foods.mp4",
-      },
+      // {
+      //   name: "Swappp",
+      //   description:
+      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      //   url: "/swappp",
+      //   video_path: "/assets/videos/swappp.mp4",
+      // },
+      // {
+      //   name: "Manna Foods",
+      //   description:
+      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      //   url: "/manna-foods",
+      //   video_path: "/assets/videos/manna-foods.mp4",
+      // },
     ],
   },
 };
