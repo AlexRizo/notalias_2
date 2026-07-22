@@ -37,8 +37,7 @@ const { prev_path, next_path } = Astro.props;
         <div class="relative h-[212px] rounded lg:h-[558px]">
           <video
             src={project.video_path}
-            autoplay
-            muted
+            preload="none" data-lazy-video muted
             loop
             playsinline
             class="absolute object-cover object-center rounded size-full"

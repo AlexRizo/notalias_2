@@ -15,8 +15,7 @@ const [eterno_centinela] = useInteriorTranslations(lang);
         eterno_centinela.hero_path.split(".").at(-1)?.includes("mp4") ? (
           <video
             src={eterno_centinela.hero_path}
-            autoplay
-            loop
+            preload="none" data-lazy-video loop
             muted
             playsinline
             class="object-cover"
@@ -53,8 +52,7 @@ const [eterno_centinela] = useInteriorTranslations(lang);
 
       <video
         class="rounded my-6"
-        autoplay
-        loop
+        preload="none" data-lazy-video loop
         muted
         playsinline
         src="/assets/img/interiors/eterno-centinela/media-03.mp4"></video>

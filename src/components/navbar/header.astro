@@ -55,7 +55,7 @@ const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
       <Navitem
         url={`${lang === "en" ? "/en" : ""}/`}
         label={"Home"}
-        className="md:hidden"
+        className="lg:hidden"
       />
       {
         options.map((opt, i) => {

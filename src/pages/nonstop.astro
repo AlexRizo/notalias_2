@@ -30,8 +30,7 @@ const lang = getLangFromUrl(Astro.url);
 
       <video
         src="/assets/img/interiors/nonstop/media-01.mp4"
-        autoplay
-        loop
+        preload="none" data-lazy-video loop
         muted
         playsinline></video>
     </div>
@@ -95,8 +94,7 @@ const lang = getLangFromUrl(Astro.url);
       <div class="relative w-full h-[444px] my-6 lg:h-[1698px]">
         <video
           src="/assets/img/interiors/nonstop/media-03.mp4"
-          autoplay
-          loop
+          preload="none" data-lazy-video loop
           muted
           playsinline
           class="object-cover size-full"></video>

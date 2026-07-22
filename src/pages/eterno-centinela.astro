@@ -32,8 +32,7 @@ const attributes: AttributesType[] = [
         eterno_centinela.hero_path.split(".").at(-1)?.includes("mp4") ? (
           <video
             src={eterno_centinela.hero_path}
-            autoplay
-            loop
+            preload="none" data-lazy-video loop
             muted
             playsinline
             class="object-cover"
@@ -61,8 +60,7 @@ const attributes: AttributesType[] = [
       <div class="lg:grid lg:grid-cols-2 lg:gap-4">
         <video
           class="rounded my-6 hidden lg:block lg:my-0 lg:max-h-[845px] lg:mx-auto"
-          autoplay
-          loop
+          preload="none" data-lazy-video loop
           muted
           playsinline
           src="/assets/img/interiors/eterno-centinela/media-03.mp4"></video>
@@ -85,8 +83,7 @@ const attributes: AttributesType[] = [
 
       <video
         class="rounded my-6 lg:hidden"
-        autoplay
-        loop
+        preload="none" data-lazy-video loop
         muted
         playsinline
         src="/assets/img/interiors/eterno-centinela/media-03.mp4"></video>

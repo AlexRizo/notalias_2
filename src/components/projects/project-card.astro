@@ -20,7 +20,8 @@ const { name, description, url, videoPath, button } = Astro.props;
       }</a
     >
     <video
-      autoplay
+      preload="none"
+      data-lazy-video
       muted
       loop
       playsinline

@@ -29,8 +29,7 @@ const lang = getLangFromUrl(Astro.url);
       <h1 class="text-center text-xl my-6 lg:text-3xl">Ratito</h1>
       <video
         src="/assets/img/interiors/ratito/media-01.mp4"
-        autoplay
-        loop
+        preload="none" data-lazy-video loop
         muted
         playsinline
         class="object-cover lg:w-full"></video>

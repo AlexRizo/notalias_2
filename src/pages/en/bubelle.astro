@@ -28,8 +28,7 @@ const lang = getLangFromUrl(Astro.url);
       <h1 class="text-center text-xl my-6">Bubelle</h1>
       <video
         src="/assets/img/interiors/bubelle/media-01.mp4"
-        autoplay
-        loop
+        preload="none" data-lazy-video loop
         muted
         playsinline
         class="object-cover"></video>
@@ -46,8 +45,7 @@ const lang = getLangFromUrl(Astro.url);
       <img src="/assets/img/interiors/bubelle/media-02.webp" />
       <video
         src="/assets/img/interiors/bubelle/media-03.mp4"
-        autoplay
-        loop
+        preload="none" data-lazy-video loop
         muted
         playsinline
         class="my-6"></video>
@@ -101,8 +99,7 @@ const lang = getLangFromUrl(Astro.url);
       <div class="relative w-full h-86.5 overflow-hidden my-6 rounded">
         <video
           src="/assets/img/interiors/bubelle/media-07.mp4"
-          autoplay
-          loop
+          preload="none" data-lazy-video loop
           muted
           playsinline
           class="absolute inset-0 object-cover size-[200%] object-[-100px_-60px]"
