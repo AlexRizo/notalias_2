@@ -334,7 +334,7 @@ export const translations = {
             title: "Brands are systems, not logos",
             media_path: "/assets/videos/about_character.mp4",
             description:
-              "Toda marca vive dentro de un contexto cultural. Los códigos, comportamientos y tensiones de ese contexto son la verdadera materia prima de la estrategia.",
+              "Una marca que funciona es un sistema conectado — visual, verbal, estratégico, digital — donde cada detalle es coherente y cada decisión es intencional.",
           },
         ],
       },
