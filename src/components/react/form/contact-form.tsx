@@ -120,14 +120,20 @@ export const ContactForm = ({ lang }: Props) => {
                     ref={ladaRef}
                   />
                   <input
-                    type="number"
+                    type="text"
                     id="phone"
-                    min={0}
+                    inputMode="numeric"
                     minLength={10}
                     placeholder={ui.contact_page.form.phone_field.placeholder}
                     required
                     className="col-span-2"
                     {...register("phone")}
+                    onInput={(e) => {
+                      e.currentTarget.value = e.currentTarget.value.replace(
+                        /\D/g,
+                        "",
+                      );
+                    }}
                   />
                 </div>
               </FormField>
@@ -196,13 +202,19 @@ export const ContactForm = ({ lang }: Props) => {
                   ref={ladaRef}
                 />
                 <input
-                  type="number"
+                  type="text"
                   id="phone"
-                  min={0}
+                  inputMode="numeric"
                   minLength={10}
                   placeholder={ui.contact_page.form.phone_field.placeholder}
                   required
                   {...register("phone")}
+                  onInput={(e) => {
+                    e.currentTarget.value = e.currentTarget.value.replace(
+                      /\D/g,
+                      "",
+                    );
+                  }}
                 />
               </div>
             </FormField>
