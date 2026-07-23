@@ -865,7 +865,7 @@ export const translations = {
         ],
       },
       form_modal: {
-        title: "We’ll be in touch",
+        title: "We’ll Be In Touch",
         description:
           "We Review Every Inquiry Personally. Expect To Hear From Us Within 48 Hours.",
       },
