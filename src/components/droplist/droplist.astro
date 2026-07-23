@@ -23,15 +23,15 @@ const ui = useTranslations(lang);
               alt="+"
             />
           </button>
-          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed text-white lg:text-lg lg:leading-tight ">
-            <div class="lg:pb-12 lg:flex lg:justify-between lg:items-center">
+          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed lg:text-lg lg:leading-tight ">
+            <div class="lg:pb-12 lg:flex lg:items-center lg:justify-between">
               <p class="pl-12 mb-5 max-w-76 lg:max-w-[388px] lg:pl-14 lg:mb-0">
                 <span>{item.subtitle}</span>
                 <br />
                 <span>{item.description}</span>
               </p>
-              <img src="/assets/icons/planet-white.svg" />
-              <ul class="pl-15 mb-7 lg:pl-0 lg:mb-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 xl:gap-x-18 2xl:gap-x-26">
+              {/* <img src="/assets/icons/planet-white.svg" /> */}
+              <ul class="pl-15 mb-7 lg:pl-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 lg:gap-x-14 xl:gap-x-36 2xl:gap-x-64">
                 {item.list.map((li) => (
                   <li class="list-disc leading-snug marker:text-[6px] lg:marker:text-sm">
                     {li}
@@ -50,15 +50,15 @@ const ui = useTranslations(lang);
   .accordion-item.open {
     background-color: var(--color-primary);
   }
-  .accordion-item.open .accordion-trigger {
+  /* .accordion-item.open .accordion-trigger {
     color: white;
-  }
-  .accordion-item.open {
+  } */
+  /* .accordion-item.open {
     color: rgba(255, 255, 255, 0.75);
-  }
-  .accordion-item.open .accordion-icon {
+  } */
+  /* .accordion-item.open .accordion-icon {
     filter: brightness(0) invert(1);
-  }
+  } */
 </style>
 
 <script>
