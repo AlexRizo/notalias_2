@@ -15,7 +15,7 @@ const ui = useTranslations(lang);
             data-index={i}
           >
             <p class="text-sm flex items-center gap-2 lg:text-3xl lg:gap-6">
-              <span class="w-8 text-center">{"0" + (i + 1)}</span> {item.name}
+              <span class="w-8 text-center">{"0" + (i + 1)}</span> <span class="font-semibold">{item.name}</span>
             </p>
             <img
               src="/assets/icons/plus-black.svg"
@@ -24,7 +24,7 @@ const ui = useTranslations(lang);
             />
           </button>
           <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] flex flex-row justify-between gap-4 lg:text-lg">
-            <p class="pl-12 mb-5 max-w-40 leading-relaxed text-white lg:max-w-86 lg:pl-16">
+            <p class="pl-12 mb-5 max-w-40 leading-relaxed lg:max-w-86 lg:pl-16">
               {item.description}
             </p>
             <img
@@ -43,7 +43,7 @@ const ui = useTranslations(lang);
   .accordion-item.open {
     background-color: var(--color-primary);
   }
-  .accordion-item.open .accordion-trigger {
+  /* .accordion-item.open .accordion-trigger {
     color: white;
   }
   .accordion-item.open {
@@ -51,7 +51,7 @@ const ui = useTranslations(lang);
   }
   .accordion-item.open .accordion-icon {
     filter: brightness(0) invert(1);
-  }
+  } */
 </style>
 
 <script>
