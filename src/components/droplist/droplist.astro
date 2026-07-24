@@ -14,8 +14,9 @@ const ui = useTranslations(lang);
             aria-expanded="false"
             data-index={i}
           >
-            <p class="text-2xl flex items-center gap-2 lg:text-3xl lg:gap-4">
-              <span class="w-8 text-center">{"0" + (i + 1)}</span> <span class="font-semibold">{item.name}</span>
+            <p class="text-2xl flex items-center gap-7 lg:text-3xl lg:gap-4">
+              <span class="w-8 text-center">{"0" + (i + 1)}</span>{" "}
+              <span class="font-semibold">{item.name}</span>
             </p>
             <img
               src="/assets/icons/plus-black.svg"
@@ -23,17 +24,17 @@ const ui = useTranslations(lang);
               alt="+"
             />
           </button>
-          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-[10px] leading-relaxed lg:text-lg lg:leading-tight ">
-            <div class="lg:pb-12 lg:flex lg:items-center lg:justify-between">
-              <p class="pl-12 mb-5 max-w-76 lg:max-w-[388px] lg:pl-14 lg:mb-0">
-                <span>{item.subtitle}</span>
+          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-lg leading-[1.10] lg:leading-tight font-light lg:font-normal">
+            <div class="pt-4 lg:pb-12 lg:flex lg:items-center lg:justify-between">
+              <p class="pl-12 mb-5 max-w-86 lg:max-w-[388px] lg:pl-14 lg:mb-0">
+                <span class="mb-0.5 flex lg:mb-0">{item.subtitle}</span>
                 <br />
                 <span>{item.description}</span>
               </p>
               {/* <img src="/assets/icons/planet-white.svg" /> */}
-              <ul class="pl-15 mb-7 lg:pl-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 lg:gap-x-14 xl:gap-x-36 2xl:gap-x-64">
+              <ul class="pl-15 mb-7 mt-10 lg:mt-0 lg:pl-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 lg:gap-x-14 xl:gap-x-36 2xl:gap-x-64">
                 {item.list.map((li) => (
-                  <li class="list-disc leading-snug marker:text-[6px] lg:marker:text-sm">
+                  <li class="list-disc leading-snug marker:text-[10px] lg:marker:text-sm">
                     {li}
                   </li>
                 ))}

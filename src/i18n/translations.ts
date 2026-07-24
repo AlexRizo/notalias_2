@@ -692,8 +692,8 @@ export const translations = {
       hero: {
         title: "What we believe",
         description: [
-          "Creativity is the most human thing there is. In a world racing to automate everything, we choose to feel, to question, to craft.",
-          "Every brand we build is proof that human thinking still matters.",
+          "Creativity is the most human thing there is. In a world racing to automate everything, we choose to feel, to question, to craft. Every",
+          "brand we build is proof that human thinking still matters.",
         ],
       },
       slide: {
