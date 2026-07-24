@@ -13,7 +13,7 @@ const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
 ---
 
 <header
-  class="sticky top-0 z-50 flex flex-row justify-between items-center px-4 py-10 lg:py-6 bg-[#D9D9D9]/20 backdrop-blur-xs"
+  class="sticky top-0 z-50 flex flex-row justify-between items-center px-4 py-6 lg:py-6 bg-[#D9D9D9]/20 backdrop-blur-xs"
 >
   <a
     href={`/${lang === "en" ? "en" : ""}`}
@@ -46,7 +46,7 @@ const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
   <!-- ? Navbar Mobile -->
   <button
     id="open-menu"
-    class="bg-primary py-0.5 px-2.75 rounded-full uppercase text-white text-sm lg:hidden"
+    class="bg-primary py-1 px-3.5 rounded-full uppercase text-sm lg:hidden"
   >
     {ui.menu}
   </button>
