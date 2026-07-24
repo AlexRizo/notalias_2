@@ -12,12 +12,12 @@ const ui = useTranslations(lang);
 <Layout lang={lang}>
   <section class="lg:container lg:mx-auto lg:px-3">
     <h2
-      class="text-[#7B7B7B] text-center font-normal uppercase mb-10 lg:text-left"
+      class="text-[#7B7B7B] text-center font-normal uppercase mt-10 mb-6 lg:text-left text-lg lg:text-base"
     >
       {ui.selected_work.title}
     </h2>
     <div
-      class="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-3 lg:gap-y-22"
+      class="flex flex-col gap-15 lg:grid lg:grid-cols-2 lg:gap-3 lg:gap-y-22"
     >
       {
         ui.selected_work.projects.map((project) => (
@@ -36,14 +36,14 @@ const ui = useTranslations(lang);
   <section
     class="bg-black flex flex-col justify-center items-center pt-10 pb-18 lg:pt-22 lg:pb-30"
   >
-    <img src="/assets/icons/eye.svg" alt="Ojo" class="lg:w-37" />
+    <img src="/assets/icons/ovni-white.svg" alt="Ojo" class="lg:w-37" />
     <h1
-      class="text-3xl font-arvo text-white text-center w-71 mt-3.5 mb-6 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.15]"
+      class="text-3xl font-arvo text-white text-center w-71 mt-6 mb-8 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.10]"
     >
       {ui.selected_work.contact.title}
     </h1>
     <a
-      class="text-white text-sm uppercase lg:text-base flex items-center gap-4"
+      class="text-white uppercase flex items-center gap-3"
       >{ui.selected_work.contact.contact_us}<img src="/assets/icons/arrow-white.svg" alt="->" class="lg:w-3" /></a
     >
   </section>
