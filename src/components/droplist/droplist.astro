@@ -4,22 +4,22 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<ul class="border-t border-black/10">
+<ul class="lg:border-t border-black/10">
   {
     ui.services_page.our_services.items.map((item, i) => (
       <li class="accordion-item border-b border-black/10 transition-colors duration-300">
         <div class="lg:container lg:mx-auto xl:pl-8 xl:pr-4">
           <button
-            class="accordion-trigger w-full flex justify-between items-center py-3 px-2 text-left lg:py-7"
+            class="accordion-trigger w-full flex justify-between items-center py-9 px-2 text-left lg:py-7"
             aria-expanded="false"
             data-index={i}
           >
-            <p class="text-sm flex items-center gap-2 lg:text-3xl lg:gap-4">
+            <p class="text-2xl flex items-center gap-2 lg:text-3xl lg:gap-4">
               <span class="w-8 text-center">{"0" + (i + 1)}</span> <span class="font-semibold">{item.name}</span>
             </p>
             <img
               src="/assets/icons/plus-black.svg"
-              class="accordion-icon mr-3 lg:m-0 lg:w-[37px]"
+              class="accordion-icon mr-3 lg:m-0 w-5 lg:w-[37px]"
               alt="+"
             />
           </button>

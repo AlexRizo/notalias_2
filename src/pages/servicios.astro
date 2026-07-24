@@ -7,7 +7,7 @@ const ui = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
-  <section class="mt-2 max-w-96 mx-auto lg:container">
+  <section class="mt-8 max-w-96 mx-auto lg:container">
     <div
       class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden lg:max-w-full lg:h-[664px]"
     >
@@ -20,26 +20,26 @@ const ui = useTranslations(lang);
     </div>
   </section>
 
-  <section class="pt-18 pb-20 lg:pb-24">
+  <section class="pt-10 pb-14 lg:pb-24 lg:pt-18">
     <h1
-      class="font-arvo text-3xl text-center w-80 mx-auto leading-tight lg:text-6xl lg:w-120 lg:leading-none"
+      class="font-arvo text-3xl text-center w-80 mx-auto leading-[1.10] lg:text-6xl lg:w-120 lg:leading-none"
     >
       {ui.services_page.title}
     </h1>
     <img
       src="/assets/icons/jellyfish.svg"
       alt="Medusa"
-      class="mx-auto my-9 lg:w-24 lg:my-4"
+      class="mx-auto my-10 lg:w-24 lg:my-4"
     />
     <p
-      class="text-center w-[209px] mx-auto font-light leading-tight lg:text-xl lg:w-[667px]"
+      class="text-center w-77 mx-auto font-light leading-tight text-lg lg:text-xl lg:w-[667px]"
     >
       {ui.services_page.description}
     </p>
   </section>
 
   <section
-    class="bg-[#F6F6F6] py-14 lg:grid lg:grid-cols-2 lg:justify-around lg:gap-2"
+    class="bg-[#F6F6F6] py-16 lg:py-14 lg:grid lg:grid-cols-2 lg:justify-around lg:gap-2"
   >
     <h1
       class="font-arvo text-3xl text-center lg:text-6xl lg:w-96 lg:ml-auto lg:leading-none lg:text-left"
@@ -47,7 +47,7 @@ const ui = useTranslations(lang);
       {ui.services_page.our_services.title}
     </h1>
     <p
-      class="text-[10px] text-center w-72 mx-auto leading-tight mt-4 lg:text-lg lg:w-[455px] lg:mt-0 lg:text-left lg:mr-auto lg:ml-0"
+      class="text-lg text-center font-light w-78 mx-auto leading-[1.10] mt-4 lg:text-lg lg:w-[455px] lg:mt-0 lg:text-left lg:mr-auto lg:ml-0"
     >
       {ui.services_page.our_services.description}
     </p>
@@ -57,9 +57,9 @@ const ui = useTranslations(lang);
     <Droplist />
   </section>
 
-  <section class="bg-black flex flex-col justify-center items-center p-14 lg:py-30">
+  <section class="bg-black flex flex-col justify-center items-center py-18 lg:py-30">
     <img src="/assets/icons/espiral.svg" alt="Spiral" class="lg:w-[105px]" />
-    <h1 class="text-3xl font-arvo text-white text-center w-80 mt-5 mb-6 lg:text-6xl lg:w-150 lg:my-12">
+    <h1 class="text-3xl font-arvo text-white text-center w-80 mt-6 mb-8 lg:text-6xl lg:w-150 lg:my-12 leading-[1.10]">
       {ui.services_page.contact.title}
     </h1>
     <a href={ lang === "en" ? "/en/contact" : "/contacto"} class="text-white text-sm flex items-center gap-4 uppercase lg:text-base"
