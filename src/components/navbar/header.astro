@@ -44,42 +44,6 @@ const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
   </nav>
 
   <!-- ? Navbar Mobile -->
-  <div
-    id="menu-overlay"
-    class="fixed inset-0 z-40 bg-[#D9D9D9]/80 lg:hidden transition-opacity"
-    data-is-active="false"
-  >
-    <nav
-      class="flex flex-col items-center gap-7 bg-black rounded-lg h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 py-18"
-    >
-      <Navitem
-        url={`${lang === "en" ? "/en" : ""}/`}
-        label={"Home"}
-        className="lg:hidden"
-      />
-      {
-        options.map((opt, i) => {
-          const isSwitcher = i === options.length - 1;
-          return (
-            <Navitem
-              url={
-                isSwitcher
-                  ? switcherUrl
-                  : `${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`
-              }
-              label={opt}
-              className={
-                isSwitcher ? "text-primary hover:bg-white tracking-wider" : ""
-              }
-            />
-          );
-        })
-      }
-      <button id="close-menu">
-        <img src="/assets/icons/plus.svg" alt="X" />
-      </button>
-    </nav>
-  </div>
   <button
     id="open-menu"
     class="bg-primary py-0.5 px-2.75 rounded-full uppercase text-white text-sm lg:hidden"
@@ -91,6 +55,43 @@ const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
     ES | EN
   </a>
 </header>
+
+<div
+  id="menu-overlay"
+  class="fixed z-55 bg-[#D9D9D9]/80 lg:hidden transition-opacity left-0 top-0 right-0 bottom-0"
+  data-is-active="false"
+>
+  <nav
+    class="flex flex-col items-center gap-7 bg-black rounded-lg h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 py-18"
+  >
+    <Navitem
+      url={`${lang === "en" ? "/en" : ""}/`}
+      label={"Home"}
+      className="lg:hidden"
+    />
+    {
+      options.map((opt, i) => {
+        const isSwitcher = i === options.length - 1;
+        return (
+          <Navitem
+            url={
+              isSwitcher
+                ? switcherUrl
+                : `${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`
+            }
+            label={opt}
+            className={
+              isSwitcher ? "text-primary hover:bg-white tracking-wider" : ""
+            }
+          />
+        );
+      })
+    }
+    <button id="close-menu">
+      <img src="/assets/icons/plus.svg" alt="X" />
+    </button>
+  </nav>
+</div>
 
 <style is:inline>
   #menu-overlay.active {
