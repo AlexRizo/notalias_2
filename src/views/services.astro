@@ -22,15 +22,15 @@ const ui = useTranslations(lang);
 
     <video
       src={ui.services.videoPath}
-      preload="none" data-lazy-video loop
+      preload="none"
+      data-lazy-video
+      loop
       muted
       playsinline
-      class="h-30 mx-auto my-18 lg:h-72 lg:my-0"></video>
+      class="h-30 mx-auto my-18 lg:h-72 lg:my-0 hidden lg:block"></video>
 
     <article>
-      <h2
-        class="uppercase text-xl text-primary text-center font-semibold mb-4 lg:mb-10 lg:text-left"
-      >
+      <h2 class="uppercase text-xl text-primary font-semibold mb-4 lg:mb-10">
         {ui.services.services}
       </h2>
 
