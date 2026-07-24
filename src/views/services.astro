@@ -5,7 +5,7 @@ const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<section class="bg-[#F4F4F4] py-20">
+<section class="bg-[#F4F4F4] pt-26 pb-20 lg:py-20">
   <div class="lg:flex lg:container lg:mx-auto lg:items-center lg:px-3">
     <h1
       class="font-arvo text-3xl text-primary text-center w-60 mx-auto lg:text-6xl lg:w-120 lg:text-left lg:mx-0 tracking-tighter"
@@ -29,23 +29,26 @@ const ui = useTranslations(lang);
       playsinline
       class="h-30 mx-auto my-18 lg:h-72 lg:my-0 hidden lg:block"></video>
 
-    <article>
-      <h2 class="uppercase text-xl text-primary font-semibold mb-4 lg:mb-10">
+    <article class="max-w-74 mx-auto mt-12 lg:max-w-[auto] lg:mx-0 lg:mt-0">
+      <h2 class="uppercase text-4xl text-primary font-semibold mb-4 lg:mb-10">
         {ui.services.services}
       </h2>
 
-      <ul class="mx-auto w-min space-y-6.5 lg:space-y-9">
+      <ul class="lg:mx-auto lg:w-min space-y-6.5 lg:space-y-9 mt-12 lg:mt-0">
         {
-          ui.services.items.map((item) => (
-            <li class="flex flex-row w-45 justify-between items-center lg:w-57">
-              <a
-                href="/en/services"
-                class="underline underline-offset-6 text-primary font-light text-lg lg:text-2xl lg:underline-offset-10 lg:decoration-1"
-              >
-                {item}
-              </a>
-              <img src="/assets/icons/arrow.svg" alt="->" class="lg:w-4" />
-            </li>
+          ui.services.items.map((item, index) => (
+            <>
+              <div class="bg-primary h-px w-full lg:hidden" />
+              <li class="flex flex-row gap-2 lg:justify-between items-center lg:w-57">
+                <a
+                  href="/en/services"
+                  class="pl-2 lg:pl-0 lg:underline text-primary font-semibold text-2xl lg:font-light lg:underline-offset-10 lg:decoration-1"
+                >
+                  {item}
+                </a>
+                <img src="/assets/icons/arrow.svg" alt="->" class="lg:w-4" />
+              </li>
+            </>
           ))
         }
       </ul>
