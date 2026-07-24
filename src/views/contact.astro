@@ -6,17 +6,17 @@ const ui = useTranslations(lang);
 ---
 
 <section
-  class="bg-black flex flex-col justify-center items-center pt-10 pb-18 lg:pt-22 lg:pb-30"
+  class="bg-black flex flex-col justify-center items-center pt-24 pb-24 lg:pt-22 lg:pb-30"
 >
   <img src="/assets/icons/eye.svg" alt="Ojo" class="lg:w-37" />
   <h1
-    class="text-3xl font-arvo text-white text-center w-71 mt-3.5 mb-6 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.15]"
+    class="text-3xl font-arvo text-white text-center w-71 mt-3.5 mb-8 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.15]"
   >
     {ui.contact.title}
   </h1>
   <a
     href={lang === "en" ? "/en/contact" : "/contacto"}
-    class="text-white text-sm uppercase lg:text-base flex items-center gap-4"
+    class="text-white uppercase flex items-center gap-4"
     >{ui.contact.contact_us} <img src="/assets/icons/arrow-white.svg" alt="->" class="lg:w-3" /></a
   >
 </section>
