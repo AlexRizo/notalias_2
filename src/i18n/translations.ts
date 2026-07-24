@@ -583,23 +583,23 @@ export const translations = {
         label: "Menu",
         home: {
           label: "Home",
-          url: "/",
+          url: "/en",
         },
         work: {
           label: "Work",
-          url: "/work",
+          url: "/en/work",
         },
         services: {
           label: "Services",
-          url: "/services",
+          url: "/en/services",
         },
         about: {
           label: "About",
-          url: "/about",
+          url: "/en/about",
         },
         contact: {
           label: "Contact",
-          url: "/contact",
+          url: "/en/contact",
         },
       },
       madrid: {
