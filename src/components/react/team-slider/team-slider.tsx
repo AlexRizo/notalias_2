@@ -17,7 +17,7 @@ interface Props {
 export const TeamSlider = ({ title, slides }: Props) => {
   return (
     <section className="max-w-96 mx-auto lg:container lg:px-3">
-      <h1 className="text-sm text-center text-[#7B7B7B] py-10 lg:text-left">
+      <h1 className="text-lg text-center text-[#7B7B7B] py-13 lg:py-10 lg:text-left">
         {title}
       </h1>
       <Swiper
@@ -25,7 +25,7 @@ export const TeamSlider = ({ title, slides }: Props) => {
         modules={[Autoplay]}
         breakpoints={{
           0: {
-            slidesPerView: 1.1,
+            slidesPerView: 1,
             centeredSlides: true,
             spaceBetween: 10,
           },
