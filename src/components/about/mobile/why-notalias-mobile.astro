@@ -9,7 +9,7 @@ const items = ui.about_page.why_notalias.items;
 ---
 
 <section
-  class="scroll-section bg-primary py-20 h-dvh flex flex-col items-center justify-evenly border overflow-hidden lg:hidden"
+  class="scroll-section bg-primary py-20 h-svh flex flex-col items-center justify-evenly border overflow-hidden lg:hidden"
 >
   <h1 class="font-arvo text-3xl w-54 mx-auto text-center tracking-tighter">
     {ui.about_page.why_notalias.title[0]}
@@ -29,36 +29,57 @@ const items = ui.about_page.why_notalias.items;
 </section>
 
 <script>
-  import gsap from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-  const horizontalScroll = () => {
-    const containerRef =
-      document.querySelector<HTMLElement>(".scroll-section")!;
-    const timeline = document.querySelector<HTMLElement>(".timeline")!;
+// Evita que el colapso de la barra de URL dispare refreshes en móvil
+ScrollTrigger.config({ ignoreMobileResize: true });
 
-    const distanceToScroll = timeline.scrollWidth - window.innerWidth;
+let mm: gsap.MatchMedia | undefined;
+
+const initHorizontalScroll = (): void => {
+  mm?.revert();
+  mm = gsap.matchMedia();
+
+  // Solo por debajo de lg, que es donde la sección existe
+  mm.add("(max-width: 1023px)", () => {
+    const section = document.querySelector<HTMLElement>(".scroll-section");
+    const timeline = document.querySelector<HTMLElement>(".timeline");
+    if (!section || !timeline) return;
+
+    const getDistance = (): number =>
+      Math.max(0, timeline.scrollWidth - section.offsetWidth);
 
     gsap.to(timeline, {
-      x: -distanceToScroll,
+      x: () => -getDistance(),
       ease: "none",
       scrollTrigger: {
-        trigger: containerRef,
+        trigger: section,
         pin: true,
+        pinType: "transform", // más estable que "fixed" en móvil
+        anticipatePin: 1,
         start: "top top",
-        end: "+=" + distanceToScroll,
+        end: () => "+=" + getDistance(),
         scrub: 1,
+        invalidateOnRefresh: true,
       },
     });
-  };
-
-  document.addEventListener("astro:page-load", () => {
-    horizontalScroll();
-
-    setTimeout(() => {
-      horizontalScroll();
-    }, 1000);
   });
+};
+
+document.addEventListener("astro:page-load", () => {
+  initHorizontalScroll();
+
+  // Re-medir cuando el layout ya esté estable
+  document.fonts?.ready.then(() => ScrollTrigger.refresh());
+  window.addEventListener("load", () => ScrollTrigger.refresh(), { once: true });
+});
+
+// Limpieza en navegaciones con View Transitions
+document.addEventListener("astro:before-swap", () => {
+  mm?.revert();
+  ScrollTrigger.getAll().forEach((t) => t.kill());
+});
 </script>
