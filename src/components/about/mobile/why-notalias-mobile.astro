@@ -29,57 +29,32 @@ const items = ui.about_page.why_notalias.items;
 </section>
 
 <script>
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
 
-// Evita que el colapso de la barra de URL dispare refreshes en móvil
-ScrollTrigger.config({ ignoreMobileResize: true });
+  const horizontalScroll = () => {
+    const containerRef =
+      document.querySelector<HTMLElement>(".scroll-section")!;
+    const timeline = document.querySelector<HTMLElement>(".timeline")!;
 
-let mm: gsap.MatchMedia | undefined;
-
-const initHorizontalScroll = (): void => {
-  mm?.revert();
-  mm = gsap.matchMedia();
-
-  // Solo por debajo de lg, que es donde la sección existe
-  mm.add("(max-width: 1023px)", () => {
-    const section = document.querySelector<HTMLElement>(".scroll-section");
-    const timeline = document.querySelector<HTMLElement>(".timeline");
-    if (!section || !timeline) return;
-
-    const getDistance = (): number =>
-      Math.max(0, timeline.scrollWidth - section.offsetWidth);
+    const distanceToScroll = timeline.scrollWidth - window.innerWidth;
 
     gsap.to(timeline, {
-      x: () => -getDistance(),
+      x: -distanceToScroll,
       ease: "none",
       scrollTrigger: {
-        trigger: section,
+        trigger: containerRef,
         pin: true,
-        pinType: "transform", // más estable que "fixed" en móvil
-        anticipatePin: 1,
         start: "top top",
-        end: () => "+=" + getDistance(),
+        end: "+=" + distanceToScroll,
         scrub: 1,
-        invalidateOnRefresh: true,
       },
     });
-  });
-};
+  };
 
-document.addEventListener("astro:page-load", () => {
-  initHorizontalScroll();
-
-  // Re-medir cuando el layout ya esté estable
-  document.fonts?.ready.then(() => ScrollTrigger.refresh());
-  window.addEventListener("load", () => ScrollTrigger.refresh(), { once: true });
-});
-
-// Limpieza en navegaciones con View Transitions
-document.addEventListener("astro:before-swap", () => {
-  mm?.revert();
-  ScrollTrigger.getAll().forEach((t) => t.kill());
-});
+  setTimeout(() => {
+    horizontalScroll();
+  }, 1000);
 </script>
