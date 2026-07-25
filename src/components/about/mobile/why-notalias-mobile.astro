@@ -34,7 +34,7 @@ const items = ui.about_page.why_notalias.items;
 
   gsap.registerPlugin(ScrollTrigger);
 
-  document.addEventListener("astro:page-load", () => {
+  const horizontalScroll = () => {
     const containerRef =
       document.querySelector<HTMLElement>(".scroll-section")!;
     const timeline = document.querySelector<HTMLElement>(".timeline")!;
@@ -52,5 +52,13 @@ const items = ui.about_page.why_notalias.items;
         scrub: 1,
       },
     });
+  };
+
+  document.addEventListener("astro:page-load", () => {
+    horizontalScroll();
+
+    setTimeout(() => {
+      horizontalScroll();
+    }, 1000);
   });
 </script>
