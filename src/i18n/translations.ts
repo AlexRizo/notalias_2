@@ -784,7 +784,7 @@ export const translations = {
       },
       why_notalias: {
         title: ["Why", "Not Alias?"],
-        locations: "Guadalajara - Madrid - Los Angeles",
+        locations: "Guadalajara - Madrid",
         items: [
           {
             title: "Clients discover themselves through our process.",

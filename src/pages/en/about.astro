@@ -5,6 +5,7 @@ import AboutCarrousel from "@/components/react/about-carrousel/about-carrousel";
 import ImageDroplist from "@/components/droplist-with-image/image-droplist.astro";
 import { TeamSlider } from "@/components/react/team-slider/team-slider";
 import WhyNotalias from "@/views/about/why-notalias.astro";
+import WhyNotaliasMobile from "@/components/about/mobile/why-notalias-mobile.astro";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
@@ -40,7 +41,9 @@ const ui = useTranslations(lang);
   </section>
 
   <section class="text-center py-10 lg:py-6">
-    <h1 class="font-arvo text-3xl w-56 mx-auto leading-tight lg:text-6xl lg:w-auto">
+    <h1
+      class="font-arvo text-3xl w-56 mx-auto leading-tight lg:text-6xl lg:w-auto"
+    >
       {ui.about_page.how_work.title}
     </h1>
   </section>
@@ -55,15 +58,30 @@ const ui = useTranslations(lang);
     slides={ui.about_page.team.slides}
   />
 
-  <WhyNotalias />
+  <div>
+    <WhyNotalias />
+    <WhyNotaliasMobile />
+  </div>
 
-  <section class="flex flex-col justify-center items-center lg:gap-8 gap-4 p-20 bg-black">
-    <img src="/assets/icons/work-together.svg" alt="Spiral" class="lg:w-[193px]"/>
-    <h1 class="text-3xl font-arvo text-white text-center w-60 mt-5 mb-6 lg:text-[55px] lg:w-auto">
+  <section
+    class="flex flex-col justify-center items-center lg:gap-8 gap-4 p-20 bg-black"
+  >
+    <img
+      src="/assets/icons/work-together.svg"
+      alt="Spiral"
+      class="lg:w-[193px]"
+    />
+    <h1
+      class="text-3xl font-arvo text-white text-center w-60 mt-5 mb-6 lg:text-[55px] lg:w-auto"
+    >
       {ui.about_page.work_together.title}
     </h1>
     <a class="text-sm text-white uppercase lg:text-base flex items-center gap-4"
-      >{ui.about_page.work_together.contact_us}<img src="/assets/icons/arrow-white.svg" alt="->" class="lg:w-3" /></a
+      >{ui.about_page.work_together.contact_us}<img
+        src="/assets/icons/arrow-white.svg"
+        alt="->"
+        class="lg:w-3"
+      /></a
     >
   </section>
 </Layout>

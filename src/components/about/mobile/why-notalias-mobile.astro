@@ -1,0 +1,57 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import ArticleMobile from "./article-mobile.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+
+const items = ui.about_page.why_notalias.items;
+---
+
+<section
+  class="scroll-section bg-primary py-14 h-screen flex flex-col items-center justify-between border"
+>
+  <h1 class="font-arvo text-3xl w-54 mx-auto text-center tracking-tighter">
+    {ui.about_page.why_notalias.title[0]} {ui.about_page.why_notalias.title[1]}
+  </h1>
+
+  <article class="timeline flex items-center self-start overflow-hidden w-max">
+    <ArticleMobile title={items[0].title} description={items[0].description} />
+    <ArticleMobile title={items[1].title} description={items[1].description} />
+    <ArticleMobile title={items[2].title} description={items[2].description} />
+    <ArticleMobile title={items[3].title} description={items[3].description} />
+    <ArticleMobile title={items[4].title} description={items[4].description} />
+  </article>
+  <p class="text-center text-lg font-light">
+    {ui.about_page.why_notalias.locations}
+  </p>
+</section>
+
+<script>
+  import gsap from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const horizontalScroll = () => {
+    const containerRef =
+      document.querySelector<HTMLElement>(".scroll-section")!;
+    const timeline = document.querySelector<HTMLElement>(".timeline")!;
+
+    const distanceToScroll = timeline.scrollWidth - window.innerWidth;
+
+    gsap.to(timeline, {
+      x: -distanceToScroll,
+      ease: "none",
+      scrollTrigger: {
+        trigger: containerRef,
+        pin: true,
+        start: "top top",
+        end: "+=" + distanceToScroll,
+        scrub: 1,
+      },
+    });
+  };
+
+  horizontalScroll();
+</script>
