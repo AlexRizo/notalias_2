@@ -1,0 +1,102 @@
+---
+import Attributes from "@/components/interiors/attributes.astro";
+import OtherProyects from "@/components/interiors/other-proyects.astro";
+import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
+
+const attributes: AttributesType[] = [
+  {
+    label: "Client",
+    value: ["Grupo AGR"],
+  },
+  {
+    label: "Services",
+    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+  },
+  {
+    label: "Industry",
+    value: ["Wine & Spirits"],
+  },
+];
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">Tan Tán</h1>
+
+    <img src="/assets/img/interiors/tantan/media-01.webp" />
+  </div>
+
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">
+      De la expresión al lugar: donde el vino y un vinilo se encuentran.
+    </h2>
+    <Attributes attributes={attributes} />
+  </article>
+
+  <div class="content">
+    <img src="/assets/img/interiors/tantan/media-02.webp" />
+
+    <video
+      src="/assets/img/interiors/tantan/media-03.mp4"
+      playsinline
+      muted
+      autoplay
+      loop
+      preload="none"></video>
+
+    <article>
+      <h3>Contexto</h3>
+      <p>
+        Tequila Centinela tiene 120 años de historia. Eterno es su entrada al
+        cristalino — la categoría que hoy define el crecimiento del tequila
+        premium. El mercado estaba saturado de marcas gritando legado, tradición
+        y herencia. Pero la generación que hoy impulsa el consumo ya no compraba
+        discursos de historia — pedía significado, presencia, pertenencia a un
+        momento.
+      </p>
+    </article>
+
+    <img src="/assets/img/interiors/tantan/media-04.webp" loading="lazy" />
+
+    <article>
+      <h3>Challenge</h3>
+      <p>
+        La marca existía pero con presencia mínima y sin una identidad que
+        levantara la mano en premium. El reto no era contar la historia otra vez
+        — era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse
+        de juventud ni renunciar a lo que ya era.
+      </p>
+    </article>
+
+    <img src="/assets/img/interiors/tantan/media-05.webp" loading="lazy" />
+    <img src="/assets/img/interiors/tantan/media-06.webp" loading="lazy" />
+
+    <article>
+      <h3>The Work</h3>
+      <p>
+        <span
+          >Ese territorio era la noche. Leímos el high energy y la nightlife no
+          como canal de activación, sino como el lugar donde Eterno tenía que
+          existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto que
+          ancla el peso del legado en la energía del ahora, en el momento, en la
+          cultura nocturna.</span
+        >
+        <br />
+        <br />
+        <span
+          >El sistema visual se construyó desde el entorno, no desde la botella.
+          Cristales, metal, luz. El rojo como pulso. Un lenguaje que no describe
+          la noche — la habita. Todo materializado en un Creative Book
+          ejecutable desde el día uno.</span
+        >
+      </p>
+    </article>
+
+    <img src="/assets/img/interiors/tantan/media-07.webp" loading="lazy" />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>

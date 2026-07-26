@@ -38,3 +38,34 @@ textarea,
 select {
   @apply bg-white rounded-lg px-4 py-3 text-sm outline-none lg:text-[15px];
 }
+
+.interior {
+  .section {
+    @apply max-w-96 mx-auto px-2;
+  }
+
+  .title {
+    @apply text-xl mt-14 mb-6;
+  }
+
+  .description {
+    @apply text-3xl font-arvo tracking-tight leading-[1.10] my-8;
+  }
+
+  .content {
+    @apply space-y-10;
+
+    h3 {
+      @apply text-lg font-semibold;
+    }
+
+    p {
+      @apply text-lg font-light tracking-[-0.015em] leading-[1.15] mt-2;
+    }
+  }
+
+  img,
+  video {
+    @apply w-full rounded-lg;
+  }
+}
