@@ -2,7 +2,7 @@
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
 import type { Attributes as AttributesType } from "@/i18n/interiors";
-import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
+import { getLangFromUrl } from "@/i18n/utils";
 
 const attributes: AttributesType[] = [
   {
@@ -18,34 +18,39 @@ const attributes: AttributesType[] = [
     value: ["Wine & Spirits"],
   },
 ];
-
-const lang = getLangFromUrl(Astro.url);
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
   <div>
-    <h1 class="title">Tan Tán</h1>
+    <h1 class="title">Eterno Centinela</h1>
 
-    <img src="/assets/img/interiors/tantan/media-01.webp" />
+    <img
+      src="/assets/img/interiors/eterno-centinela/mobile/media-01.webp"
+      class="h-212 object-cover"
+    />
   </div>
-
   <article class="mt-4 lg:mt-26">
     <h2 class="description">
-      De la expresión al lugar: donde el vino y un vinilo se encuentran.
+      Hacer que una nueva generación eligiera un legado de 120 años.
     </h2>
     <Attributes attributes={attributes} />
   </article>
 
   <div class="content">
-    <img src="/assets/img/interiors/tantan/media-02.webp" />
+    <div class="grid grid-cols-2 gap-4">
+      <video
+        src="/assets/img/interiors/eterno-centinela/media-03.mp4"
+        playsinline
+        muted
+        autoplay
+        loop
+        preload="none"></video>
 
-    <video
-      src="/assets/img/interiors/tantan/media-03.mp4"
-      playsinline
-      muted
-      autoplay
-      loop
-      preload="none"></video>
+      <img
+        src="/assets/img/interiors/eterno-centinela/media-02.webp"
+        loading="lazy"
+      />
+    </div>
 
     <article>
       <h3>Contexto</h3>
@@ -59,7 +64,11 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-04.webp" loading="lazy" />
+    <img
+      src="/assets/img/interiors/amidemi/media-04.webp"
+      loading="lazy"
+      class="h-100 object-cover object-top"
+    />
 
     <article>
       <h3>Challenge</h3>
@@ -71,8 +80,11 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-05.webp" loading="lazy" />
-    <img src="/assets/img/interiors/tantan/media-06.webp" loading="lazy" />
+    <img
+      src="/assets/img/interiors/amidemi/media-05.webp"
+      loading="lazy"
+      class="h-[429px] object-cover"
+    />
 
     <article>
       <h3>The Work</h3>
@@ -95,7 +107,11 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-07.webp" loading="lazy" />
+    <img
+      src="/assets/img/interiors/amidemi/media-06.webp"
+      loading="lazy"
+      class="h-90.5 object-cover"
+    />
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />

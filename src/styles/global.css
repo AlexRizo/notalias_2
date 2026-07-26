@@ -45,22 +45,22 @@ select {
   }
 
   .title {
-    @apply text-xl mt-14 mb-6;
+    @apply text-xl mt-14 mb-6 lg:text-3xl lg:text-center lg:font-light lg:mb-8;
   }
 
   .description {
-    @apply text-3xl font-arvo tracking-tight leading-[1.10] my-8;
+    @apply text-3xl font-arvo tracking-tight leading-[1.10] my-8 lg:text-5xl lg:max-w-[745px];
   }
 
   .content {
     @apply space-y-10;
 
     h3 {
-      @apply text-lg font-semibold;
+      @apply text-lg font-semibold lg:text-3xl lg:font-light lg:text-center;
     }
 
     p {
-      @apply text-lg font-light tracking-[-0.015em] leading-[1.15] mt-2;
+      @apply text-lg font-light tracking-[-0.015em] leading-[1.15] mt-2 lg:font-light lg:text-center lg:leading-tight;
     }
   }
 

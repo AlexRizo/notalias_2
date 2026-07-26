@@ -1,5 +1,5 @@
 ---
-import Attributes from "@/components/interiors/Att.astro";
+import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
 import type { Attributes as AttributesType } from "@/i18n/interiors";
 import { getLangFromUrl } from "@/i18n/utils";
@@ -53,7 +53,11 @@ const lang = getLangFromUrl(Astro.url);
       class="h-91 object-cover"
       preload="none"></video>
 
-    <img src="/assets/img/interiors/amidemi/media-03.webp" loading="lazy" class="h-100 object-cover" />
+    <img
+      src="/assets/img/interiors/amidemi/media-03.webp"
+      loading="lazy"
+      class="h-100 object-cover"
+    />
 
     <article>
       <h3>Contexto</h3>
@@ -67,7 +71,11 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/amidemi/media-04.webp" loading="lazy" class="h-100 object-cover object-top" />
+    <img
+      src="/assets/img/interiors/amidemi/media-04.webp"
+      loading="lazy"
+      class="h-100 object-cover object-top"
+    />
 
     <article>
       <h3>Challenge</h3>
@@ -79,7 +87,11 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/amidemi/media-05.webp" loading="lazy" class="h-[429px] object-cover" />
+    <img
+      src="/assets/img/interiors/amidemi/media-05.webp"
+      loading="lazy"
+      class="h-[429px] object-cover"
+    />
 
     <article>
       <h3>The Work</h3>
@@ -102,7 +114,11 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/amidemi/media-06.webp" loading="lazy" class="h-90.5 object-cover" />
+    <img
+      src="/assets/img/interiors/amidemi/media-06.webp"
+      loading="lazy"
+      class="h-90.5 object-cover"
+    />
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />

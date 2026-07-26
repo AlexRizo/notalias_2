@@ -10,11 +10,11 @@ const { attributes }: Props = Astro.props;
 ---
 
 <div
-  class="grid grid-cols-2 gap-3 pt-2 pb-4 mt-5 mb-10 border-b border-t border-black/30 lg:gap-0 lg:py-4"
+  class="grid grid-cols-2 gap-3 pt-2 pb-4 mt-5 mb-10 border-b border-t border-black/30 lg:grid-cols-3 lg:gap-0 lg:py-4"
 >
   {
     attributes.map((attribute, i) => (
-      <article class={cn('flex flex-col w-max', i === attributes.length - 1 ? 'col-span-2 border-t border-black/30 w-full pt-3' : '')}>
+      <article class={cn('flex flex-col w-max', i === attributes.length - 1 && 'col-span-2 border-t border-black/30 w-full pt-3 lg:col-auto lg:pt-0 lg:border-0')}>
         <h3 class="text-lg font-semibold mb-1.5 lg:text-3xl lg:font-light">{attribute.label}</h3>
         {attribute.value.map((value) => (
           <p class="text-lg lg:text-[#7b7b7b] leading-tight lg:text-xl max-w-[150px] lg:max-w-none lg:font-light">{value}</p>
