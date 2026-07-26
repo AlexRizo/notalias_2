@@ -1,9 +1,8 @@
 ---
-import Paginator from "@/components/paginator/paginator.astro";
-import ProjectCard from "@/components/projects/project-card.astro";
+import Paginator from "@/components/paginator/Paginator.astro";
+import ProjectCard from "@/components/projects/ProjectCard.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import Layout from "@/layout/layout.astro";
-import Contact from "@/views/contact.astro";
+import Layout from "@/layout/Layout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
@@ -42,9 +41,12 @@ const ui = useTranslations(lang);
     >
       {ui.selected_work.contact.title}
     </h1>
-    <a
-      class="text-white uppercase flex items-center gap-3"
-      >{ui.selected_work.contact.contact_us}<img src="/assets/icons/arrow-white.svg" alt="->" class="lg:w-3" /></a
+    <a class="text-white uppercase flex items-center gap-3"
+      >{ui.selected_work.contact.contact_us}<img
+        src="/assets/icons/arrow-white.svg"
+        alt="->"
+        class="lg:w-3"
+      /></a
     >
   </section>
 </Layout>

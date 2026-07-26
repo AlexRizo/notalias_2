@@ -1,11 +1,11 @@
 ---
-import Layout from "@/layout/layout.astro";
+import Layout from "@/layout/Layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import AboutCarrousel from "@/components/react/about-carrousel/about-carrousel";
-import ImageDroplist from "@/components/droplist-with-image/image-droplist.astro";
+import ImageDroplist from "@/components/droplist-with-image/ImageDroplist.astro";
 import { TeamSlider } from "@/components/react/team-slider/team-slider";
-import WhyNotalias from "@/views/about/why-notalias.astro";
-import WhyNotaliasMobile from "@/components/about/mobile/why-notalias-mobile.astro";
+import WhyNotalias from "@/views/about/WhyNotalias.astro";
+import WhyNotaliasMobile from "@/components/about/mobile/WhyNotaliasMobile.astro";
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---

@@ -1,7 +1,7 @@
 ---
-import Layout from "@/layout/layout.astro";
+import Layout from "@/layout/Layout.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import ContactDirectly from "@/views/about/contact-directly.astro";
+import ContactDirectly from "@/views/about/ContactDirectly.astro";
 import { ContactForm } from "@/components/react/form/contact-form";
 
 const lang = getLangFromUrl(Astro.url);
@@ -10,17 +10,26 @@ const ui = useTranslations(lang);
 
 <Layout lang={lang} className="bg-[#F6F6F6]">
   <section class="flex flex-col items-center justify-center pb-18 lg:pt-20">
-    <h1 class="text-3xl font-arvo text-center w-96 lg:text-6xl lg:w-[650px] lg:tracking-tight">
+    <h1
+      class="text-3xl font-arvo text-center w-96 lg:text-6xl lg:w-[650px] lg:tracking-tight"
+    >
       {ui.contact_page.title}
     </h1>
-    <p class="text-sm text-center mt-3 lg:text-xl lg:mt-6">{ui.contact_page.description}</p>
+    <p class="text-sm text-center mt-3 lg:text-xl lg:mt-6">
+      {ui.contact_page.description}
+    </p>
     <div class="relative size-24">
-      <img src="/assets/icons/bactery.svg" class="absolute -left-33 top-3 lg:w-25 lg:-left-120 lg:-top-30" />
+      <img
+        src="/assets/icons/bactery.svg"
+        class="absolute -left-33 top-3 lg:w-25 lg:-left-120 lg:-top-30"
+      />
       <img src="/assets/icons/ovni.svg" class="absolute top-7.5 lg:w-26" />
-      <img src="/assets/icons/planet.svg" class="absolute -right-32 -top-9 lg:w-16.5 lg:-top-54 lg:-right-120" />
+      <img
+        src="/assets/icons/planet.svg"
+        class="absolute -right-32 -top-9 lg:w-16.5 lg:-top-54 lg:-right-120"
+      />
     </div>
   </section>
-
 
   <ContactForm client:visible lang={lang} />
 

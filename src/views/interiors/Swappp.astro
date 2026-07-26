@@ -1,8 +1,8 @@
 ---
-import Attributes from "@/components/interiors/attributes.astro";
-import OtherProyects from "@/components/interiors/other-proyects.astro";
+import Attributes from "@/components/interiors/Att.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
 import type { Attributes as AttributesType } from "@/i18n/interiors";
-import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
+import { getLangFromUrl } from "@/i18n/utils";
 
 const attributes: AttributesType[] = [
   {
@@ -24,9 +24,12 @@ const lang = getLangFromUrl(Astro.url);
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
   <div>
-    <h1 class="title">Tan Tán</h1>
+    <h1 class="title">Swappp</h1>
 
-    <img src="/assets/img/interiors/tantan/media-01.webp" />
+    <div
+      class="w-full h-54 bg-[url('/assets/img/interiors/swappp/media-01.webp')] bg-size-[110%] bg-position-[0%_21%] bg-no-repeat rounded-lg"
+    >
+    </div>
   </div>
 
   <article class="mt-4 lg:mt-26">
@@ -37,29 +40,15 @@ const lang = getLangFromUrl(Astro.url);
   </article>
 
   <div class="content">
-    <img src="/assets/img/interiors/tantan/media-02.webp" />
+    <img src="/assets/img/interiors/swappp/media-02.webp" />
 
     <video
-      src="/assets/img/interiors/tantan/media-03.mp4"
+      src="/assets/img/interiors/swappp/media-03.mp4"
       playsinline
       muted
       autoplay
       loop
       preload="none"></video>
-
-    <article>
-      <h3>Contexto</h3>
-      <p>
-        Manzanillo tiene bares. Lo que no tenía era un lugar donde desconectarte
-        de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un
-        espacio que te recibe con una buena copa, música que te hace sentir algo
-        y conversación que vale la pena. Sin ruido innecesario, sin prisa. Un
-        lugar para el que sabe que la mejor noche no siempre es la más loca, a
-        veces es simplemente la que no quieres que termine.
-      </p>
-    </article>
-
-    <img src="/assets/img/interiors/tantan/media-04.webp" loading="lazy" />
 
     <article>
       <h3>Challenge</h3>
@@ -71,8 +60,13 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-05.webp" loading="lazy" />
-    <img src="/assets/img/interiors/tantan/media-06.webp" loading="lazy" />
+    <img src="/assets/img/interiors/swappp/media-04.webp" loading="lazy" />
+
+    <div
+      class="h-91 bg-[url('/assets/img/interiors/swappp/media-05.webp')] bg-size-[115%] bg-position-[100%_30%] bg-no-repeat rounded-lg"
+    >
+    </div>
+    <img src="/assets/img/interiors/swappp/media-06.webp" loading="lazy" />
 
     <article>
       <h3>The Work</h3>
@@ -95,7 +89,7 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-07.webp" loading="lazy" />
+    <img src="/assets/img/interiors/swappp/media-07.webp" loading="lazy" class="h-90.5 object-cover" />
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />
