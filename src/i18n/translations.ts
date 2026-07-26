@@ -345,25 +345,25 @@ export const translations = {
             name: "Immersion",
             description:
               "Escuchamos antes de liderar. Inmersión profunda en el negocio, mercado, audiencia y ambición.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-immersion.webp",
           },
           {
             name: "Diagnosis",
             description:
               "Sintetizamos todo en una foto clara: dónde estás, hacia dónde necesitas ir y qué hay en el camino.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-diagnosis.webp",
           },
           {
             name: "Creation",
             description:
               "La estrategia toma forma. Conceptos, sistemas visuales, identidad verbal — sprints enfocados, retroalimentación ágil.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-creation.webp",
           },
           {
             name: "Delivery",
             description:
               "Todo lo que tu equipo necesita para ejecutar: lineamientos, activos, creative books. Listo desde el día uno.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-delivery.webp",
           },
         ],
       },
@@ -735,25 +735,25 @@ export const translations = {
             name: "Immersion",
             description:
               "We listen before we lead. Deep dive into business, market, audience, ambition.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-immersion.webp",
           },
           {
             name: "Diagnosis",
             description:
               "We synthesize into a clear picture: where you are, where you need to go, what's in the way.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-diagnosis.webp",
           },
           {
             name: "Creation",
             description:
               "Strategy becomes form. Concepts, visual systems, verbal identity — focused sprints, tight feedback.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-creation.webp",
           },
           {
             name: "Delivery",
             description:
               "Everything your team needs to execute: guidelines, assets, creative books. Ready from day one.",
-            image_path: "/assets/img/about/immersion.webp",
+            image_path: "/assets/img/about/about-delivery.webp",
           },
         ],
       },
