@@ -58,38 +58,50 @@ const switcherUrl = getAlternateLangUrl(Astro.url, lang === "en" ? "es" : "en");
 
 <div
   id="menu-overlay"
-  class="fixed z-55 bg-[#D9D9D9]/80 lg:hidden transition-opacity left-0 top-0 right-0 bottom-0"
+  class="fixed z-55 bg-primary lg:hidden transition-opacity left-0 top-0 right-0 bottom-0 px-6"
   data-is-active="false"
 >
-  <nav
-    class="flex flex-col items-center gap-7 bg-black rounded-lg h-[90dvh] w-[90dvw] -translate-x-1/2 absolute bottom-5 left-1/2 py-18"
-  >
-    <Navitem
-      url={`${lang === "en" ? "/en" : ""}/`}
-      label={"Home"}
-      className="lg:hidden"
-    />
+  <div class="flex justify-between items-center py-8 max-w-96 mx-auto">
+    <img src="/assets/icons/notalias.svg" alt="Not Alias" />
+
+    <button id="close-menu" class="cursor-pointer">
+      <img src="/assets/icons/quit.svg" alt="X" />
+    </button>
+  </div>
+  <nav class="flex flex-col gap-3.5 py-18 max-w-96 mx-auto">
+    <div>
+      <Navitem
+        url={`${lang === "en" ? "/en" : ""}/`}
+        label={"Home"}
+        className="lg:hidden"
+        arrow={true}
+      />
+    </div>
+    <div class="h-px bg-black w-full"></div>
     {
       options.map((opt, i) => {
         const isSwitcher = i === options.length - 1;
         return (
-          <Navitem
-            url={
-              isSwitcher
-                ? switcherUrl
-                : `${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`
-            }
-            label={opt}
-            className={
-              isSwitcher ? "text-primary hover:bg-white tracking-wider" : ""
-            }
-          />
+          <>
+            <Navitem
+              url={
+                isSwitcher
+                  ? switcherUrl
+                  : `${lang === "en" ? "/en" : ""}/${opt.toLowerCase()}`
+              }
+              label={opt}
+              className={isSwitcher ? "text-xl mt-4 tracking-wider" : ""}
+              arrow={!isSwitcher}
+            />
+            {i === options.length - 1 ? (
+              ""
+            ) : (
+              <div class="h-px bg-black w-full" />
+            )}
+          </>
         );
       })
     }
-    <button id="close-menu">
-      <img src="/assets/icons/plus.svg" alt="X" />
-    </button>
   </nav>
 </div>
 

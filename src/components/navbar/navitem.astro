@@ -5,16 +5,27 @@ interface Props {
   url: string;
   label: string;
   className?: string;
+  arrow?: boolean;
 }
 
-const { url, label, className } = Astro.props;
+const { url, label, className, arrow } = Astro.props;
 ---
 
 <a
   href={url}
   data-astro-prefetch="hover"
   class={cn(
-    "text-white text-lg uppercase tracking-tighter text-center bg-transparent hover:bg-primary transition-colors rounded-2xl py-0.5 lg:text-xs lg:font-medium lg:py-0.75 lg:tracking-wide lg:hover:text-white px-3",
+    "text-[28px] font-medium uppercase tracking-tighter lg:text-center bg-transparent hover:bg-primary transition-colors rounded-2xl py-0.5 lg:text-xs lg:py-0.75 lg:tracking-wide lg:hover:text-white px-3",
     className,
-  )}>{label}</a
->
+  )}
+  >{label}
+  {
+    arrow && (
+      <img
+        src="/assets/icons/arrow-white.svg"
+        alt="->"
+        class="brightness-0 lg:hidden inline w-4.5 ml-4"
+      />
+    )
+  }
+</a>
