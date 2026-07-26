@@ -18,7 +18,7 @@ const { contact_items } = Astro.props;
     contact_items.map(({ label, value, copy, url }) => (
       <p class="grid grid-cols-[max-content_max-content_max-content] gap-5 lg:gap-6">
         <span class="text-right w-31.5 lg:w-33.5">{label} -></span>
-        <span class="w-44 lg:w-46">{value}</span>
+        <span class="w-38 lg:w-46">{value}</span>
         <span
           class="text-primary cursor-pointer copy-btn transition-colors duration-200"
           data-value={value}
