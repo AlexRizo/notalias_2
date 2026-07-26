@@ -1,0 +1,136 @@
+---
+import Attributes from "@/components/interiors/Attributes.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
+import type { Attributes as AttributesType } from "@/i18n/interiors";
+
+const attributes: AttributesType[] = [
+  {
+    label: "Client",
+    value: ["PRESENT"],
+  },
+  {
+    label: "Services",
+    value: ["Brand Strategy", "Brand Identity", "Naming"],
+  },
+  {
+    label: "Industry",
+    value: ["Turismo & Hospitalidad"],
+  },
+];
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">Ratito</h1>
+
+    <video
+      src="/assets/img/interiors/ratito/media-01.mp4"
+      playsinline
+      muted
+      autoplay
+      loop
+      class="h-212 object-cover"
+      preload="none"></video>
+  </div>
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">PONERLE NOMBRE Y CARA AL TIEMPO BIEN VIVIDO</h2>
+    <Attributes attributes={attributes} />
+  </article>
+
+  <div class="content">
+    <div class="img-container">
+      <img
+        src="/assets/img/interiors/ratito/media-02.webp"
+        class="h-173 object-cover"
+        loading="lazy"
+      />
+      <img
+        src="/assets/img/interiors/ratito/media-03.webp"
+        class="h-173 object-cover object-center"
+      />
+    </div>
+
+    <article>
+      <h3>Contexto</h3>
+      <p>
+        <span
+          >El mercado de renta vacacional en México lleva años creciendo, pero
+          sin madurar. Entre Airbnb y los portales de distribución, cualquiera
+          puede listar una propiedad — y eso se nota. El resultado: un mercado
+          saturado de opciones que se parecen todas, donde el precio termina
+          siendo el único diferenciador y la experiencia del huésped queda en
+          segundo plano.</span
+        >
+        <br />
+        <br />
+        <span
+          >meteoro ventures llegó con una lectura distinta. Vieron en ese
+          desorden una oportunidad: crear una empresa de hospitalidad y property
+          management que no compitiera por precio, sino por experiencia. Una
+          plataforma que entendiera que detrás de cada reserva no hay un cliente
+          buscando alojamiento — hay alguien buscando un ratito para
+          desconectarse, para estar, para vivir algo que valga la pena recordar.</span
+        >
+        <br />
+        <br />
+        <span
+          >La idea de negocio era sólida. Lo que no existía todavía era la
+          marca.</span
+        >
+      </p>
+    </article>
+
+    <img src="/assets/img/interiors/ratito/media-04.webp" loading="lazy" />
+
+    <article>
+      <h3>Challenge</h3>
+      <p>
+        La marca existía pero con presencia mínima y sin una identidad que
+        levantara la mano en premium. El reto no era contar la historia otra vez
+        — era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse
+        de juventud ni renunciar a lo que ya era.
+      </p>
+    </article>
+
+    <div class="img-container">
+      <img
+        src="/assets/img/interiors/ratito/media-05.webp"
+        class="h-216.5 object-cover"
+        loading="lazy"
+      />
+      <img
+        src="/assets/img/interiors/ratito/media-06.webp"
+        class="h-216.5 object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <article>
+      <h3>The Work</h3>
+      <p class="lg:flex lg:flex-row lg:gap-4 lg:text-left! lg:max-w-max!">
+        <span class="w-110"
+          >Crear desde cero la identidad de una empresa de hospitalidad que no
+          quisiera verse como una empresa de hospitalidad. Ni hotel boutique
+          aspiracional, ni plataforma tecnológica fría, ni el típico logo de
+          casita con palmera que puebla la categoría.</span
+        >
+        <span class="w-112"
+          >El reto era encontrar una personalidad que hiciera sentir al huésped
+          que estaba eligiendo algo distinto antes de llegar a la propiedad, y
+          convencer al propietario de que sus metros cuadrados estarían en manos
+          de alguien que entiende lo que significa cuidar algo con criterio. Dos
+          audiencias con necesidades opuestas. Una sola marca que tenía que
+          funcionar para ambas — sin perder carácter en el intento.</span
+        >
+      </p>
+    </article>
+
+    <img
+      src="/assets/img/interiors/ratito/media-07.webp"
+      loading="lazy"
+      class="h-188 object-cover object-[0_60%]"
+    />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>
