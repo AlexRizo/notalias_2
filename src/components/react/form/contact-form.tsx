@@ -68,8 +68,8 @@ export const ContactForm = ({ lang }: Props) => {
   }, []);
 
   useEffect(() => {
-    console.log(sended)
-  }, [sended])
+    console.log(sended);
+  }, [sended]);
 
   return (
     <>
@@ -174,7 +174,7 @@ export const ContactForm = ({ lang }: Props) => {
           </form>
         ) : (
           <form
-            className="max-w-96 mx-auto space-y-5 lg:hidden"
+            className="max-w-96 mx-auto space-y-5 px-4 lg:hidden"
             id="contact-form"
             onSubmit={onSubmit}
           >
@@ -205,7 +205,8 @@ export const ContactForm = ({ lang }: Props) => {
                   type="text"
                   id="phone"
                   inputMode="numeric"
-                  minLength={10}
+                  minLength={0}
+                  maxLength={10}
                   placeholder={ui.contact_page.form.phone_field.placeholder}
                   required
                   {...register("phone")}
@@ -228,6 +229,7 @@ export const ContactForm = ({ lang }: Props) => {
                 id="email"
                 placeholder={ui.contact_page.form.email_field.placeholder}
                 required
+                className="placeholder:underline placeholder:underline-offset-2"
                 {...register("email")}
               />
             </FormField>
@@ -240,6 +242,7 @@ export const ContactForm = ({ lang }: Props) => {
                 id="business"
                 placeholder={ui.contact_page.form.business_field.placeholder}
                 required
+                className="placeholder:underline placeholder:underline-offset-2"
                 {...register("business")}
               />
             </FormField>
@@ -249,7 +252,7 @@ export const ContactForm = ({ lang }: Props) => {
             >
               <textarea
                 id="message"
-                className="resize-none"
+                className="resize-none placeholder:underline placeholder:underline-offset-2"
                 placeholder={ui.contact_page.form.description_field.placeholder}
                 rows={4}
                 required
