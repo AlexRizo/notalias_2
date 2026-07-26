@@ -26,7 +26,10 @@ const lang = getLangFromUrl(Astro.url);
   <div>
     <h1 class="title">Swappp</h1>
 
-    <img src="/assets/img/interiors/tantan/media-01.webp" />
+    <div
+      class="w-full h-54 bg-[url('/assets/img/interiors/swappp/media-01.webp')] bg-size-[110%] bg-position-[0%_21%] bg-no-repeat rounded-lg"
+    >
+    </div>
   </div>
 
   <article class="mt-4 lg:mt-26">
@@ -37,29 +40,15 @@ const lang = getLangFromUrl(Astro.url);
   </article>
 
   <div class="content">
-    <img src="/assets/img/interiors/tantan/media-02.webp" />
+    <img src="/assets/img/interiors/swappp/media-02.webp" />
 
     <video
-      src="/assets/img/interiors/tantan/media-03.mp4"
+      src="/assets/img/interiors/swappp/media-03.mp4"
       playsinline
       muted
       autoplay
       loop
       preload="none"></video>
-
-    <article>
-      <h3>Contexto</h3>
-      <p>
-        Tequila Centinela tiene 120 años de historia. Eterno es su entrada al
-        cristalino — la categoría que hoy define el crecimiento del tequila
-        premium. El mercado estaba saturado de marcas gritando legado, tradición
-        y herencia. Pero la generación que hoy impulsa el consumo ya no compraba
-        discursos de historia — pedía significado, presencia, pertenencia a un
-        momento.
-      </p>
-    </article>
-
-    <img src="/assets/img/interiors/tantan/media-04.webp" loading="lazy" />
 
     <article>
       <h3>Challenge</h3>
@@ -71,8 +60,13 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-05.webp" loading="lazy" />
-    <img src="/assets/img/interiors/tantan/media-06.webp" loading="lazy" />
+    <img src="/assets/img/interiors/swappp/media-04.webp" loading="lazy" />
+
+    <div
+      class="h-91 bg-[url('/assets/img/interiors/swappp/media-05.webp')] bg-size-[115%] bg-position-[100%_30%] bg-no-repeat rounded-lg"
+    >
+    </div>
+    <img src="/assets/img/interiors/swappp/media-06.webp" loading="lazy" />
 
     <article>
       <h3>The Work</h3>
@@ -95,7 +89,7 @@ const lang = getLangFromUrl(Astro.url);
       </p>
     </article>
 
-    <img src="/assets/img/interiors/tantan/media-07.webp" loading="lazy" />
+    <img src="/assets/img/interiors/swappp/media-07.webp" loading="lazy" class="h-90.5 object-cover" />
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />
