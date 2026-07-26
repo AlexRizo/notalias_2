@@ -1,0 +1,152 @@
+---
+import Attributes from "@/components/interiors/Attributes.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
+import type { Attributes as AttributesType } from "@/i18n/interiors";
+
+const attributes: AttributesType[] = [
+  {
+    label: "Client",
+    value: ["Grupo AGR", "Bubelle"],
+  },
+  {
+    label: "Services",
+    value: ["Naming", "Brand Identity", "Packaging"],
+  },
+  {
+    label: "Industry",
+    value: ["Bevarages / Bebida sin alcohol"],
+  },
+];
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">Bubelle</h1>
+
+    <video
+      src="/assets/img/interiors/bubelle/media-01.mp4"
+      playsinline
+      muted
+      autoplay
+      loop
+      class="h-212 object-cover"
+      preload="none"></video>
+  </div>
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">PONERLE NOMBRE Y CARA AL TIEMPO BIEN VIVIDO</h2>
+    <Attributes attributes={attributes} />
+  </article>
+
+  <div class="content">
+    <img src="/assets/img/interiors/bubelle/media-02.webp" loading="lazy" />
+    <video
+      src="/assets/img/interiors/bubelle/media-03.mp4"
+      playsinline
+      muted
+      autoplay
+      loop
+      class="h-207 object-cover"
+      preload="none"></video>
+
+    <article>
+      <h3>Context</h3>
+      <p>
+        <span
+          >Las 12:00 del mediodía del domingo tienen un ritual propio. El brunch
+          no es desayuno tardío ni almuerzo temprano — es una pausa intencional,
+          una excusa para juntarse, para que la mesa dure más de lo necesario. Y
+          en ese momento, la Mimosa siempre tuvo un lugar reservado.</span
+        >
+        <br />
+        <br />
+        <span
+          >El problema es que ese lugar lo ocupaba el alcohol. Quien no tomaba,
+          se quedaba fuera del ritual: agua, refresco, jugo. Nada que estuviera
+          a la altura del momento. Bubelle nació para cubrir ese espacio vacío:
+          una bebida con la elegancia y la efervescencia de una Mimosa, sin el
+          alcohol que la excluye de muchas mesas.
+        </span>
+      </p>
+    </article>
+
+    <img src="/assets/img/interiors/bubelle/media-04.webp" loading="lazy" />
+    <article>
+      <h3>Challenge</h3>
+      <p>
+        <span
+          >El reto era doble y contradictorio. Por un lado, Bubelle necesitaba
+          evocar la Mimosa — su textura, su ocasión, su aura — sin copiarla ni
+          depender de ella. Por otro, tenía que construir identidad propia desde
+          cero en una categoría que en México prácticamente no existía: la
+          bebida sin alcohol que se toma porque quiere tomarse, no porque no
+          queda de otra.</span
+        >
+        <br />
+        <br />
+        <span>
+          Nombrarla era el primer nudo. "Sin alcohol" como atributo siempre
+          suena a resta, a lo que no tiene. El nombre tenía que traer lo que sí
+          tiene: burbuja, belleza, ligereza, la belle époque. Bubelle resolvió
+          eso en dos sílabas: bubble + belle. El producto y el mundo en el que
+          vive, juntos en una sola palabra que suena francesa sin serlo y
+          elegante sin esforzarse.
+        </span>
+      </p>
+    </article>
+
+    <img src="/assets/img/interiors/bubelle/media-05.webp" loading="lazy" />
+    <img src="/assets/img/interiors/bubelle/media-06.webp" loading="lazy" />
+
+    <article>
+      <h3>The Work</h3>
+      <p>
+        <span
+          >Construir Bubelle fue construir un mundo antes que un producto. La
+          referencia no era ningún refresco ni ningún jugo — era el Hotel Ritz
+          de París. Sus fachadas, sus lámparas, su barra. Un lujo accesible, una
+          elegancia sin pretensión. Las ilustraciones de elementos
+          arquitectónicos que recorren el packaging no son decoración: son el
+          territorio donde Bubelle existe.</span
+        >
+        <br />
+        <br />
+        <span
+          >El isotipo resuelve la marca en una sola unidad: tipografía script
+          con carácter propio, contenida en un marco que recuerda a las
+          etiquetas de bebida europea clásica. La paleta parte del verde oscuro
+          como base institucional — seria, limpia — y deja que el color de cada
+          sabor entre como fondo de etiqueta: azul para la Clásica, rosa para
+          Frambuesa, lila para Maracuyá. El verde permanece. El mundo cambia de
+          ánimo según lo que hay dentro.</span
+        >
+        <br />
+        <br />
+        <span
+          >El packaging opera en dos formatos desde el lanzamiento — botella de
+          vidrio — con el mismo sistema gráfico sin forzarlo. La botella tiene
+          presencia en mesa, en hielera, en foto. La botella tiene movilidad,
+          inmediatez, anaquel. Juntas cubren todos los momentos del brunch: el
+          que se sirve con calma y el que se agarra al vuelo.</span
+        >
+        <br />
+        <br />
+        <span
+          >El nombre, el mundo y el sistema se diseñaron para que Bubelle no
+          tenga que explicar qué es. Quien la ve, ya sabe en qué momento va.</span
+        >
+      </p>
+    </article>
+
+    <video
+      src="/assets/img/interiors/bubelle/media-07.mp4"
+      preload="none"
+      data-lazy-video
+      loop
+      muted
+      playsinline
+      class="h-198.5 object-cover object-[0_25%]"
+    />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>
