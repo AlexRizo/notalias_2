@@ -55,12 +55,20 @@ select {
   .content {
     @apply space-y-10;
 
+    article {
+      @apply lg:py-20;
+    }
+    
     h3 {
-      @apply text-lg font-semibold lg:text-3xl lg:font-light lg:text-center;
+      @apply text-lg font-semibold lg:text-3xl lg:font-light lg:text-center lg:mb-4;
     }
 
     p {
-      @apply text-lg font-light tracking-[-0.015em] leading-[1.15] mt-2 lg:font-light lg:text-center lg:leading-tight;
+      @apply text-lg font-light tracking-[-0.015em] leading-[1.15] mt-2 lg:font-light lg:text-center lg:leading-tight lg:max-w-138 lg:mx-auto;
+    }
+
+    .img-container {
+      @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-4;
     }
   }
 
