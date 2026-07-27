@@ -30,49 +30,66 @@ const others = [
 const { prev_path, next_path } = Astro.props;
 ---
 
-<aside class="grid grid-cols-2 gap-4 mb-16 my-18 px-3 lg:my-30 lg:grid-cols-3 lg:container lg:mx-auto">
-  {
-    others.map((project, i) => (
-      <div class={cn(i === others.length - 1 && "hidden lg:block")}>
-        <div class="relative h-[212px] rounded lg:h-[558px]">
-          <video
-            src={project.video_path}
-            preload="none" data-lazy-video muted
-            loop
-            playsinline
-            class="absolute object-cover object-center rounded size-full"
-          />
+<section class="mb-16 mt-18 lg:my-30">
+  <aside class="grid grid-cols-2 gap-4 lg:grid-cols-3">
+    {
+      others.map((project, i) => (
+        <div class={cn(i === others.length - 1 && "hidden lg:block")}>
+          <div class="relative h-[212px] rounded lg:h-[558px]">
+            <video
+              src={project.video_path}
+              preload="none"
+              data-lazy-video
+              muted
+              loop
+              playsinline
+              class="absolute object-cover object-center rounded size-full"
+            />
+          </div>
+          <article class="mb-10">
+            <h1 class="text-lg mb-3 mt-5 leading-none lg:text-3xl font-semibold lg:font-normal">
+              {project.name}
+            </h1>
+            <p class="text-lg font-light leading-tight lg:leading-normal">
+              {project.description}
+            </p>
+          </article>
         </div>
-        <article class="mb-10">
-          <h1 class="text-lg mb-3 mt-5 leading-none lg:text-3xl">
-            {project.name}
-          </h1>
-          <p class="text-sm font-light leading-tight lg:text-lg lg:leading-normal">
-            {project.description}
-          </p>
-        </article>
-        {project.name !== "Flor y Fruto" && (
-          <a
-            href={i === 0 ? prev_path : i === 2 ? next_path : "#"}
-            class={cn(
-              "flex text-sm lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
-              i && "justify-end",
-              i === 0 && "flex-row-reverse justify-end",
-            )}
-          >
-            {i === 0 ? "PREVIOUS PROJECTS" : "NEXT PROJECTS"}
-            {i === 0 ? (
-              <img
-                src="/assets/icons/gray-arrow.svg"
-                alt="<-"
-                class="rotate-180 hidden lg:block"
-              />
-            ) : (
-              <img src="/assets/icons/gray-arrow.svg" alt="->" class="hidden lg:block"/>
-            )}
-          </a>
-        )}
-      </div>
-    ))
-  }
-</aside>
+      ))
+    }
+  </aside>
+  <div class="flex justify-between w-full">
+    <a
+      href={prev_path}
+      class={cn(
+        "flex text-xs text-primary lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+      )}
+    >
+      <img
+        src="/assets/icons/gray-arrow.svg"
+        alt="<-"
+        class="rotate-180 hidden lg:block w-5!"
+      />
+      <img
+        src="/assets/icons/arrow.svg"
+        alt="<-"
+        class="rotate-180 mr-2 w-3.5! lg:hidden"
+      />
+      PREVIOUS PROJECTS
+    </a>
+    <a
+      href={next_path}
+      class={cn(
+        "flex text-xs text-primary lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+      )}
+    >
+      NEXT PROJECTS
+      <img
+        src="/assets/icons/gray-arrow.svg"
+        alt="<-"
+        class="hidden lg:block w-5!"
+      />
+      <img src="/assets/icons/arrow.svg" alt="<-" class="ml-2 w-3.5! lg:hidden" />
+    </a>
+  </div>
+</section>
