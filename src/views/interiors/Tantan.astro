@@ -7,15 +7,15 @@ import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
 const attributes: AttributesType[] = [
   {
     label: "Client",
-    value: ["Grupo AGR"],
+    value: ["TAN TAN"],
   },
   {
     label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+    value: ["Brand Strategy", "Brand Identity", "Naming", "Creative Direction"],
   },
   {
     label: "Industry",
-    value: ["Wine & Spirits"],
+    value: ["Food & Beverage / Hospitality"],
   },
 ];
 
@@ -26,12 +26,13 @@ const lang = getLangFromUrl(Astro.url);
   <div>
     <h1 class="title">Tan Tán</h1>
 
-    <img src="/assets/img/interiors/tantan/media-01.webp" />
+    <img src="/assets/img/interiors/tantan/media-01.webp" class="h-54 lg:h-212 object-cover"/>
   </div>
 
   <article class="mt-4 lg:mt-26">
     <h2 class="description">
-      De la expresión al lugar: donde el vino y un vinilo se encuentran.
+      De la expresión al lugar: construir la marca que vive entre una copa y un
+      vinilo.
     </h2>
     <Attributes attributes={attributes} />
   </article>
@@ -50,12 +51,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>Contexto</h3>
       <p>
-        Manzanillo tiene bares. Lo que no tenía era un lugar donde desconectarte
-        de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un
-        espacio que te recibe con una buena copa, música que te hace sentir algo
-        y conversación que vale la pena. Sin ruido innecesario, sin prisa. Un
-        lugar para el que sabe que la mejor noche no siempre es la más loca, a
-        veces es simplemente la que no quieres que termine.
+        Manzanillo tiene marina, tiene turismo, tiene gastronomía. Lo que no
+        tenía era un lugar que supiera exactamente lo que quería ser. Un espacio
+        donde pudieras llegar en plan chill con tu pareja un jueves, y terminar
+        bailando un sábado sin que nada se sintiera forzado. Un lugar que no
+        tuviera que elegir entre ser sofisticado o ser divertido — porque la
+        respuesta siempre fue los dos.
       </p>
     </article>
 
@@ -64,10 +65,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>Challenge</h3>
       <p>
-        La marca existía pero con presencia mínima y sin una identidad que
-        levantara la mano en premium. El reto no era contar la historia otra vez
-        — era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse
-        de juventud ni renunciar a lo que ya era.
+        El proyecto llegó sin nombre, sin identidad y sin referentes locales.
+        Construir desde cero en un mercado donde la competencia no es directa
+        pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y
+        cualquier marca nueva tiene que ganarse su lugar ahí dentro sin
+        disfrazarse del entorno. El reto era crear algo que se sintiera como si
+        siempre hubiera existido — y al mismo tiempo, completamente nuevo.
       </p>
     </article>
 
@@ -78,19 +81,29 @@ const lang = getLangFromUrl(Astro.url);
       <h3>The Work</h3>
       <p>
         <span
-          >Ese territorio era la noche. Leímos el high energy y la nightlife no
-          como canal de activación, sino como el lugar donde Eterno tenía que
-          existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto que
-          ancla el peso del legado en la energía del ahora, en el momento, en la
-          cultura nocturna.</span
+          >El nombre lo dijo todo desde el principio. Tan tán — esa expresión
+          mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni
+          tan tan" — se convirtió en el concepto que ordenó todo lo demás. No
+          había que inventar una personalidad: había que nombrar lo que el lugar
+          ya quería ser.</span
         >
         <br />
         <br />
         <span
-          >El sistema visual se construyó desde el entorno, no desde la botella.
-          Cristales, metal, luz. El rojo como pulso. Un lenguaje que no describe
-          la noche — la habita. Todo materializado en un Creative Book
-          ejecutable desde el día uno.</span
+          >Desde ahí construimos un sistema de identidad completo. Un logotipo
+          con carácter propio que mezcla peso retro con frescura contemporánea.
+          Mascotas ilustradas — copas con personalidad, vinilos con piernas —
+          que habitan la marca con humor sin perder elegancia. Una paleta que
+          balancea el verde esmeralda profundo con el naranja tigre encendido:
+          seria cuando tiene que serlo, eléctrica cuando la noche lo pide.</span
+        >
+        <br />
+        <br />
+        <span
+          >El sistema se desplegó en cada punto de contacto: menú, señalética,
+          merch, redes sociales y aplicaciones para el espacio. Todo ejecutable
+          desde el día uno, todo coherente, todo con esa vibra de lugar que ya
+          conoces aunque sea tu primera vez.</span
         >
       </p>
     </article>

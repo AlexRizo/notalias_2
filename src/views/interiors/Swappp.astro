@@ -7,15 +7,15 @@ import { getLangFromUrl } from "@/i18n/utils";
 const attributes: AttributesType[] = [
   {
     label: "Client",
-    value: ["Grupo AGR"],
+    value: ["Swapp"],
   },
   {
     label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+    value: ["Rebranding", "Visual Identity", "Packaging Design"],
   },
   {
     label: "Industry",
-    value: ["Wine & Spirits"],
+    value: ["Food & Beverage", "Energy Drinks"],
   },
 ];
 
@@ -26,15 +26,12 @@ const lang = getLangFromUrl(Astro.url);
   <div>
     <h1 class="title">Swappp</h1>
 
-    <div
-      class="w-full h-54 bg-[url('/assets/img/interiors/swappp/media-01.webp')] bg-size-[110%] bg-position-[0%_21%] bg-no-repeat rounded-lg"
-    >
-    </div>
+    <img src="/assets/img/interiors/swappp/media-01.webp" class="h-54 lg:h-212 object-cover object-[0_20%] lg:object-[0_35%]"/>
   </div>
 
   <article class="mt-4 lg:mt-26">
     <h2 class="description">
-      De la expresión al lugar: donde el vino y un vinilo se encuentran.
+      Construir una identidad para una nueva generación de energía.
     </h2>
     <Attributes attributes={attributes} />
   </article>
@@ -62,10 +59,7 @@ const lang = getLangFromUrl(Astro.url);
 
     <img src="/assets/img/interiors/swappp/media-04.webp" loading="lazy" />
 
-    <div
-      class="h-91 bg-[url('/assets/img/interiors/swappp/media-05.webp')] bg-size-[115%] bg-position-[100%_30%] bg-no-repeat rounded-lg"
-    >
-    </div>
+    <img src="/assets/img/interiors/swappp/media-05.webp" class="h-91 lg:h-max object-cover object-[100%_30%]"/>
     <img src="/assets/img/interiors/swappp/media-06.webp" loading="lazy" />
 
     <article>
@@ -92,7 +86,7 @@ const lang = getLangFromUrl(Astro.url);
     <img
       src="/assets/img/interiors/swappp/media-07.webp"
       loading="lazy"
-      class="h-90.5 object-cover"
+      class="h-90.5 lg:h-auto object-cover"
     />
   </div>
 
