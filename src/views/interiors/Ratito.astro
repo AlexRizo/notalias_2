@@ -29,7 +29,7 @@ const attributes: AttributesType[] = [
       muted
       autoplay
       loop
-      class="h-212 object-cover"
+      class="h-54 lg:h-212 object-cover"
       preload="none"></video>
   </div>
   <article class="mt-4 lg:mt-26">
@@ -41,12 +41,12 @@ const attributes: AttributesType[] = [
     <div class="img-container">
       <img
         src="/assets/img/interiors/ratito/media-02.webp"
-        class="h-173 object-cover"
+        class="h-91 lg:h-173 object-cover"
         loading="lazy"
       />
       <img
         src="/assets/img/interiors/ratito/media-03.webp"
-        class="h-173 object-cover object-center"
+        class="h-173 object-cover object-center hidden lg:block"
       />
     </div>
 
@@ -80,6 +80,10 @@ const attributes: AttributesType[] = [
       </p>
     </article>
 
+    <img
+      src="/assets/img/interiors/ratito/media-03.webp"
+      class="h-91 object-cover object-center lg:hidden"
+    />
     <img src="/assets/img/interiors/ratito/media-04.webp" loading="lazy" />
 
     <article>
@@ -95,12 +99,12 @@ const attributes: AttributesType[] = [
     <div class="img-container">
       <img
         src="/assets/img/interiors/ratito/media-05.webp"
-        class="h-216.5 object-cover"
+        class="h-107.5 lg:h-216.5 object-cover"
         loading="lazy"
       />
       <img
         src="/assets/img/interiors/ratito/media-06.webp"
-        class="h-216.5 object-cover"
+        class="h-216.5 object-cover hidden lg:block"
         loading="lazy"
       />
     </div>
@@ -108,13 +112,15 @@ const attributes: AttributesType[] = [
     <article>
       <h3>The Work</h3>
       <p class="lg:flex lg:flex-row lg:gap-4 lg:text-left! lg:max-w-max!">
-        <span class="w-110"
+        <span class="lg:w-110"
           >Crear desde cero la identidad de una empresa de hospitalidad que no
           quisiera verse como una empresa de hospitalidad. Ni hotel boutique
           aspiracional, ni plataforma tecnológica fría, ni el típico logo de
           casita con palmera que puebla la categoría.</span
         >
-        <span class="w-112"
+        <br />
+        <br />
+        <span class="lg:w-112"
           >El reto era encontrar una personalidad que hiciera sentir al huésped
           que estaba eligiendo algo distinto antes de llegar a la propiedad, y
           convencer al propietario de que sus metros cuadrados estarían en manos
@@ -126,9 +132,14 @@ const attributes: AttributesType[] = [
     </article>
 
     <img
+      src="/assets/img/interiors/ratito/media-06.webp"
+      class="h-113 object-cover lg:hidden"
+      loading="lazy"
+    />
+    <img
       src="/assets/img/interiors/ratito/media-07.webp"
       loading="lazy"
-      class="h-188 object-cover object-[0_60%]"
+      class="lg:h-188 object-cover object-[0_60%]"
     />
   </div>
 
