@@ -7,15 +7,15 @@ import { getLangFromUrl } from "@/i18n/utils";
 const attributes: AttributesType[] = [
   {
     label: "Client",
-    value: ["Grupo AGR"],
+    value: ["BLISSIFY"],
   },
   {
     label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+    value: ["Brand Identity"],
   },
   {
     label: "Industry",
-    value: ["Wine & Spirits"],
+    value: ["E-commerce / Fashion & Lifestyle"],
   },
 ];
 
@@ -33,12 +33,12 @@ const lang = getLangFromUrl(Astro.url);
       loop
       playsinline
       preload="none"
-      class="h-54 object-cover"></video>
+      class="h-54 lg:h-212 object-cover"></video>
   </div>
 
   <article class="mt-4 lg:mt-26">
     <h2 class="description">
-      De la expresión al lugar: donde el vino y un vinilo se encuentran.
+      Transformar el acceso a tendencias globales en una experiencia de marca.
     </h2>
     <Attributes attributes={attributes} />
   </article>
@@ -55,18 +55,16 @@ const lang = getLangFromUrl(Astro.url);
     <img
       src="/assets/img/interiors/blissify/media-03.webp"
       loading="lazy"
-      class="h-100 object-cover"
+      class="h-100 lg:h-auto object-cover"
     />
 
     <article>
       <h3>Contexto</h3>
       <p>
-        Manzanillo tiene bares. Lo que no tenía era un lugar donde desconectarte
-        de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un
-        espacio que te recibe con una buena copa, música que te hace sentir algo
-        y conversación que vale la pena. Sin ruido innecesario, sin prisa. Un
-        lugar para el que sabe que la mejor noche no siempre es la más loca, a
-        veces es simplemente la que no quieres que termine.
+        Blissify acerca tendencias globales a México a través de una experiencia
+        de personal shopping. Moda, skincare, cosméticos, wellness y tecnología
+        convivían dentro de una misma oferta, pero sin un sistema capaz de
+        comunicarlo de manera consistente.
       </p>
     </article>
 
@@ -77,41 +75,44 @@ const lang = getLangFromUrl(Astro.url);
       autoplay
       loop
       preload="none"
-      class="h-100 object-cover object-center"></video>
+      class="h-100 lg:h-auto object-cover object-center"></video>
 
     <article>
       <h3>Challenge</h3>
       <p>
-        La marca existía pero con presencia mínima y sin una identidad que
-        levantara la mano en premium. El reto no era contar la historia otra vez
-        — era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse
-        de juventud ni renunciar a lo que ya era.
+        <span>El acceso ya no era el diferenciador. La percepción sí.</span>
+        <br />
+        <br />
+        <span
+          >La marca corría el riesgo de ser vista como una reventa informal en
+          lugar de una plataforma confiable para descubrir productos y
+          tendencias internacionales.</span
+        >
       </p>
     </article>
 
     <img
       src="/assets/img/interiors/blissify/media-05.webp"
       loading="lazy"
-      class="h-[259px] object-cover"
+      class="h-[259px] lg:h-auto object-cover"
     />
 
     <article>
       <h3>The Work</h3>
       <p>
         <span
-          >Ese territorio era la noche. Leímos el high energy y la nightlife no
-          como canal de activación, sino como el lugar donde Eterno tenía que
-          existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto que
-          ancla el peso del legado en la energía del ahora, en el momento, en la
-          cultura nocturna.</span
+          >Construimos una identidad editorial diseñada para ordenar la
+          complejidad. Creamos un sistema visual capaz de integrar cinco
+          categorías distintas bajo un mismo lenguaje, manteniendo claridad,
+          coherencia y reconocimiento en cada punto de contacto.</span
         >
         <br />
         <br />
         <span
-          >El sistema visual se construyó desde el entorno, no desde la botella.
-          Cristales, metal, luz. El rojo como pulso. Un lenguaje que no describe
-          la noche — la habita. Todo materializado en un Creative Book
-          ejecutable desde el día uno.</span
+          >Más que una nueva imagen, desarrollamos una arquitectura de marca que
+          permite crecer con consistencia. Una identidad con la formalidad de
+          una empresa consolidada y la sensibilidad de un referente de
+          tendencias.</span
         >
       </p>
     </article>
@@ -119,7 +120,7 @@ const lang = getLangFromUrl(Astro.url);
     <img
       src="/assets/img/interiors/blissify/media-06.webp"
       loading="lazy"
-      class="h-90.5 object-cover"
+      class="h-90.5 lg:h-auto object-cover"
     />
   </div>
 
