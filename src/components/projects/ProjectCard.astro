@@ -14,11 +14,11 @@ const { name, description, url, videoPath, button } = Astro.props;
   <div class="relative w-91 h-111 overflow-hidden lg:w-full lg:h-[845px]">
     <a
       href={url}
-      class="glass-button absolute z-10 px-2 py-2 text-sm text-white right-3 top-2.5 flex items-center gap-1 lg:flex-row-reverse lg:gap-0 lg:text-xl lg:px-4.5"
+      class="glass-button absolute z-10 px-2 py-2 text-sm text-white right-3 top-2.5 flex items-center gap-1 lg:flex-row-reverse lg:gap-0 lg:text-xl lg:px-5.5"
       ><img
         src="/assets/icons/plus.svg"
         alt="+"
-        class="rotate-45 size-3.5 lg:size-5"
+        class="rotate-45 size-3.5 lg:size-5.5"
       /><span class="hidden lg:block">{button}</span></a
     >
     <video
@@ -31,7 +31,7 @@ const { name, description, url, videoPath, button } = Astro.props;
       src={videoPath}></video>
   </div>
   <h2
-    class="text-2xl font-semibold lg:text-3xl tracking-tight mt-6 lg:mt-4 mb-2"
+    class="text-2xl font-semibold lg:text-3xl lg:font-normal tracking-tight mt-6 lg:mt-4 mb-2"
   >
     {name}
   </h2>
