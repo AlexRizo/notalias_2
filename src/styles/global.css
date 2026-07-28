@@ -8,6 +8,17 @@
   --default-font-family: "Inter", sans-serif;
 }
 
+/* Fade-in de los videos al cargar. Solo se aplica si hay JS (la clase `js` la
+   pone el layout), para que sin JS nunca queden invisibles. */
+html.js video {
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+
+html.js video.video-loaded {
+  opacity: 1;
+}
+
 .glass-button {
   @apply bg-[#D9D9D933]/30 border border-[rgba(255,255,255,0.25)] backdrop-blur-sm rounded-lg lg:rounded-full;
   box-shadow:

@@ -28,6 +28,11 @@ const { lang = "es", title, className } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <title>{title ? title : "Not Alias_"}</title>
+    <script is:inline>
+      // Marca que hay JS antes del primer paint para que el fade de los videos
+      // se aplique sin flash (y no se oculten si el JS está deshabilitado).
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body class={cn(className)}>
     <Header />
@@ -39,9 +44,6 @@ const { lang = "es", title, className } = Astro.props;
     <script>
       // Reproduce cada video solo cuando entra en el viewport y lo pausa al
       // salir, para no decodificar todos a la vez (evita saturar GPU/RAM).
-      const lazyVideos =
-        document.querySelectorAll<HTMLVideoElement>("video[data-lazy-video]");
-
       const observer = new IntersectionObserver(
         (entries) => {
           for (const entry of entries) {
@@ -57,7 +59,40 @@ const { lang = "es", title, className } = Astro.props;
         { rootMargin: "200px" },
       );
 
-      lazyVideos.forEach((video) => observer.observe(video));
+      // Cada video arranca en opacity: 0 y aparece con fade cuando ya tiene
+      // fotograma que mostrar, para que no entre de golpe.
+      const revealVideo = (video: HTMLVideoElement) =>
+        video.classList.add("video-loaded");
+
+      const setupVideo = (video: HTMLVideoElement) => {
+        if (video.dataset.videoReady) return;
+        video.dataset.videoReady = "true";
+
+        if (video.readyState >= 2) {
+          revealVideo(video);
+        } else {
+          const onReady = () => revealVideo(video);
+          video.addEventListener("loadeddata", onReady, { once: true });
+          video.addEventListener("canplay", onReady, { once: true });
+          // Si falla la carga, mejor mostrarlo que dejarlo invisible.
+          video.addEventListener("error", onReady, { once: true });
+        }
+
+        if (video.dataset.lazyVideo !== undefined) observer.observe(video);
+      };
+
+      document.querySelectorAll<HTMLVideoElement>("video").forEach(setupVideo);
+
+      // Los videos dentro de islas de React se montan después del script.
+      new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          for (const node of mutation.addedNodes) {
+            if (!(node instanceof Element)) continue;
+            if (node instanceof HTMLVideoElement) setupVideo(node);
+            node.querySelectorAll<HTMLVideoElement>("video").forEach(setupVideo);
+          }
+        }
+      }).observe(document.body, { childList: true, subtree: true });
     </script>
   </body>
 </html>
