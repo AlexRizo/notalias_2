@@ -8,14 +8,16 @@
   --default-font-family: "Inter", sans-serif;
 }
 
-/* Fade-in de los videos al cargar. Solo se aplica si hay JS (la clase `js` la
-   pone el layout), para que sin JS nunca queden invisibles. */
-html.js video {
+/* Fade-in de los videos e imágenes al cargar. Solo se aplica si hay JS (la
+   clase `js` la pone el layout), para que sin JS nunca queden invisibles. */
+html.js video,
+html.js img:not([src$=".svg"]) {
   opacity: 0;
   transition: opacity 700ms ease;
 }
 
-html.js video.video-loaded {
+html.js video.video-loaded,
+html.js img.img-loaded {
   opacity: 1;
 }
 

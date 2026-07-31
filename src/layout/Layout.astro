@@ -83,13 +83,38 @@ const { lang = "es", title, className } = Astro.props;
 
       document.querySelectorAll<HTMLVideoElement>("video").forEach(setupVideo);
 
-      // Los videos dentro de islas de React se montan después del script.
+      // Fade-in de imágenes: misma lógica que los videos.
+      const revealImg = (img: HTMLImageElement) =>
+        img.classList.add("img-loaded");
+
+      const setupImg = (img: HTMLImageElement) => {
+        if (img.dataset.imgReady) return;
+        img.dataset.imgReady = "true";
+
+        if (img.complete) {
+          revealImg(img);
+        } else {
+          img.addEventListener("load", () => revealImg(img), { once: true });
+          img.addEventListener("error", () => revealImg(img), { once: true });
+        }
+      };
+
+      document
+        .querySelectorAll<HTMLImageElement>("img:not([src$='.svg'])")
+        .forEach(setupImg);
+
+      // Los videos/imágenes dentro de islas de React se montan después del script.
       new MutationObserver((mutations) => {
         for (const mutation of mutations) {
           for (const node of mutation.addedNodes) {
             if (!(node instanceof Element)) continue;
             if (node instanceof HTMLVideoElement) setupVideo(node);
             node.querySelectorAll<HTMLVideoElement>("video").forEach(setupVideo);
+            if (node instanceof HTMLImageElement && !node.src.endsWith(".svg"))
+              setupImg(node);
+            node
+              .querySelectorAll<HTMLImageElement>("img:not([src$='.svg'])")
+              .forEach(setupImg);
           }
         }
       }).observe(document.body, { childList: true, subtree: true });
