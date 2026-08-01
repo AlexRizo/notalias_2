@@ -1,25 +1,11 @@
 ---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
-import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getInteriorContent } from "@/i18n/interiors";
 import { getLangFromUrl } from "@/i18n/utils";
 
-const attributes: AttributesType[] = [
-  {
-    label: "Client",
-    value: ["Swapp"],
-  },
-  {
-    label: "Services",
-    value: ["Rebranding", "Visual Identity", "Packaging Design"],
-  },
-  {
-    label: "Industry",
-    value: ["Food & Beverage", "Energy Drinks"],
-  },
-];
-
 const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("swappp", lang)!;
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
@@ -33,23 +19,22 @@ const lang = getLangFromUrl(Astro.url);
   </div>
 
   <article class="mt-4 lg:mt-26">
-    <h2 class="description">
-      Construir una identidad para una nueva generación de energía.
-    </h2>
-    <Attributes attributes={attributes} />
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
   </article>
 
   <div class="content">
     <img src="/assets/img/interiors/swappp/media-02.webp" />
 
     <article>
-      <h3>Contenxt</h3>
+      <h3>Context</h3>
       <p>
-        SWAPPP nació con una propuesta clara: ofrecer una alternativa de energía
-        más natural para personas con estilos de vida activos. La marca ya
-        contaba con una personalidad fresca y cercana, pero necesitaba una
-        identidad capaz de comunicar su propuesta con mayor claridad y
-        consistencia.
+        {data.context.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -64,10 +49,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>Challenge</h3>
       <p>
-        En una categoría dominada por mensajes de rendimiento extremo, SWAPPP
-        tenía una oportunidad distinta: posicionarse alrededor de una energía
-        más natural, cercana y contemporánea. La identidad debía reflejar esa
-        diferencia.
+        {data.challenge.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -82,32 +69,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>The Work</h3>
       <p>
-        <span
-          >Desarrollamos una identidad visual construida alrededor de un
-          principio simple: energía natural.</span
-        >
-        <br />
-        <br />
-        <span
-          >Creamos un sistema gráfico minimalista, flexible y altamente
-          reconocible, capaz de adaptarse a diferentes presentaciones de
-          producto manteniendo una identidad consistente. El lenguaje visual
-          combina una estructura limpia con elementos gráficos de apoyo, colores
-          vibrantes y una tipografía con personalidad que transmite movimiento,
-          frescura y carácter.</span
-        >
-        <br />
-        <br />
-        <span
-          >Diseñamos además un sistema de packaging preparado para crecer junto
-          con la marca, donde cada sabor encuentra una expresión propia sin
-          perder reconocimiento dentro del portafolio. El resultado fue una
-          identidad contemporánea y escalable que transforma una bebida
-          energética en una marca con personalidad propia.</span
-        >
-        <br />
-        <br />
-        <span>GOOD ENERGY ONLY.</span>
+        {data.the_work.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 

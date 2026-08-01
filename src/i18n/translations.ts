@@ -1,99 +1,142 @@
-export const projects = {
-  en: {
-    pages: 4,
-    items: [
-      {
-        name: "Bubelle",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/en/bubelle",
-        video_path: "/assets/videos/bubelle.mp4",
-      },
-      {
-        name: "Flor y Fruto",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/en/flor-y-fruto",
-        video_path: "/assets/videos/flor-y-fruto.mp4",
-      },
-      {
-        name: "Centinela Eterno",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/en/eterno-centinela",
-        video_path: "/assets/videos/centinela-eterno.mp4",
-      },
-      {
-        name: "Nonstop",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/en/nonstop",
-        video_path: "/assets/videos/nonstop.mp4",
-      },
-      // {
-      //   name: "Swappp",
-      //   description:
-      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-      //   url: "/en/swappp",
-      //   video_path: "/assets/videos/swappp.mp4",
-      // },
-      // {
-      //   name: "Manna Foods",
-      //   description:
-      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-      //   url: "/en/manna-foods",
-      //   video_path: "/assets/videos/manna-foods.mp4",
-      // },
-    ],
+// ─── Language-neutral shared data ────────────────────────────────────────────
+
+const projectItems = [
+  {
+    name: "Bubelle",
+    slug: "bubelle",
+    description:
+      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+    video_path: "/assets/videos/bubelle.mp4",
   },
-  es: {
-    pages: 4,
-    items: [
-      {
-        name: "Bubelle",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/bubelle",
-        video_path: "/assets/videos/bubelle.mp4",
-      },
-      {
-        name: "Flor y Fruto",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/flor-y-fruto",
-        video_path: "/assets/videos/flor-y-fruto.mp4",
-      },
-      {
-        name: "Centinela Eterno",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/eterno-centinela",
-        video_path: "/assets/videos/centinela-eterno.mp4",
-      },
-      {
-        name: "Nonstop",
-        description:
-          "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-        url: "/nonstop",
-        video_path: "/assets/videos/nonstop.mp4",
-      },
-      // {
-      //   name: "Swappp",
-      //   description:
-      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-      //   url: "/swappp",
-      //   video_path: "/assets/videos/swappp.mp4",
-      // },
-      // {
-      //   name: "Manna Foods",
-      //   description:
-      //     "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-      //   url: "/manna-foods",
-      //   video_path: "/assets/videos/manna-foods.mp4",
-      // },
-    ],
+  {
+    name: "Flor y Fruto",
+    slug: "flor-y-fruto",
+    description:
+      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+    video_path: "/assets/videos/flor-y-fruto.mp4",
+  },
+  {
+    name: "Centinela Eterno",
+    slug: "eterno-centinela",
+    description:
+      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+    video_path: "/assets/videos/centinela-eterno.mp4",
+  },
+  {
+    name: "Nonstop",
+    slug: "nonstop",
+    description:
+      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+    video_path: "/assets/videos/nonstop.mp4",
+  },
+  // {
+  //   name: "Swappp",
+  //   slug: "swappp",
+  //   description: "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+  //   video_path: "/assets/videos/swappp.mp4",
+  // },
+  // {
+  //   name: "Manna Foods",
+  //   slug: "manna-foods",
+  //   description: "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+  //   video_path: "/assets/videos/manna-foods.mp4",
+  // },
+];
+
+const buildProjects = (lang: "es" | "en") =>
+  projectItems.map(({ slug, ...rest }) => ({
+    ...rest,
+    url: lang === "en" ? `/en/${slug}` : `/${slug}`,
+  }));
+
+export const projects = {
+  en: { pages: 4, items: buildProjects("en") },
+  es: { pages: 4, items: buildProjects("es") },
+};
+
+const sharedServices = {
+  title: ["We build", "brand systems.", "for those raising the standard"],
+  videoPath: "/assets/videos/ssd.mp4",
+  services: "Services",
+  items: [
+    "Brand Strategy",
+    "Brand Identity",
+    "Brand Execution",
+    "Digital Experience",
+  ],
+};
+
+const sharedFooterSocial = {
+  title: "Social",
+  instagram: { label: "Instagram", url: "" },
+  linkedin: { label: "LinkedIn", url: "" },
+};
+
+const sharedFooterLocations = {
+  guadalajara: {
+    title: "Guadalajara",
+    address: "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
+  },
+  madrid: {
+    title: "Madrid",
+    address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
   },
 };
+
+const sharedTeam = {
+  title: "OUR LEADERS",
+  slides: [
+    {
+      name: "Marco Leyva",
+      role: "Co-founder & Creative Director",
+      image_path: "/assets/img/about/team/marco_leyva.webp",
+    },
+    {
+      name: "Miguel de la Madrid",
+      role: "Co-founder & Business Director",
+      image_path: "/assets/img/about/team/miguel_de_la_madrid.webp",
+    },
+    {
+      name: "Brando Rosales",
+      role: "Chief Growth Officer & Partner",
+      image_path: "/assets/img/about/team/brando_rosales.webp",
+    },
+    {
+      name: "Ed Carrasco",
+      role: "Strategy Director",
+      image_path: "/assets/img/about/team/ed_carrasco.webp",
+    },
+  ],
+};
+
+// icon and media_path are the same for every slide in both languages
+const slideMedia = {
+  icon: "/assets/icons/about/brand-identity.svg",
+  media_path: "/assets/videos/about_character.mp4",
+};
+
+const howWorkImagePaths = [
+  "/assets/img/about/about-immersion.webp",
+  "/assets/img/about/about-diagnosis.webp",
+  "/assets/img/about/about-creation.webp",
+  "/assets/img/about/about-delivery.webp",
+];
+
+const sharedWhyNotalias = {
+  title: ["Why", "Not Alias?"],
+  locations: "Guadalajara - Madrid",
+};
+
+const servicesPageTitle = "Where strategy meets craft";
+const ourServicesTitle = "Our work services";
+
+const blogMedia = [
+  { url: "#", image: "/assets/img/home/erewhon.webp" },
+  { url: "#", image: "/assets/img/home/human_intelligence_first.webp" },
+  { url: "#", image: "/assets/img/home/currently_listening.webp" },
+];
+
+// ─── Translations ─────────────────────────────────────────────────────────────
 
 export const translations = {
   es: {
@@ -112,6 +155,7 @@ export const translations = {
     },
     selected_work: {
       title: "Proyectos Recientes",
+      work_page_title: "Proyectos Destacados",
       project_button: "Ver más",
       projects: projects.es.items,
       contact: {
@@ -119,17 +163,7 @@ export const translations = {
         contact_us: "Contáctanos",
       },
     },
-    services: {
-      title: ["We build", "brand systems.", "for those raising the standard"],
-      videoPath: "/assets/videos/ssd.mp4",
-      services: "Services",
-      items: [
-        "Brand Strategy",
-        "Brand Identity",
-        "Brand Execution",
-        "Digital Experience",
-      ],
-    },
+    services: sharedServices,
     blog: {
       title: "Not a Journal",
       entries: [
@@ -137,25 +171,22 @@ export const translations = {
           title: "Built for Erewhon",
           description:
             "Desarrollamos el sistema de marca completo para un nuevo producto que lanzará exclusivamente en Erewhon este año. Pronto más.",
-          url: "#",
-          image: "/assets/img/home/erewhon.webp",
           open_label: "VER MÁS",
+          ...blogMedia[0],
         },
         {
-          title: "Human Intelligence First",
+          title: "Human intelligence first",
           description:
             "La AI es una herramienta. Las decisiones que definen una marca siguen siendo humanas. Esa es nuestra apuesta.",
-          url: "#",
-          image: "/assets/img/home/human_intelligence_first.webp",
           open_label: "VER MÁS",
+          ...blogMedia[1],
         },
         {
-          title: "Siempre escuchando",
+          title: "Current listening",
           description:
             "Tetragramaton de Rick Rubin — conversaciones sobre creatividad, oficio y proceso que mantienen nuestro pensamiento afilado.",
-          url: "#",
-          image: "/assets/img/home/currently_listening.webp",
           open_label: "VER MÁS",
+          ...blogMedia[2],
         },
       ],
     },
@@ -172,52 +203,15 @@ export const translations = {
           "Llámanos / WhatsApp: +52 312 144 7976",
         ],
       },
-      social: {
-        title: "Social",
-        instagram: {
-          label: "Instagram",
-          url: "",
-        },
-        linkedin: {
-          label: "LinkedIn",
-          url: "",
-        },
-        // behance: {
-        //   label: "Behance",
-        //   url: "",
-        // },
-      },
-      guadalajara: {
-        title: "Guadalajara",
-        address:
-          "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
-      },
+      social: sharedFooterSocial,
+      ...sharedFooterLocations,
       menu: {
         label: "Menú",
-        home: {
-          label: "Inicio",
-          url: "/",
-        },
-        work: {
-          label: "Proyectos",
-          url: "/proyectos",
-        },
-        services: {
-          label: "Servicios",
-          url: "/servicios",
-        },
-        about: {
-          label: "Nosotros",
-          url: "/nosotros",
-        },
-        contact: {
-          label: "Contacto",
-          url: "/contacto",
-        },
-      },
-      madrid: {
-        title: "Madrid",
-        address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
+        home: { label: "Inicio", url: "/" },
+        work: { label: "Proyectos", url: "/proyectos" },
+        services: { label: "Servicios", url: "/servicios" },
+        about: { label: "Nosotros", url: "/nosotros" },
+        contact: { label: "Contacto", url: "/contacto" },
       },
       // los_angeles: {
       //   title: "Los Angeles",
@@ -231,11 +225,11 @@ export const translations = {
       ],
     },
     services_page: {
-      title: "Where strategy meets craft",
+      title: servicesPageTitle,
       description:
         "Combinamos entendimiento cultural, pensamiento crítico y talento creativo de clase mundial para construir sistemas de marca que funcionan en cualquier mercado y plataforma. Del naming al packaging, del posicionamiento a la experiencia digital — cada decisión es intencional, cada detalle se gana.",
       our_services: {
-        title: "Our work services",
+        title: ourServicesTitle,
         description:
           "Nuestro trabajo se categoriza en cuatro pilares. Cada uno es independiente, pero están diseñados para construirse entre sí — la estrategia informa la identidad, la identidad define la ejecución, la ejecución se extiende a lo digital.",
         items: [
@@ -248,6 +242,7 @@ export const translations = {
               "Brand DNA & Positioning",
               "Research & Benchmarking",
               "Cultural Strategy",
+              "Naming & Brand Architecture",
               "Go-to-Market Strategy",
               "Strategic Workshops",
             ],
@@ -310,31 +305,27 @@ export const translations = {
         slides: [
           {
             title: "Human intelligence first",
-            icon: "/assets/icons/about/brand-identity.svg",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "La AI amplifica, pero no reemplaza. Las decisiones que definen una marca nacen de la sensibilidad humana — intuición, empatía, lectura cultural, criterio creativo.",
+            ...slideMedia,
           },
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Better questions, better brands",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "La calidad del resultado depende de la calidad del entendimiento. Invertimos en hacer las preguntas correctas antes de empezar a diseñar.",
+            ...slideMedia,
           },
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Culture is the brief",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "Toda marca vive dentro de un contexto cultural. Los códigos, comportamientos y tensiones de ese contexto son la verdadera materia prima de la estrategia.",
+            ...slideMedia,
           },
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Brands are systems, not logos",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "Una marca que funciona es un sistema conectado — visual, verbal, estratégico, digital — donde cada detalle es coherente y cada decisión es intencional.",
+            ...slideMedia,
           },
         ],
       },
@@ -345,64 +336,35 @@ export const translations = {
             name: "Immersion",
             description:
               "Escuchamos antes de liderar. Inmersión profunda en el negocio, mercado, audiencia y ambición.",
-            image_path: "/assets/img/about/about-immersion.webp",
+            image_path: howWorkImagePaths[0],
           },
           {
             name: "Diagnosis",
             description:
               "Sintetizamos todo en una foto clara: dónde estás, hacia dónde necesitas ir y qué hay en el camino.",
-            image_path: "/assets/img/about/about-diagnosis.webp",
+            image_path: howWorkImagePaths[1],
           },
           {
             name: "Creation",
             description:
               "La estrategia toma forma. Conceptos, sistemas visuales, identidad verbal — sprints enfocados, retroalimentación ágil.",
-            image_path: "/assets/img/about/about-creation.webp",
+            image_path: howWorkImagePaths[2],
           },
           {
             name: "Delivery",
             description:
               "Todo lo que tu equipo necesita para ejecutar: lineamientos, activos, creative books. Listo desde el día uno.",
-            image_path: "/assets/img/about/about-delivery.webp",
+            image_path: howWorkImagePaths[3],
           },
         ],
       },
-      team: {
-        title: "OUR LEADERS",
-        slides: [
-          {
-            name: "Marco Leyva",
-            role: "Co-founder & Creative Director",
-            image_path: "/assets/img/about/team/marco_leyva.webp",
-          },
-          {
-            name: "Miguel de la Madrid",
-            role: "Co-founder & Business Director",
-            image_path: "/assets/img/about/team/miguel_de_la_madrid.webp",
-          },
-          {
-            name: "Brando Rosales",
-            role: "Chief Growth Officer & Partner",
-            image_path: "/assets/img/about/team/brando_rosales.webp",
-          },
-          {
-            name: "Ed Carrasco",
-            role: "Strategy Director",
-            image_path: "/assets/img/about/team/ed_carrasco.webp",
-          },
-        ],
-      },
+      team: sharedTeam,
       why_notalias: {
-        title: ["Why", "Not Alias?"],
-        locations: "Guadalajara - Madrid",
+        ...sharedWhyNotalias,
         items: [
           {
-            title: "Nuestros clientes se descubren en el proceso.",
-            description: '"Nos ayudaron a entender nuestra propia marca."',
-          },
-          {
-            title: "Fluidez cultural.",
-            description: "Leemos códigos culturales, no solo datos de mercado.",
+            title: "Estrategia y diseño bajo un mismo techo.",
+            description: "Sin intermediarios, sin traspasos entre firmas.",
           },
           {
             title: "Atención boutique, estándares globales.",
@@ -410,13 +372,17 @@ export const translations = {
               "Lo suficientemente cercanos para cuidar cada detalle. Con la experiencia para competir con cualquiera.",
           },
           {
+            title: "Fluidez cultural.",
+            description: "Leemos códigos culturales, no solo datos de mercado.",
+          },
+          {
             title: "Sistemas, no entregables.",
             description:
               "Te entregamos un sistema que tu equipo puede operar desde el día uno.",
           },
           {
-            title: "Estrategia y diseño bajo un mismo techo. ",
-            description: "Sin intermediarios, sin traspasos entre firmas.",
+            title: "Nuestros clientes se descubren en el proceso.",
+            description: '"Nos ayudaron a entender nuestra propia marca."',
           },
         ],
       },
@@ -459,20 +425,17 @@ export const translations = {
             label: "Email",
             value: "hello@notalias.com",
             copy: "Copiar",
-            copy_value: "hello@notalias.com",
           },
           {
-            label: "Call / WhatsApp",
+            label: "Llámanos / WhatsApp",
             value: "+523121447976",
             copy: "Copiar",
-            copy_value: "+523121447976",
           },
           {
             label: "Encuéntranos",
-            value: "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
-            copy: "Copiar",
-            copy_value:
+            value:
               "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
+            copy: "Copiar",
           },
         ],
       },
@@ -499,6 +462,7 @@ export const translations = {
     },
     selected_work: {
       title: "Recent Work",
+      work_page_title: "Selected Work",
       project_button: "See more",
       projects: projects.en.items,
       contact: {
@@ -506,17 +470,7 @@ export const translations = {
         contact_us: "Contact us",
       },
     },
-    services: {
-      title: ["We build", "brand systems.", "for those raising the standard"],
-      videoPath: "/assets/videos/ssd.mp4",
-      services: "Services",
-      items: [
-        "Brand Strategy",
-        "Brand Identity",
-        "Brand Execution",
-        "Digital Experience",
-      ],
-    },
+    services: sharedServices,
     blog: {
       title: "Not a journal",
       entries: [
@@ -524,25 +478,22 @@ export const translations = {
           title: "Built for Erewhon",
           description:
             "We developed the full brand system for a new product launching exclusively at Erewhon this year. More soon.",
-          url: "#",
-          image: "/assets/img/home/erewhon.webp",
           open_label: "OPEN LINK",
+          ...blogMedia[0],
         },
         {
           title: "Human intelligence first",
           description:
             "AI is a tool. The real decisions — the ones that shape a brand — still come from people. That's our bet.",
-          url: "#",
-          image: "/assets/img/home/human_intelligence_first.webp",
           open_label: "OPEN LINK",
+          ...blogMedia[1],
         },
         {
-          title: "Currently listening",
+          title: "Current listening",
           description:
             "Tetragramaton by Rick Rubin — conversations on creativity, craft and process that keep our thinking sharp.",
-          url: "#",
-          image: "/assets/img/home/currently_listening.webp",
           open_label: "OPEN LINK",
+          ...blogMedia[2],
         },
       ],
     },
@@ -559,52 +510,15 @@ export const translations = {
           "Call us / WhatsApp: +52 312 144 7976",
         ],
       },
-      social: {
-        title: "Social",
-        instagram: {
-          label: "Instagram",
-          url: "",
-        },
-        linkedin: {
-          label: "LinkedIn",
-          url: "",
-        },
-        // behance: {
-        //   label: "Behance",
-        //   url: "",
-        // },
-      },
-      guadalajara: {
-        title: "Guadalajara",
-        address:
-          "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
-      },
+      social: sharedFooterSocial,
+      ...sharedFooterLocations,
       menu: {
         label: "Menu",
-        home: {
-          label: "Home",
-          url: "/en",
-        },
-        work: {
-          label: "Work",
-          url: "/en/work",
-        },
-        services: {
-          label: "Services",
-          url: "/en/services",
-        },
-        about: {
-          label: "About",
-          url: "/en/about",
-        },
-        contact: {
-          label: "Contact",
-          url: "/en/contact",
-        },
-      },
-      madrid: {
-        title: "Madrid",
-        address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
+        home: { label: "Home", url: "/en" },
+        work: { label: "Work", url: "/en/work" },
+        services: { label: "Services", url: "/en/services" },
+        about: { label: "About", url: "/en/about" },
+        contact: { label: "Contact", url: "/en/contact" },
       },
       // los_angeles: {
       //   title: "Los Angeles",
@@ -618,18 +532,17 @@ export const translations = {
       ],
     },
     services_page: {
-      title: "Where strategy meets craft",
+      title: servicesPageTitle,
       description:
         "We bring cultural understanding, critical thinking, and world-class creative talent to build brand systems that perform across markets and platforms. From naming to packaging, from positioning to digital experience — every decision is intentional, every detail is earned.",
       our_services: {
-        title: "Our work services",
+        title: ourServicesTitle,
         description:
           "Our work is organized around four disciplines. Each one is independent, but they're designed to build on each other — strategy informs identity, identity defines execution, execution extends into digital.",
         items: [
           {
             name: "Brand Strategy",
             subtitle: "The thinking before the design.",
-
             description:
               "We define what the brand needs to say, to whom, and why it matters — before anyone opens a design file. Research, cultural context, positioning, and competitive clarity. The foundation that makes every creative decision solid.",
             list: [
@@ -664,7 +577,6 @@ export const translations = {
               "Key Visual & Campaign Concept",
               "Brand Launch Kit",
               "Brand Applications",
-              "Editorial Design",
               "Merch Design",
               "Editorial Design",
             ],
@@ -699,32 +611,28 @@ export const translations = {
       slide: {
         slides: [
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Human intelligence first",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
+            ...slideMedia,
           },
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Better questions, better brands",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "The quality of the outcome depends on the quality of the understanding. We invest in asking the right questions before we start designing.",
+            ...slideMedia,
           },
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Culture is the brief",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "Every brand lives inside a cultural context. The codes, behaviors, and tensions of that context are the real raw material for strategy.",
+            ...slideMedia,
           },
           {
-            icon: "/assets/icons/about/brand-identity.svg",
             title: "Brands are systems, not logos",
-            media_path: "/assets/videos/about_character.mp4",
             description:
               "A brand that works is a connected system — visual, verbal, strategic, digital — where every detail is coherent and every decision is intentional.",
+            ...slideMedia,
           },
         ],
       },
@@ -735,76 +643,51 @@ export const translations = {
             name: "Immersion",
             description:
               "We listen before we lead. Deep dive into business, market, audience, ambition.",
-            image_path: "/assets/img/about/about-immersion.webp",
+            image_path: howWorkImagePaths[0],
           },
           {
             name: "Diagnosis",
             description:
               "We synthesize into a clear picture: where you are, where you need to go, what's in the way.",
-            image_path: "/assets/img/about/about-diagnosis.webp",
+            image_path: howWorkImagePaths[1],
           },
           {
             name: "Creation",
             description:
               "Strategy becomes form. Concepts, visual systems, verbal identity — focused sprints, tight feedback.",
-            image_path: "/assets/img/about/about-creation.webp",
+            image_path: howWorkImagePaths[2],
           },
           {
             name: "Delivery",
             description:
               "Everything your team needs to execute: guidelines, assets, creative books. Ready from day one.",
-            image_path: "/assets/img/about/about-delivery.webp",
+            image_path: howWorkImagePaths[3],
           },
         ],
       },
-      team: {
-        title: "OUR LEADERS",
-        slides: [
-          {
-            name: "Marco Leyva",
-            role: "Co-founder & Creative Director",
-            image_path: "/assets/img/about/team/marco_leyva.webp",
-          },
-          {
-            name: "Miguel de la Madrid",
-            role: "Co-founder & Business Director",
-            image_path: "/assets/img/about/team/miguel_de_la_madrid.webp",
-          },
-          {
-            name: "Brando Rosales",
-            role: "Chief Growth Officer & Partner",
-            image_path: "/assets/img/about/team/brando_rosales.webp",
-          },
-          {
-            name: "Ed Carrasco",
-            role: "Strategy Director",
-            image_path: "/assets/img/about/team/ed_carrasco.webp",
-          },
-        ],
-      },
+      team: sharedTeam,
       why_notalias: {
-        title: ["Why", "Not Alias?"],
-        locations: "Guadalajara - Madrid",
+        ...sharedWhyNotalias,
         items: [
           {
-            title: "Clients discover themselves through our process.",
-            description: '"You helped us understand our own brand."',
-          },
-          {
-            title: "Culturally fluent",
-            description: "We read cultural codes, not just market data.",
+            title: "Strategy and design under one roof.",
+            description: "No handoffs between firms.",
           },
           {
             title: "Boutique attention, global standards.",
             description: "Small enough to care, experienced enough to thrive.",
           },
           {
+            title: "Culturally fluent",
+            description: "We read cultural codes, not just market data.",
+          },
+          {
             title: "Systems, not deliverables.",
             description: "We hand you a system your team can run with.",
           },
           {
-            title: "Strategy and design under one roof.",
-            description: "No handoffs between firms.",
+            title: "Clients discover themselves through our process.",
+            description: '"You helped us understand our own brand."',
           },
         ],
       },
@@ -814,7 +697,7 @@ export const translations = {
       },
     },
     contact_page: {
-      title: "Let’s build something they can’t ignore",
+      title: "Let's build something they can't ignore",
       description: "Tell us what you're working on.",
       form: {
         name_field: {
@@ -847,25 +730,22 @@ export const translations = {
             label: "Email",
             value: "hello@notalias.com",
             copy: "Copy",
-            copy_value: "hello@notalias.com",
           },
           {
             label: "Call / WhatsApp",
             value: "+523121447976",
             copy: "Copy",
-            copy_value: "+523121447976",
           },
           {
             label: "Find us",
-            value: "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
-            copy: "Copy",
-            copy_value:
+            value:
               "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
+            copy: "Copy",
           },
         ],
       },
       form_modal: {
-        title: "We’ll Be In Touch",
+        title: "We'll Be In Touch",
         description:
           "We Review Every Inquiry Personally. Expect To Hear From Us Within 48 Hours.",
       },

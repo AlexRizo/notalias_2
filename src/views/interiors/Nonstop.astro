@@ -1,22 +1,11 @@
 ---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
-import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
 
-const attributes: AttributesType[] = [
-  {
-    label: "Client",
-    value: ["Nonstop"],
-  },
-  {
-    label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Packaging"],
-  },
-  {
-    label: "Industry",
-    value: ["Health & Performance / Consumer Goods"],
-  },
-];
+const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("nonstop", lang)!;
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
@@ -33,11 +22,8 @@ const attributes: AttributesType[] = [
       preload="none"></video>
   </div>
   <article class="mt-4 lg:mt-26">
-    <h2 class="description">
-      La primera marca de electrolitos en México diseñada para los que nunca
-      paran.
-    </h2>
-    <Attributes attributes={attributes} />
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
   </article>
 
   <div class="content">
@@ -60,20 +46,12 @@ const attributes: AttributesType[] = [
     <article>
       <h3>Context</h3>
       <p>
-        <span
-          >Hay un perfil de persona en México que ya existe: entrena de lunes a
-          lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene
-          entre 20 y 45 años, compra por convicción y no por precio, y cuánto
-          encuentra algo que se siente suyo, lo adopta como identidad.</span
-        >
-        <br />
-        <br />
-        <span
-          >Esa persona no tenía una marca propia de electrolitos. Usaba lo que
-          encontraba: importados caros, genéricos sin personalidad, o productos
-          pensados para otro mercado. La categoría estaba vacante no por falta
-          de producto, sino por falta de carácter/ identidad.
-        </span>
+        {data.context.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -94,27 +72,12 @@ const attributes: AttributesType[] = [
     <article>
       <h3>Challenge</h3>
       <p>
-        <span
-          >No queríamos ganar en fórmula, queríamos ganar en identidad.
-        </span>
-        <br />
-        <br />
-        <span>
-          Nonstop llegó con algo que pocas marcas de esta categoría tienen claro
-          desde el inicio: una mentalidad - “For the wont stop crowd”, no es un
-          eslogan, es la razón de existir del producto. Nuestro trabajo era
-          hacer que esa mentalidad se leyera en todo - en el packaging, en el
-          logotipo, en tipografía, en color - antes de que alguien leyera un
-          solo ingrediente.
-        </span>
-        <br />
-        <br />
-        <span>
-          La trampa era evidente: el universo de referencias era negro, atletico
-          y minimalista. Llegar tarde a ese lenguaje visual significaba ser una
-          copia. Habia que hablar el mismo idioma de limpieza y precisión, pero
-          con un acento que hiciera a nonstop reconocible en dos segundos
-        </span>
+        {data.challenge.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -127,41 +90,12 @@ const attributes: AttributesType[] = [
     <article>
       <h3>The Work</h3>
       <p>
-        <span
-          >Empezamos por definir la narrativa de marca/ el concepto rector antes
-          de tocar el diseño. Nonstop no es una marca de hidratación, es una
-          afirmación silenciosa. “For the non stop crow”. Ese insght ordeno
-          todas las decisiones: tono de voz directo y sin adornos, estetica que
-          elmina lo innecesario, un sistema visual construido sobre el negro y
-          el blanco con un unico acento de colr que identifica cada sabor.</span
-        >
-        <br />
-        <br />
-        <span
-          >El símbolo nace de la letra N: dos formas orgánicas que representan
-          movimiento continuo, ritmo, flujo sin interrupción. Funciona solo o
-          junto al logotipo, nunca combinado - una decisión deliberada para dar
-          flexibilidad sin perder precisión. El logotipo en tipografía sans
-          serif sólida refuerza lo mismo: disciplina, constancia, lo esencial.</span
-        >
-        <br />
-        <br />
-        <span
-          >El packaging fue diseñado para ser transparente antes de ser bonito.
-          Los ingredientes al frente, las dosis claras, sin promesas vacias. El
-          stick individual como formato principal porque ese es el momento de la
-          marca: antes del entreno, en la bolsa, en la mano, después de la meta.
-          La pleca de color en la parte inferior es el unico elemento que
-          diferncia sabores, manteniendo el sistema limpio y escalable para las
-          versiones que vendran.</span
-        >
-        <br />
-        <br />
-        <span
-          >El resultado es un sistema que puede vivir en un anaquel, en un
-          evento de running, en una playera y en un billboard, con el mismo
-          carácter que en todos.</span
-        >
+        {data.the_work.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 

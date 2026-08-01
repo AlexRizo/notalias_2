@@ -1,4 +1,3 @@
-import { interiors } from "./interiors";
 import { translations, type Lang, type UI } from "./translations";
 
 export const defaultLang: Lang = "es";
@@ -47,9 +46,4 @@ export const getAlternateLangUrl = (url: URL, targetLang: Lang): string => {
   const path = translated.join("/");
   const prefix = targetLang === "en" ? "/en" : "";
   return path ? `${prefix}/${path}` : prefix || "/";
-};
-
-export const useInteriorTranslations = (lang: Lang) => {
-  const t = interiors[lang];
-  return t;
 };

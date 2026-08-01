@@ -1,25 +1,11 @@
 ---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
-import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getInteriorContent } from "@/i18n/interiors";
 import { getLangFromUrl } from "@/i18n/utils";
 
-const attributes: AttributesType[] = [
-  {
-    label: "Client",
-    value: ["BLISSIFY"],
-  },
-  {
-    label: "Services",
-    value: ["Brand Identity"],
-  },
-  {
-    label: "Industry",
-    value: ["E-commerce / Fashion & Lifestyle"],
-  },
-];
-
 const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("blissify", lang)!;
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
@@ -37,10 +23,8 @@ const lang = getLangFromUrl(Astro.url);
   </div>
 
   <article class="mt-4 lg:mt-26">
-    <h2 class="description">
-      Transformar el acceso a tendencias globales en una experiencia de marca.
-    </h2>
-    <Attributes attributes={attributes} />
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
   </article>
 
   <div class="content">
@@ -59,12 +43,14 @@ const lang = getLangFromUrl(Astro.url);
     />
 
     <article>
-      <h3>Contexto</h3>
+      <h3>Context</h3>
       <p>
-        Blissify acerca tendencias globales a México a través de una experiencia
-        de personal shopping. Moda, skincare, cosméticos, wellness y tecnología
-        convivían dentro de una misma oferta, pero sin un sistema capaz de
-        comunicarlo de manera consistente.
+        {data.context.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -80,14 +66,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>Challenge</h3>
       <p>
-        <span>El acceso ya no era el diferenciador. La percepción sí.</span>
-        <br />
-        <br />
-        <span
-          >La marca corría el riesgo de ser vista como una reventa informal en
-          lugar de una plataforma confiable para descubrir productos y
-          tendencias internacionales.</span
-        >
+        {data.challenge.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -100,20 +84,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>The Work</h3>
       <p>
-        <span
-          >Construimos una identidad editorial diseñada para ordenar la
-          complejidad. Creamos un sistema visual capaz de integrar cinco
-          categorías distintas bajo un mismo lenguaje, manteniendo claridad,
-          coherencia y reconocimiento en cada punto de contacto.</span
-        >
-        <br />
-        <br />
-        <span
-          >Más que una nueva imagen, desarrollamos una arquitectura de marca que
-          permite crecer con consistencia. Una identidad con la formalidad de
-          una empresa consolidada y la sensibilidad de un referente de
-          tendencias.</span
-        >
+        {data.the_work.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 

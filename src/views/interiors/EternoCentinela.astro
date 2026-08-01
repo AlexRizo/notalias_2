@@ -1,22 +1,11 @@
 ---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
-import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
 
-const attributes: AttributesType[] = [
-  {
-    label: "Client",
-    value: ["Tequila Centinela", "Eterno Centinela"],
-  },
-  {
-    label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
-  },
-  {
-    label: "Industry",
-    value: ["Wine & Spirits"],
-  },
-];
+const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("eterno-centinela", lang)!;
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
@@ -29,10 +18,8 @@ const attributes: AttributesType[] = [
     />
   </div>
   <article class="mt-4 lg:mt-26">
-    <h2 class="description">
-      Hacer que una nueva generación eligiera un legado de 120 años.
-    </h2>
-    <Attributes attributes={attributes} />
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
   </article>
 
   <div class="content">
@@ -54,14 +41,14 @@ const attributes: AttributesType[] = [
     </div>
 
     <article>
-      <h3>Contexto</h3>
+      <h3>Context</h3>
       <p>
-        Tequila Centinela tiene 120 años de historia. Eterno es su entrada al
-        cristalino — la categoría que hoy define el crecimiento del tequila
-        premium. El mercado estaba saturado de marcas gritando legado, tradición
-        y herencia. Pero la generación que hoy impulsa el consumo ya no compraba
-        discursos de historia — pedía significado, presencia, pertenencia a un
-        momento.
+        {data.context.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -82,10 +69,12 @@ const attributes: AttributesType[] = [
     <article>
       <h3>Challenge</h3>
       <p>
-        La marca existía pero con presencia mínima y sin una identidad que
-        levantara la mano en premium. El reto no era contar la historia otra vez
-        — era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse
-        de juventud ni renunciar a lo que ya era.
+        {data.challenge.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -105,19 +94,8 @@ const attributes: AttributesType[] = [
     <article>
       <h3>The Work</h3>
       <p class="lg:flex lg:flex-row lg:gap-4 lg:text-left! lg:max-w-max!">
-        <span class="w-110"
-          >Ese territorio era la noche. Leímos el high energy y la nightlife no
-          como canal de activación, sino como el lugar donde Eterno tenía que
-          existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto que
-          ancla el peso del legado en la energía del ahora, en el momento, en la
-          cultura nocturna.</span
-        >
-        <span class="w-112"
-          >El sistema visual se construyó desde el entorno, no desde la botella.
-          Cristales, metal, luz. El rojo como pulso. Un lenguaje que no describe
-          la noche — la habita. Todo materializado en un Creative Book
-          ejecutable desde el día uno.</span
-        >
+        <span class="w-110">{data.the_work[0]}</span>
+        <span class="w-112">{data.the_work[1]}</span>
       </p>
     </article>
 

@@ -1,30 +1,11 @@
 ---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
-import type { Attributes as AttributesType } from "@/i18n/interiors";
+import { getInteriorContent } from "@/i18n/interiors";
 import { getLangFromUrl } from "@/i18n/utils";
 
-const attributes: AttributesType[] = [
-  {
-    label: "Client",
-    value: ["AMÍDEMI"],
-  },
-  {
-    label: "Services",
-    value: [
-      "Brand Strategy",
-      "Brand Identity",
-      "Visual Identity",
-      "Creative Direction",
-    ],
-  },
-  {
-    label: "Industry",
-    value: ["Jewerly / E-commerce"],
-  },
-];
-
 const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("amidemi", lang)!;
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
@@ -42,10 +23,8 @@ const lang = getLangFromUrl(Astro.url);
   </div>
 
   <article class="mt-4 lg:mt-26">
-    <h2 class="description">
-      Transformar una compra cotidiana en un acto de consentimiento personal.
-    </h2>
-    <Attributes attributes={attributes} />
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
   </article>
 
   <div class="content">
@@ -65,20 +44,14 @@ const lang = getLangFromUrl(Astro.url);
     />
 
     <article>
-      <h3>Contexto</h3>
+      <h3>Context</h3>
       <p>
-        <span>
-          La joyería accesible suele moverse entre dos extremos: el lujo
-          aspiracional y las tendencias pasajeras. En medio de ese espacio
-          existía una oportunidad para construir una marca pensada para quienes
-          compran con intención, ya sea para sí mismas o para alguien más.
-        </span>
-        <br />
-        <br />
-        <span
-          >AMÍDEMI nació con una idea con mucho peso pero aún sin una narrativa
-          capaz de sostenerla: "De mí para mí".</span
-        >
+        {data.context.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -91,15 +64,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>Challenge</h3>
       <p>
-        <span> El reto no era diseñar una marca de joyería más. </span>
-        <br />
-        <br />
-        <span>
-          Era construir una identidad con significado propio. Una marca capaz de
-          conectar con mujeres que buscan piezas versátiles, accesibles y
-          atemporales, alejándose tanto de la comunicación aspiracional del lujo
-          como de la estética efímera de las tendencias.
-        </span>
+        {data.challenge.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -112,35 +82,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>The Work</h3>
       <p>
-        <span
-          >Partimos de una pregunta simple: ¿qué representa realmente regalarse
-          joyería?</span
-        >
-        <br />
-        <br />
-        <span
-          >La respuesta nos llevó a construir un territorio centrado en el
-          auto-regalo como un acto de ritual, conexión y consentimiento
-          personal. Desde ahí desarrollamos una identidad verbal cómplice,
-          sensorial y cercana, capaz de hablar sobre estilo, rutina y
-          significado sin caer en clichés ni excesos.</span
-        >
-        <br />
-        <br />
-        <span
-          >Visualmente diseñamos un sistema minimalista, cálido y orgánico que
-          refleja la naturalidad de la marca. Una identidad construida para
-          acompañar momentos cotidianos, elevando la percepción de cada pieza
-          sin depender del lenguaje tradicional del lujo.</span
-        >
-        <br />
-        <br />
-        <span
-          >El resultado fue una marca que convierte una compra cotidiana en un
-          gesto personal. Una identidad diseñada para funcionar tanto cuando
-          alguien se regala algo a sí misma como cuando busca regalar algo con
-          intención.</span
-        >
+        {data.the_work.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 

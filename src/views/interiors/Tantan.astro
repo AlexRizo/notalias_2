@@ -1,25 +1,11 @@
 ---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
-import type { Attributes as AttributesType } from "@/i18n/interiors";
-import { getLangFromUrl, useInteriorTranslations } from "@/i18n/utils";
-
-const attributes: AttributesType[] = [
-  {
-    label: "Client",
-    value: ["TAN TAN"],
-  },
-  {
-    label: "Services",
-    value: ["Brand Strategy", "Brand Identity", "Naming", "Creative Direction"],
-  },
-  {
-    label: "Industry",
-    value: ["Food & Beverage / Hospitality"],
-  },
-];
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("tantan", lang)!;
 ---
 
 <section class="max-w-96 mx-auto px-2 lg:container interior">
@@ -30,11 +16,8 @@ const lang = getLangFromUrl(Astro.url);
   </div>
 
   <article class="mt-4 lg:mt-26">
-    <h2 class="description">
-      De la expresión al lugar: construir la marca que vive entre una copa y un
-      vinilo.
-    </h2>
-    <Attributes attributes={attributes} />
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
   </article>
 
   <div class="content">
@@ -49,14 +32,14 @@ const lang = getLangFromUrl(Astro.url);
       preload="none"></video>
 
     <article>
-      <h3>Contexto</h3>
+      <h3>Context</h3>
       <p>
-        Manzanillo tiene marina, tiene turismo, tiene gastronomía. Lo que no
-        tenía era un lugar que supiera exactamente lo que quería ser. Un espacio
-        donde pudieras llegar en plan chill con tu pareja un jueves, y terminar
-        bailando un sábado sin que nada se sintiera forzado. Un lugar que no
-        tuviera que elegir entre ser sofisticado o ser divertido — porque la
-        respuesta siempre fue los dos.
+        {data.context.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -65,12 +48,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>Challenge</h3>
       <p>
-        El proyecto llegó sin nombre, sin identidad y sin referentes locales.
-        Construir desde cero en un mercado donde la competencia no es directa
-        pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y
-        cualquier marca nueva tiene que ganarse su lugar ahí dentro sin
-        disfrazarse del entorno. El reto era crear algo que se sintiera como si
-        siempre hubiera existido — y al mismo tiempo, completamente nuevo.
+        {data.challenge.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
@@ -80,31 +63,12 @@ const lang = getLangFromUrl(Astro.url);
     <article>
       <h3>The Work</h3>
       <p>
-        <span
-          >El nombre lo dijo todo desde el principio. Tan tán — esa expresión
-          mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni
-          tan tan" — se convirtió en el concepto que ordenó todo lo demás. No
-          había que inventar una personalidad: había que nombrar lo que el lugar
-          ya quería ser.</span
-        >
-        <br />
-        <br />
-        <span
-          >Desde ahí construimos un sistema de identidad completo. Un logotipo
-          con carácter propio que mezcla peso retro con frescura contemporánea.
-          Mascotas ilustradas — copas con personalidad, vinilos con piernas —
-          que habitan la marca con humor sin perder elegancia. Una paleta que
-          balancea el verde esmeralda profundo con el naranja tigre encendido:
-          seria cuando tiene que serlo, eléctrica cuando la noche lo pide.</span
-        >
-        <br />
-        <br />
-        <span
-          >El sistema se desplegó en cada punto de contacto: menú, señalética,
-          merch, redes sociales y aplicaciones para el espacio. Todo ejecutable
-          desde el día uno, todo coherente, todo con esa vibra de lugar que ya
-          conoces aunque sea tu primera vez.</span
-        >
+        {data.the_work.map((p, i) => (
+          <>
+            {i > 0 && <><br /><br /></>}
+            <span>{p}</span>
+          </>
+        ))}
       </p>
     </article>
 
