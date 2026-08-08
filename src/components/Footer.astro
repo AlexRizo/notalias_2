@@ -96,11 +96,21 @@ const ui = useTranslations(lang);
 
       <div class="mt-3">
         <h1 class="footer-s-title">{ui.footer.menu.label}</h1>
-        <a href={ui.footer.menu.home.url} class="footer-s-text">{ui.footer.menu.home.label}</a>
-        <a href={ui.footer.menu.work.url} class="footer-s-text">{ui.footer.menu.work.label}</a>
-        <a href={ui.footer.menu.services.url} class="footer-s-text">{ui.footer.menu.services.label}</a>
-        <a href={ui.footer.menu.about.url} class="footer-s-text">{ui.footer.menu.about.label}</a>
-        <a href={ui.footer.menu.contact.url} class="footer-s-text">{ui.footer.menu.contact.label}</a>
+        <a href={ui.footer.menu.home.url} class="footer-s-text"
+          >{ui.footer.menu.home.label}</a
+        >
+        <a href={ui.footer.menu.work.url} class="footer-s-text"
+          >{ui.footer.menu.work.label}</a
+        >
+        <a href={ui.footer.menu.services.url} class="footer-s-text"
+          >{ui.footer.menu.services.label}</a
+        >
+        <a href={ui.footer.menu.about.url} class="footer-s-text"
+          >{ui.footer.menu.about.label}</a
+        >
+        <a href={ui.footer.menu.contact.url} class="footer-s-text"
+          >{ui.footer.menu.contact.label}</a
+        >
       </div>
 
       <p class="w-30 footer-s-text lg:hidden!">
@@ -109,7 +119,7 @@ const ui = useTranslations(lang);
             return ext === "year" ? (
               <span class="footer-year">{ext}</span>
             ) : (
-              <span>{ext}</span>
+              <span>&nbsp;{ext}</span>
             );
           })
         }
@@ -122,7 +132,7 @@ const ui = useTranslations(lang);
           return ext === "year" ? (
             <span class="footer-year">{ext}</span>
           ) : (
-            <span>{ext}</span>
+            <span>&nbsp;{ext}</span>
           );
         })
       }

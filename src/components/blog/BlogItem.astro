@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 interface Props {
   title: string;
   description: string;
@@ -14,14 +16,14 @@ const { title, description, image, url, openLabel } = Astro.props as Props;
   <img
     src={image}
     alt={title}
-    class="w-full h-111 object-cover rounded-xl lg:h-[557px]"
+    class="w-full h-111 object-cover rounded-xl lg:max-h-[557px]"
   />
-  <article class="flex flex-col">
+  <article class="flex flex-col h-full">
     <h1 class="text-2xl my-5.5 lg:text-3xl">{title}</h1>
-    <p class="text-lg font-light w-82 leading-tight mb-10 lg:w-auto lg:max-w-96">{description}</p>
+    <p class="text-lg font-light w-82 leading-tight mb-5 lg:w-auto lg:max-w-96">{description}</p>
 
-    <a class="text-primary flex items-center gap-2 mt-auto" href={url}
-      >{openLabel} <img src="/assets/icons/open-external-02.svg" alt="->" class="size-2.5 lg:size-2" /></a
+    <a class="text-primary flex items-center gap-2 mt-auto hover:text-white hover:bg-primary w-max transition-colors py-2 px-4 rounded-full" href={url}
+      >{openLabel} <Icon name="open-external-02" class="size-2.5 lg:size-2" /></a
     >
   </article>
 </div>
