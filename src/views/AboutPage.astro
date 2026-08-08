@@ -75,7 +75,9 @@ const ui = useTranslations(lang);
     >
       {ui.about_page.work_together.title}
     </h1>
-    <a class="text-sm text-white uppercase lg:text-base flex items-center gap-4"
+    <a
+      href={`${lang === 'es' ? '/contacto' : '/en/contact'}`}
+      class="text-sm text-white uppercase lg:text-base flex items-center gap-4"
       >{ui.about_page.work_together.contact_us}<img
         src="/assets/icons/arrow-white.svg"
         alt="->"

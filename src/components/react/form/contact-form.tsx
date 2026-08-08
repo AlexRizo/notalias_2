@@ -158,7 +158,7 @@ export const ContactForm = ({ lang }: Props) => {
             >
               <textarea
                 id="message"
-                className="resize-none"
+                className="resize-none rounded-xl!"
                 placeholder={ui.contact_page.form.description_field.placeholder}
                 rows={4}
                 required
