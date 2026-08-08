@@ -4,43 +4,57 @@ const projectItems = [
   {
     name: "Bubelle",
     slug: "bubelle",
-    description:
-      "Brand Strategy · Brand Identity · Creative Direction",
+    description: "Brand Strategy · Brand Identity · Creative Direction",
     video_path: "/assets/videos/bubelle.mp4",
   },
   {
     name: "Flor y Fruto",
     slug: "flor-y-fruto",
-    description:
-      "Brand Strategy · Naming · Brand Identity · Packaging",
+    description: "Brand Strategy · Naming · Brand Identity · Packaging",
     video_path: "/assets/videos/flor-y-fruto.mp4",
   },
   {
     name: "Centinela Eterno",
     slug: "eterno-centinela",
-    description:
-      "Brand Strategy · Brand Identity · Creative Direction",
+    description: "Brand Strategy · Brand Identity · Creative Direction",
     video_path: "/assets/videos/centinela-eterno.mp4",
   },
   {
     name: "Nonstop",
     slug: "nonstop",
-    description:
-      "Brand Strategy · Brand Identity · Packaging",
+    description: "Brand Strategy · Brand Identity · Packaging",
     video_path: "/assets/videos/nonstop.mp4",
   },
-  // {
-  //   name: "Swappp",
-  //   slug: "swappp",
-  //   description: "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-  //   video_path: "/assets/videos/swappp.mp4",
-  // },
-  // {
-  //   name: "Manna Foods",
-  //   slug: "manna-foods",
-  //   description: "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-  //   video_path: "/assets/videos/manna-foods.mp4",
-  // },
+  {
+    name: "Tan Tan",
+    slug: "tantan",
+    description: "Brand Strategy · Brand Identity · Naming · Creative Direction",
+    video_path: "/assets/img/interiors/tantan/media-03.mp4",
+  },
+  {
+    name: "Amídemi",
+    slug: "amidemi",
+    description: "Brand Strategy · Brand Identity · Visual Identity · Creative Direction",
+    video_path: "/assets/img/interiors/amidemi/media-01.mp4",
+  },
+  {
+    name: "Swappp",
+    slug: "swappp",
+    description: "Rebranding · Visual Identity · Packaging Design",
+    video_path: "/assets/videos/swappp.mp4",
+  },
+  {
+    name: "Blissify",
+    slug: "blissify",
+    description: "Brand Identity",
+    video_path: "/assets/img/interiors/blissify/media-01.mp4",
+  },
+  {
+    name: "Ratito",
+    slug: "ratito",
+    description: "Brand Strategy · Brand Identity · Naming",
+    video_path: "/assets/img/interiors/ratito/media-01.mp4",
+  },
 ];
 
 const buildProjects = (lang: "es" | "en") =>

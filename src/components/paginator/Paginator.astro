@@ -10,7 +10,10 @@ const { pages } = Astro.props;
 >
   {
     pages.map((page) => (
-      <button class="text-[12.5px] size-4.5 hover:bg-primary transition-colors rounded-full flex items-center justify-center cursor-pointer lg:size-[25px] lg:text-lg">
+      <button
+        data-page-btn={page}
+        class={`text-[12.5px] size-4.5 hover:bg-primary transition-colors rounded-full flex items-center justify-center cursor-pointer lg:size-[25px] lg:text-lg ${page === 1 ? "bg-primary" : ""}`}
+      >
         {page}
       </button>
     ))

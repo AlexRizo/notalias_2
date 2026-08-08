@@ -16,7 +16,7 @@ const ui = useTranslations(lang);
     class="flex flex-col gap-15 lg:grid lg:grid-cols-2 lg:gap-x-3 lg:gap-y-26"
   >
     {
-      ui.selected_work.projects.map((project) => (
+      ui.selected_work.projects.slice(0, 4).map((project) => (
         <ProjectCard
           name={project.name}
           description={project.description}

@@ -6,6 +6,11 @@ import Layout from "@/layout/Layout.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
+
+const PROJECTS_PER_PAGE = 6;
+const projects = ui.selected_work.projects;
+const totalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
+const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 ---
 
 <Layout lang={lang}>
@@ -16,21 +21,27 @@ const ui = useTranslations(lang);
       {ui.selected_work.work_page_title}
     </h2>
     <div
+      id="projects-grid"
       class="flex flex-col gap-15 lg:grid lg:grid-cols-2 lg:gap-3 lg:gap-y-22"
     >
       {
-        ui.selected_work.projects.map((project) => (
-          <ProjectCard
-            name={project.name}
-            description={project.description}
-            url={project.url}
-            videoPath={project.video_path}
-            button={ui.selected_work.project_button}
-          />
+        projects.map((project, index) => (
+          <div
+            data-page={Math.floor(index / PROJECTS_PER_PAGE) + 1}
+            class={index >= PROJECTS_PER_PAGE ? "hidden" : ""}
+          >
+            <ProjectCard
+              name={project.name}
+              description={project.description}
+              url={project.url}
+              videoPath={project.video_path}
+              button={ui.selected_work.project_button}
+            />
+          </div>
         ))
       }
     </div>
-    <Paginator pages={[1, 2, 3, 4]} />
+    {totalPages > 1 && <Paginator pages={pageNumbers} />}
   </section>
   <section
     class="bg-black flex flex-col justify-center items-center pt-10 pb-18 lg:pt-22 lg:pb-30"
@@ -50,3 +61,23 @@ const ui = useTranslations(lang);
     >
   </section>
 </Layout>
+
+<script>
+  const PROJECTS_PER_PAGE = 6;
+
+  function goToPage(page: number) {
+    document.querySelectorAll<HTMLElement>("[data-page]").forEach((el) => {
+      el.classList.toggle("hidden", Number(el.dataset.page) !== page);
+    });
+
+    document.querySelectorAll<HTMLElement>("[data-page-btn]").forEach((btn) => {
+      btn.classList.toggle("bg-primary", Number(btn.dataset.pageBtn) === page);
+    });
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  document.querySelectorAll<HTMLElement>("[data-page-btn]").forEach((btn) => {
+    btn.addEventListener("click", () => goToPage(Number(btn.dataset.pageBtn)));
+  });
+</script>
