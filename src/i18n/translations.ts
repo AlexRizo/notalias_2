@@ -5,28 +5,28 @@ const projectItems = [
     name: "Bubelle",
     slug: "bubelle",
     description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      "Brand Strategy · Brand Identity · Creative Direction",
     video_path: "/assets/videos/bubelle.mp4",
   },
   {
     name: "Flor y Fruto",
     slug: "flor-y-fruto",
     description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      "Brand Strategy · Naming · Brand Identity · Packaging",
     video_path: "/assets/videos/flor-y-fruto.mp4",
   },
   {
     name: "Centinela Eterno",
     slug: "eterno-centinela",
     description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      "Brand Strategy · Brand Identity · Creative Direction",
     video_path: "/assets/videos/centinela-eterno.mp4",
   },
   {
     name: "Nonstop",
     slug: "nonstop",
     description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
+      "Brand Strategy · Brand Identity · Packaging",
     video_path: "/assets/videos/nonstop.mp4",
   },
   // {
