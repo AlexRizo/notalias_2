@@ -17,16 +17,18 @@ export const AboutCarrouselSlide = ({ slide }: Props) => {
           playsInline
         />
       </div>
-      <div className="mt-10 mb-5 flex flex-col justify-between items-start relative lg:bg-white lg:rounded-l-md lg:my-0 lg:w-full lg:pl-26 lg:py-28 lg:justify-start">
-        <h2 className="text-2xl leading-[1.15] font-medium w-50 lg:order-2 lg:mt-auto lg:text-3xl lg:font-light lg:mb-4">
+      <div className="mt-10 mb-5 flex flex-col justify-between items-start relative lg:bg-white lg:rounded-l-md lg:my-0 lg:w-full lg:pl-26 lg:py-26 lg:justify-start">
+        <h2 className="text-2xl leading-[1.15] font-medium w-50 lg:order-2 lg:mt-auto lg:text-3xl lg:font-light lg:mb-4 lg:w-40">
           {slide.title}
         </h2>
-        {/* <img
+        <img
           src="/assets/icons/blue-brain.svg"
           alt="*"
-          className="lg:order-1 relative -top-2.5 lg:w-21"
-        /> */}
-        <p className="text-xl leading-[1.10] lg:text-sm w-80 mt-8 lg:order-3">{slide.description}</p>
+          className="lg:order-1 relative -top-3.5 lg:w-21 hidden lg:block"
+        />
+        <p className="text-xl leading-tight lg:text-lg w-80 lg:w-90 mt-8 lg:mt-2 lg:order-3">
+          {slide.description}
+        </p>
       </div>
     </div>
   );

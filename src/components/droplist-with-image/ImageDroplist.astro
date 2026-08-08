@@ -10,32 +10,25 @@ const ui = useTranslations(lang);
       <li class="accordion-item border-t border-black/10 transition-colors duration-300">
         <div class="lg:container lg:mx-auto lg:pl-25 lg:pr-10">
           <button
-            class="accordion-trigger w-full flex justify-between items-center py-7 px-4 text-left lg:py-7"
+            class="accordion-trigger w-full flex justify-between items-center py-7 px-4 text-left lg:py-14"
             aria-expanded="false"
             data-index={i}
           >
             <p class="text-2xl flex items-center gap-7 lg:text-3xl lg:gap-6">
-              <span class="w-8 text-center">{"0" + (i + 1)}</span>{" "}
+              <span class="w-8 text-center">{"0" + (i + 1)}</span>
               <span class="font-semibold">{item.name}</span>
             </p>
+
+            <p class="accordion-description max-w-84 leading-relaxed lg:max-w-86">
+              {item.description}
+            </p>
+
             <img
               src="/assets/icons/plus-black.svg"
               class="accordion-icon mr-3 w-5 lg:size-[37px]"
               alt="+"
             />
           </button>
-          <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out flex flex-col lg:flex-row justify-between gap-4 text-lg lg:p-0">
-            <p class="pl-17 mb-5 max-w-84 leading-relaxed lg:max-w-86 lg:pl-16">
-              {item.description}
-            </p>
-            <div class="px-4 lg:px-0">
-              <img
-                src={item.image_path}
-                alt={item.name}
-                class="w-full h-59 object-cover rounded mb-6 mr-4 lg:w-[725px] lg:min-h-none lg:h-[476px]"
-              />
-            </div>
-          </article>
         </div>
       </li>
     ))
@@ -43,53 +36,71 @@ const ui = useTranslations(lang);
 </ul>
 
 <style>
+  .accordion-trigger {
+    overflow: hidden;
+    transition: height 0.4s ease;
+  }
+
+  .accordion-description {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .accordion-item.open .accordion-description {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .accordion-item.open {
     background-color: var(--color-primary);
   }
-  /* .accordion-item.open .accordion-trigger {
-    color: white;
-  }
-  .accordion-item.open {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  .accordion-item.open .accordion-icon {
-    filter: brightness(0) invert(1);
-  } */
 </style>
 
 <script>
-  const closeItem = (item: Element) => {
-    const content = item.querySelector(".accordion-content") as HTMLElement;
-    const trigger = item.querySelector(".accordion-trigger") as HTMLElement;
-    const icon = item.querySelector(".accordion-icon") as HTMLImageElement;
+  const items = document.querySelectorAll<HTMLElement>(".accordion-item");
 
-    content.style.maxHeight = "0px";
+  // Measure collapsed and expanded heights for each trigger
+  items.forEach((item) => {
+    const trigger = item.querySelector<HTMLElement>(".accordion-trigger")!;
+    const desc = item.querySelector<HTMLElement>(".accordion-description")!;
+
+    const expandedH = trigger.scrollHeight;
+    const collapsedH = expandedH - desc.scrollHeight;
+
+    trigger.dataset.expandedH = String(expandedH);
+    trigger.dataset.collapsedH = String(collapsedH);
+    trigger.style.height = collapsedH + "px";
+  });
+
+  const closeItem = (item: HTMLElement) => {
+    const trigger = item.querySelector<HTMLElement>(".accordion-trigger")!;
+    const icon = item.querySelector<HTMLImageElement>(".accordion-icon")!;
+
+    trigger.style.height = trigger.dataset.collapsedH + "px";
     icon.src = "/assets/icons/plus-black.svg";
     icon.alt = "+";
     trigger.setAttribute("aria-expanded", "false");
     item.classList.remove("open");
   };
 
-  const triggers = document.querySelectorAll(".accordion-trigger");
+  items.forEach((item) => {
+    const trigger = item.querySelector<HTMLElement>(".accordion-trigger")!;
+    const icon = trigger.querySelector<HTMLImageElement>(".accordion-icon")!;
 
-  triggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
-      const item = trigger.closest(".accordion-item")!;
-      const content = item.querySelector(".accordion-content") as HTMLElement;
-      const icon = trigger.querySelector(".accordion-icon") as HTMLImageElement;
       const isOpen = trigger.getAttribute("aria-expanded") === "true";
 
       if (isOpen) {
         closeItem(item);
       } else {
-        triggers.forEach((other) => {
-          const otherItem = other.closest(".accordion-item")!;
-          if (otherItem !== item && otherItem.classList.contains("open")) {
-            closeItem(otherItem);
+        items.forEach((other) => {
+          if (other !== item && other.classList.contains("open")) {
+            closeItem(other);
           }
         });
 
-        content.style.maxHeight = content.scrollHeight + "px";
+        trigger.style.height = trigger.dataset.expandedH + "px";
         icon.src = "/assets/icons/minus.svg";
         icon.alt = "-";
         trigger.setAttribute("aria-expanded", "true");
