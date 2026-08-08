@@ -10,7 +10,7 @@ const ui = useTranslations(lang);
       <li class="accordion-item border-b border-black/10 transition-colors duration-300">
         <div class="lg:container lg:mx-auto xl:pl-8 xl:pr-4">
           <button
-            class="accordion-trigger w-full flex justify-between items-center py-9 px-2 text-left lg:py-7"
+            class="accordion-trigger w-full flex justify-between items-center py-9 px-2 text-left lg:py-10"
             aria-expanded="false"
             data-index={i}
           >
@@ -25,14 +25,13 @@ const ui = useTranslations(lang);
             />
           </button>
           <article class="accordion-content overflow-hidden max-h-0 transition-[max-height] duration-300 ease-in-out text-lg leading-[1.10] lg:leading-tight font-light lg:font-normal">
-            <div class="pt-4 lg:pb-12 lg:flex lg:items-center lg:justify-between">
+            <div class="pt-4 lg:pt-0 lg:pb-16 lg:flex lg:items-center lg:justify-between">
               <p class="pl-12 mb-5 max-w-86 lg:max-w-[388px] lg:pl-14 lg:mb-0">
                 <span class="mb-0.5 flex lg:mb-0">{item.subtitle}</span>
-                <br />
                 <span>{item.description}</span>
               </p>
               {/* <img src="/assets/icons/planet-white.svg" /> */}
-              <ul class="pl-15 mb-7 mt-10 lg:mt-0 lg:pl-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 lg:gap-x-14 xl:gap-x-36 2xl:gap-x-64">
+              <ul class="pl-15 mb-7 mt-10 lg:mt-0 lg:pl-0 lg:grid lg:grid-cols-2 lg:content-center lg:gap-y-3 lg:gap-x-14 xl:gap-x-36 2xl:gap-x-64 lg:pr-10">
                 {item.list.map((li) => (
                   <li class="list-disc leading-snug marker:text-[10px] lg:marker:text-sm">
                     {li}

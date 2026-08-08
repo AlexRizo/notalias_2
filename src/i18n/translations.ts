@@ -239,6 +239,7 @@ export const translations = {
       ],
     },
     services_page: {
+      hero_title: "SERVICIOS",
       title: servicesPageTitle,
       description:
         "Combinamos entendimiento cultural, pensamiento crítico y talento creativo de clase mundial para construir sistemas de marca que funcionan en cualquier mercado y plataforma. Del naming al packaging, del posicionamiento a la experiencia digital — cada decisión es intencional, cada detalle se gana.",
@@ -546,6 +547,7 @@ export const translations = {
       ],
     },
     services_page: {
+      hero_title: "SERVICES",
       title: servicesPageTitle,
       description:
         "We bring cultural understanding, critical thinking, and world-class creative talent to build brand systems that perform across markets and platforms. From naming to packaging, from positioning to digital experience — every decision is intentional, every detail is earned.",

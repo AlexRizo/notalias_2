@@ -9,6 +9,11 @@ const ui = useTranslations(lang);
 
 <Layout lang={lang}>
   <section class="mt-8 max-w-96 mx-auto lg:container">
+    <h2
+      class="text-[#7B7B7B] text-center font-normal uppercase mt-16 mb-6 lg:text-left text-lg lg:text-xl"
+    >
+      {ui.services_page.hero_title}
+    </h2>
     <div
       class="p-4 h-108.5 max-w-[363px] relative mx-auto overflow-hidden lg:max-w-full lg:h-[664px]"
     >
@@ -42,7 +47,7 @@ const ui = useTranslations(lang);
   </section>
 
   <section
-    class="bg-[#F6F6F6] py-16 lg:py-14 lg:grid lg:grid-cols-2 lg:justify-around lg:gap-2"
+    class="bg-[#F6F6F6] py-16 lg:py-14 lg:grid lg:grid-cols-2 lg:justify-around lg:items-center lg:gap-2"
   >
     <h1
       class="font-arvo text-3xl text-center lg:text-6xl lg:w-96 lg:ml-auto lg:leading-none lg:text-left"
@@ -50,7 +55,7 @@ const ui = useTranslations(lang);
       {ui.services_page.our_services.title}
     </h1>
     <p
-      class="text-lg text-center font-light w-78 mx-auto leading-[1.10] mt-4 lg:text-lg lg:w-[455px] lg:mt-0 lg:text-left lg:mr-auto lg:ml-0"
+      class="text-lg text-center font-light w-78 mx-auto leading-tight mt-4 lg:text-lg lg:w-[490px] lg:mt-0 lg:text-left lg:mr-auto lg:ml-0"
     >
       {ui.services_page.our_services.description}
     </p>
