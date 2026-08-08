@@ -1,12 +1,13 @@
 ---
 import { cn } from "@/helpers/cn";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Icon } from "astro-icon/components";
 
 const lang = getLangFromUrl(Astro.url);
 const ui = useTranslations(lang);
 ---
 
-<section class="bg-[#F4F4F4] pt-26 pb-20 lg:py-20">
+<section class="bg-[#F4F4F4] pt-26 pb-24 lg:py-20">
   <div class="lg:flex lg:container lg:mx-auto lg:items-center lg:px-3">
     <h1
       class="font-arvo text-3xl text-primary text-center w-60 mx-auto lg:text-6xl lg:w-120 lg:text-left lg:mx-0 tracking-tighter lg:leading-[1.10]"
@@ -30,34 +31,27 @@ const ui = useTranslations(lang);
       playsinline
       class="h-30 mx-auto my-18 lg:h-72 lg:my-0 hidden lg:block"></video>
 
-    <article class="max-w-74 mx-auto mt-12 lg:max-w-[auto] lg:mx-0 lg:mt-0">
-      <h2 class="uppercase text-4xl text-primary font-semibold mb-4 lg:mb-10">
+    <article class="max-w-74 mx-auto mt-20 lg:max-w-[auto] lg:mx-0 lg:mt-0">
+      <h2 class="uppercase text-4xl text-primary font-semibold mb-4 lg:mb-6 lg:pl-4">
         {ui.services.services}
       </h2>
 
       <ul
-        class="lg:mx-auto lg:w-min space-y-6.5 lg:space-y-9 mt-12 lg:mt-0 lg:divide-y divide-primary"
+        class="lg:mx-auto lg:w-min mt-12 lg:mt-0 divide-y divide-primary border-y lg:border-t-0 border-primary"
       >
         {
           ui.services.items.map((item, index) => (
-            <>
-              <div class="bg-primary h-px w-full lg:hidden" />
-              <li
-                class={cn(
-                  "flex flex-row gap-2 lg:justify-between items-center lg:w-57 lg:pb-1",
-                  index === ui.services.items.length - 1 &&
-                    "border-b border-primary",
-                )}
-              >
+            <div class="py-5">
+              <li class="flex flex-row gap-2 lg:justify-between items-center lg:w-68 text-primary hover:text-white hover:bg-primary transition-colors px-4.5 py-1 rounded-full">
                 <a
                   href="/en/services"
-                  class="pl-2 lg:pl-0 text-primary font-semibold text-2xl"
+                  class="pl-2 lg:pl-0 font-semibold text-2xl"
                 >
                   {item}
                 </a>
-                <img src="/assets/icons/arrow.svg" alt="->" class="lg:w-4" />
+                <Icon name="arrow" class="w-3 lg:w-4" />
               </li>
-            </>
+            </div>
           ))
         }
       </ul>
