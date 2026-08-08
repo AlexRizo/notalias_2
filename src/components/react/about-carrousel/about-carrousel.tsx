@@ -29,7 +29,7 @@ export const AboutCarrousel = ({ slides }: Props) => {
         }}
         centeredSlides={true}
         pagination={{ clickable: true }}
-        // autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide>
