@@ -322,28 +322,28 @@ export const translations = {
             title: "Human intelligence first",
             description:
               "La AI amplifica, pero no reemplaza. Las decisiones que definen una marca nacen de la sensibilidad humana — intuición, empatía, lectura cultural, criterio creativo.",
-            media_path: "/assets/videos/about/carrousel-01.mp4",
+            media_path: "/assets/videos/about/carrousel-01.webm",
             icon: "/assets/videos/about/blue-brain.svg"
           },
           {
             title: "Better questions, better brands",
             description:
               "La calidad del resultado depende de la calidad del entendimiento. Invertimos en hacer las preguntas correctas antes de empezar a diseñar.",
-            media_path: "/assets/videos/about/carrousel-02.mp4",
+            media_path: "/assets/videos/about/carrousel-02.webm",
             icon: "/assets/videos/about/mount.svg"
           },
           {
             title: "Culture is the brief",
             description:
               "Toda marca vive dentro de un contexto cultural. Los códigos, comportamientos y tensiones de ese contexto son la verdadera materia prima de la estrategia.",
-            media_path: "/assets/videos/about/carrousel-03.mp4",
+            media_path: "/assets/videos/about/carrousel-03.webm",
             icon: "/assets/videos/about/sun.svg"
           },
           {
             title: "Brands are systems, not logos",
             description:
               "Una marca que funciona es un sistema conectado — visual, verbal, estratégico, digital — donde cada detalle es coherente y cada decisión es intencional.",
-            media_path: "/assets/videos/about/carrousel-04.mp4",
+            media_path: "/assets/videos/about/carrousel-04.webm",
             icon: "/assets/videos/about/jellyfish.svg"
           },
         ],
@@ -634,21 +634,21 @@ export const translations = {
             title: "Human intelligence first",
             description:
               "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
-            media_path: "/assets/videos/about/carrousel-01.mp4",
+            media_path: "/assets/videos/about/carrousel-01.webm",
             icon: "/assets/videos/about/blue-brain.svg"
           },
           {
             title: "Better questions, better brands",
             description:
               "The quality of the outcome depends on the quality of the understanding. We invest in asking the right questions before we start designing.",
-            media_path: "/assets/videos/about/carrousel-02.mp4",
+            media_path: "/assets/videos/about/carrousel-02.webm",
             icon: "/assets/videos/about/mount.svg"
           },
           {
             title: "Culture is the brief",
             description:
               "Every brand lives inside a cultural context. The codes, behaviors, and tensions of that context are the real raw material for strategy.",
-            media_path: "/assets/videos/about/carrousel-03.mp4",
+            media_path: "/assets/videos/about/carrousel-03.webm",
             icon: "/assets/videos/about/sun.svg"
           },
           {
