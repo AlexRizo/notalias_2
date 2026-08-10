@@ -33,7 +33,7 @@ export const AboutCarrousel = ({ slides }: Props) => {
       >
         {slides.map((slide, index) => (
           <SwiperSlide>
-            <AboutCarrouselSlide key={`slide-${index}`} slide={slide} />
+            <AboutCarrouselSlide key={`slide-${index}`} slide={slide} reverse={index % 2 !== 0} />
           </SwiperSlide>
         ))}
       </Swiper>
