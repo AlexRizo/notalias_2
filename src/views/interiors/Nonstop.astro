@@ -45,72 +45,87 @@ const data = getInteriorContent("nonstop", lang)!;
 
     <article>
       <h3>Context</h3>
-      <p>
-        {data.context.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
+      <p class="p-02">
+        {
+          data.context.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
       </p>
     </article>
 
-    <video
-      src="/assets/img/interiors/nonstop/media-03.mp4"
-      autoplay
-      muted
-      loop
-      class="h-111 lg:h-[1698px] object-cover"
-      playsinline></video>
-
+    <div class="grid-component">
+      <video
+        src="/assets/img/interiors/nonstop/media-03.mp4"
+        autoplay
+        muted
+        loop
+        class="h-111 lg:h-200 object-cover"
+        playsinline></video>
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
     <img
       src="/assets/img/interiors/nonstop/media-04.webp"
       class="lg:h-213.5 object-cover object-[0_75%]"
       loading="lazy"
     />
 
-    <article>
-      <h3>Challenge</h3>
-      <p>
-        {data.challenge.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <img
-      src="/assets/img/interiors/nonstop/media-05.webp"
-      loading="lazy"
-      class="h-91 lg:h-348.5 object-cover object-center"
-    />
-
-    <article>
-      <h3>The Work</h3>
-      <p>
-        {data.the_work.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <div class="img-container">
+    <div class="grid-component">
       <img
-        src="/assets/img/interiors/nonstop/media-06.webp"
+        src="/assets/img/interiors/nonstop/media-05.webp"
         loading="lazy"
-        class="h-83.5 lg:h-[687px] object-cover"
+        class="h-91 lg:h-173 object-cover object-center"
       />
-      <img
-        src="/assets/img/interiors/nonstop/media-07.webp"
-        loading="lazy"
-        class="lg:h-[687px] object-cover object-[0_35%]"
-      />
+
+      <article>
+        <h3>The Work</h3>
+        <p>
+          {
+            data.the_work.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
     </div>
+    <img
+      src="/assets/img/interiors/nonstop/media-04.webp"
+      class="lg:h-213.5 object-cover object-[0_75%]"
+      loading="lazy"
+    />
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />
