@@ -13,7 +13,7 @@ const data = getInteriorContent("blissify", lang)!;
     <h1 class="title">Blissify</h1>
 
     <video
-      src="/assets/img/interiors/blissify/media-01.mp4"
+      src="/assets/img/interiors/blissify/media-01.webm"
       autoplay
       muted
       loop
@@ -30,7 +30,7 @@ const data = getInteriorContent("blissify", lang)!;
   <div class="content">
     <div class="img-container">
       <video
-        src="/assets/img/interiors/blissify/media-02.mp4"
+        src="/assets/img/interiors/blissify/media-02.webm"
         playsinline
         muted
         autoplay
@@ -40,7 +40,7 @@ const data = getInteriorContent("blissify", lang)!;
       <img
         src="/assets/img/interiors/blissify/media-03.webp"
         loading="lazy"
-        class="h-100 lg:h-auto object-cover"
+        class="h-100 lg:h-auto object-cover hidden lg:block"
       />
     </div>
 
@@ -63,15 +63,22 @@ const data = getInteriorContent("blissify", lang)!;
       </p>
     </article>
 
+    <img
+      src="/assets/img/interiors/blissify/media-03.webp"
+      loading="lazy"
+      class="h-100 lg:h-auto object-cover lg:hidden"
+    />
+
     <div class="grid-component">
       <video
-        src="/assets/img/interiors/blissify/media-04.mp4"
+        src="/assets/img/interiors/blissify/media-04.webm"
         playsinline
         muted
         autoplay
         loop
         preload="none"
-        class="h-100 lg:h-180 object-cover object-center"></video>
+        class="h-100 lg:h-180 object-cover object-center hidden lg:block"
+      ></video>
       <article>
         <h3>Challenge</h3>
         <p>
@@ -90,6 +97,19 @@ const data = getInteriorContent("blissify", lang)!;
           }
         </p>
       </article>
+      <video
+        src="/assets/img/interiors/blissify/media-04.webm"
+        playsinline
+        muted
+        autoplay
+        loop
+        preload="none"
+        class="h-100 lg:h-180 object-cover object-center lg:hidden"></video>
+      <img
+        src="/assets/img/interiors/blissify/media-05.webp"
+        loading="lazy"
+        class="h-[259px] lg:h-218 object-cover lg:hidden"
+      />
     </div>
 
     <div class="grid-component">
@@ -122,7 +142,7 @@ const data = getInteriorContent("blissify", lang)!;
     <img
       src="/assets/img/interiors/blissify/media-05.webp"
       loading="lazy"
-      class="h-[259px] lg:h-218 object-cover"
+      class="h-[259px] lg:h-218 object-cover hidden lg:block"
     />
   </div>
 

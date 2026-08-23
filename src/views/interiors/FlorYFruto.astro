@@ -43,7 +43,7 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
       <img
         src="/assets/img/interiors/flor-y-fruto/media-03.webp"
         loading="lazy"
-        class="lg:h-[687px] object-cover"
+        class="lg:h-[687px] object-cover hidden lg:block"
       />
     </div>
 
@@ -65,6 +65,12 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
         }
       </p>
     </article>
+
+    <img
+      src="/assets/img/interiors/flor-y-fruto/media-03.webp"
+      loading="lazy"
+      class="lg:h-[687px] object-cover lg:hidden"
+    />
 
     <img
       src="/assets/img/interiors/flor-y-fruto/media-04.webp"
@@ -98,7 +104,7 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
       />
     </div>
 
-    <div class="img-container">
+    <div class="img-container hidden! lg:grid!">
       <img
         src="/assets/img/interiors/flor-y-fruto/media-06.webp"
         loading="lazy"
@@ -111,7 +117,7 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
       />
     </div>
 
-    <article>
+    <article class="hidden lg:block">
       <h3>The Work</h3>
       <div class="grid-p p-02">
         <p>
@@ -122,6 +128,30 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
           <span>{data.the_work[2]}<br /><br /></span>
           <span>{data.the_work[3]}</span>
         </p>
+      </div>
+    </article>
+
+    <article class="lg:hidden">
+      <h3>The Work</h3>
+      <div class="grid-p p-02">
+        <p>
+          <span>{data.the_work[0]}<br /><br /></span>
+          <span>{data.the_work[1]}<br /><br /></span>
+          <span>{data.the_work[2]}<br /><br /></span>
+        </p>
+        <img
+          src="/assets/img/interiors/flor-y-fruto/media-06.webp"
+          loading="lazy"
+          class="object-cover mb-6"
+        />
+        <p>
+          <span>{data.the_work[3]}</span>
+        </p>
+        <img
+          src="/assets/img/interiors/flor-y-fruto/media-07.webp"
+          loading="lazy"
+          class="h-100 lg:h-[687px] object-cover object-[0_35%] my-6"
+        />
       </div>
     </article>
   </div>

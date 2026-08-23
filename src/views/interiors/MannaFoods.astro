@@ -24,6 +24,11 @@ const data = getInteriorContent("manna-foods", lang)!;
   </article>
 
   <div class="content">
+    <img
+      src="/assets/img/interiors/manna-foods/media-02.webp"
+      class="h-91 lg:h-173 object-cover lg:hidden"
+      loading="lazy"
+    />
     <div class="grid-component">
       <article class="">
         <h3>Context</h3>
@@ -45,7 +50,7 @@ const data = getInteriorContent("manna-foods", lang)!;
       </article>
       <img
         src="/assets/img/interiors/manna-foods/media-02.webp"
-        class="h-91 lg:h-173 object-cover"
+        class="h-91 lg:h-173 object-cover hidden lg:block"
         loading="lazy"
       />
     </div>
@@ -73,6 +78,13 @@ const data = getInteriorContent("manna-foods", lang)!;
           }
         </p>
       </article>
+      <video
+        src="/assets/img/interiors/manna-foods/media-04.webm"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="h-100 lg:h-210 object-cover lg:hidden"></video>
     </div>
 
     <div class="grid-component">
@@ -89,6 +101,17 @@ const data = getInteriorContent("manna-foods", lang)!;
                   </>
                 )}
                 <span>{p}</span>
+                {i == 1 && (
+                  <>
+                    <br />
+                    <br />
+                    <img
+                      src="/assets/img/interiors/manna-foods/media-05.webp"
+                      class="lg:h-173 object-cover"
+                      loading="lazy"
+                    />
+                  </>
+                )}
               </>
             ))
           }
@@ -101,13 +124,12 @@ const data = getInteriorContent("manna-foods", lang)!;
         muted
         loop
         playsinline
-        class="lg:h-210 object-cover"
-      />
+        class="lg:h-210 object-cover hidden lg:block"></video>
     </div>
 
     <img
       src="/assets/img/interiors/manna-foods/media-05.webp"
-      class="h-91 lg:h-173 object-cover"
+      class="h-91 lg:h-173 object-cover hidden lg:block"
       loading="lazy"
     />
   </div>

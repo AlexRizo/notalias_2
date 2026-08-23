@@ -24,49 +24,31 @@ const data = getInteriorContent("pascal", lang)!;
   </article>
 
   <div class="content">
-    <div class="img-container">
-      <img
-        src="/assets/img/interiors/pascal/media-02.webp"
-        class="h-91 lg:h-173 object-cover"
-        loading="lazy"
-      />
-      <img
-        src="/assets/img/interiors/pascal/media-03.webp"
-        class="h-91 lg:h-173 object-cover"
-        loading="lazy"
-      />
-    </div>
-
-    <article>
-      <h3>Context</h3>
-      <p class="p-02">
-        {
-          data.context.map((p, i) => (
-            <>
-              {i > 0 && (
-                <>
-                  <br />
-                  <br />
-                </>
-              )}
-              <span>{p}</span>
-            </>
-          ))
-        }
-      </p>
-    </article>
-
     <div class="grid-component">
       <img
         src="/assets/img/interiors/pascal/media-04.webp"
         loading="lazy"
-        class="h-86 lg:h-200 object-cover object-center"
+        class="h-86 lg:h-200 object-cover lg:hidden"
       />
+
+      <div class="img-container hidden! lg:grid!">
+        <img
+          src="/assets/img/interiors/pascal/media-02.webp"
+          class="h-91 lg:h-173 object-cover"
+          loading="lazy"
+        />
+        <img
+          src="/assets/img/interiors/pascal/media-03.webp"
+          class="h-91 lg:h-173 object-cover"
+          loading="lazy"
+        />
+      </div>
+
       <article>
-        <h3>Challenge</h3>
-        <p>
+        <h3>Context</h3>
+        <p class="p-02">
           {
-            data.challenge.map((p, i) => (
+            data.context.map((p, i) => (
               <>
                 {i > 0 && (
                   <>
@@ -80,34 +62,76 @@ const data = getInteriorContent("pascal", lang)!;
           }
         </p>
       </article>
+
+      <div class="grid-component">
+        <img
+          src="/assets/img/interiors/pascal/media-03.webp"
+          class="h-91 lg:h-173 object-cover lg:hidden"
+          loading="lazy"
+        />
+        <img
+          src="/assets/img/interiors/pascal/media-04.webp"
+          loading="lazy"
+          class="h-86 lg:h-200 object-cover object-center hidden lg:block"
+        />
+        <article>
+          <h3>Challenge</h3>
+          <p>
+            {
+              data.challenge.map((p, i) => (
+                <>
+                  {i > 0 && (
+                    <>
+                      <br />
+                      <br />
+                    </>
+                  )}
+                  <span>{p}</span>
+                </>
+              ))
+            }
+          </p>
+        </article>
+      </div>
+
+      <img
+        src="/assets/img/interiors/pascal/media-05.webp"
+        loading="lazy"
+        class="lg:h-188 object-cover object-[0_60%] hidden lg:block"
+      />
+
+      <img
+        src="/assets/img/interiors/pascal/media-02.webp"
+        class="h-91 lg:h-173 object-cover lg:hidden"
+        loading="lazy"
+      />
+
+      <article>
+        <h3>The Work</h3>
+        <div class="grid-p p-02">
+          <p>
+            <span>{data.the_work[0]}<br /><br /></span>
+            <span>{data.the_work[1]}</span>
+          </p>
+          <img
+            src="/assets/img/interiors/pascal/media-05.webp"
+            loading="lazy"
+            class="lg:h-188 object-cover object-[0_60%] lg:hidden my-6"
+          />
+          <p>
+            <span>{data.the_work[2]}<br /><br /></span>
+            <span>{data.the_work[3]}</span>
+          </p>
+        </div>
+      </article>
+
+      <img
+        src="/assets/img/interiors/pascal/media-06.webp"
+        loading="lazy"
+        class="lg:h-188 object-cover"
+      />
     </div>
 
-    <img
-      src="/assets/img/interiors/pascal/media-05.webp"
-      loading="lazy"
-      class="lg:h-188 object-cover object-[0_60%]"
-    />
-
-    <article>
-      <h3>The Work</h3>
-      <div class="grid-p p-02">
-        <p>
-          <span>{data.the_work[0]}<br /><br /></span>
-          <span>{data.the_work[1]}</span>
-        </p>
-        <p>
-          <span>{data.the_work[2]}<br /><br /></span>
-          <span>{data.the_work[3]}</span>
-        </p>
-      </div>
-    </article>
-
-    <img
-      src="/assets/img/interiors/pascal/media-06.webp"
-      loading="lazy"
-      class="lg:h-188 object-cover"
-    />
+    <OtherProyects prev_path="/" next_path="/" />
   </div>
-
-  <OtherProyects prev_path="/" next_path="/" />
 </section>

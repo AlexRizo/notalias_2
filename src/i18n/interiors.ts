@@ -465,7 +465,9 @@ const projects: InteriorProject[] = [
         "El ecosistema de venture studios y fondos de inversión en México está lleno de nombres que suenan parecido, prometen lo mismo y se presentan igual. Suits, cifras, retornos. Capital frío, lenguaje corporativo, distancia estratégica. Un mercado donde la diferencia entre un socio real y un inversionista pasivo raramente se hace visible desde la identidad.",
       ],
       challenge: [
-        "El reto no era solo nombrar a meteoro era dotarla de una identidad que hiciera tangible algo intangible: la diferencia entre un capital que acompaña y uno que transforma. Había que construir una marca capaz de hablarle al emprendedor que busca más que dinero, sin caer en el discurso motivacional vacío. Una identidad que transmitiera estructura y visión de largo plazo, pero que al mismo tiempo se sintiera dinámica, real y con criterio propio. Que no sonara a fondo, ni a aceleradora, ni a consultora. Que sonara a socio. El nombre ya existía. La tarea era darle sistema, profundidad y presencia.",
+        "El reto no era solo nombrar a meteoro era dotarla de una identidad que hiciera tangible algo intangible: la diferencia entre un capital que acompaña y uno que transforma.",
+        "Había que construir una marca capaz de hablarle al emprendedor que busca más que dinero, sin caer en el discurso motivacional vacío. Una identidad que transmitiera estructura y visión de largo plazo, pero que al mismo tiempo se sintiera dinámica, real y con criterio propio. Que no sonara a fondo, ni a aceleradora, ni a consultora. Que sonara a socio.",
+        "El nombre ya existía. La tarea era darle sistema, profundidad y presencia.",
       ],
       the_work: [
         "El punto de partida fue encontrar el territorio de sentido que justificara todo lo demás. Ese territorio fue el impacto: no como promesa, sino como dirección. Un meteoro no avisa, no pide permiso aparece, genera cambio y deja marca.",

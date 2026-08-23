@@ -26,8 +26,17 @@ const data = getInteriorContent("tantan", lang)!;
   <div class="content">
     <img
       src="/assets/img/interiors/tantan/media-02.webp"
-      class="h-190 object-cover object-[0_62%]"
+      class="h-50 lg:h-190 object-cover object-[0_62%]"
     />
+
+    <video
+      src="/assets/img/interiors/tantan/media-03.mp4"
+      playsinline
+      muted
+      autoplay
+      loop
+      preload="none"
+      class="lg:h-173 object-cover lg:hidden"></video>
 
     <article>
       <h3>Context</h3>
@@ -56,11 +65,16 @@ const data = getInteriorContent("tantan", lang)!;
         autoplay
         loop
         preload="none"
-        class="h-173 object-cover"></video>
+        class="h-173 object-cover hidden lg:block"></video>
       <img
         src="/assets/img/interiors/tantan/media-04.webp"
         loading="lazy"
-        class="h-173 object-cover"
+        class="h-173 object-cover hidden lg:block"
+      />
+      <img
+        src="/assets/img/interiors/tantan/media-05.webp"
+        loading="lazy"
+        class="h-106 lg:h-173 object-cover lg:hidden"
       />
     </div>
 
@@ -83,16 +97,22 @@ const data = getInteriorContent("tantan", lang)!;
       </p>
     </article>
 
+    <img
+      src="/assets/img/interiors/tantan/media-04.webp"
+      loading="lazy"
+      class="h-106 lg:h-173 object-cover lg:hidden"
+    />
+
     <div class="img-container">
       <img
         src="/assets/img/interiors/tantan/media-05.webp"
         loading="lazy"
-        class="h-173 object-cover"
+        class="h-173 object-cover hidden lg:block"
       />
       <img
         src="/assets/img/interiors/tantan/media-06.webp"
         loading="lazy"
-        class="h-173 object-cover"
+        class="h-173 object-cover hidden lg:block"
       />
     </div>
 
@@ -100,17 +120,22 @@ const data = getInteriorContent("tantan", lang)!;
       <h3>The Work</h3>
       <div class="grid-p p-02">
         <p>
-          <span>{data.the_work[0]}<br/><br/></span>
-          <span>{data.the_work[1]}<br/><br/></span>
+          <span>{data.the_work[0]}<br /><br /></span>
+          <span>{data.the_work[1]}<br /><br /></span>
         </p>
         <p>
-          <span>{data.the_work[2]}<br/><br/></span>
+          <span>{data.the_work[2]}<br /><br /></span>
           <span>{data.the_work[3]}</span>
         </p>
       </div>
     </article>
 
     <img src="/assets/img/interiors/tantan/media-07.webp" loading="lazy" />
+    <img
+      src="/assets/img/interiors/tantan/media-06.webp"
+      loading="lazy"
+      class="h-80 lg:h-173 object-cover lg:hidden"
+    />
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />

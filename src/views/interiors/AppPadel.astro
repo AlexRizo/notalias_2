@@ -12,15 +12,9 @@ const data = getInteriorContent("app-padel", lang)!;
   <div>
     <h1 class="title">AppPadel</h1>
 
-    <div class="relative flex items-center justify-center">
-      <img
-        src="/assets/img/interiors/apppadel/media-01.webp"
-        class="h-54 lg:h-212 object-cover"
-      />
-    </div>
     <img
-      src="/assets/img/interiors/apppadel/video-icon.webp"
-      class="absolute w-26! lg:w-112.5!"
+      src="/assets/img/interiors/apppadel/media-01.webp"
+      class="h-54 lg:h-212 object-cover"
     />
   </div>
   <article class="mt-4 lg:mt-26">
@@ -95,7 +89,7 @@ const data = getInteriorContent("app-padel", lang)!;
       <img
         src="/assets/img/interiors/apppadel/media-06.webp"
         loading="lazy"
-        class="h-114 lg:h-173 object-cover object-[0_35%]"
+        class="h-114 lg:h-173 object-cover object-[0_35%] hidden lg:block"
       />
     </div>
 
@@ -106,6 +100,11 @@ const data = getInteriorContent("app-padel", lang)!;
           <span>{data.the_work[0]}<br /><br /></span>
           <span>{data.the_work[1]}<br /><br /></span>
         </p>
+        <img
+          src="/assets/img/interiors/apppadel/media-06.webp"
+          loading="lazy"
+          class="h-84 lg:h-173 object-cover lg:hidden mb-6"
+        />
         <p>
           <span>{data.the_work[2]}<br /><br /></span>
           <span>{data.the_work[3]}</span>

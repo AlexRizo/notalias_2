@@ -54,6 +54,10 @@ const data = getInteriorContent("meteoro", lang)!;
     </div>
 
     <div class="grid-component">
+      <img
+        src="/assets/img/interiors/meteoro/media-03.webp"
+        class="h-90 lg:h-173 object-cover object-center lg:hidden"
+      />
       <article>
         <h3>Challenge</h3>
         <p>
@@ -74,7 +78,7 @@ const data = getInteriorContent("meteoro", lang)!;
       </article>
       <img
         src="/assets/img/interiors/meteoro/media-03.webp"
-        class="h-86 lg:h-173 object-cover object-center"
+        class="h-86 lg:h-173 object-cover object-center hidden lg:block"
       />
     </div>
 
@@ -87,7 +91,7 @@ const data = getInteriorContent("meteoro", lang)!;
       <img
         src="/assets/img/interiors/meteoro/media-05.webp"
         loading="lazy"
-        class="lg:h-200 object-cover"
+        class="lg:h-200 object-cover hidden lg:block"
       />
     </div>
 
@@ -105,6 +109,17 @@ const data = getInteriorContent("meteoro", lang)!;
                   </>
                 )}
                 <span>{p}</span>
+                {i == 1 && (
+                  <span>
+                    <br />
+                    <br />
+                    <img
+                      src="/assets/img/interiors/meteoro/media-05.webp"
+                      loading="lazy"
+                      class="lg:h-200 object-cover lg:hidden"
+                    />
+                  </span>
+                )}
               </>
             ))
           }

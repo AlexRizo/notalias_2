@@ -70,6 +70,11 @@ const data = getInteriorContent("nonstop", lang)!;
         loop
         class="h-111 lg:h-200 object-cover"
         playsinline></video>
+      <img
+        src="/assets/img/interiors/nonstop/media-04.webp"
+        class="lg:h-213.5 object-cover object-[0_75%] lg:hidden"
+        loading="lazy"
+      />
       <article>
         <h3>Challenge</h3>
         <p>
@@ -91,7 +96,7 @@ const data = getInteriorContent("nonstop", lang)!;
     </div>
     <img
       src="/assets/img/interiors/nonstop/media-04.webp"
-      class="lg:h-213.5 object-cover object-[0_75%]"
+      class="lg:h-213.5 object-cover object-[0_75%] hidden lg:block"
       loading="lazy"
     />
 
@@ -115,6 +120,17 @@ const data = getInteriorContent("nonstop", lang)!;
                   </>
                 )}
                 <span>{p}</span>
+                {i === 1 && (
+                  <span class="lg:hidden">
+                    <br />
+                    <br />
+                    <img
+                      src="/assets/img/interiors/nonstop/media-06.webp"
+                      class="lg:h-213.5 object-cover object-[0_75%]"
+                      loading="lazy"
+                    />
+                  </span>
+                )}
               </>
             ))
           }
@@ -123,7 +139,7 @@ const data = getInteriorContent("nonstop", lang)!;
     </div>
     <img
       src="/assets/img/interiors/nonstop/media-06.webp"
-      class="lg:h-213.5 object-cover object-[0_75%]"
+      class="lg:h-213.5 object-cover object-[0_75%] hidden lg:block"
       loading="lazy"
     />
   </div>
