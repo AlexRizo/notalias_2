@@ -359,8 +359,8 @@ const projects: InteriorProject[] = [
     es: {
       description: "Ponerle nombre y cara al tiempo bien vivido.",
       context: [
-        "El mercado de renta vacacional en México lleva años creciendo, pero sin madurar. Entre Airbnb y los portales de distribución, cualquiera puede listar una propiedad — y eso se nota. El resultado: un mercado saturado de opciones que se parecen todas, donde el precio termina siendo el único diferenciador y la experiencia del huésped queda en segundo plano.",
-        "meteoro ventures llegó con una lectura distinta. Vieron en ese desorden una oportunidad: crear una empresa de hospitalidad y property management que no compitiera por precio, sino por experiencia. Una plataforma que entendiera que detrás de cada reserva no hay un cliente buscando alojamiento — hay alguien buscando un ratito para desconectarse, para estar, para vivir algo que valga la pena recordar.",
+        "El mercado de renta vacacional en México lleva años creciendo, pero sin madurar. Entre Airbnb y los portales de distribución, cualquiera puede listar una propiedad y eso se nota. El resultado: un mercado saturado de opciones que se parecen todas, donde el precio termina siendo el único diferenciador y la experiencia del huésped queda en segundo plano.",
+        "Meteoro ventures llegó con una lectura distinta. Vieron en ese desorden una oportunidad: crear una empresa de hospitalidad y property management que no compitiera por precio, sino por experiencia. Una plataforma que entendiera que detrás de cada reserva no hay un cliente buscando alojamiento hay alguien buscando un ratito para desconectarse, para estar, para vivir algo que valga la pena recordar.",
         "La idea de negocio era sólida. Lo que no existía todavía era la marca.",
       ],
       challenge: [

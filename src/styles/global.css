@@ -58,11 +58,15 @@ select {
   }
 
   .title {
-    @apply text-xl mt-14 mb-6 lg:text-3xl lg:text-center lg:font-light lg:mb-8;
+    @apply text-xl mt-14 mb-6 lg:text-3xl text-center lg:font-light lg:mb-8;
   }
 
   .description {
     @apply text-3xl font-arvo tracking-tight leading-[1.10] my-8 lg:text-5xl lg:max-w-[745px];
+  }
+
+  .grid-component {
+    @apply grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-10 items-center;
   }
 
   .content {

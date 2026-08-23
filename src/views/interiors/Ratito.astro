@@ -27,78 +27,89 @@ const data = getInteriorContent("ratito", lang)!;
   </article>
 
   <div class="content">
-    <div class="img-container">
+    <div class="grid-component">
       <img
         src="/assets/img/interiors/ratito/media-02.webp"
         class="h-91 lg:h-173 object-cover"
         loading="lazy"
       />
+      <article class="">
+        <h3>Context</h3>
+        <p>
+          {
+            data.context.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
+
+    <div class="grid-component">
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
       <img
         src="/assets/img/interiors/ratito/media-03.webp"
-        class="h-173 object-cover object-center hidden lg:block"
+        class="h-86 lg:h-173 object-cover object-center "
       />
     </div>
 
-    <article>
-      <h3>Context</h3>
-      <p>
-        {data.context.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
+    <div class="grid-component">
+      <img src="/assets/img/interiors/ratito/media-04.webp" loading="lazy" />
+      <article>
+        <h3>The Work</h3>
+        <p>
+          {data.the_work[0]}
+          <br />
+          <br />
+          {data.the_work[1]}
+        </p>
+      </article>
+    </div>
 
-    <img
-      src="/assets/img/interiors/ratito/media-03.webp"
-      class="h-91 object-cover object-center lg:hidden"
-    />
-    <img src="/assets/img/interiors/ratito/media-04.webp" loading="lazy" />
-
-    <article>
-      <h3>Challenge</h3>
-      <p>
-        {data.challenge.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <div class="img-container">
+    <div class="grid-component">
+      <article>
+        <p>
+          {data.the_work[2]}
+          <br />
+          <br />
+          {data.the_work[3]}
+          <br />
+          <br />
+          {data.the_work[4]}
+        </p>
+      </article>
       <img
         src="/assets/img/interiors/ratito/media-05.webp"
         class="h-107.5 lg:h-216.5 object-cover"
         loading="lazy"
       />
-      <img
-        src="/assets/img/interiors/ratito/media-06.webp"
-        class="h-216.5 object-cover hidden lg:block"
-        loading="lazy"
-      />
     </div>
 
-    <article>
-      <h3>The Work</h3>
-      <p>
-        {data.the_work.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <img
-      src="/assets/img/interiors/ratito/media-06.webp"
-      class="h-113 object-cover lg:hidden"
-      loading="lazy"
-    />
     <img
       src="/assets/img/interiors/ratito/media-07.webp"
       loading="lazy"
