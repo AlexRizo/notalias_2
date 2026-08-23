@@ -77,7 +77,7 @@ select {
     }
 
     .p-02 {
-      @apply lg:max-w-222;
+      @apply lg:max-w-221;
     }
 
     h3 {
@@ -90,6 +90,14 @@ select {
 
     .img-container {
       @apply grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-4;
+    }
+
+    .grid-p {
+      @apply lg:flex lg:flex-row lg:gap-4 mx-auto;
+    }
+
+    .grid-p p {
+      @apply text-left! flex-1;
     }
   }
 

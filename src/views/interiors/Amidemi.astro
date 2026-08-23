@@ -28,73 +28,87 @@ const data = getInteriorContent("amidemi", lang)!;
   </article>
 
   <div class="content">
-    <video
-      src="/assets/img/interiors/amidemi/media-02.mp4"
-      playsinline
-      muted
-      autoplay
-      loop
-      class="h-91 lg:h-224 object-cover"
-      preload="none"></video>
+    <div class="grid-component">
+      <video
+        src="/assets/img/interiors/amidemi/media-02.mp4"
+        playsinline
+        muted
+        autoplay
+        loop
+        class="h-91 lg:h-173 object-cover"
+        preload="none"></video>
 
-    <img
-      src="/assets/img/interiors/amidemi/media-03.webp"
-      loading="lazy"
-      class="h-100 lg:h-auto object-cover"
-    />
+      <article>
+        <h3>Context</h3>
+        <p>
+          {
+            data.context.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
 
-    <article>
-      <h3>Context</h3>
-      <p>
-        {data.context.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
+    <div class="grid-component">
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+      <img
+        src="/assets/img/interiors/amidemi/media-03.webp"
+        loading="lazy"
+        class="h-100 lg:h-173 object-cover"
+      />
+    </div>
 
-    <img
-      src="/assets/img/interiors/amidemi/media-04.webp"
-      loading="lazy"
-      class="h-100 lg:h-auto object-cover object-top"
-    />
-
-    <article>
-      <h3>Challenge</h3>
-      <p>
-        {data.challenge.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <img
-      src="/assets/img/interiors/amidemi/media-05.webp"
-      loading="lazy"
-      class="h-[429px] lg:h-auto object-cover"
-    />
+    <div class="img-container">
+      <img
+        src="/assets/img/interiors/amidemi/media-06.webp"
+        loading="lazy"
+        class="h-90.5 lg:h-173 object-cover"
+      />
+    </div>
 
     <article>
       <h3>The Work</h3>
-      <p>
-        {data.the_work.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
+      <div class="grid-p p-02">
+        <p>
+          <span>{data.the_work[0]}<br /><br /></span>
+          <span>{data.the_work[1]}<br /><br /></span>
+        </p>
+        <p>
+          <span>{data.the_work[2]}<br /><br /></span>
+          <span>{data.the_work[3]}</span>
+        </p>
+      </div>
     </article>
-
     <img
       src="/assets/img/interiors/amidemi/media-06.webp"
       loading="lazy"
-      class="h-90.5 lg:h-auto object-cover"
+      class="h-90.5 lg:h-173 object-cover"
     />
   </div>
 
