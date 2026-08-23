@@ -52,6 +52,10 @@ select {
   @apply bg-white rounded-full px-4 lg:px-6 py-3 text-sm outline-none lg:text-[15px];
 }
 
+textarea {
+  @apply rounded-lg!;
+}
+
 .interior {
   .section {
     @apply max-w-96 mx-auto px-2;

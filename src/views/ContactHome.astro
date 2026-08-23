@@ -1,0 +1,27 @@
+---
+import ContactDirectly from "@/views/about/ContactDirectly.astro";
+import { ContactForm } from "@/components/react/form/contact-form";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import Layout from "@/layout/Layout.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+---
+
+<section
+  class="flex flex-col items-center justify-center pb-4 pt-20 lg:pb-18 lg:pt-20 bg-[#F3F3F3]"
+>
+  <h1
+    class="text-3xl font-arvo text-center w-96 lg:text-6xl leading-none lg:w-[650px] lg:tracking-tight"
+  >
+    {ui.contact_page.title}
+  </h1>
+  <p class="text-lg text-center mt-6 lg:text-xl">
+    {ui.contact_page.description}
+  </p>
+  <img src="/assets/icons/blue-ufo.svg" class="lg:hidden mt-12" />
+</section>
+
+<div class="pb-20 bg-[#F3F3F3]">
+  <ContactForm client:visible lang={lang} />
+</div>
