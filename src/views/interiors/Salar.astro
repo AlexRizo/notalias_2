@@ -1,0 +1,126 @@
+---
+import Attributes from "@/components/interiors/Attributes.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("salar", lang)!;
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">SALAR</h1>
+
+    <video
+      src="/assets/img/interiors/salar/media-01.webm"
+      class="h-54 lg:h-212 object-cover"
+      playsinline
+      muted
+      autoplay
+      loop
+      preload="none"></video>
+  </div>
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
+  </article>
+
+  <div class="content">
+    <div class="img-container">
+      <img
+        src="/assets/img/interiors/salar/media-02.webp"
+        class="h-91 lg:h-173 object-cover"
+        loading="lazy"
+      />
+      <img
+        src="/assets/img/interiors/salar/media-03.webp"
+        class="h-91 lg:h-173 object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <article>
+      <h3>Context</h3>
+      <p class="p-02">
+        {
+          data.context.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
+      </p>
+    </article>
+
+    <video
+      src="/assets/img/interiors/salar/media-04.webm"
+      class="lg:h-192 object-cover"
+      playsinline
+      muted
+      autoplay
+      loop
+      preload="none"></video>
+
+    <article>
+      <h3>Challenge</h3>
+      <p>
+        {
+          data.challenge.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
+      </p>
+    </article>
+
+    <div class="img-container">
+      <video
+        src="/assets/img/interiors/salar/media-05.webm"
+        class="h-86 lg:h-200 object-cover object-center"
+        playsinline
+        muted
+        autoplay
+        loop
+        preload="none"></video>
+      <img
+        src="/assets/img/interiors/salar/media-06.webp"
+        loading="lazy"
+        class="h-86 lg:h-200 object-cover object-center"
+      />
+    </div>
+
+    <article>
+      <h3>The Work</h3>
+      <div class="grid-p p-02">
+        <p>
+          {data.the_work[0]}
+        </p>
+        <p>
+          {data.the_work[1]}
+        </p>
+      </div>
+    </article>
+
+    <img
+      src="/assets/img/interiors/salar/media-07.webp"
+      loading="lazy"
+      class="lg:h-188 object-cover object-[0_60%]"
+    />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>

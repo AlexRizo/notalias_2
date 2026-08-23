@@ -1,0 +1,113 @@
+---
+import Attributes from "@/components/interiors/Attributes.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("pascal", lang)!;
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">PASCAL</h1>
+
+    <img
+      src="/assets/img/interiors/pascal/media-01.webp"
+      class="h-54 lg:h-200 object-cover"
+      loading="lazy"
+    />
+  </div>
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
+  </article>
+
+  <div class="content">
+    <div class="img-container">
+      <img
+        src="/assets/img/interiors/pascal/media-02.webp"
+        class="h-91 lg:h-173 object-cover"
+        loading="lazy"
+      />
+      <img
+        src="/assets/img/interiors/pascal/media-03.webp"
+        class="h-91 lg:h-173 object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <article>
+      <h3>Context</h3>
+      <p class="p-02">
+        {
+          data.context.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
+      </p>
+    </article>
+
+    <div class="grid-component">
+      <img
+        src="/assets/img/interiors/pascal/media-04.webp"
+        loading="lazy"
+        class="h-86 lg:h-200 object-cover object-center"
+      />
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
+
+    <img
+      src="/assets/img/interiors/pascal/media-05.webp"
+      loading="lazy"
+      class="lg:h-188 object-cover object-[0_60%]"
+    />
+
+    <article>
+      <h3>The Work</h3>
+      <div class="grid-p p-02">
+        <p>
+          <span>{data.the_work[0]}<br /><br /></span>
+          <span>{data.the_work[1]}</span>
+        </p>
+        <p>
+          <span>{data.the_work[2]}<br /><br /></span>
+          <span>{data.the_work[3]}</span>
+        </p>
+      </div>
+    </article>
+
+    <img
+      src="/assets/img/interiors/pascal/media-06.webp"
+      loading="lazy"
+      class="lg:h-188 object-cover"
+    />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>

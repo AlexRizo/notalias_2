@@ -228,7 +228,8 @@ const projects: InteriorProject[] = [
       description:
         "De la expresión al lugar: donde el vino y un vinilo se encuentran.",
       context: [
-        "En Manzanillo había muchos bares, pero lo que faltaba era un lugar donde desconectarte de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un espacio que te recibe con una buena copa, música que te hace sentir algo y conversación que vale la pena. Sin ruido innecesario, sin prisa. Un lugar para el que sabe que la mejor noche no siempre es la más loca, a veces es simplemente la que no quieres que termine.",
+        "En Manzanillo había muchos bares, pero lo que faltaba era un lugar donde desconectarte de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un espacio que te recibe con una buena copa, música que te hace sentir algo y conversación que vale la pena. Sin ruido innecesario, sin prisa.",
+        "Un lugar para el que sabe que la mejor noche no siempre es la más loca, a veces es simplemente la que no quieres que termine.",
       ],
       challenge: [
         "El proyecto llegó sin nombre, sin identidad y sin referentes locales. Construir desde cero en un mercado donde la competencia no es directa pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y cualquier marca nueva tiene que ganarse su lugar ahí dentro sin disfrazarse del entorno. El reto era crear algo que se sintiera como si siempre hubiera existido y al mismo tiempo, completamente nuevo.",
@@ -446,6 +447,320 @@ const projects: InteriorProject[] = [
         "The visual identity follows the same philosophy. A warm, expressive typographic approach moves away from the minimalist sans-serif language common across hospitality brands, while photography prioritizes atmosphere over architecture—natural light, quiet mornings, shared moments, and the emotional quality of a place instead of simply showcasing the space.",
         "A deep blue anchors the identity, balancing warmth and trust while giving the brand the sophistication needed to connect with both guests and property owners.",
         "The result is a distinctive hospitality brand that shifts the conversation away from accommodation and toward something far more valuable: the experience of time well spent.",
+      ],
+    },
+  },
+  {
+    slug: "meteoro",
+    attributes: [
+      { label: "Client", value: ["Meteoro Ventures"] },
+      { label: "Services", value: ["Brand Identity"] },
+      { label: "Industry", value: ["Capital & Innovation"] },
+    ],
+    es: {
+      description:
+        "Construir desde cero la identidad de quien construye desde cero.",
+      context: [
+        "Meteoro nació con una misión clara: crear y potenciar negocios junto a emprendedores, conectando ideas, capital y talento para construir empresas que trascienden. Pero antes de salir al mundo a impulsar marcas de otros, tenía que resolver su propio reto de identidad.",
+        "El ecosistema de venture studios y fondos de inversión en México está lleno de nombres que suenan parecido, prometen lo mismo y se presentan igual. Suits, cifras, retornos. Capital frío, lenguaje corporativo, distancia estratégica. Un mercado donde la diferencia entre un socio real y un inversionista pasivo raramente se hace visible desde la identidad.",
+      ],
+      challenge: [
+        "El reto no era solo nombrar a meteoro era dotarla de una identidad que hiciera tangible algo intangible: la diferencia entre un capital que acompaña y uno que transforma. Había que construir una marca capaz de hablarle al emprendedor que busca más que dinero, sin caer en el discurso motivacional vacío. Una identidad que transmitiera estructura y visión de largo plazo, pero que al mismo tiempo se sintiera dinámica, real y con criterio propio. Que no sonara a fondo, ni a aceleradora, ni a consultora. Que sonara a socio. El nombre ya existía. La tarea era darle sistema, profundidad y presencia.",
+      ],
+      the_work: [
+        "El punto de partida fue encontrar el territorio de sentido que justificara todo lo demás. Ese territorio fue el impacto: no como promesa, sino como dirección. Un meteoro no avisa, no pide permiso aparece, genera cambio y deja marca.",
+        'De ahí nació el claim "Impulsamos ideas que cambian industrias" una declaración que no describe lo que meteoro hace, sino lo que meteoro mueve. El lenguaje de la marca se construyó desde la misma lógica: preciso, estratégico, sin adornos. Verbos que pesan, frases que avanzan. ',
+        "La identidad visual tomó ese mismo impulso. Una tipografía geométrica y limpia Bai Jamjuree y Standerd que combina solidez con modernidad. Un símbolo que abstrae la trayectoria del meteoro: núcleo claro, dirección definida, listo para impactar. Una paleta construida sobre dos ejes: Insight Blue, azul profundo que habla de visión y liderazgo; y Venture Core, gris azuláceo que ancla la estructura y la ejecución. El sistema completo verbal y visual se diseñó para ser ejecutable desde el día uno, en papelería, comunicación digital, OOH y presencia web. Coherente en todos los soportes. Reconocible desde cualquier punto de contacto. Meteoro salió al mundo con una identidad que no necesita explicación. Se presenta sola.",
+      ],
+    },
+    en: {
+      description:
+        "Building the identity of a venture studio dedicated to building businesses from the ground up.",
+      context: [
+        "Meteoro was founded with a clear mission: to build and scale businesses alongside entrepreneurs by connecting ideas, capital, and talent to create companies with lasting impact.",
+        "Before helping founders shape the next generation of businesses, however, Meteoro needed to define its own identity.",
+        "Mexico's venture studio and investment landscape is crowded with firms that look, sound, and position themselves in remarkably similar ways. Corporate language, financial metrics, and institutional aesthetics dominate the category, making it difficult to distinguish true operating partners from traditional sources of capital.",
+        "The opportunity was to build a brand that reflected a fundamentally different way of investing.",
+      ],
+      challenge: [
+        "The challenge extended far beyond visual identity. Meteoro needed to express something inherently intangible: the difference between capital that simply funds growth and capital that actively helps create it.",
+        "The brand had to resonate with founders looking for more than investment—entrepreneurs seeking a strategic partner capable of contributing experience, perspective, and long-term commitment. It needed to communicate structure without rigidity, ambition without corporate distance, and credibility without relying on the conventions of venture capital firms, accelerators, or consulting companies.",
+        "The name already existed. Our role was to transform it into a complete brand system with clarity, depth, and presence.",
+      ],
+      the_work: [
+        "Our starting point was defining the brand's strategic territory. That territory became impact—not as an aspiration, but as a direction. A meteor doesn't announce its arrival. It creates momentum, changes trajectories, and leaves a lasting mark. That idea became the foundation for the entire identity system.",
+        'From this positioning emerged the brand platform: "Powering ideas that transform industries." More than a description of what Meteoro does, it expresses the kind of change the venture studio exists to create. The verbal identity follows the same philosophy: precise, strategic, and intentional. Every message is built around confident language, purposeful verbs, and concise statements that move ideas forward rather than embellish them.',
+        "The visual identity translates that momentum into form. A geometric typographic system—built with Bai Jamjuree and Standerd—balances precision with contemporary character. The symbol abstracts the trajectory of a meteor: a defined core moving with clarity and purpose, ready to create impact. The color palette is anchored by two core assets. Insight Blue conveys vision, intelligence, and leadership, while Venture Core, a muted blue-grey, reinforces structure, execution, and long-term thinking. The complete identity system—both verbal and visual—was designed for immediate implementation across every touchpoint, from corporate communications and digital platforms to out-of-home campaigns, stationery, and the website.",
+        "The result is a brand that communicates its role without explanation: not simply an investor, but a venture-building partner with a clear point of view and an identity designed to match its ambition.",
+      ],
+    },
+  },
+  {
+    slug: "strategy-os",
+    attributes: [
+      { label: "Client", value: ["Strategy OS"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+      },
+      { label: "Industry", value: ["SaaS / AI / Business Operations"] },
+    ],
+    es: {
+      description: "Diseñar un sistema operativo para líderes que ejecutan.",
+      context: [
+        "Las empresas tecnológicas crecen cada vez más rápido, pero muchas siguen enfrentando el mismo problema: la estrategia vive en documentos, juntas y presentaciones, mientras la operación diaria avanza por otro camino.",
+        "StrategyOS nace para cerrar esa brecha. Una plataforma impulsada por AI diseñada para founders, C-levels y líderes que necesitan visibilidad, estructura y claridad para conectar la estrategia con la ejecución. En una categoría dominada por herramientas complejas y discursos centrados en productividad, la oportunidad estaba en construir una marca que hablara de resultados, no de procesos.",
+      ],
+      challenge: [
+        "El reto no era presentar otra herramienta de planeación.",
+        "Era construir una marca capaz de reclamar un territorio propio: convertir la estrategia en un sistema vivo, medible y presente en el día a día. La identidad debía transmitir inteligencia y capacidad analítica sin caer en el lenguaje frío de software corporativo, posicionando a StrategyOS como el aliado que ayuda a los líderes a tomar mejores decisiones y generar impacto real.",
+      ],
+      the_work: [
+        "Partimos de una idea central: la claridad es el motor de la ejecución.",
+        'De ahí nació el territorio narrativo "Where Clarity Drives Execution", una plataforma estratégica que transforma la claridad en una ventaja competitiva. La marca fue diseñada para hablarle a líderes que buscan resultados, no más complejidad. ',
+        "Construimos una identidad verbal basada en la combinación de tres arquetipos: El Creador, El Mentor Analista y El Social Techy. Un lenguaje inteligente, técnico pero accesible, capaz de comunicar profundidad sin recurrir al hype tecnológico.",
+        "Visualmente desarrollamos un sistema limpio, numérico y contemporáneo que refleja exactamente lo que el producto promete: orden, estructura, visibilidad y foco. Cada elemento fue diseñado para reforzar la percepción de una plataforma tecnológica orientada a outcomes, donde la estrategia deja de ser una intención y se convierte en ejecución medible.",
+        "El resultado es una marca preparada para escalar junto con el producto: moderna, confiable y construida para demostrar que la mejor estrategia es la que sucede todos los días.",
+      ],
+    },
+    en: {
+      description:
+        "Designing the operating system for leaders who turn strategy into execution.",
+      context: [
+        "Technology companies are scaling faster than ever, yet many continue to face the same challenge: strategy lives in documents, presentations, and leadership meetings, while day-to-day operations follow a different path.",
+        "Strategy OS was created to close that gap.",
+        "Powered by AI, the platform is designed for founders, executives, and leadership teams who need visibility, structure, and clarity to align strategic direction with everyday execution. In a category crowded with complex software and productivity-driven messaging, the opportunity was to build a brand centered on outcomes rather than processes.",
+      ],
+      challenge: [
+        "The challenge wasn't to launch another planning platform.",
+        "It was to establish a distinct position within the category by redefining strategy as a living operating system—one that is measurable, actionable, and embedded in daily decision-making.",
+        "The identity needed to communicate intelligence, analytical rigor, and strategic thinking without adopting the impersonal tone typical of enterprise software. Instead, Strategy OS had to position itself as the trusted partner that empowers leaders to make better decisions and drive meaningful business outcomes.",
+      ],
+      the_work: [
+        'We began with a simple strategic belief: Clarity drives execution. From that idea, we developed the brand platform "Where Clarity Drives Execution"—a positioning that reframes clarity as a competitive advantage rather than a byproduct of planning.',
+        "The brand was designed for leaders who seek measurable impact, not additional complexity.",
+        "We built a verbal identity by combining three complementary archetypes: The Creator, The Analytical Mentor, and The Social Technologist. The resulting voice is intelligent, precise, and approachable—technical enough to establish credibility while remaining accessible and free from the exaggerated language often associated with AI products.",
+        "Visually, we created a clean, structured, and contemporary identity system inspired by the principles the platform itself delivers: clarity, organization, visibility, and focus. Every element reinforces the perception of a technology platform built around measurable outcomes, where strategy evolves from static intent into continuous execution.",
+        "The result is a scalable brand system designed to grow alongside the product—modern, credible, and built to demonstrate that the most effective strategy is the one that gets executed every day.",
+      ],
+    },
+  },
+  {
+    slug: "seres",
+    attributes: [
+      { label: "Client", value: ["SERES"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+      },
+      { label: "Industry", value: ["Hospitality & Entertainment"] },
+    ],
+    es: {
+      description:
+        "Darle identidad a un lugar donde los humanos buscan simplemente ser.",
+      context: [
+        "SERES nace en Sayulita, un destino en crecimiento acelerado donde la identidad de lugar se disputa entre lo auténtico y lo construido para el consumo. Su propuesta: un hotel boutique y un beach club que no compiten con el destino, sino que lo amplifican. Una marca diseñada para expandirse geográficamente adoptando la esencia cultural de cada lugar donde llegue.",
+      ],
+      challenge: [
+        "El mercado de la hospitalidad boutique está saturado de marcas que prometen experiencias únicas y terminan diciendo lo mismo. El reto no era crear una marca de hotel, era crear un territorio de pertenencia. Un nombre que pudiera viajar, adaptarse a nuevos destinos y seguir siendo reconocible sin perder su alma. Y hacerlo sin caer en el lujo performativo ni en la autenticidad forzada.",
+      ],
+      the_work: [
+        "El punto de partida fue el nombre. SERES no describe un lugar, describe a quienes lo habitan. Desde ahí se construyó todo: un concepto creativo anclado en la conexión humana, la vulnerabilidad como fuerza y la comunidad como arquitectura social.",
+        'La identidad verbal se desarrolló desde la filosofía "la simplicidad es la mayor de las sofisticaciones" traducida en un sistema de lenguaje que celebra lo local, lo humano y lo presente.',
+        "El sistema visual respondió al mismo principio: propuestas que habitan el espacio entre lo contemporáneo y lo artesanal, entre la serenidad del retiro y la energía del beach club.",
+        "El resultado es una marca que puede crecer, hacia tulum, puerto escondido, etc. sin perder lo que hace SERES.",
+      ],
+    },
+    en: {
+      description:
+        "Creating the identity of a place where people come simply to be.",
+      context: [
+        "SERES was born in Sayulita, a destination experiencing rapid growth where local identity is constantly being negotiated between authenticity and tourism. Its vision was different: a boutique hotel and beach club designed not to compete with the destination, but to amplify it. A hospitality brand conceived as a platform—one capable of expanding into new locations while embracing the unique culture, character, and rhythm of every place it inhabits. The ambition wasn't to replicate an experience. It was to create a brand that could belong anywhere by genuinely belonging somewhere first.",
+      ],
+      challenge: [
+        "The boutique hospitality market is saturated with brands promising unique experiences while communicating virtually the same message. The challenge wasn't to create another hotel brand. It was to define a territory of belonging.",
+        "The name needed to travel across destinations, adapt to different cultural contexts, and remain instantly recognizable without losing its essence. At the same time, the brand had to avoid both performative luxury and the increasingly familiar aesthetic of manufactured authenticity. The goal was to create a hospitality brand rooted in human connection rather than hospitality conventions.",
+      ],
+      the_work: [
+        "Everything began with the name. SERES doesn't describe a place—it describes the people who give that place meaning. That insight became the strategic foundation for the entire brand. We built a creative platform centered on human connection, vulnerability as strength, and community as the architecture of meaningful experiences. Rather than positioning the brand around amenities or destinations, we positioned it around the relationships and moments that naturally unfold within its spaces.",
+        "The verbal identity was inspired by the belief that simplicity is the highest form of sophistication, resulting in a voice that celebrates local culture, human connection, and living fully in the present. The visual identity follows the same philosophy. It balances contemporary design with handcrafted character, creating a system capable of moving seamlessly between the calm of a boutique retreat and the vibrant energy of a beach club without losing coherence. The result is a scalable hospitality brand designed to grow into future destinations—from Tulum to Puerto Escondido and beyond—while preserving the qualities that make SERES unmistakably itself.",
+      ],
+    },
+  },
+  {
+    slug: "salar",
+    attributes: [
+      { label: "Client", value: ["SALAR"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Packaging"],
+      },
+      { label: "Industry", value: ["Food & Beverage"] },
+    ],
+    es: {
+      description:
+        "Revelar el valor de la sal hecha con tiempo, territorio y oficio.",
+      context: [
+        "Cuyutlán, Colima lleva más de 500 años produciendo sal de la misma manera: extraer el agua del subsuelo, dejarla evaporar bajo el sol y recolectar cada grano a mano. El resultado es una sal con carácter, rica en minerales volcánicos, con sabor limpio y textura nítida. Pero sin una marca, todo ese origen y ese oficio no llegaban a ningún lado.",
+      ],
+      challenge: [
+        "El mercado de sal artesanal está lleno de productos que se esconden detrás del folclor o del packaging bonito sin decir nada real. El reto no era hacer que SALAR se viera premium, era hacer que se sintiera honesta. Que quien la tuviera en la mano entendiera de dónde viene, quién la cosechó y por qué eso importa. Sin romantizar, sin exagerar.",
+      ],
+      the_work: [
+        "El territorio de marca se construyó desde una verdad simple: esto no se fabrica, se cosecha. De ahí nació todo, un tono de voz directo y sin adornos, un sistema visual que habla de tierra, mar y sol, y un símbolo que retrata el instante exacto en que el agua se convierte en sal viva.",
+        "El packaging se diseñó en dos versiones: pouch premium y pouch comercial, para que la marca pudiera vivir tanto en una cocina de autor como en un mercado local, sin perder coherencia ni carácter. La paleta, los costales, la lata, el sitio web. Todo materializa la misma idea. Una sal viva, honesta y hecha con paciencia.",
+      ],
+    },
+    en: {
+      description:
+        "Revealing the value of salt shaped by time, place, and craftsmanship.",
+      context: [
+        "For more than 500 years, the salt flats of Cuyutlán, Colima have produced salt using the same ancestral process: drawing mineral-rich water from underground wells, allowing it to evaporate naturally under the sun, and harvesting every crystal by hand. The result is a salt distinguished by its clean flavor, crisp texture, and volcanic mineral profile. What was missing wasn't quality—it was a brand capable of communicating the value of that origin and craftsmanship.",
+      ],
+      challenge: [
+        "The artisanal salt category is crowded with brands that rely on folkloric narratives or premium-looking packaging while saying very little about the product itself. The challenge wasn't to make SALAR look premium. It was to make it feel authentic.",
+        "The brand needed to communicate where the salt comes from, who harvests it, and why that process matters—without romanticizing tradition or overstating the story. Authenticity had to come from transparency rather than storytelling alone.",
+      ],
+      the_work: [
+        "The brand was built around one simple truth: Salt isn't manufactured. It's harvested. That belief became the foundation of the entire identity system. We developed a verbal identity that is direct, confident, and free of unnecessary embellishment, allowing the product's origin to speak for itself. The visual language draws inspiration from the three elements that define the harvesting process—earth, sea, and sun—while the symbol captures the precise moment when seawater transforms into living salt.",
+        "The packaging system was developed across both premium and commercial pouch formats, enabling the brand to perform equally well in fine dining kitchens and local markets without compromising consistency or character. From the color palette and woven sacks to the signature tin and digital experience, every touchpoint reinforces the same idea:",
+        "A living salt, harvested with patience, shaped by nature, and presented with honesty.",
+      ],
+    },
+  },
+  {
+    slug: "manna-foods",
+    attributes: [
+      { label: "Client", value: ["Manna Foods"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Packaging"],
+      },
+      { label: "Industry", value: ["Food & Beverage"] },
+    ],
+    es: {
+      description: "Hacer del antojo el mejor aliado de lo saludable.",
+      context: [
+        "La categoría de snacks saludables ha crecido impulsada por consumidores que buscan mejores alternativas sin renunciar al sabor. Sin embargo, gran parte del mercado sigue comunicando desde la restricción: menos calorías, menos culpa, menos indulgencia.",
+        "manna foods® nació para demostrar que la alimentación saludable también puede ser emocionante, sorprendente y profundamente disfrutable. Una marca construida para cambiar la forma en que las personas viven la experiencia de un snack.",
+      ],
+      challenge: [
+        "En una categoría donde la salud suele comunicar sacrificio, la oportunidad estaba en cambiar la conversación.",
+        "La marca necesitaba construir una identidad capaz de equilibrar bienestar, innovación y deseo, creando un lenguaje que transmita calidad, cercanía y sabor sin depender de los códigos tradicionales de la alimentación saludable.",
+
+        "Además, el sistema debía permitir el crecimiento de un portafolio de submarcas y nuevos sabores bajo una identidad coherente y reconocible.",
+      ],
+      the_work: [
+        "Desarrollamos una plataforma de marca construida alrededor de una idea central: Transformando el sabor de lo saludable.",
+        "A partir de este concepto creamos una identidad verbal optimista, cercana y llena de energía, enfocada en inspirar una nueva forma de disfrutar los snacks saludables. La narrativa posiciona a manna foods® como una marca que transforma ingredientes cotidianos en experiencias sorprendentes, celebrando la innovación, el sabor y el bienestar como parte de un mismo universo.",
+        "Visualmente diseñamos un sistema limpio, contemporáneo y altamente flexible que comunica frescura, calidad e innovación. La identidad incorpora un símbolo construido a partir de cuatro chips que forman una flor, representando la unión entre naturaleza, sabor y transformación. Además, desarrollamos una arquitectura preparada para acompañar el crecimiento de submarcas como Colichips y Kalechips, manteniendo consistencia en cada empaque y punto de contacto.",
+        "El resultado es una marca preparada para competir en una categoría en constante evolución, demostrando que lo saludable no tiene por qué sentirse como una renuncia, sino como una experiencia que despierta el apetito desde el primer vistazo.",
+      ],
+    },
+    en: {
+      description: "Making cravings the best ally of healthy living.",
+      context: [
+        "The healthy snack category has grown rapidly as consumers seek better-for-you alternatives without compromising on taste. Yet much of the market continues to communicate through restriction: fewer calories, less guilt, fewer indulgences. Manna Foods® was created to challenge that narrative. The ambition was to prove that healthy eating can be exciting, flavorful, and genuinely enjoyable—a brand designed to transform the way people experience everyday snacking.",
+      ],
+      challenge: [
+        "In a category where health is often associated with sacrifice, the opportunity was to change the conversation. The brand needed an identity capable of balancing wellness, innovation, and desire, creating a language that communicated quality, approachability, and great taste without relying on the familiar visual and verbal codes of healthy food brands.",
+        "At the same time, the system needed to support long-term growth, providing a scalable architecture for future sub-brands and product lines while maintaining a cohesive and recognizable identity.",
+      ],
+      the_work: [
+        "We developed a brand platform around one central idea: Transforming the Flavor of Healthy.",
+        "This strategic concept became the foundation of a verbal identity that is optimistic, approachable, and full of energy—encouraging a new way of thinking about healthy snacks. Rather than focusing on what consumers should avoid, the brand celebrates what they gain: flavor, discovery, and enjoyment. The narrative positions Manna Foods® as a company that transforms everyday ingredients into memorable food experiences, bringing together innovation, taste, and wellbeing within a single brand universe.",
+        "Visually, we created a clean, contemporary, and highly flexible identity system that communicates freshness, quality, and innovation. At its core is a symbol composed of four chips forming a flower, representing the intersection of nature, flavor, and transformation. We also developed a scalable brand architecture designed to accommodate sub-brands such as Colichips and Kalechips, ensuring consistency across packaging, product lines, and every customer touchpoint.",
+        "The result is a future-ready brand built to compete in an evolving category—demonstrating that healthy eating should never feel like a compromise, but an experience that sparks appetite from the very first glance.",
+      ],
+    },
+  },
+  {
+    slug: "pascal",
+    attributes: [
+      { label: "Client", value: ["PASCAL"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity"],
+      },
+      { label: "Industry", value: ["Jewelry"] },
+    ],
+    es: {
+      description:
+        "Construir una marca para celebrar los hitos que merecen ser recordados.",
+      context: [
+        "La compra de un diamante rara vez responde únicamente al producto. Detrás de cada elección existe una historia de compromiso, esfuerzo y decisiones que marcan un antes y un después.",
+        "En un mercado donde la mayoría de las marcas compiten por precio, inventario o exclusividad, Pascal identificó una oportunidad distinta: construir una experiencia basada en la empatía y el significado de cada momento.",
+      ],
+      challenge: [
+        "La categoría suele comunicar lujo, estatus y aspiración.",
+        "Pascal necesitaba diferenciarse construyendo una marca que acompañara emocionalmente a sus clientes durante uno de los momentos más importantes de sus vidas. La identidad debía transmitir confianza, cercanía y sofisticación, convirtiendo el proceso de elegir un diamante en una experiencia segura y profundamente personal.",
+      ],
+      the_work: [
+        "Construimos la estrategia alrededor de una idea central: Celebrando hitos.",
+        "Desde este territorio desarrollamos una identidad verbal que reconoce el esfuerzo, el compromiso y las decisiones valientes que existen detrás de cada compra. Más que vender diamantes, la marca celebra los momentos que transforman la vida de sus clientes, convirtiéndose en un acompañante cercano durante todo el proceso.",
+        "Visualmente diseñamos un sistema elegante y atemporal que equilibra sofisticación y calidez. La identidad combina una estética limpia con un lenguaje contemporáneo, alejándose de los códigos tradicionales del lujo para construir una experiencia más humana, transparente y cercana. Cada elemento fue pensado para reforzar la confianza y consolidar a Pascal como un espacio donde elegir una joya también significa celebrar una historia personal.",
+        "El resultado es una marca que trasciende el producto y convierte cada diamante en el símbolo de un logro, una promesa o un nuevo comienzo.",
+      ],
+    },
+    en: {
+      description:
+        "Building a brand that celebrates the milestones worth remembering.",
+      context: [
+        "Purchasing a diamond is rarely just about the product.",
+        "Behind every decision lies a story of commitment, ambition, and milestones that mark a meaningful turning point in someone's life.",
+        "In a category where most brands compete through price, inventory, or exclusivity, Pascal recognized a different opportunity: to build an experience rooted in empathy and the emotional significance behind every purchase.",
+      ],
+      challenge: [
+        "The fine jewelry category is traditionally defined by luxury, status, and aspiration. Pascal needed to stand apart by creating a brand that supports customers through one of the most meaningful moments of their lives. The identity had to inspire trust, warmth, and sophistication while transforming the process of choosing a diamond into an experience that feels personal, reassuring, and deeply memorable.",
+      ],
+      the_work: [
+        "We built the strategy around one defining idea: Celebrating Life's Milestones. This strategic platform shaped a verbal identity that acknowledges the commitment, courage, and personal achievements behind every purchase. Rather than focusing on diamonds themselves, the brand celebrates the stories they represent, positioning Pascal as a trusted companion throughout each customer's journey.",
+        "Visually, we designed an identity system that balances timeless elegance with genuine warmth. A refined and contemporary aesthetic moves away from the traditional codes of luxury, creating a more human, transparent, and approachable brand experience. Every element of the system was crafted to reinforce confidence, ensuring that Pascal is perceived not simply as a jeweler, but as a place where selecting a diamond becomes the celebration of a personal story.",
+        "The result is a brand that transcends the product itself, transforming every diamond into a symbol of achievement, commitment, and new beginnings.",
+      ],
+    },
+  },
+  {
+    slug: "app-padel",
+    attributes: [
+      { label: "Client", value: ["AppPadel"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity"],
+      },
+      { label: "Industry", value: ["Sports & Technology"] },
+    ],
+    es: {
+      description:
+        "Unir la experiencia del pádel dentro de una sola plataforma.",
+      context: [
+        "El pádel ha dejado de ser únicamente un deporte para convertirse en una experiencia de comunidad. Cada partido genera nuevas conexiones entre jugadores, clubes, entrenadores, marcas y amigos, mientras el ecosistema digital continúa creciendo con soluciones independientes para cada necesidad.",
+        "AppPadel nació para reunir todo ese universo en un solo lugar, construyendo una plataforma capaz de acompañar al jugador antes, durante y después de cada partido.",
+      ],
+      challenge: [
+        "La oportunidad no estaba en crear otra aplicación para jugadores de pádel.",
+        "El verdadero desafío consistía en construir una marca capaz de integrar múltiples servicios bajo una sola experiencia, posicionando a AppPadel como el punto de encuentro de una comunidad global. La identidad debía comunicar cercanía, simplicidad e innovación sin perder el componente humano que define al deporte.",
+      ],
+      the_work: [
+        "Construimos la estrategia alrededor de un concepto central: La red del pádel.",
+        "Desde este territorio desarrollamos una identidad que entiende el deporte como un espacio de conexión. Más que una plataforma tecnológica, AppPadel se presenta como un ecosistema donde reservar pistas, encontrar jugadores, comprar equipamiento, seguir noticias, realizar apuestas y descubrir nuevos lugares forman parte de una misma experiencia.",
+        "Diseñamos una identidad verbal cercana, optimista y colaborativa, acompañada de un sistema visual minimalista y flexible pensado para conectar con una comunidad global de jugadores. Cada elemento fue desarrollado para reforzar la idea de una plataforma simple, accesible y preparada para crecer junto con el deporte.",
+        "El resultado es una marca que trasciende la funcionalidad de una aplicación y se posiciona como el hub social que conecta al mundo del pádel.",
+      ],
+    },
+    en: {
+      description:
+        "Bringing the entire padel experience together through one connected platform.",
+      context: [
+        "Padel has evolved beyond a sport into a thriving social ecosystem. Every match creates new connections between players, clubs, coaches, brands, and communities, while the digital landscape continues to grow through fragmented tools designed to solve individual needs. AppPadel was created to bring that entire ecosystem together within a single platform—supporting players before, during, and after every match.",
+      ],
+      challenge: [
+        "The opportunity wasn't to launch another app for padel players. The real challenge was to build a brand capable of unifying multiple services into one seamless experience, positioning AppPadel as the central hub of a growing global community. The identity needed to communicate simplicity, innovation, and accessibility while preserving the human connection that makes the sport unique.",
+      ],
+      the_work: [
+        "We built the strategy around one defining idea: The Padel Network. This strategic territory positioned the brand around connection rather than functionality.",
+        "Instead of presenting AppPadel as just another technology platform, we framed it as a complete ecosystem where booking courts, finding playing partners, shopping for equipment, following tournaments, exploring news, placing bets, and discovering new clubs all become part of one connected experience. We developed a verbal identity that is approachable, optimistic, and community-driven, supported by a clean and flexible visual system designed to resonate with a global audience of players.",
+        "Every element of the identity reinforces the platform's promise: making the sport more connected, accessible, and intuitive without adding complexity. The result is a scalable brand that goes beyond the role of an application, positioning AppPadel as the social hub for the global padel community.",
       ],
     },
   },

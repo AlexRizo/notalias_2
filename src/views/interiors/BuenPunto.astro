@@ -1,0 +1,121 @@
+---
+import Attributes from "@/components/interiors/Attributes.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("buen-punto", lang)!;
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">Buen Punto</h1>
+
+    <video
+      src="/assets/img/interiors/ratito/media-01.webm"
+      playsinline
+      muted
+      autoplay
+      loop
+      class="h-54 lg:h-212 object-cover"
+      preload="none"></video>
+  </div>
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
+  </article>
+
+  <div class="content">
+    <div class="grid-component">
+      <img
+        src="/assets/img/interiors/ratito/media-02.webp"
+        class="h-91 lg:h-173 object-cover"
+        loading="lazy"
+      />
+      <article class="">
+        <h3>Context</h3>
+        <p>
+          {
+            data.context.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
+
+    <div class="grid-component">
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+      <img
+        src="/assets/img/interiors/ratito/media-03.webp"
+        class="h-86 lg:h-173 object-cover object-center "
+      />
+    </div>
+
+    <div class="grid-component">
+      <img src="/assets/img/interiors/ratito/media-04.webp" loading="lazy" />
+      <article>
+        <h3>The Work</h3>
+        <p>
+          {data.the_work[0]}
+          <br />
+          <br />
+          {data.the_work[1]}
+        </p>
+      </article>
+    </div>
+
+    <div class="grid-component">
+      <article>
+        <p>
+          {data.the_work[2]}
+          <br />
+          <br />
+          {data.the_work[3]}
+          <br />
+          <br />
+          {data.the_work[4]}
+        </p>
+      </article>
+      <img
+        src="/assets/img/interiors/ratito/media-05.webp"
+        class="h-107.5 lg:h-216.5 object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <img
+      src="/assets/img/interiors/ratito/media-07.webp"
+      loading="lazy"
+      class="lg:h-188 object-cover object-[0_60%]"
+    />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>

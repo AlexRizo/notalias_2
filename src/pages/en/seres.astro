@@ -1,0 +1,11 @@
+---
+import Layout from "@/layout/Layout.astro";
+import Seres from "@/views/interiors/Seres.astro";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout lang={lang} className="bg-[#f6f6f6]">
+  <Seres />
+</Layout>

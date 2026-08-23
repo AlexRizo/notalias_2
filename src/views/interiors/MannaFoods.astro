@@ -1,0 +1,116 @@
+---
+import Attributes from "@/components/interiors/Attributes.astro";
+import OtherProyects from "@/components/interiors/OtherProyects.astro";
+import { getInteriorContent } from "@/i18n/interiors";
+import { getLangFromUrl } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const data = getInteriorContent("manna-foods", lang)!;
+---
+
+<section class="max-w-96 mx-auto px-2 lg:container interior">
+  <div>
+    <h1 class="title">manna foods</h1>
+
+    <img
+      src="/assets/img/interiors/manna-foods/media-01.webp"
+      class="h-54 lg:h-212 object-cover"
+      loading="lazy"
+    />
+  </div>
+  <article class="mt-4 lg:mt-26">
+    <h2 class="description">{data.description}</h2>
+    <Attributes attributes={data.attributes} />
+  </article>
+
+  <div class="content">
+    <div class="grid-component">
+      <article class="">
+        <h3>Context</h3>
+        <p>
+          {
+            data.context.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+      <img
+        src="/assets/img/interiors/manna-foods/media-02.webp"
+        class="h-91 lg:h-173 object-cover"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="grid-component">
+      <img
+        src="/assets/img/interiors/manna-foods/media-03.gif"
+        class="h-86 lg:h-173 object-cover object-center"
+      />
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
+
+    <div class="grid-component">
+      <article>
+        <h3>The Work</h3>
+        <p>
+          {
+            data.the_work.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+
+      <video
+        src="/assets/img/interiors/manna-foods/media-04.webm"
+        autoplay
+        muted
+        loop
+        playsinline
+        class="lg:h-210 object-cover"
+      />
+    </div>
+
+    <img
+      src="/assets/img/interiors/manna-foods/media-05.webp"
+      class="h-91 lg:h-173 object-cover"
+      loading="lazy"
+    />
+  </div>
+
+  <OtherProyects prev_path="/" next_path="/" />
+</section>
