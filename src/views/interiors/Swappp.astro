@@ -14,7 +14,7 @@ const data = getInteriorContent("swappp", lang)!;
 
     <img
       src="/assets/img/interiors/swappp/media-01.webp"
-      class="h-54 lg:h-212 object-cover object-[0_20%] lg:object-[0_35%]"
+      class="h-54 lg:h-212 object-cover"
     />
   </div>
 
@@ -24,65 +24,92 @@ const data = getInteriorContent("swappp", lang)!;
   </article>
 
   <div class="content">
-    <img src="/assets/img/interiors/swappp/media-02.webp" />
+    <div class="grid-component">
+      <img
+        src="/assets/img/interiors/swappp/media-02.webp"
+        class="h-100 lg:h-180 object-cover"
+      />
+      <article>
+        <h3>Context</h3>
+        <p>
+          {
+            data.context.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+    </div>
 
-    <article>
-      <h3>Context</h3>
-      <p>
-        {data.context.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
+    <div class="grid-component">
+      <video
+        src="/assets/img/interiors/swappp/media-03.webm"
+        playsinline
+        muted
+        autoplay
+        loop
+        preload="none"
+        class="lg:h-180 object-cover lg:hidden"></video>
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
+      <video
+        src="/assets/img/interiors/swappp/media-03.webm"
+        playsinline
+        muted
+        autoplay
+        loop
+        preload="none"
+        class="lg:h-180 object-cover hidden lg:block"></video>
+    </div>
 
-    <video
-      src="/assets/img/interiors/swappp/media-03.mp4"
-      playsinline
-      muted
-      autoplay
-      loop
-      preload="none"></video>
+    <div class="grid-component">
+      <img src="/assets/img/interiors/swappp/media-04.webp" loading="lazy" class="h-80 lg:h-auto object-cover"/>
+      <article>
+        <h3>The Work</h3>
+        <p>
+          <span>{data.the_work[0]}</span>
+          <br /><br />
+          <span>{data.the_work[1]}</span>
+        </p>
+      </article>
+    </div>
 
-    <article>
-      <h3>Challenge</h3>
-      <p>
-        {data.challenge.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <img src="/assets/img/interiors/swappp/media-04.webp" loading="lazy" />
-
-    <img
-      src="/assets/img/interiors/swappp/media-05.webp"
-      class="h-91 lg:h-max object-cover object-[100%_30%]"
-    />
-    <img src="/assets/img/interiors/swappp/media-06.webp" loading="lazy" />
-
-    <article>
-      <h3>The Work</h3>
-      <p>
-        {data.the_work.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
-
-    <img
-      src="/assets/img/interiors/swappp/media-07.webp"
-      loading="lazy"
-      class="h-90.5 lg:h-auto object-cover"
-    />
+    <div class="grid-component">
+      <article>
+        <p>
+          <span>{data.the_work[2]}</span>
+          <br /><br />
+          <span>{data.the_work[3]}</span>
+          <br /><br />
+          <span>{data.the_work[4]}</span>
+        </p>
+      </article>
+      <img src="/assets/img/interiors/swappp/media-05.webp" loading="lazy" />
+    </div>
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />

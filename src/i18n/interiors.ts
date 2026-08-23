@@ -333,7 +333,8 @@ const projects: InteriorProject[] = [
       the_work: [
         "Desarrollamos una identidad visual construida alrededor de un principio simple: energía natural.",
         "Creamos un sistema gráfico minimalista, flexible y altamente reconocible, capaz de adaptarse a diferentes presentaciones de producto manteniendo una identidad consistente. El lenguaje visual combina una estructura limpia con elementos gráficos de apoyo, colores vibrantes y una tipografía con personalidad que transmite movimiento, frescura y carácter.",
-        "Diseñamos además un sistema de packaging preparado para crecer junto con la marca, donde cada sabor encuentra una expresión propia sin perder reconocimiento dentro del portafolio. El resultado fue una identidad contemporánea y escalable que transforma una bebida energética en una marca con personalidad propia.",
+        "Diseñamos además un sistema de packaging preparado para crecer junto con la marca, donde cada sabor encuentra una expresión propia sin perder reconocimiento dentro del portafolio.",
+        "El resultado fue una identidad contemporánea y escalable que transforma una bebida energética en una marca con personalidad propia.",
         "GOOD ENERGY ONLY.",
       ],
     },
