@@ -235,7 +235,8 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         'El nombre lo dijo todo desde el principio. Tan tán esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan" se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser.',
-        "Desde ahí construimos un sistema de identidad completo. Un logotipo con carácter propio que mezcla peso retro con frescura contemporánea. Ilustraciones que habitan la marca con humor sin perder elegancia. Una paleta que balancea el verde esmeralda profundo con el naranja encendido: seria cuando tiene que serlo, eléctrica cuando la noche lo pide.",
+        "Desde ahí construimos un sistema de identidad completo. Un logotipo con carácter propio que mezcla peso retro con frescura contemporánea. Ilustraciones que habitan la marca con humor sin perder elegancia.",
+        "Una paleta que balancea el verde esmeralda profundo con el naranja encendido: seria cuando tiene que serlo, eléctrica cuando la noche lo pide.",
         "El sistema se desplegó en cada punto de contacto: menú, señalética, merch, redes sociales y aplicaciones para el espacio. Todo ejecutable desde el día uno, todo coherente, todo con esa vibra de lugar que ya conoces aunque sea tu primera vez.",
       ],
     },
