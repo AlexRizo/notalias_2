@@ -75,7 +75,11 @@ select {
     article {
       @apply lg:py-20;
     }
-    
+
+    .p-02 {
+      @apply lg:max-w-222;
+    }
+
     h3 {
       @apply text-lg font-semibold lg:text-3xl lg:font-light lg:text-center lg:mb-4;
     }

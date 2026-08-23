@@ -22,24 +22,29 @@ const projects: InteriorProject[] = [
     slug: "eterno-centinela",
     attributes: [
       { label: "Client", value: ["Tequila Centinela", "Eterno Centinela"] },
-      { label: "Services", value: ["Brand Strategy", "Brand Identity", "Creative Direction"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+      },
       { label: "Industry", value: ["Wine & Spirits"] },
     ],
     es: {
-      description: "Hacer que una nueva generación eligiera un legado de 120 años.",
+      description:
+        "Hacer que una nueva generación eligiera un legado de 120 años.",
       context: [
-        "Tequila Centinela tiene 120 años de historia. Eterno es su entrada al cristalino — la categoría que hoy define el crecimiento del tequila premium. El mercado estaba saturado de marcas gritando legado, tradición y herencia. Pero la generación que hoy impulsa el consumo ya no compraba discursos de historia — pedía significado, presencia, pertenencia a un momento.",
+        "Tequila Centinela tiene 120 años de historia. Eterno es su entrada al cristalino la categoría que hoy define el crecimiento del tequila premium. El mercado estaba saturado de marcas gritando legado, tradición y herencia. Pero la generación que hoy impulsa el consumo ya no compraba discursos de historia pedía significado, presencia, pertenencia a un momento.",
       ],
       challenge: [
-        "La marca existía pero con presencia mínima y sin una identidad que levantara la mano en premium. El reto no era contar la historia otra vez — era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse de juventud ni renunciar a lo que ya era.",
+        "La marca existía pero con presencia mínima y sin una identidad que levantara la mano en premium. El reto no era contar la historia otra vez era encontrar el territorio donde pudiera vivir hoy, sin disfrazarse de juventud ni renunciar a lo que ya era.",
       ],
       the_work: [
-        'Ese territorio era la noche. Leímos el high energy y la nightlife no como canal de activación, sino como el lugar donde Eterno tenía que existir culturalmente. De ahí nació "SOMOS TIEMPO" — un concepto que ancla el peso del legado en la energía del ahora, en el momento, en la cultura nocturna.',
-        "El sistema visual se construyó desde el entorno, no desde la botella. Cristales, metal, luz. El rojo como pulso. Un lenguaje que no describe la noche — la habita. Todo materializado en un Creative Book ejecutable desde el día uno.",
+        'Ese territorio era la noche. Leímos el high energy y la nightlife no como canal de activación, sino como el lugar donde Eterno tenía que existir culturalmente. De ahí nació "SOMOS TIEMPO" un concepto que ancla el peso del legado en la energía del ahora, en el momento, en la cultura nocturna.',
+        "El sistema visual se construyó desde el entorno, no desde la botella. Cristales, metal, luz. El rojo como pulso. Un lenguaje que no describe la noche la habita. Todo materializado en un Creative Book ejecutable desde el día uno.",
       ],
     },
     en: {
-      description: "Repositioning a 120-year legacy for the generation redefining premium tequila.",
+      description:
+        "Repositioning a 120-year legacy for the generation redefining premium tequila.",
       context: [
         "Tequila Centinela carries over 120 years of heritage. Eterno marked the brand's entry into the Cristalino segment—a category driving the next wave of growth in premium tequila.",
         "The market was saturated with brands competing through the same narratives of legacy, tradition, and heritage. Yet the generation shaping today's premium spirits market was no longer persuaded by historical claims alone. They were looking for brands that created meaning, felt culturally relevant, and belonged in the moments that mattered.",
@@ -58,27 +63,35 @@ const projects: InteriorProject[] = [
     slug: "flor-y-fruto",
     attributes: [
       { label: "Client", value: ["GRUPO AGR (Agrumex)", "Flor y Fruto"] },
-      { label: "Services", value: ["Brand Strategy", "Naming", "Brand Identity", "Packaging"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Naming", "Brand Identity", "Packaging"],
+      },
       { label: "Industry", value: ["Agro-Industrial"] },
     ],
     es: {
-      description: "Del campo a la botella: convertir quince años de agroindustria en una marca que el consumidor elige por nombre.",
+      description:
+        "Del campo a la botella: convertir quince años de agroindustria en una marca que el consumidor elige por nombre.",
       context: [
-        "Grupo AGR lleva más de quince años operando en la industria citrícola mexicana. Campo, proceso, volumen —todo estaba ahí. Lo que no existía era la marca: un nombre, una identidad, una razón para que el consumidor final los eligiera sobre cualquier otra botella en el anaquel.",
+        "Grupo AGR lleva más de quince años operando en la industria citrícola mexicana. Campo, proceso, volumen todo estaba ahí. Lo que no existía era la marca: un nombre, una identidad, una razón para que el consumidor final los eligiera sobre cualquier otra botella en el anaquel.",
         "El mercado de jugos de limón embotellados en México estaba dominado por marcas genéricas o productos con concentrado artificial.",
       ],
       challenge: [
-        "El reto no era el producto —era el salto. Pasar de proveedor anónimo de la cadena agroindustrial a marca de consumo con presencia en retail y HORECA al mismo tiempo. Dos canales con lógicas distintas: el chef que necesita funcionalidad y volumen, y el consumidor en el supermercado que necesita confianza y carácter.",
-        "La marca tenía que comunicar origen mexicano —Tecomán, el campo, el limonero— sin caer en lo folclórico. Tenía que sonar natural y honesta sin sonar artesanal o regional. Y tenía que construirse con escalabilidad: Flor y Fruto no era solo jugo de limón, era la plataforma de marca de un grupo con visión de expandirse a otros productos.",
+        "El reto no era el producto era el salto.",
+        " Pasar de proveedor anónimo de la cadena agroindustrial a marca de consumo con presencia en retail y HORECA al mismo tiempo. Dos canales con lógicas distintas:",
+        "el chef que necesita funcionalidad y volumen, y el consumidor en el supermercado que necesita confianza y carácter.",
+        "La marca tenía que comunicar origen mexicano Tecomán, el campo, el limonero sin caer en lo folclórico. Tenía que sonar natural y honesta sin sonar artesanal o regional. Y tenía que construirse con escalabilidad: Flor y Fruto no era solo jugo de limón, era la plataforma de marca de un grupo con visión de expandirse a otros productos.",
       ],
       the_work: [
-        "El primer acto fue el naming. Antes de cualquier decisión visual, encontramos el nombre en el mismo árbol: el limonero es el único frutal que florece y fructifica de manera simultánea y continua. Flor y fruto conviven en la misma rama al mismo tiempo —un ciclo que no para, que no tiene estación. Ese insight no era botánico: era la metáfora exacta de lo que la marca necesitaba ser.",
-        '"Flor y Fruto" no describe el producto, lo contextualiza. Trae el campo adentro antes de que abras la botella. Sus dos mitades tienen peso propio: Flor es la promesa, el aroma, lo emocional; Fruto es la verdad tangible, la precisión natural, el resultado. Juntas construyen una marca en equilibrio entre lo bello y lo útil.',
-        "Desde ese núcleo se construyó el sistema completo: identidad visual con símbolo del limonero (raíz y fruto como una sola unidad), paleta que refleja el origen —verde campo, verde lima, crema cálida— y tipografía que comunica elegancia sin distancia. El packaging fue diseñado para operar en ambos canales sin bifurcar la identidad: misma marca, misma voz, mismo símbolo. El Brand Book cierra el sistema con lineamientos que permiten incorporar futuros productos sin perder el carácter.",
+        "El primer acto fue el naming. Antes de cualquier decisión visual, encontramos el nombre en el mismo árbol: el limonero es el único frutal que florece y fructifica de manera simultánea y continua. Flor y fruto conviven en la misma rama al mismo tiempo un ciclo que no para, que no tiene estación. Ese insight no era botánico: era la metáfora exacta de lo que la marca necesitaba ser.",
+        '"Flor y Fruto" no describe el producto, lo contextualiza. Trae el campo adentro antes de que abras la botella. Sus dos mitades tienen peso propio: Flor es la promesa, el aroma, lo emocional;',
+        "Fruto es la verdad tangible, la precisión natural, el resultado. Juntas construyen una marca en equilibrio entre lo bello y lo útil.",
+        "Desde ese núcleo se construyó el sistema completo: identidad visual con símbolo del limonero (raíz y fruto como una sola unidad), paleta que refleja el origen verde campo, verde lima, crema cálida y tipografía que comunica elegancia sin distancia. El packaging fue diseñado para operar en ambos canales sin bifurcar la identidad: misma marca, misma voz, mismo símbolo. El Brand Book cierra el sistema con lineamientos que permiten incorporar futuros productos sin perder el carácter.",
       ],
     },
     en: {
-      description: "Transforming fifteen years of agricultural expertise into a consumer brand people choose by name.",
+      description:
+        "Transforming fifteen years of agricultural expertise into a consumer brand people choose by name.",
       context: [
         "Grupo AGR has spent more than fifteen years operating across Mexico's citrus industry. The infrastructure, production expertise, and scale were already in place. What was missing was a brand—a name, an identity, and a compelling reason for consumers to choose its products over every other bottle on the shelf.",
         "Mexico's bottled lime juice category was largely dominated by generic brands and products made with artificial concentrate, leaving little room for brands built around authenticity and origin.",
@@ -107,24 +120,26 @@ const projects: InteriorProject[] = [
       { label: "Industry", value: ["Bevarages / Bebida sin alcohol"] },
     ],
     es: {
-      description: "Bubelle: donde la burbuja se vuelve el momento en la mesa que no tiene prisa.",
+      description:
+        "Bubelle: donde la burbuja se vuelve el momento en la mesa que no tiene prisa.",
       context: [
-        "Las 12:00 del mediodía del domingo tienen un ritual propio. El brunch no es desayuno tardío ni almuerzo temprano — es una pausa intencional, una excusa para juntarse, para que la mesa dure más de lo necesario. Y en ese momento, la Mimosa siempre tuvo un lugar reservado.",
+        "Las 12:00 del mediodía del domingo tienen un ritual propio. El brunch no es desayuno tardío ni almuerzo temprano es una pausa intencional, una excusa para juntarse, para que la mesa dure más de lo necesario. Y en ese momento, la Mimosa siempre tuvo un lugar reservado.",
         "El problema es que ese lugar lo ocupaba el alcohol. Quien no tomaba, se quedaba fuera del ritual: agua, refresco, jugo. Nada que estuviera a la altura del momento. Bubelle nació para cubrir ese espacio vacío: una bebida con la elegancia y la efervescencia de una Mimosa, sin el alcohol que la excluye de muchas mesas.",
       ],
       challenge: [
-        "El reto era doble y contradictorio. Por un lado, Bubelle necesitaba evocar la Mimosa — su textura, su ocasión, su aura — sin copiarla ni depender de ella. Por otro lado, tenía que construir identidad propia desde cero en una categoría que en México prácticamente no existía: la bebida sin alcohol que se toma porque quiere tomarse, no porque no queda de otra.",
+        "El reto era doble y contradictorio. Por un lado, Bubelle necesitaba evocar la Mimosa su textura, su ocasión, su aura sin copiarla ni depender de ella. Por otro lado, tenía que construir identidad propia desde cero en una categoría que en México prácticamente no existía: la bebida sin alcohol que se toma porque quiere tomarse, no porque no queda de otra.",
         'Nombrarla era el primer nudo. "Sin alcohol" como atributo siempre suena a resta, a lo que no tiene. El nombre tenía que traer lo que sí tiene: burbuja, belleza, ligereza, la belle époque. Bubelle resolvió eso en dos sílabas: bubble + belle. El producto y el mundo en el que vive, juntos en una sola palabra que suena francesa sin serlo y elegante sin esforzarse.',
       ],
       the_work: [
-        "Construir Bubelle fue construir un mundo antes que un producto. La referencia no era ningún refresco ni ningún jugo — era el Hotel Ritz de París. Donde se creó la mimosa, en ese mismo hotel por el barman Frank Meier, de ahí nos inspiramos en el entorno; sus fachadas, sus lámparas, su barra, como guiños en homenaje. Un lujo accesible, una elegancia sin pretensión. Las ilustraciones de elementos arquitectónicos que recorren el packaging no son decoración: son el territorio donde Bubelle existe.",
-        "El isotipo resuelve la marca en una sola unidad: tipografía script con carácter propio, contenida en un marco que recuerda a las etiquetas de bebida europea clásica. La paleta parte del verde oscuro como base institucional — seria, limpia — y deja que el color de cada sabor entre como fondo de etiqueta: azul para la Clásica, rosa para Frambuesa, lila para Maracuyá. El verde permanece. El mundo cambia de ánimo según lo que hay dentro.",
-        "El packaging opera en dos formatos desde el lanzamiento — botella de vidrio — con el mismo sistema gráfico sin forzarlo. La botella tiene presencia en mesa, en hielera, en foto. La botella tiene movilidad, inmediatez y anaquel. Juntas cubren todos los momentos del brunch: el que se sirve con calma y el que se agarra al vuelo.",
+        "Construir Bubelle fue construir un mundo antes que un producto. La referencia no era ningún refresco ni ningún jugo era el Hotel Ritz de París. Donde se creó la mimosa, en ese mismo hotel por el barman Frank Meier, de ahí nos inspiramos en el entorno; sus fachadas, sus lámparas, su barra, como guiños en homenaje. Un lujo accesible, una elegancia sin pretensión. Las ilustraciones de elementos arquitectónicos que recorren el packaging no son decoración: son el territorio donde Bubelle existe.",
+        "El isotipo resuelve la marca en una sola unidad: tipografía script con carácter propio, contenida en un marco que recuerda a las etiquetas de bebida europea clásica. La paleta parte del verde oscuro como base institucional seria, limpia y deja que el color de cada sabor entre como fondo de etiqueta: azul para la Clásica, rosa para Frambuesa, lila para Maracuyá. El verde permanece. El mundo cambia de ánimo según lo que hay dentro.",
+        "El packaging opera en dos formatos desde el lanzamiento botella de vidrio con el mismo sistema gráfico sin forzarlo. La botella tiene presencia en mesa, en hielera, en foto. La botella tiene movilidad, inmediatez y anaquel. Juntas cubren todos los momentos del brunch: el que se sirve con calma y el que se agarra al vuelo.",
         "El nombre, el mundo y el sistema se diseñaron para que Bubelle no tenga que explicar qué es. Quien la ve, ya sabe en qué momento va.",
       ],
     },
     en: {
-      description: "Reimagining the Mimosa ritual through a sophisticated alcohol-free brand made for brunch.",
+      description:
+        "Reimagining the Mimosa ritual through a sophisticated alcohol-free brand made for brunch.",
       context: [
         "Sunday brunch has its own rhythm. It's neither a late breakfast nor an early lunch—it's an intentional pause, an occasion where conversations last longer and the table becomes the destination. Within that ritual, the Mimosa has always held a place of its own.",
         "The problem was that the experience revolved around alcohol. For those who chose not to drink, the alternatives were predictable: water, soda, or juice—none carrying the same sense of occasion. Bubelle was created to fill that gap: an alcohol-free sparkling beverage that delivers the elegance, freshness, and celebratory character of a Mimosa while making the ritual accessible to everyone.",
@@ -148,11 +163,15 @@ const projects: InteriorProject[] = [
     slug: "nonstop",
     attributes: [
       { label: "Client", value: ["Nonstop"] },
-      { label: "Services", value: ["Brand Strategy", "Brand Identity", "Packaging"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Packaging"],
+      },
       { label: "Industry", value: ["Health & Performance / Consumer Goods"] },
     ],
     es: {
-      description: "La primera marca de electrolitos en México diseñada para los que nunca paran.",
+      description:
+        "La primera marca de electrolitos en México diseñada para los que nunca paran.",
       context: [
         "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuánto encuentra algo que se siente suyo, lo adopta como identidad.",
         "Esa persona no tenía una marca propia de electrolitos. Usaba lo que encontraba: importados caros, genéricos sin personalidad, o productos pensados para otro mercado. La categoría estaba vacante no por falta de producto, sino por falta de carácter/ identidad.",
@@ -169,7 +188,8 @@ const projects: InteriorProject[] = [
       ],
     },
     en: {
-      description: "Building Mexico's first electrolyte brand designed for people who never slow down.",
+      description:
+        "Building Mexico's first electrolyte brand designed for people who never slow down.",
       context: [
         "A new generation of performance-driven consumers has emerged in Mexico. They train consistently, pay close attention to their nutrition, and actively seek products that help them perform better and recover faster. Typically between 20 and 45 years old, they buy with intention rather than price in mind—and when they discover a brand that reflects who they are, they make it part of their identity.",
         "Yet this audience had no brand to truly call its own in the electrolyte category. Their options were limited to expensive imports, generic alternatives, or products designed for entirely different markets.",
@@ -193,11 +213,20 @@ const projects: InteriorProject[] = [
     slug: "tantan",
     attributes: [
       { label: "Client", value: ["TAN TAN"] },
-      { label: "Services", value: ["Brand Strategy", "Brand Identity", "Naming", "Creative Direction"] },
+      {
+        label: "Services",
+        value: [
+          "Brand Strategy",
+          "Brand Identity",
+          "Naming",
+          "Creative Direction",
+        ],
+      },
       { label: "Industry", value: ["Food & Beverage / Hospitality"] },
     ],
     es: {
-      description: "De la expresión al lugar: donde el vino y un vinilo se encuentran.",
+      description:
+        "De la expresión al lugar: donde el vino y un vinilo se encuentran.",
       context: [
         "En Manzanillo había muchos bares, pero lo que faltaba era un lugar donde desconectarte de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un espacio que te recibe con una buena copa, música que te hace sentir algo y conversación que vale la pena. Sin ruido innecesario, sin prisa. Un lugar para el que sabe que la mejor noche no siempre es la más loca, a veces es simplemente la que no quieres que termine.",
       ],
@@ -205,13 +234,14 @@ const projects: InteriorProject[] = [
         "El proyecto llegó sin nombre, sin identidad y sin referentes locales. Construir desde cero en un mercado donde la competencia no es directa pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y cualquier marca nueva tiene que ganarse su lugar ahí dentro sin disfrazarse del entorno. El reto era crear algo que se sintiera como si siempre hubiera existido y al mismo tiempo, completamente nuevo.",
       ],
       the_work: [
-        'El nombre lo dijo todo desde el principio. Tan tán — esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan" se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser.',
+        'El nombre lo dijo todo desde el principio. Tan tán esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan" se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser.',
         "Desde ahí construimos un sistema de identidad completo. Un logotipo con carácter propio que mezcla peso retro con frescura contemporánea. Ilustraciones que habitan la marca con humor sin perder elegancia. Una paleta que balancea el verde esmeralda profundo con el naranja encendido: seria cuando tiene que serlo, eléctrica cuando la noche lo pide.",
         "El sistema se desplegó en cada punto de contacto: menú, señalética, merch, redes sociales y aplicaciones para el espacio. Todo ejecutable desde el día uno, todo coherente, todo con esa vibra de lugar que ya conoces aunque sea tu primera vez.",
       ],
     },
     en: {
-      description: "Creating a destination where great wine, vinyl records, and meaningful evenings come together.",
+      description:
+        "Creating a destination where great wine, vinyl records, and meaningful evenings come together.",
       context: [
         "Manzanillo had no shortage of bars. What it lacked was a place to truly disconnect. A place to leave the day behind, settle in with a great glass of wine, listen to music that evokes emotion, and enjoy conversations worth staying for. No unnecessary noise. No rush. Just the kind of atmosphere that invites people to slow down.",
         "Designed for those who understand that the best nights aren't always the loudest—they're the ones you never want to end.",
@@ -232,11 +262,20 @@ const projects: InteriorProject[] = [
     slug: "amidemi",
     attributes: [
       { label: "Client", value: ["AMÍDEMI"] },
-      { label: "Services", value: ["Brand Strategy", "Brand Identity", "Visual Identity", "Creative Direction"] },
+      {
+        label: "Services",
+        value: [
+          "Brand Strategy",
+          "Brand Identity",
+          "Visual Identity",
+          "Creative Direction",
+        ],
+      },
       { label: "Industry", value: ["Jewerly / E-commerce"] },
     ],
     es: {
-      description: "Dar significado a una frase que ya vivía en la marca: de mí para mí.",
+      description:
+        "Dar significado a una frase que ya vivía en la marca: de mí para mí.",
       context: [
         "La joyería accesible suele moverse entre dos extremos: el lujo aspiracional y las tendencias pasajeras. En medio de ese espacio existía una oportunidad para construir una marca pensada para quienes compran con intención, ya sea para sí mismas o para alguien más.",
         'AMÍDEMI nació con una idea con mucho peso pero aún sin una narrativa capaz de sostenerla: "De mí para mí".',
@@ -253,7 +292,8 @@ const projects: InteriorProject[] = [
       ],
     },
     en: {
-      description: 'Giving meaning to an idea the brand already owned: "From me, to me."',
+      description:
+        'Giving meaning to an idea the brand already owned: "From me, to me."',
       context: [
         "The accessible jewelry market often sits between two extremes: aspirational luxury and fast-moving trends. Between those spaces, there was an opportunity to create a brand for people who buy with intention—whether they're choosing a piece for themselves or for someone else.",
         'AMÍDEMI already had a powerful idea at its core, but it lacked the narrative to bring it to life: "From me, to me." The opportunity wasn\'t to invent a new message, but to give lasting meaning to one that was already there.',
@@ -274,7 +314,10 @@ const projects: InteriorProject[] = [
     slug: "swappp",
     attributes: [
       { label: "Client", value: ["Swapp"] },
-      { label: "Services", value: ["Rebranding", "Visual Identity", "Packaging Design"] },
+      {
+        label: "Services",
+        value: ["Rebranding", "Visual Identity", "Packaging Design"],
+      },
       { label: "Industry", value: ["Food & Beverage", "Energy Drinks"] },
     ],
     es: {
@@ -318,7 +361,8 @@ const projects: InteriorProject[] = [
       { label: "Industry", value: ["E-commerce / Fashion & Lifestyle"] },
     ],
     es: {
-      description: "Transformar el acceso a tendencias globales en una experiencia de marca.",
+      description:
+        "Transformar el acceso a tendencias globales en una experiencia de marca.",
       context: [
         "Blissify acerca tendencias globales a México a través de una experiencia de personal shopping. Moda, skincare, cosméticos, wellness y tecnología convivían dentro de una misma oferta, pero sin un sistema capaz de comunicarlo de manera consistente.",
       ],
@@ -332,7 +376,8 @@ const projects: InteriorProject[] = [
       ],
     },
     en: {
-      description: "Transforming access to global trends into a curated brand experience.",
+      description:
+        "Transforming access to global trends into a curated brand experience.",
       context: [
         "Blissify brings global trends closer to Mexican consumers through a curated personal shopping experience.",
         "From fashion and skincare to beauty, wellness, and technology, the business offered access to a wide range of international products. What it lacked was a cohesive brand system capable of bringing these categories together under a clear and consistent identity.",
@@ -353,7 +398,10 @@ const projects: InteriorProject[] = [
     slug: "ratito",
     attributes: [
       { label: "Client", value: ["PRESENT"] },
-      { label: "Services", value: ["Brand Strategy", "Brand Identity", "Naming"] },
+      {
+        label: "Services",
+        value: ["Brand Strategy", "Brand Identity", "Naming"],
+      },
       { label: "Industry", value: ["Turismo & Hospitalidad"] },
     ],
     es: {
@@ -366,18 +414,19 @@ const projects: InteriorProject[] = [
       challenge: [
         "Crear desde cero la identidad de una empresa de hospitalidad que no quisiera verse como una empresa de hospitalidad. Ni hotel boutique aspiracional, ni plataforma tecnológica fría, ni el típico logo de casita con palmera que puebla la categoría.",
         "El reto era encontrar una personalidad que hiciera sentir al huésped que estaba eligiendo algo distinto antes de llegar a la propiedad, y convencer al propietario de que sus metros cuadrados estarían en manos de alguien que entiende lo que significa cuidar algo con criterio.",
-        "Dos audiencias con necesidades opuestas. Una sola marca que tenía que funcionar para ambas — sin perder carácter en el intento.",
+        "Dos audiencias con necesidades opuestas. Una sola marca que tenía que funcionar para ambas sin perder carácter en el intento.",
       ],
       the_work: [
-        "El primer movimiento fue estratégico: encontrar el territorio emocional que pudiera contener todo lo que Ratito quería ser. Ese territorio fue el tiempo — no el tiempo como recurso escaso ni como lujo, sino el tiempo como experiencia. El instante que vale. El ratito que recuerdas.",
-        'De ahí nació el nombre. Ratito no describe un producto — describe una sensación. Es coloquial sin ser informal, cercano sin ser ingenuo. Tiene la calidez de algo hecho con intención y la ligereza de algo que no se toma demasiado en serio. En un mercado lleno de nombres genéricos o en inglés, Ratito se para solo.',
+        "El primer movimiento fue estratégico: encontrar el territorio emocional que pudiera contener todo lo que Ratito quería ser. Ese territorio fue el tiempo no el tiempo como recurso escaso ni como lujo, sino el tiempo como experiencia. El instante que vale. El ratito que recuerdas.",
+        "De ahí nació el nombre. Ratito no describe un producto describe una sensación. Es coloquial sin ser informal, cercano sin ser ingenuo. Tiene la calidez de algo hecho con intención y la ligereza de algo que no se toma demasiado en serio. En un mercado lleno de nombres genéricos o en inglés, Ratito se para solo.",
         '"Habitamos instantes. Creamos refugios pensados para disfrutar lo más valioso: el tiempo bien vivido." No habla de propiedades. Habla de lo que pasa dentro de ellas.',
-        "La identidad visual tomó la misma dirección: una tipografía de script cálida y con personalidad propia — lejos del sans-serif limpio que domina la categoría — sobre fotografía que privilegia la atmósfera sobre el inmueble. Los atardeceres, la luz, el silencio antes de que lleguen los demás. El azul como color de la marca: intenso, confiable, con profundidad suficiente para sostener tanto la emoción del huésped como la seriedad que el propietario necesita ver.",
+        "La identidad visual tomó la misma dirección: una tipografía de script cálida y con personalidad propia lejos del sans-serif limpio que domina la categoría sobre fotografía que privilegia la atmósfera sobre el inmueble. Los atardeceres, la luz, el silencio antes de que lleguen los demás. El azul como color de la marca: intenso, confiable, con profundidad suficiente para sostener tanto la emoción del huésped como la seriedad que el propietario necesita ver.",
         "El resultado fue una marca que se reconoce al primer golpe de vista y que le dice a quien la ve exactamente lo que necesita escuchar: aquí el tiempo se cuida.",
       ],
     },
     en: {
-      description: "Naming and shaping a hospitality brand built around the value of time well spent.",
+      description:
+        "Naming and shaping a hospitality brand built around the value of time well spent.",
       context: [
         "Mexico's vacation rental market has grown rapidly, but not necessarily with greater differentiation. Platforms like Airbnb have made it easy for anyone to list a property, resulting in a category crowded with similar offerings where price often becomes the primary differentiator and the guest experience is treated as an afterthought.",
         "Meteoro Ventures saw a different opportunity.",

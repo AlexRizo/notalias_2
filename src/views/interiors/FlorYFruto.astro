@@ -33,62 +33,70 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
   </article>
 
   <div class="content">
-    <img
-      src="/assets/img/interiors/flor-y-fruto/media-02.webp"
-      class="lg:h-266 object-cover object-top"
-      loading="lazy"
-    />
+    <div class="img-container">
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-02.webp"
+        class="lg:h-[687px] object-cover object-top"
+        loading="lazy"
+      />
+
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-03.webp"
+        loading="lazy"
+        class="lg:h-[687px] object-cover"
+      />
+    </div>
 
     <article>
       <h3>Context</h3>
-      <p>
-        {data.context.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
+      <p class="p-02">
+        {
+          data.context.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
       </p>
     </article>
 
-    <img
-      src="/assets/img/interiors/flor-y-fruto/media-03.webp"
-      loading="lazy"
-    />
     <img
       src="/assets/img/interiors/flor-y-fruto/media-04.webp"
       loading="lazy"
     />
 
-    <article>
-      <h3>Challenge</h3>
-      <p>
-        {data.challenge.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
+    <div class="grid-component">
+      <article>
+        <h3>Challenge</h3>
+        <p>
+          {
+            data.challenge.map((p, i) => (
+              <>
+                {i > 0 && (
+                  <>
+                    <br />
+                    <br />
+                  </>
+                )}
+                <span>{p}</span>
+              </>
+            ))
+          }
+        </p>
+      </article>
 
-    <img
-      src="/assets/img/interiors/flor-y-fruto/media-05.webp"
-      loading="lazy"
-      class="lg:h-373 object-cover object-[0_25%]"
-    />
-
-    <article>
-      <h3>The Work</h3>
-      <p>
-        {data.the_work.map((p, i) => (
-          <>
-            {i > 0 && <><br /><br /></>}
-            <span>{p}</span>
-          </>
-        ))}
-      </p>
-    </article>
+      <img
+        src="/assets/img/interiors/flor-y-fruto/media-05.webp"
+        loading="lazy"
+        class="lg:h-200 object-cover object-[0_25%]"
+      />
+    </div>
 
     <div class="img-container">
       <img
@@ -102,6 +110,20 @@ const data = getInteriorContent("flor-y-fruto", lang)!;
         class="h-114 lg:h-[687px] object-cover object-[0_35%]"
       />
     </div>
+
+    <article>
+      <h3>The Work</h3>
+      <div class="lg:flex lg:flex-row lg:gap-4 p-02 mx-auto">
+        <p class="text-left! flex-1">
+          <span>{data.the_work[0]}<br /><br /></span>
+          <span>{data.the_work[1]}<br /><br /></span>
+        </p>
+        <p class="text-left! flex-1">
+          <span>{data.the_work[2]}<br /><br /></span>
+          <span>{data.the_work[3]}</span>
+        </p>
+      </div>
+    </article>
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />
