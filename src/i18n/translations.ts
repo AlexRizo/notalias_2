@@ -679,7 +679,7 @@ export const translations = {
             title: "Brands are systems, not logos",
             description:
               "A brand that works is a connected system — visual, verbal, strategic, digital — where every detail is coherent and every decision is intentional.",
-            media_path: "/assets/videos/about/carrousel-04.mp4",
+            media_path: "/assets/videos/about/carrousel-04.webm",
             icon: "/assets/videos/about/jellyfish.svg"
           },
         ],
