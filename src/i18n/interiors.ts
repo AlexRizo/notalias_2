@@ -499,7 +499,7 @@ const projects: InteriorProject[] = [
     },
   },
   {
-    slug: "strategy-os",
+    slug: "strategyos",
     attributes: [
       { label: "Client", value: ["Strategy OS"] },
       {
@@ -724,7 +724,7 @@ const projects: InteriorProject[] = [
     },
   },
   {
-    slug: "app-padel",
+    slug: "apppadel",
     attributes: [
       { label: "Client", value: ["AppPadel"] },
       {
@@ -764,6 +764,127 @@ const projects: InteriorProject[] = [
         "We built the strategy around one defining idea: The Padel Network. This strategic territory positioned the brand around connection rather than functionality.",
         "Instead of presenting AppPadel as just another technology platform, we framed it as a complete ecosystem where booking courts, finding playing partners, shopping for equipment, following tournaments, exploring news, placing bets, and discovering new clubs all become part of one connected experience. We developed a verbal identity that is approachable, optimistic, and community-driven, supported by a clean and flexible visual system designed to resonate with a global audience of players.",
         "Every element of the identity reinforces the platform's promise: making the sport more connected, accessible, and intuitive without adding complexity. The result is a scalable brand that goes beyond the role of an application, positioning AppPadel as the social hub for the global padel community.",
+      ],
+    },
+  },
+  {
+    slug: "buen-punto",
+    attributes: [
+      { label: "Client", value: ["Buen Punto"] },
+      {
+        label: "Services",
+        value: ["Rebranding", "Brand Positioning", "Launch Kit"],
+      },
+      { label: "Industry", value: ["Wine & Spirits"] },
+    ],
+    es: {
+      description: "Cuando el momento lo pide, Buen Punto tiene la respuesta.",
+      context: [
+        "Buen Punto nace en Tonaya, Jalisco, una región de microclimas únicos, agave por generaciones y una tradición de bebidas que cuentan historias tanto como las conversaciones que las acompañan. Un tequila que no busca imponerse, busca acompañar: accesible, versátil, pensado para cualquier celebración, con tres expresiones (Blanco, Reposado y Cristalino) y visión de crecer tanto en anaquel nacional como en exportación.",
+      ],
+      challenge: [
+        "El mercado de tequila está saturado de marcas que compiten por quién grita más fuerte su legado o su exclusividad. La oportunidad estaba en encontrar un equilibrio entre lo tradicional y lo contemporáneo: una identidad genuina y cercana, que transmitiera un carácter artesanal real, y que diferenciara desde el primer golpe de vista sin depender del agave de siempre.",
+      ],
+      the_work: [
+        'Partimos del propio nombre como territorio de marca. Buen Punto nace de una expresión cotidiana que funciona como una forma de validar, coincidir y continuar una conversación: "Buen punto, tienes razón." Una frase sencilla, cercana y flexible que permitió construir una personalidad de marca que invita a la conversación.',
+        "A partir de este concepto desarrollamos una identidad que busca hacer del tequila una elección natural para distintos momentos de consumo. Una marca que no dicta cómo celebrar, sino que está lista para acompañar la ocasión.",
+        "Visualmente, construimos un sistema que equilibra tradición y modernidad. El logotipo parte de una estructura clásica, incorporando pequeños guiños gráficos que le aportan carácter y personalidad sin alejarlo de los códigos de la categoría.",
+        "Para el símbolo desarrollamos una reinterpretación del agave. En lugar de recurrir a la representación literal que domina gran parte del universo del tequila, abstrajimos sus formas y modificamos su composición para crear un recurso propio, reconocible y menos predecible.",
+        "El sistema se extiende al packaging a través de una etiqueta que apela a los sentidos del tacto y de la vista: papel texturizado y materiales que aportan un distintivo visual, con terminado como la técnica debossing y hot stamping (foil) que resalta el punto sobre la ilustración de los volcanes, todo complementado con una paleta de colores e ilustraciones que refuerzan el equilibrio entre lo tradicional y lo contemporáneo. Finalmente, los sentidos del olfato y del gusto quedan a cargo del producto mismo.",
+        "El resultado es una marca que reconoce de dónde viene, pero está diseñada para todo lo que viene después: una nueva forma de llevar el tequila a la mesa, a la celebración y a los momentos que simplemente son un buen punto.",
+      ],
+    },
+    en: {
+      description: "When the moment calls for it, Buen Punto has the answer.",
+      context: [
+        "Buen Punto was born in Tonaya, Jalisco, a region of unique microclimates, generations of agave, and a tradition of drinks that tell stories just as well as the conversations around them. A tequila that doesn't try to impose itself, it accompanies: accessible, versatile, built for any celebration, with three expressions (Blanco, Reposado, and Cristalino) and a vision to grow in both the domestic shelf and export markets.",
+      ],
+      challenge: [
+        "The tequila market is saturated with brands competing over who shouts their heritage or exclusivity the loudest. The opportunity was finding a balance between tradition and the contemporary: an identity that felt genuine and approachable, carried real artisanal character, and stood out at first glance without relying on the usual agave imagery.",
+      ],
+      the_work: [
+        'We started from the name itself as brand territory. "Buen Punto" comes from an everyday phrase that validates, agrees, and carries a conversation forward, a personality that invites dialogue instead of dictating how to celebrate.',
+        "Visually we built a system that balances tradition and modernity: a logotype with a classic structure carrying its own graphic details, and an abstract reinterpretation of agave instead of the literal imagery that dominates the category.",
+        "The system extends into packaging through a label that appeals to touch and sight, with textured paper and finishes that highlight the point over an illustration of volcanoes, leaving smell and taste to the product itself.",
+      ],
+    },
+  },
+  {
+    slug: "grupo-rancagua",
+    attributes: [
+      { label: "Client", value: ["Grupo Rancagua"] },
+      {
+        label: "Services",
+        value: ["Rebranding", "Visual System", "Brand Applications"],
+      },
+      { label: "Industry", value: ["Automotive / Mobility"] },
+    ],
+    es: {
+      description: "Una sola marca para respaldar a todas las demás.",
+      context: [
+        "Grupo Rancagua operaba como un grupo automotriz con diversificación de alianzas estratégicas y marcas comerciales (Nissan, Neo Motors, Bestune, JIM, entre otras). El mercado actual de la movilidad exigía algo más que ser un distribuidor corporativo: consistencia institucional, claridad en la representación conjunta con marcas socias, y una estructura visual capaz de transmitir cercanía, tecnología y dinamismo.",
+      ],
+      challenge: [
+        "El reto consistía en consolidar una arquitectura de marca que proyectara solidez y respaldo sin restar protagonismo a las marcas de vehículos con las que coexiste. Se necesitaba un sistema corporativo ordenado que garantizara coherencia en todas sus manifestaciones, transmitiendo legado, visión y confianza hacia el futuro.",
+      ],
+      the_work: [
+        'El punto de partida fue definir un concepto que pudiera hablar por todas las marcas al mismo tiempo: "Confianza que conduce el futuro." Una idea lo suficientemente sólida para sostener al grupo, y lo suficientemente flexible para no ahogar a las marcas que opera.',
+        'Desde ahí construimos una identidad visual corporativa contemporánea, complementada con una paleta sobria siendo el negro de base con acentos en rojo vibrante, diseñada para comunicar autoridad sin perder accesibilidad. Para darle movimiento y presencia al sistema, desarrollamos recursos gráficos lineales construidos a partir de la silueta de la "R", que no viven estáticos en una página sino que se superponen directamente sobre los vehículos en contextos reales: en el espectacular, en la señalética, en la campaña digital. La marca no describe los autos, los habita.',
+        "Una de las piezas más críticas del proyecto fue el sistema de co-branding. Grupo Rancagua opera marcas con identidades propias y reglas estrictas (Nissan Rancagua, Neo Motors, Bestune, JIM) y el reto era que el grupo pudiera aparecer junto a ellas sin competir ni diluirse. Establecimos jerarquías claras, zonas de convivencia y proporciones definidas para que Grupo Rancagua funcione siempre como respaldo sólido: presente, reconocible, pero nunca por encima de la marca socia.",
+        "Todo el sistema se tradujo en aplicaciones concretas: papelería corporativa, campañas digitales, espectaculares y señalética, un Brand Book ejecutable desde el primer día.",
+      ],
+    },
+    en: {
+      description: "One brand to stand behind all the rest.",
+      context: [
+        "Grupo Rancagua operated as an automotive group with a diverse set of strategic alliances and commercial brands (Nissan, Neo Motors, Bestune, JIM, among others). Today's mobility market demanded more than being a corporate distributor: institutional consistency, clarity in how it appeared alongside partner brands, and a visual structure able to convey closeness, technology, and momentum.",
+      ],
+      challenge: [
+        "The challenge was consolidating a brand architecture that projected strength and support without taking the spotlight away from the vehicle brands it coexists with. It needed an ordered corporate system that guaranteed coherence across every touchpoint, conveying legacy, vision, and confidence in the future.",
+      ],
+      the_work: [
+        'The starting point was defining a concept that could speak for every brand at once: "Confidence that drives the future." An idea solid enough to hold the group together, and flexible enough not to overshadow the brands it operates.',
+        'From there we built a contemporary corporate identity, with black as its base and red accents, and linear graphic resources built from the silhouette of the "R" that overlay directly onto vehicles in real settings: the brand doesn\'t describe the cars, it inhabits them.',
+        "The most critical piece was the co branding system. Grupo Rancagua operates brands with their own identities and strict rules, and the challenge was letting the group appear alongside them without competing or diluting them. We established clear hierarchies and defined proportions so Grupo Rancagua always functions as solid backing: present, recognizable, but never above the partner brand.",
+      ],
+    },
+  },
+  {
+    slug: "alltern",
+    attributes: [
+      { label: "Client", value: ["Alltern"] },
+      {
+        label: "Services",
+        value: ["Naming", "Visual System", "Brand Applications"],
+      },
+      { label: "Industry", value: ["Food & Beverage", "Healthy Fast Food"] },
+    ],
+    es: {
+      description: "Fast food como una alternativa de bienestar.",
+      context: [
+        "Durante años, la comida rápida ha estado asociada al exceso, mientras que la alimentación saludable suele percibirse como poco práctica o limitada en sabor. Alltern nació para demostrar que comer bien no tiene por qué significar renunciar al tiempo, al sabor ni a la accesibilidad.",
+      ],
+      challenge: [
+        "La categoría estaba dominada por dos discursos opuestos: la rapidez o el bienestar. La oportunidad consistía en construir una marca capaz de reconciliar ambos mundos, eliminando los estigmas alrededor de la comida rápida saludable.",
+      ],
+      the_work: [
+        "Desarrollamos la estrategia alrededor de una idea central: Healthy Fast Foo.",
+        "A partir de este concepto construimos una identidad que redefine lo que significa la comida rápida, integrando cuatro atributos esenciales en una sola propuesta: saludable, rápida, accesible y deliciosa. La identidad verbal adopta un tono directo, irreverente y cercano, mientras que el concepto creativo All In One Alternative comunica una solución completa para un estilo de vida en movimiento.",
+        "Visualmente diseñamos un sistema contemporáneo con una personalidad fresca y urbana. La identidad combina recursos gráficos minimalistas, una paleta vibrante y un lenguaje flexible que transmite dinamismo sin perder claridad. Cada aplicación fue pensada para reforzar la percepción de una marca moderna, honesta y accesible, capaz de romper con los códigos tradicionales de la categoría.",
+        "El resultado es una marca que deja de enfrentar salud y sabor como conceptos opuestos para convertirlos en una misma experiencia.",
+      ],
+    },
+    en: {
+      description: "Turning fast food into an alternative for wellbeing.",
+      context: [
+        "For years, fast food has been associated with excess, while healthy eating is often seen as impractical or limited in flavor. Alltern was born to prove that eating well doesn't mean giving up time, taste, or accessibility.",
+      ],
+      challenge: [
+        "The category was dominated by two opposing narratives: speed or wellbeing. The opportunity was to build a brand able to reconcile both worlds, removing the stigma around healthy fast food.",
+      ],
+      the_work: [
+        "We built the strategy around one central idea: healthy fast food. From there we developed an identity that redefines what fast food means, with a direct, approachable tone and a creative concept, All In One Alternative, that communicates a complete solution for a life in motion.",
+        "Visually we designed a contemporary system with a fresh, urban personality, combining minimalist graphic resources with a vibrant palette, built to break away from the category's traditional codes.",
       ],
     },
   },

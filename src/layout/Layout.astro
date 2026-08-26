@@ -1,6 +1,7 @@
 ---
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/navbar/Header.astro";
+import WhatsAppButton from "@/components/WhatsAppButton.astro";
 import { cn } from "@/helpers/cn";
 import type { Lang } from "@/i18n/translations";
 import "@/styles/global.css";
@@ -40,6 +41,7 @@ const { lang = "es", title, className } = Astro.props;
       <slot />
     </main>
     <Footer />
+    <WhatsAppButton />
 
     <script>
       // Reproduce cada video solo cuando entra en el viewport y lo pausa al

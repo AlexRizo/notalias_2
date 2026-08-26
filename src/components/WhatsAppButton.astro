@@ -1,0 +1,46 @@
+---
+const whatsappNumber = "523121447976";
+const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+---
+
+<a
+  href={whatsappUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp"
+  class="whatsapp-float"
+>
+  <img src="/assets/icons/whatsapp-icon.svg" alt="whatsapp-icon" />
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 50;
+    width: 68px;
+    height: 68px;
+    display: block;
+    transition: transform 0.2s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.06);
+  }
+
+  .whatsapp-blob {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .whatsapp-icon {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    width: 46%;
+    transform: translate(-50%, -50%);
+  }
+</style>

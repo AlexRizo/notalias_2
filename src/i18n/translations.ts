@@ -2,58 +2,66 @@
 
 const projectItems = [
   {
-    name: "Bubelle",
-    slug: "bubelle",
+    name: "Flor y Fruto",
+    slug: "flor-y-fruto",
     description: "Brand Strategy · Brand Identity · Creative Direction",
-    video_path: "/assets/img/interiors/bubelle/media-01.mp4",
+    video_path: "/assets/videos/flor-y-fruto.webm",
   },
   {
     name: "Ratito",
     slug: "ratito",
     description: "Brand Strategy · Brand Identity · Naming",
-    video_path: "/assets/img/interiors/ratito/media-01.webm",
+    video_path: "/assets/img/interiors/ratito/media-00.webm",
   },
   {
     name: "Centinela Eterno",
     slug: "eterno-centinela",
     description: "Brand Strategy · Brand Identity · Creative Direction",
-    video_path: "/assets/img/interiors/eterno-centinela/media-01.webp",
+    video_path: "/assets/videos/centinela-eterno.mp4",
   },
   {
     name: "Nonstop",
     slug: "nonstop",
     description: "Brand Strategy · Brand Identity · Packaging",
-    video_path: "/assets/img/interiors/nonstop/media-01.webm",
+    video_path: "/assets/img/interiors/nonstop/media-03.webm",
+  },
+  {
+    name: "Buen Punto",
+    slug: "buen-punto",
+    description: "Brand Identity",
+    video_path: "/assets/img/interiors/buen-punto/media-04.webp",
   },
   {
     name: "Blissify",
     slug: "blissify",
     description: "Brand Identity",
-    video_path: "/assets/img/interiors/blissify/media-01.webm",
+    video_path: "/assets/img/interiors/blissify/media-02.webm",
   },
   {
     name: "Strategy OS",
     slug: "strategyos",
     description: "Brand Strategy · Brand Identity · Creative Direction",
-    video_path: "/assets/img/interiors/strategyos/media-01.webp",
+    video_path: "/assets/img/interiors/strategyos/media-02.webp",
   },
   {
     name: "Amídemi",
     slug: "amidemi",
-    description: "Brand Strategy · Brand Identity · Visual Identity · Creative Direction",
-    video_path: "/assets/img/interiors/amidemi/media-01.webm",
+    description:
+      "Brand Strategy · Brand Identity · Visual Identity · Creative Direction",
+    video_path: "/assets/img/interiors/amidemi/media-033.webp",
   },
   {
     name: "Tan Tan",
     slug: "tantan",
-    description: "Brand Strategy · Brand Identity · Naming · Creative Direction",
+    description:
+      "Brand Strategy · Brand Identity · Naming · Creative Direction",
     video_path: "/assets/img/interiors/tantan/media-01.webp",
   },
   {
     name: "Swappp",
     slug: "swappp",
     description: "Rebranding · Visual Identity · Packaging Design",
-    video_path: "/assets/img/interiors/swappp/media-01.webp",
+    video_path: "/assets/img/interiors/swappp/media-03.webm",
   },
   {
     name: "Meteoro",
@@ -65,19 +73,43 @@ const projectItems = [
     name: "SALAR",
     slug: "salar",
     description: "Brand Strategy · Brand Identity · Packaging",
-    video_path: "/assets/img/interiors/salar/media-01.webm",
+    video_path: "/assets/img/interiors/salar/media-02.webp",
   },
   {
     name: "Manna Foods",
     slug: "manna-foods",
     description: "Brand Strategy · Brand Identity · Packaging",
-    video_path: "/assets/img/interiors/manna-foods/media-01.webp",
+    video_path: "/assets/img/interiors/manna-foods/media-04.webm",
+  },
+  {
+    name: "Pascal",
+    slug: "pascal",
+    description: "Brand Strategy · Brand Identity · Packaging",
+    video_path: "/assets/img/interiors/pascal/media-00.webp",
+  },
+  {
+    name: "SERES",
+    slug: "seres",
+    description: "Brand Strategy · Brand Identity · Packaging",
+    video_path: "/assets/img/interiors/seres/media-04.webp",
   },
   {
     name: "AppPadel",
     slug: "apppadel",
     description: "Brand Strategy · Brand Identity",
     video_path: "/assets/img/interiors/apppadel/media-01.webp",
+  },
+  {
+    name: "Grupo Rancagua",
+    slug: "grupo-rancagua",
+    description: "Brand Strategy · Brand Identity · Packaging",
+    video_path: "/assets/img/interiors/grupo-rancagua/media-00.webp",
+  },
+  {
+    name: "Alltern",
+    slug: "alltern",
+    description: "Brand Strategy · Brand Identity · Packaging",
+    video_path: "/assets/img/interiors/alltern/media-01.webp",
   },
 ];
 
@@ -334,7 +366,7 @@ export const translations = {
     },
     about_page: {
       hero: {
-        title: "Qué creemos",
+        title: "What we believe",
         description: [
           "La creatividad es lo más humano que existe. En un mundo que corre por automatizarlo todo, nosotros elegimos sentir, cuestionar, crear.",
           "Cada marca que construimos es prueba de que el pensamiento humano sigue importando.",
@@ -347,28 +379,28 @@ export const translations = {
             description:
               "La AI amplifica, pero no reemplaza. Las decisiones que definen una marca nacen de la sensibilidad humana — intuición, empatía, lectura cultural, criterio creativo.",
             media_path: "/assets/videos/about/carrousel-01.webm",
-            icon: "/assets/videos/about/blue-brain.svg"
+            icon: "/assets/videos/about/blue-brain.svg",
           },
           {
             title: "Better questions, better brands",
             description:
               "La calidad del resultado depende de la calidad del entendimiento. Invertimos en hacer las preguntas correctas antes de empezar a diseñar.",
             media_path: "/assets/videos/about/carrousel-02.webm",
-            icon: "/assets/videos/about/mount.svg"
+            icon: "/assets/videos/about/mount.svg",
           },
           {
             title: "Culture is the brief",
             description:
               "Toda marca vive dentro de un contexto cultural. Los códigos, comportamientos y tensiones de ese contexto son la verdadera materia prima de la estrategia.",
             media_path: "/assets/videos/about/carrousel-03.webm",
-            icon: "/assets/videos/about/sun.svg"
+            icon: "/assets/videos/about/sun.svg",
           },
           {
             title: "Brands are systems, not logos",
             description:
               "Una marca que funciona es un sistema conectado — visual, verbal, estratégico, digital — donde cada detalle es coherente y cada decisión es intencional.",
             media_path: "/assets/videos/about/carrousel-04.webm",
-            icon: "/assets/videos/about/jellyfish.svg"
+            icon: "/assets/videos/about/jellyfish.svg",
           },
         ],
       },
@@ -659,21 +691,21 @@ export const translations = {
             description:
               "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
             media_path: "/assets/videos/about/carrousel-01.webm",
-            icon: "/assets/videos/about/blue-brain.svg"
+            icon: "/assets/videos/about/blue-brain.svg",
           },
           {
             title: "Better questions, better brands",
             description:
               "The quality of the outcome depends on the quality of the understanding. We invest in asking the right questions before we start designing.",
             media_path: "/assets/videos/about/carrousel-02.webm",
-            icon: "/assets/videos/about/mount.svg"
+            icon: "/assets/videos/about/mount.svg",
           },
           {
             title: "Culture is the brief",
             description:
               "Every brand lives inside a cultural context. The codes, behaviors, and tensions of that context are the real raw material for strategy.",
             media_path: "/assets/videos/about/carrousel-03.webm",
-            icon: "/assets/videos/about/sun.svg"
+            icon: "/assets/videos/about/sun.svg",
           },
           {
             title: "Brands are systems, not logos",
