@@ -1,4 +1,4 @@
-<!-- ---
+---
 import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
 import { getInteriorContent } from "@/i18n/interiors";
@@ -93,11 +93,7 @@ const data = getInteriorContent("buen-punto", lang)!;
     <article>
       <h3>The Work</h3>
       <div class="grid-p p-02">
-        <p>
-          <span>{data.the_work[0]}<br /><br /></span>
-          <span>{data.the_work[1]}<br /><br /></span>
-          <span>{data.the_work[2]}<br /><br /></span>
-        </p>
+        <p>{data.the_work[0]}</p>
         <div class="lg:hidden">
           <img
             src="/assets/img/interiors/buen-punto/media-05.webp"
@@ -106,11 +102,6 @@ const data = getInteriorContent("buen-punto", lang)!;
           />
           <br />
         </div>
-        <p>
-          <span>{data.the_work[3]}<br /><br /></span>
-          <span>{data.the_work[4]}<br /><br /></span>
-          <span>{data.the_work[5]}</span>
-        </p>
       </div>
     </article>
 
@@ -122,4 +113,4 @@ const data = getInteriorContent("buen-punto", lang)!;
   </div>
 
   <OtherProyects prev_path="/" next_path="/" />
-</section> -->
+</section>

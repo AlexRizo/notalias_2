@@ -93,9 +93,20 @@ const data = getInteriorContent("eterno-centinela", lang)!;
 
     <article>
       <h3>The Work</h3>
-      <p class="lg:flex lg:flex-row lg:gap-4 lg:text-left! lg:max-w-max!">
-        <span class="w-110">{data.the_work[0]}</span>
-        <span class="w-112">{data.the_work[1]}</span>
+      <p>
+        {
+          data.the_work.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
       </p>
     </article>
 
