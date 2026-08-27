@@ -30,7 +30,35 @@ const others = [
 const { prev_path, next_path } = Astro.props;
 ---
 
-<section class="mb-16 mt-18 lg:my-30">
+<section class="mb-16 mt-15 lg:my-30">
+  <div class="flex justify-between w-full mb-16">
+    <a
+      href={prev_path}
+      class={cn(
+        "flex text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+      )}
+    >
+      <img
+        src="/assets/icons/arrow.svg"
+        alt="<-"
+        class="rotate-180 mr-2 w-3.5! lg:hidden"
+      />
+      PREVIOUS PROJECTS
+    </a>
+    <a
+      href={next_path}
+      class={cn(
+        "flex text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+      )}
+    >
+      NEXT PROJECTS
+      <img
+        src="/assets/icons/arrow.svg"
+        alt="<-"
+        class="ml-2 w-3.5! lg:hidden"
+      />
+    </a>
+  </div>
   <aside class="grid grid-cols-2 gap-4 lg:grid-cols-3">
     {
       others.map((project, i) => (
@@ -58,38 +86,4 @@ const { prev_path, next_path } = Astro.props;
       ))
     }
   </aside>
-  <div class="flex justify-between w-full">
-    <a
-      href={prev_path}
-      class={cn(
-        "flex text-xs text-primary lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
-      )}
-    >
-      <img
-        src="/assets/icons/gray-arrow.svg"
-        alt="<-"
-        class="rotate-180 hidden lg:block w-5!"
-      />
-      <img
-        src="/assets/icons/arrow.svg"
-        alt="<-"
-        class="rotate-180 mr-2 w-3.5! lg:hidden"
-      />
-      PREVIOUS PROJECTS
-    </a>
-    <a
-      href={next_path}
-      class={cn(
-        "flex text-xs text-primary lg:text-[#7B7B7B] lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
-      )}
-    >
-      NEXT PROJECTS
-      <img
-        src="/assets/icons/gray-arrow.svg"
-        alt="<-"
-        class="hidden lg:block w-5!"
-      />
-      <img src="/assets/icons/arrow.svg" alt="<-" class="ml-2 w-3.5! lg:hidden" />
-    </a>
-  </div>
 </section>

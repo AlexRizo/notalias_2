@@ -4,13 +4,13 @@ const projectItems = [
   {
     name: "Flor y Fruto",
     slug: "flor-y-fruto",
-    description: "Brand Strategy · Brand Identity · Creative Direction",
+    description: "Visual System · Packaging · Launch Kit",
     video_path: "/assets/videos/flor-y-fruto.webm",
   },
   {
     name: "Ratito",
     slug: "ratito",
-    description: "Brand Strategy · Brand Identity · Naming",
+    description: "Naming · Visual System · Brand Applications",
     video_path: "/assets/img/interiors/ratito/media-00.webm",
   },
   {
@@ -22,93 +22,92 @@ const projectItems = [
   {
     name: "Nonstop",
     slug: "nonstop",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description:
+      "Brand DNA · Visual System · Packaging · Digital Brand System",
     video_path: "/assets/img/interiors/nonstop/media-03.webm",
   },
   {
     name: "Buen Punto",
     slug: "buen-punto",
-    description: "Brand Identity",
+    description: "Rebranding · Brand Positioning · Launch Kit",
     video_path: "/assets/img/interiors/buen-punto/media-04.webp",
   },
   {
     name: "Blissify",
     slug: "blissify",
-    description: "Brand Identity",
+    description: "Rebranding · Visual System · Brand Applications",
     video_path: "/assets/img/interiors/blissify/media-02.webm",
   },
   {
     name: "Strategy OS",
     slug: "strategyos",
-    description: "Brand Strategy · Brand Identity · Creative Direction",
+    description: "Visual System · Digital Brand System",
     video_path: "/assets/img/interiors/strategyos/media-02.webp",
   },
   {
     name: "Amídemi",
     slug: "amidemi",
-    description:
-      "Brand Strategy · Brand Identity · Visual Identity · Creative Direction",
+    description: "Naming · Visual System · Packaging · Launch Kit",
     video_path: "/assets/img/interiors/amidemi/media-033.webp",
   },
   {
     name: "Tan Tan",
     slug: "tantan",
-    description:
-      "Brand Strategy · Brand Identity · Naming · Creative Direction",
+    description: "Visual System · Brand Applications",
     video_path: "/assets/img/interiors/tantan/media-01.webp",
   },
   {
     name: "Swappp",
     slug: "swappp",
-    description: "Rebranding · Visual Identity · Packaging Design",
+    description: "Rebranding · Packaging · Retail Kit",
     video_path: "/assets/img/interiors/swappp/media-03.webm",
   },
   {
     name: "Meteoro",
     slug: "meteoro",
-    description: "Brand Identity",
+    description: "Visual System · UX/UI · Web Development",
     video_path: "/assets/img/interiors/meteoro/media-01.webm",
   },
   {
     name: "SALAR",
     slug: "salar",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description: "Visual System · Packaging · Brand Applications",
     video_path: "/assets/img/interiors/salar/media-02.webp",
   },
   {
     name: "Manna Foods",
     slug: "manna-foods",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description: "Rebranding · Packaging System · Retail Kit",
     video_path: "/assets/img/interiors/manna-foods/media-04.webm",
   },
   {
     name: "Pascal",
     slug: "pascal",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description: "Naming · Visual System",
     video_path: "/assets/img/interiors/pascal/media-00.webp",
   },
   {
     name: "SERES",
     slug: "seres",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description: "Naming · Visual System · Art Direction",
     video_path: "/assets/img/interiors/seres/media-04.webp",
   },
   {
     name: "AppPadel",
     slug: "apppadel",
-    description: "Brand Strategy · Brand Identity",
+    description: "Brand DNA · Visual System · UX/UI",
     video_path: "/assets/img/interiors/apppadel/media-01.webp",
   },
   {
     name: "Grupo Rancagua",
     slug: "grupo-rancagua",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description: "Rebranding · Visual System · Brand Applications",
     video_path: "/assets/img/interiors/grupo-rancagua/media-00.webp",
   },
   {
     name: "Alltern",
     slug: "alltern",
-    description: "Brand Strategy · Brand Identity · Packaging",
+    description: "Naming · Visual System · Brand Applications",
     video_path: "/assets/img/interiors/alltern/media-01.webp",
   },
 ];
@@ -378,7 +377,7 @@ export const translations = {
             title: "Human intelligence first",
             description:
               "La AI amplifica, pero no reemplaza. Las decisiones que definen una marca nacen de la sensibilidad humana — intuición, empatía, lectura cultural, criterio creativo.",
-            media_path: "/assets/videos/about/carrousel-01.webm",
+            media_path: "/assets/videos/about/carrousel-01.mp4",
             icon: "/assets/videos/about/blue-brain.svg",
           },
           {
@@ -690,7 +689,7 @@ export const translations = {
             title: "Human intelligence first",
             description:
               "AI amplifies, but doesn't replace. The decisions that shape a brand come from human sensitivity — intuition, empathy, cultural reading, creative judgment.",
-            media_path: "/assets/videos/about/carrousel-01.webm",
+            media_path: "/assets/videos/about/carrousel-01.mp4",
             icon: "/assets/videos/about/blue-brain.svg",
           },
           {

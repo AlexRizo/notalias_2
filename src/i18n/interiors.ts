@@ -65,7 +65,7 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["GRUPO AGR (Agrumex)", "Flor y Fruto"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Naming", "Brand Identity", "Packaging"],
+        value: ["Visual System", "Packaging", "Launch Kit"],
       },
       { label: "Industry", value: ["Agro-Industrial"] },
     ],
@@ -165,7 +165,12 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["Nonstop"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity", "Packaging"],
+        value: [
+          "Brand DNA",
+          "Visual System",
+          "Packaging",
+          "Digital Brand System",
+        ],
       },
       { label: "Industry", value: ["Health & Performance / Consumer Goods"] },
     ],
@@ -173,7 +178,7 @@ const projects: InteriorProject[] = [
       description:
         "La primera marca de electrolitos en México diseñada para los que nunca paran.",
       context: [
-        "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuánto encuentra algo que se siente suyo, lo adopta como identidad.",
+        "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuando encuentra algo que se siente suyo, lo adopta como identidad.",
         "Esa persona no tenía una marca propia de electrolitos. Usaba lo que encontraba: importados caros, genéricos sin personalidad, o productos pensados para otro mercado. La categoría estaba vacante no por falta de producto, sino por falta de carácter/ identidad.",
       ],
       challenge: [
@@ -181,9 +186,9 @@ const projects: InteriorProject[] = [
         "El nombre lo decía todo desde el inicio: Nonstop. No es una descripción del producto, es una declaración de quien lo toma. El reto era que la identidad visual y verbal estuviera a la altura de ese nombre: directo, limpio y sin ruido. Y que el sistema funcionará desde el primer día en packaging, digital, eventos y merchandising al mismo tiempo.",
       ],
       the_work: [
-        'Empezamos por definir la narrativa de marca/ el concepto rector antes de tocar el diseño. Nonstop no es una marca de hidratación, es una afirmación silenciosa. "For the non stop crow". Ese insght ordeno todas las decisiones: tono de voz directo y sin adornos, estetica que elmina lo innecesario, un sistema visual construido sobre el negro y el blanco con un unico acento de colr que identifica cada sabor.',
+        'Empezamos por definir la narrativa de marca/ el concepto rector antes de tocar el diseño. Nonstop no es una marca de hidratación, es una afirmación silenciosa. "For the non stop crowd". Ese insight ordenó todas las decisiones: tono de voz directo y sin adornos, estética que elimina lo innecesario, un sistema visual construido sobre el negro y el blanco con un único acento de color que identifica cada sabor.',
         "El símbolo nace de la letra N: dos formas orgánicas que representan movimiento continuo, ritmo, flujo sin interrupción. Funciona solo o junto al logotipo, nunca combinado – una decisión deliberada para dar flexibilidad sin perder precisión. El logotipo en tipografía sans serif sólida refuerza lo mismo: disciplina, constancia, lo esencial.",
-        "El packaging fue diseñado para ser transparente antes de ser bonito. Los ingredientes al frente, las dosis claras, sin promesas vacias. El stick individual como formato principal porque ese es el momento de la marca: antes del entreno, en la bolsa, en la mano, después de la meta. La pleca de color en la parte inferior es el unico elemento que diferncia sabores, manteniendo el sistema limpio y escalable para las versiones que vendran.",
+        "El packaging fue diseñado para ser transparente antes de ser bonito. Los ingredientes al frente, las dosis claras, sin promesas vacías. El stick individual como formato principal porque ese es el momento de la marca: antes del entreno, en la bolsa, en la mano, después de la meta. La pleca de color en la parte inferior es el único elemento que diferencia sabores, manteniendo el sistema limpio y escalable para las versiones que vendrán.",
         "El resultado es un sistema que puede vivir en un anaquel, en un evento de running, en una playera y en un billboard, con el mismo carácter que en todos.",
       ],
     },
@@ -212,15 +217,10 @@ const projects: InteriorProject[] = [
   {
     slug: "tantan",
     attributes: [
-      { label: "Client", value: ["TAN TAN"] },
+      { label: "Client", value: ["TAN TÁN"] },
       {
         label: "Services",
-        value: [
-          "Brand Strategy",
-          "Brand Identity",
-          "Naming",
-          "Creative Direction",
-        ],
+        value: ["Visual System", "Brand Applications"],
       },
       { label: "Industry", value: ["Food & Beverage / Hospitality"] },
     ],
@@ -266,14 +266,9 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["AMÍDEMI"] },
       {
         label: "Services",
-        value: [
-          "Brand Strategy",
-          "Brand Identity",
-          "Visual Identity",
-          "Creative Direction",
-        ],
+        value: ["Naming", "Visual System", "Packaging", "Launch Kit"],
       },
-      { label: "Industry", value: ["Jewerly / E-commerce"] },
+      { label: "Industry", value: ["Jewelry / E-commerce"] },
     ],
     es: {
       description:
@@ -315,10 +310,10 @@ const projects: InteriorProject[] = [
   {
     slug: "swappp",
     attributes: [
-      { label: "Client", value: ["Swapp"] },
+      { label: "Client", value: ["SWAPPP"] },
       {
         label: "Services",
-        value: ["Rebranding", "Visual Identity", "Packaging Design"],
+        value: ["Rebranding", "Packaging", "Retail Kit"],
       },
       { label: "Industry", value: ["Food & Beverage", "Energy Drinks"] },
     ],
@@ -360,7 +355,10 @@ const projects: InteriorProject[] = [
     slug: "blissify",
     attributes: [
       { label: "Client", value: ["BLISSIFY"] },
-      { label: "Services", value: ["Brand Identity"] },
+      {
+        label: "Services",
+        value: ["Rebranding", "Visual System", "Brand Applications"],
+      },
       { label: "Industry", value: ["E-commerce / Fashion & Lifestyle"] },
     ],
     es: {
@@ -400,10 +398,10 @@ const projects: InteriorProject[] = [
   {
     slug: "ratito",
     attributes: [
-      { label: "Client", value: ["PRESENT"] },
+      { label: "Client", value: ["Ratito"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity", "Naming"],
+        value: ["Naming", "Visual System", "Brand Applications"],
       },
       { label: "Industry", value: ["Turismo & Hospitalidad"] },
     ],
@@ -455,7 +453,10 @@ const projects: InteriorProject[] = [
     slug: "meteoro",
     attributes: [
       { label: "Client", value: ["Meteoro Ventures"] },
-      { label: "Services", value: ["Brand Identity"] },
+      {
+        label: "Services",
+        value: ["Visual System", "UX/UI", "Web Development"],
+      },
       { label: "Industry", value: ["Capital & Innovation"] },
     ],
     es: {
@@ -473,7 +474,7 @@ const projects: InteriorProject[] = [
       the_work: [
         "El punto de partida fue encontrar el territorio de sentido que justificara todo lo demás. Ese territorio fue el impacto: no como promesa, sino como dirección. Un meteoro no avisa, no pide permiso aparece, genera cambio y deja marca.",
         'De ahí nació el claim "Impulsamos ideas que cambian industrias" una declaración que no describe lo que meteoro hace, sino lo que meteoro mueve. El lenguaje de la marca se construyó desde la misma lógica: preciso, estratégico, sin adornos. Verbos que pesan, frases que avanzan. ',
-        "La identidad visual tomó ese mismo impulso. Una tipografía geométrica y limpia Bai Jamjuree y Standerd que combina solidez con modernidad. Un símbolo que abstrae la trayectoria del meteoro: núcleo claro, dirección definida, listo para impactar. Una paleta construida sobre dos ejes: Insight Blue, azul profundo que habla de visión y liderazgo; y Venture Core, gris azuláceo que ancla la estructura y la ejecución. El sistema completo verbal y visual se diseñó para ser ejecutable desde el día uno, en papelería, comunicación digital, OOH y presencia web. Coherente en todos los soportes. Reconocible desde cualquier punto de contacto. Meteoro salió al mundo con una identidad que no necesita explicación. Se presenta sola.",
+        "La identidad visual tomó ese mismo impulso. Una tipografía geométrica y limpia Bai Jamjuree y Standard que combina solidez con modernidad. Un símbolo que abstrae la trayectoria del meteoro: núcleo claro, dirección definida, listo para impactar. Una paleta construida sobre dos ejes: Insight Blue, azul profundo que habla de visión y liderazgo; y Venture Core, gris azuláceo que ancla la estructura y la ejecución. El sistema completo verbal y visual se diseñó para ser ejecutable desde el día uno, en papelería, comunicación digital, OOH y presencia web. Coherente en todos los soportes. Reconocible desde cualquier punto de contacto. Meteoro salió al mundo con una identidad que no necesita explicación. Se presenta sola.",
       ],
     },
     en: {
@@ -493,7 +494,7 @@ const projects: InteriorProject[] = [
       the_work: [
         "Our starting point was defining the brand's strategic territory. That territory became impact—not as an aspiration, but as a direction. A meteor doesn't announce its arrival. It creates momentum, changes trajectories, and leaves a lasting mark. That idea became the foundation for the entire identity system.",
         'From this positioning emerged the brand platform: "Powering ideas that transform industries." More than a description of what Meteoro does, it expresses the kind of change the venture studio exists to create. The verbal identity follows the same philosophy: precise, strategic, and intentional. Every message is built around confident language, purposeful verbs, and concise statements that move ideas forward rather than embellish them.',
-        "The visual identity translates that momentum into form. A geometric typographic system—built with Bai Jamjuree and Standerd—balances precision with contemporary character. The symbol abstracts the trajectory of a meteor: a defined core moving with clarity and purpose, ready to create impact. The color palette is anchored by two core assets. Insight Blue conveys vision, intelligence, and leadership, while Venture Core, a muted blue-grey, reinforces structure, execution, and long-term thinking. The complete identity system—both verbal and visual—was designed for immediate implementation across every touchpoint, from corporate communications and digital platforms to out-of-home campaigns, stationery, and the website.",
+        "The visual identity translates that momentum into form. A geometric typographic system—built with Bai Jamjuree and Standard—balances precision with contemporary character. The symbol abstracts the trajectory of a meteor: a defined core moving with clarity and purpose, ready to create impact. The color palette is anchored by two core assets. Insight Blue conveys vision, intelligence, and leadership, while Venture Core, a muted blue-grey, reinforces structure, execution, and long-term thinking. The complete identity system—both verbal and visual—was designed for immediate implementation across every touchpoint, from corporate communications and digital platforms to out-of-home campaigns, stationery, and the website.",
         "The result is a brand that communicates its role without explanation: not simply an investor, but a venture-building partner with a clear point of view and an identity designed to match its ambition.",
       ],
     },
@@ -504,7 +505,7 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["Strategy OS"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+        value: ["Visual System", "Digital Brand System"],
       },
       { label: "Industry", value: ["SaaS / AI / Business Operations"] },
     ],
@@ -554,7 +555,7 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["SERES"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
+        value: ["Naming", "Visual System", "Art Direction"],
       },
       { label: "Industry", value: ["Hospitality & Entertainment"] },
     ],
@@ -596,9 +597,9 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["SALAR"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity", "Packaging"],
+        value: ["Visual System", "Packaging", "Brand Applications"],
       },
-      { label: "Industry", value: ["Food & Beverage"] },
+      { label: "Industry", value: ["Food & Beverage / Artisanal Products"] },
     ],
     es: {
       description:
@@ -637,9 +638,9 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["Manna Foods"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity", "Packaging"],
+        value: ["Rebranding", "Packaging System", "Retail Kit"],
       },
-      { label: "Industry", value: ["Food & Beverage"] },
+      { label: "Industry", value: ["Food & Beverage", "Healthy Snacks"] },
     ],
     es: {
       description: "Hacer del antojo el mejor aliado de lo saludable.",
@@ -680,12 +681,12 @@ const projects: InteriorProject[] = [
   {
     slug: "pascal",
     attributes: [
-      { label: "Client", value: ["PASCAL"] },
+      { label: "Client", value: ["Pascal"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity"],
+        value: ["Naming", "Visual System"],
       },
-      { label: "Industry", value: ["Jewelry"] },
+      { label: "Industry", value: ["Luxury Goods", "Jewelry & Diamonds"] },
     ],
     es: {
       description:
@@ -726,12 +727,12 @@ const projects: InteriorProject[] = [
   {
     slug: "apppadel",
     attributes: [
-      { label: "Client", value: ["AppPadel"] },
+      { label: "Client", value: ["App Padel"] },
       {
         label: "Services",
-        value: ["Brand Strategy", "Brand Identity"],
+        value: ["Brand DNA", "Visual System", "UX/UI"],
       },
-      { label: "Industry", value: ["Sports & Technology"] },
+      { label: "Industry", value: ["Sports Technology", "Mobile App"] },
     ],
     es: {
       description:
@@ -770,7 +771,7 @@ const projects: InteriorProject[] = [
   {
     slug: "buen-punto",
     attributes: [
-      { label: "Client", value: ["Buen Punto"] },
+      { label: "Client", value: ["BUEN PUNTO"] },
       {
         label: "Services",
         value: ["Rebranding", "Brand Positioning", "Launch Kit"],
@@ -868,7 +869,7 @@ const projects: InteriorProject[] = [
         "La categoría estaba dominada por dos discursos opuestos: la rapidez o el bienestar. La oportunidad consistía en construir una marca capaz de reconciliar ambos mundos, eliminando los estigmas alrededor de la comida rápida saludable.",
       ],
       the_work: [
-        "Desarrollamos la estrategia alrededor de una idea central: Healthy Fast Foo.",
+        "Desarrollamos la estrategia alrededor de una idea central: Healthy Fast Food.",
         "A partir de este concepto construimos una identidad que redefine lo que significa la comida rápida, integrando cuatro atributos esenciales en una sola propuesta: saludable, rápida, accesible y deliciosa. La identidad verbal adopta un tono directo, irreverente y cercano, mientras que el concepto creativo All In One Alternative comunica una solución completa para un estilo de vida en movimiento.",
         "Visualmente diseñamos un sistema contemporáneo con una personalidad fresca y urbana. La identidad combina recursos gráficos minimalistas, una paleta vibrante y un lenguaje flexible que transmite dinamismo sin perder claridad. Cada aplicación fue pensada para reforzar la percepción de una marca moderna, honesta y accesible, capaz de romper con los códigos tradicionales de la categoría.",
         "El resultado es una marca que deja de enfrentar salud y sabor como conceptos opuestos para convertirlos en una misma experiencia.",
