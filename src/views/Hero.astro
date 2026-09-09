@@ -18,7 +18,7 @@ const ui = useTranslations(lang);
   />
   <article class="mt-6 lg:flex lg:flex-row lg:max-w-[1150px] lg:mx-auto">
     <h1
-      class="font-arvo text-3xl text-center lg:text-left lg:text-6xl w-76 lg:w-134 mx-auto text-[#060606] lg:tracking-tight"
+      class="font-crimson text-3xl text-center lg:text-left lg:text-6xl w-76 lg:w-134 mx-auto text-[#060606] lg:tracking-tight"
     >
       {
         ui.home.main_title.map((text, i) => {
@@ -28,8 +28,7 @@ const ui = useTranslations(lang);
                 <span id="rotating-word">{text}</span>
                 <span id="rotating-cursor" aria-hidden="true">
                   |
-                </span>
-                {" "}
+                </span>{" "}
               </span>
             );
           }
