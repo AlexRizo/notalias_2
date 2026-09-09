@@ -22,15 +22,14 @@ const projectItems = [
   {
     name: "Nonstop",
     slug: "nonstop",
-    description:
-      "Brand DNA · Visual System · Packaging · Digital Brand System",
+    description: "Brand DNA · Visual System · Packaging · Digital Brand System",
     video_path: "/assets/img/interiors/nonstop/media-03.webm",
   },
   {
     name: "Buen Punto",
     slug: "buen-punto",
     description: "Rebranding · Brand Positioning · Launch Kit",
-    video_path: "/assets/img/interiors/buen-punto/media-04.webp",
+    video_path: "/assets/videos/projects/buen-punto.webm",
   },
   {
     name: "Blissify",
@@ -42,19 +41,19 @@ const projectItems = [
     name: "Strategy OS",
     slug: "strategyos",
     description: "Visual System · Digital Brand System",
-    video_path: "/assets/img/interiors/strategyos/media-02.webp",
+    video_path: "/assets/img/projects/strategy-os.webp",
   },
   {
     name: "Amídemi",
     slug: "amidemi",
     description: "Naming · Visual System · Packaging · Launch Kit",
-    video_path: "/assets/img/interiors/amidemi/media-033.webp",
+    video_path: "/assets/videos/projects/amidemi.webm",
   },
   {
     name: "Tan Tan",
     slug: "tantan",
     description: "Visual System · Brand Applications",
-    video_path: "/assets/img/interiors/tantan/media-01.webp",
+    video_path: "/assets/videos/projects/tantan.webm",
   },
   {
     name: "Swappp",
@@ -63,28 +62,28 @@ const projectItems = [
     video_path: "/assets/img/interiors/swappp/media-03.webm",
   },
   {
-    name: "Meteoro",
-    slug: "meteoro",
-    description: "Visual System · UX/UI · Web Development",
-    video_path: "/assets/img/interiors/meteoro/media-01.webm",
-  },
-  {
-    name: "SALAR",
-    slug: "salar",
-    description: "Visual System · Packaging · Brand Applications",
-    video_path: "/assets/img/interiors/salar/media-02.webp",
-  },
-  {
     name: "Manna Foods",
     slug: "manna-foods",
     description: "Rebranding · Packaging System · Retail Kit",
     video_path: "/assets/img/interiors/manna-foods/media-04.webm",
   },
   {
+    name: "SALAR",
+    slug: "salar",
+    description: "Visual System · Packaging · Brand Applications",
+    video_path: "/assets/img/projects/salar.webp",
+  },
+  {
+    name: "Meteoro",
+    slug: "meteoro",
+    description: "Visual System · UX/UI · Web Development",
+    video_path: "/assets/img/interiors/meteoro/media-01.webm",
+  },
+  {
     name: "Pascal",
     slug: "pascal",
     description: "Naming · Visual System",
-    video_path: "/assets/img/interiors/pascal/media-00.webp",
+    video_path: "/assets/videos/projects/pascal.webm",
   },
   {
     name: "SERES",
@@ -96,7 +95,7 @@ const projectItems = [
     name: "AppPadel",
     slug: "apppadel",
     description: "Brand DNA · Visual System · UX/UI",
-    video_path: "/assets/img/interiors/apppadel/media-01.webp",
+    video_path: "/assets/videos/projects/app-padel.webm",
   },
   {
     name: "Grupo Rancagua",
@@ -108,7 +107,7 @@ const projectItems = [
     name: "Alltern",
     slug: "alltern",
     description: "Naming · Visual System · Brand Applications",
-    video_path: "/assets/img/interiors/alltern/media-01.webp",
+    video_path: "/assets/img/projects/alltern.webp",
   },
 ];
 
@@ -711,7 +710,7 @@ export const translations = {
             description:
               "A brand that works is a connected system — visual, verbal, strategic, digital — where every detail is coherent and every decision is intentional.",
             media_path: "/assets/videos/about/carrousel-04.webm",
-            icon: "/assets/videos/about/jellyfish.svg"
+            icon: "/assets/videos/about/jellyfish.svg",
           },
         ],
       },
