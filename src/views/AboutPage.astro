@@ -17,15 +17,15 @@ const ui = useTranslations(lang);
       class="text-center lg:text-left lg:flex lg:flex-row lg:justify-between"
     >
       <h1
-        class="font-crimson text-3xl w-56 mx-auto leading-none lg:w-68 lg:mx-0 lg:text-6xl tracking-tight"
+        class="font-crimson text-3xl w-56 mx-auto leading-none lg:w-auto lg:mx-0 lg:text-6xl tracking-tight"
       >
         {ui.about_page.hero.title}
       </h1>
-      <img
+      <!-- <img
         src="/assets/icons/bactery.svg"
         class="h-11 mx-auto my-6 lg:h-[96px] lg:my-0"
         alt="about"
-      />
+      /> -->
       <div class="font-light text-lg leading-tight lg:text-xl">
         <p class="w-74 mx-auto lg:w-96 lg:mx-0">
           {ui.about_page.hero.description[0]}
@@ -63,7 +63,7 @@ const ui = useTranslations(lang);
   <WhyNotaliasMobile />
 
   <section
-    class="flex flex-col justify-center items-center lg:gap-8 gap-4 p-20 lg:p-38 bg-black"
+    class="flex flex-col justify-center items-center lg:gap-8 gap-4 p-20 lg:p-38 bg-[#F3F3F3]"
   >
     <img
       src="/assets/icons/work-together.svg"
@@ -71,15 +71,15 @@ const ui = useTranslations(lang);
       class="lg:w-[193px]"
     />
     <h1
-      class="text-3xl font-crimson text-white text-center w-60 mt-5 mb-6 lg:text-[55px] lg:w-auto"
+      class="text-3xl font-crimson text-center w-60 mt-5 mb-6 lg:text-[55px] lg:w-auto"
     >
       {ui.about_page.work_together.title}
     </h1>
     <a
       href={`${lang === "es" ? "/contacto" : "/en/contact"}`}
-      class="text-sm text-white uppercase lg:text-base flex items-center gap-4"
+      class="text-sm uppercase text-primary lg:text-base flex items-center gap-4"
       >{ui.about_page.work_together.contact_us}<img
-        src="/assets/icons/arrow-white.svg"
+        src="/assets/icons/arrow.svg"
         alt="->"
         class="lg:w-3"
       /></a

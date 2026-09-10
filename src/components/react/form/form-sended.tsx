@@ -23,13 +23,13 @@ export const FormSended = ({ lang, onClose }: Props) => {
       </div>
       <div className="rounded-lg pb-16 pt-24 lg:size-full lg:px-0 lg:py-0 max-w-96 mx-auto lg:max-w-none lg:mx-0">
         <article className="text-center flex flex-col items-center justify-center gap-10 h-full lg:gap-3">
-          <h1 className="text-[64px] lg:text-8xl font-crimson w-70 lg:w-120 leading-[0.90]">
+          <h1 className="text-[64px] lg:text-8xl font-crimson w-70 lg:w-auto leading-[0.90]">
             {ui.contact_page.form_modal.title}
           </h1>
           <p className="text-lg lg:text-xl w-50 leading-snug lg:w-96 lg:leading-relaxed lg:mt-6 lg:mb-12">
             {ui.contact_page.form_modal.description}
           </p>
-          <img src="/assets/icons/planet-black.svg" />
+          <img src="/assets/icons/planet.svg" />
         </article>
       </div>
     </div>

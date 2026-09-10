@@ -12,7 +12,7 @@ const ui = useTranslations(lang);
   <section
     class="flex flex-col items-center justify-center pb-16 lg:pb-18 lg:pt-20"
   >
-    <img src="/assets/icons/ovni.svg" class="lg:hidden mt-14 mb-5" />
+    <img src="/assets/icons/blue-ufo.svg" class="lg:hidden mt-14 mb-5" />
     <h1
       class="text-3xl font-crimson text-center w-96 lg:text-6xl leading-none lg:w-[650px] lg:tracking-tight"
     >
@@ -26,7 +26,7 @@ const ui = useTranslations(lang);
         src="/assets/icons/bactery.svg"
         class="absolute -left-33 top-3 lg:w-25 lg:-left-120 lg:-top-30"
       />
-      <img src="/assets/icons/ovni.svg" class="absolute top-7.5 lg:w-26" />
+      <img src="/assets/icons/blue-ufo.svg" class="absolute top-7.5 lg:w-26" />
       <img
         src="/assets/icons/planet.svg"
         class="absolute -right-32 -top-9 lg:w-16.5 lg:-top-54 lg:-right-120"
@@ -34,7 +34,7 @@ const ui = useTranslations(lang);
     </div>
   </section>
 
-  <ContactForm client:visible lang={lang} />
+  <ContactForm client:load lang={lang} />
 
   <section class="pt-16 pb-14">
     <h1 class="text-3xl font-crimson text-center lg:text-6xl tracking-tighter">

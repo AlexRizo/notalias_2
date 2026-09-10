@@ -44,17 +44,17 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     {totalPages > 1 && <Paginator pages={pageNumbers} />}
   </section>
   <section
-    class="bg-black flex flex-col justify-center items-center pt-10 pb-18 lg:pt-22 lg:pb-30"
+    class="bg-[#F3F3F3] flex flex-col justify-center items-center pt-10 pb-18 lg:py-30"
   >
-    <img src="/assets/icons/ovni-white.svg" alt="Ojo" class="lg:w-37" />
+    <img src="/assets/icons/ovni-blue.svg" alt="Ojo" class="lg:w-37" />
     <h1
-      class="text-3xl font-crimson text-white text-center w-71 mt-6 mb-8 lg:mb-10 lg:text-6xl lg:w-[740px] lg:leading-[1.10]"
+      class="text-3xl font-crimson text-center w-71 mt-6 mb-8 lg:mb-10 lg:text-6xl lg:w-150 lg:leading-[1.10]"
     >
       {ui.selected_work.contact.title}
     </h1>
-    <a class="text-white uppercase flex items-center gap-3"
+    <a href="/contacto" class="uppercase flex items-center gap-3 text-primary"
       >{ui.selected_work.contact.contact_us}<img
-        src="/assets/icons/arrow-white.svg"
+        src="/assets/icons/arrow.svg"
         alt="->"
         class="lg:w-3"
       /></a

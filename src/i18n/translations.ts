@@ -507,7 +507,7 @@ export const translations = {
           {
             label: "Encuéntranos",
             value:
-              "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
+              "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
             copy: "Copiar",
           },
         ],
@@ -539,7 +539,7 @@ export const translations = {
       project_button: "See more",
       projects: projects.en.items,
       contact: {
-        title: "This could be your brand next",
+        title: "Every great project starts with a conversation.",
         contact_us: "Contact us",
       },
     },
@@ -748,24 +748,24 @@ export const translations = {
         ...sharedWhyNotalias,
         items: [
           {
-            title: "Strategy and design under one roof.",
-            description: "No handoffs between firms.",
-          },
-          {
-            title: "Boutique attention, global standards.",
-            description: "Small enough to care, experienced enough to thrive.",
+            title: "Clients discover themselves through our process.",
+            description: '"You helped us understand our own brand."',
           },
           {
             title: "Culturally fluent",
             description: "We read cultural codes, not just market data.",
           },
           {
+            title: "Boutique attention, global standards.",
+            description: "Small enough to care, experienced enough to thrive.",
+          },
+          {
             title: "Systems, not deliverables.",
             description: "We hand you a system your team can run with.",
           },
           {
-            title: "Clients discover themselves through our process.",
-            description: '"You helped us understand our own brand."',
+            title: "Strategy and design under one roof.",
+            description: "No handoffs between firms.",
           },
         ],
       },
@@ -817,7 +817,7 @@ export const translations = {
           {
             label: "Find us",
             value:
-              "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal",
+              "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
             copy: "Copy",
           },
         ],
