@@ -93,7 +93,7 @@ const data = getInteriorContent("eterno-centinela", lang)!;
 
     <article>
       <h3>The Work</h3>
-      <p>
+      <p class="p-02">
         {
           data.the_work.map((p, i) => (
             <>
@@ -103,7 +103,7 @@ const data = getInteriorContent("eterno-centinela", lang)!;
                   <br />
                 </>
               )}
-              <span>{p}</span>
+              <span class="">{p}</span>
             </>
           ))
         }
@@ -122,5 +122,5 @@ const data = getInteriorContent("eterno-centinela", lang)!;
     />
   </div>
 
-  <OtherProyects prev_path="/" next_path="/" />
+  <OtherProyects currentSlug="eterno-centinela" />
 </section>

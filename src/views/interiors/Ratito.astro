@@ -87,10 +87,17 @@ const data = getInteriorContent("ratito", lang)!;
       <article>
         <h3>The Work</h3>
         <p>{data.the_work[0]}</p>
+        <br />
+        <p>{data.the_work[1]}</p>
       </article>
     </div>
 
     <div class="grid-component">
+      <article>
+        <p>{data.the_work[2]}</p>
+        <br />
+        <p>{data.the_work[3]}</p>
+      </article>
       <img
         src="/assets/img/interiors/ratito/media-05.webp"
         class="h-107.5 lg:h-216.5 object-cover lg:hidden"
@@ -110,5 +117,5 @@ const data = getInteriorContent("ratito", lang)!;
     />
   </div>
 
-  <OtherProyects prev_path="/" next_path="/" />
+  <OtherProyects currentSlug="ratito" />
 </section>

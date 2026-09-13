@@ -1,41 +1,32 @@
 ---
 import { cn } from "@/helpers/cn";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import OtherProjectsSlider from "@/components/react/other-projects-slider/other-projects-slider";
 
 interface Props {
-  prev_path: string;
-  next_path: string;
+  currentSlug: string;
 }
 
-const others = [
-  {
-    video_path: "/assets/img/interiors/nonstop/media-03.webm",
-    name: "Nonstop",
-    description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-  },
-  {
-    video_path: "/assets/videos/swappp.mp4",
-    name: "Swappp",
-    description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-  },
-  {
-    video_path: "/assets/videos/manna-foods.mp4",
-    name: "Flor y Fruto",
-    description:
-      "Brand Identity · Brand Execution (Packaging, Brand Applications)",
-  },
-];
+const { currentSlug } = Astro.props;
 
-const { prev_path, next_path } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const ui = useTranslations(lang);
+
+const others = ui.selected_work.projects.filter(
+  (project) => !project.url.endsWith(`/${currentSlug}`),
+);
+
+const prevSelector = "other-projects-prev";
+const nextSelector = "other-projects-next";
 ---
 
 <section class="mb-16 mt-15 lg:my-30">
   <div class="flex justify-between w-full mb-16">
-    <a
-      href={prev_path}
+    <button
+      type="button"
       class={cn(
-        "flex text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+        prevSelector,
+        "flex cursor-pointer text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
       )}
     >
       <img
@@ -44,11 +35,12 @@ const { prev_path, next_path } = Astro.props;
         class="rotate-180 mr-2 w-3.5! lg:hidden"
       />
       PREVIOUS PROJECTS
-    </a>
-    <a
-      href={next_path}
+    </button>
+    <button
+      type="button"
       class={cn(
-        "flex text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+        nextSelector,
+        "flex cursor-pointer text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
       )}
     >
       NEXT PROJECTS
@@ -57,33 +49,12 @@ const { prev_path, next_path } = Astro.props;
         alt="<-"
         class="ml-2 w-3.5! lg:hidden"
       />
-    </a>
+    </button>
   </div>
-  <aside class="grid grid-cols-2 gap-4 lg:grid-cols-3">
-    {
-      others.map((project, i) => (
-        <div class={cn(i === others.length - 1 && "hidden lg:block")}>
-          <div class="relative h-[212px] rounded lg:h-[558px]">
-            <video
-              src={project.video_path}
-              preload="none"
-              data-lazy-video
-              muted
-              loop
-              playsinline
-              class="absolute object-cover object-center rounded size-full"
-            />
-          </div>
-          <article class="mb-10">
-            <h1 class="text-lg mb-3 mt-5 leading-none lg:text-3xl font-semibold lg:font-normal">
-              {project.name}
-            </h1>
-            <p class="text-lg font-light leading-tight lg:leading-normal">
-              {project.description}
-            </p>
-          </article>
-        </div>
-      ))
-    }
-  </aside>
+  <OtherProjectsSlider
+    client:visible
+    projects={others}
+    prevSelector={`.${prevSelector}`}
+    nextSelector={`.${nextSelector}`}
+  />
 </section>
