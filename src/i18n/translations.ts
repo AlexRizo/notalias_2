@@ -39,7 +39,7 @@ const projectItems = [
   },
   {
     name: "Strategy OS",
-    slug: "strategyos",
+    slug: "strategy-os",
     description: "Visual System · Digital Brand System",
     video_path: "/assets/img/projects/strategy-os.webp",
   },
@@ -93,7 +93,7 @@ const projectItems = [
   },
   {
     name: "AppPadel",
-    slug: "apppadel",
+    slug: "app-padel",
     description: "Brand DNA · Visual System · UX/UI",
     video_path: "/assets/videos/projects/app-padel.webm",
   },

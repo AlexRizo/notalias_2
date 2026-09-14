@@ -93,21 +93,10 @@ const data = getInteriorContent("eterno-centinela", lang)!;
 
     <article>
       <h3>The Work</h3>
-      <p class="p-02">
-        {
-          data.the_work.map((p, i) => (
-            <>
-              {i > 0 && (
-                <>
-                  <br />
-                  <br />
-                </>
-              )}
-              <span class="">{p}</span>
-            </>
-          ))
-        }
-      </p>
+      <div class="grid-p p-02">
+        <p class="[&:not(:last-child)]:mb-6!">{data.the_work[0]}</p>
+        <p class="[&:not(:last-child)]:mb-6!">{data.the_work[1]}</p>
+      </div>
     </article>
 
     <img

@@ -92,16 +92,19 @@ const data = getInteriorContent("buen-punto", lang)!;
     </div>
     <article>
       <h3>The Work</h3>
-      <div class="grid-p p-02">
-        <p>{data.the_work[0]}</p>
-        <div class="lg:hidden">
-          <img
-            src="/assets/img/interiors/buen-punto/media-05.webp"
-            loading="lazy"
-            class="object-cover object-center"
-          />
-          <br />
-        </div>
+      <div class="p-02 mx-auto lg:columns-2 lg:gap-10">
+        {
+          data.the_work.map((p) => (
+            <p class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6!">{p}</p>
+          ))
+        }
+      </div>
+      <div class="lg:hidden">
+        <img
+          src="/assets/img/interiors/buen-punto/media-05.webp"
+          loading="lazy"
+          class="object-cover object-center mt-6"
+        />
       </div>
     </article>
 

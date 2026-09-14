@@ -54,9 +54,8 @@ const projects: InteriorProject[] = [
         "The challenge wasn't to retell the brand's history—it was to redefine where that heritage could live today. The objective was to build a brand that felt contemporary without performing youthfulness, allowing Eterno to evolve while remaining authentic to its legacy.",
       ],
       the_work: [
-        "We identified nightlife as the brand's cultural territory. Rather than treating high-energy occasions and nightlife as activation channels, we positioned them as the environment where Eterno could establish genuine cultural relevance. This insight led to \"WE ARE TIME\"—a strategic platform that connects the weight of a 120-year legacy with the energy of the present. A brand idea rooted in the value of the moment, designed to resonate within contemporary nightlife culture. The visual identity was built from the atmosphere surrounding the experience—not from the bottle itself. Crystal, metal, and light became the foundation of the system, while red emerged as the brand's pulse.",
-        "The result is a visual language that doesn't merely represent the night—it belongs to it.",
-        "Everything was consolidated into an execution-ready Creative Book, providing a cohesive brand system that could be deployed consistently from day one.",
+        'We identified nightlife as the brand\'s cultural territory. Rather than treating high-energy occasions and nightlife as activation channels, we positioned them as the environment where Eterno could establish genuine cultural relevance. This insight led to "WE ARE TIME"—a strategic platform that connects the weight of a 120-year legacy with the energy of the present. A brand idea rooted in the value of the moment, designed to resonate within contemporary nightlife culture.',
+        "The visual identity was built from the atmosphere surrounding the experience—not from the bottle itself. Crystal, metal, and light became the foundation of the system, while red emerged as the brand's pulse. The result is a visual language that doesn't merely represent the night—it belongs to it. Everything was consolidated into an execution-ready Creative Book, providing a cohesive brand system that could be deployed consistently from day one.",
       ],
     },
   },
@@ -96,8 +95,8 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         "The first move was naming. Before any visual decision, we found the name in the tree itself: the lemon tree is the only fruit tree that flowers and fruits at the same time, continuously. Flower and fruit live on the same branch together, a cycle that never stops, that has no season. That insight wasn't botanical, it was the exact metaphor the brand needed to become.",
-        '"Flor y Fruto" doesn\'t describe the product, it contextualizes it: it brings the field inside before you even open the bottle. F',
-        "rom that core we built the full system, anchored by a lemon tree symbol that unites root and fruit as a single form. The packaging was designed to work across both channels without splitting the identity: same brand, same voice, same symbol, with guidelines that allow future products to join without losing character.",
+        '"Flor y Fruto" doesn\'t describe the product, it contextualizes it: it brings the field inside before you even open the bottle.',
+        "From that core we built the full system, anchored by a lemon tree symbol that unites root and fruit as a single form. The packaging was designed to work across both channels without splitting the identity: same brand, same voice, same symbol, with guidelines that allow future products to join without losing character.",
       ],
     },
   },
@@ -173,7 +172,9 @@ const projects: InteriorProject[] = [
         "El nombre lo decía todo desde el inicio: Nonstop. No es una descripción del producto, es una declaración de quien lo toma. El reto era que la identidad visual y verbal estuviera a la altura de ese nombre: directo, limpio y sin ruido, y que el sistema funcionara desde el primer día en packaging, digital, eventos y merchandising al mismo tiempo.",
       ],
       the_work: [
-        'Empezamos por definir la narrativa de marca antes de tocar el diseño. Nonstop no es una marca de hidratación, es una afirmación silenciosa: "For the non stop crowd". Ese insight ordenó todas las decisiones: tono de voz directo y sin adornos, estética que elimina lo innecesario, un sistema construido sobre el negro y el blanco con un único acento de color por sabor. El símbolo nace de la letra N: dos formas orgánicas que representan movimiento continuo. Funciona solo o junto al logotipo, nunca combinado, una decisión deliberada para dar flexibilidad sin perder precisión. El packaging fue diseñado para ser transparente antes de bonito: ingredientes al frente, dosis claras, sin promesas vacías. El stick individual es el formato principal porque ese es el momento de la marca: antes del entreno, en la bolsa, en la mano.',
+        'Empezamos por definir la narrativa de marca antes de tocar el diseño. Nonstop no es una marca de hidratación, es una afirmación silenciosa: "For the non stop crowd". Ese insight ordenó todas las decisiones: tono de voz directo y sin adornos, estética que elimina lo innecesario, un sistema construido sobre el negro y el blanco con un único acento de color por sabor.',
+        "El símbolo nace de la letra N: dos formas orgánicas que representan movimiento continuo. Funciona solo o junto al logotipo, nunca combinado, una decisión deliberada para dar flexibilidad sin perder precisión. ",
+        "El packaging fue diseñado para ser transparente antes de bonito: ingredientes al frente, dosis claras, sin promesas vacías. El stick individual es el formato principal porque ese es el momento de la marca: antes del entreno, en la bolsa, en la mano.",
       ],
     },
     en: {
@@ -186,7 +187,9 @@ const projects: InteriorProject[] = [
         "The name said it all from the start: Nonstop. It's not a description of the product, it's a statement from whoever takes it. The challenge was making the visual and verbal identity live up to that name: direct, clean, no noise, and ready to work from day one across packaging, digital, events, and merchandise at once.",
       ],
       the_work: [
-        "We started by defining the brand narrative before touching the design. Nonstop isn't a hydration brand, it's a quiet statement: \"For the non stop crowd.\" That insight ordered every decision: a direct tone with no ornament, an aesthetic that strips away the unnecessary, a system built on black and white with a single color accent per flavor. The symbol comes from the letter N: two organic shapes that represent continuous movement. It works alone or alongside the logotype, never combined, a deliberate choice to allow flexibility without losing precision. The packaging was designed to be transparent before beautiful: ingredients up front, doses clear, no empty promises. The individual stick is the main format because that's the brand's real moment, before training, in the bag, in the hand.",
+        "We started by defining the brand narrative before touching the design. Nonstop isn't a hydration brand, it's a quiet statement: \"For the non stop crowd.\" That insight ordered every decision: a direct tone with no ornament, an aesthetic that strips away the unnecessary, a system built on black and white with a single color accent per flavor. ",
+        "The symbol comes from the letter N: two organic shapes that represent continuous movement. It works alone or alongside the logotype, never combined, a deliberate choice to allow flexibility without losing precision. ",
+        "The packaging was designed to be transparent before beautiful: ingredients up front, doses clear, no empty promises. The individual stick is the main format because that's the brand's real moment, before training, in the bag, in the hand.",
       ],
     },
   },
@@ -210,7 +213,9 @@ const projects: InteriorProject[] = [
         "El proyecto llegó sin nombre, sin identidad y sin referentes locales. Construir desde cero en un mercado donde la competencia no es directa pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y cualquier marca nueva tiene que ganarse su lugar ahí dentro sin disfrazarse del entorno. El reto era crear algo que se sintiera como si siempre hubiera existido y, al mismo tiempo, completamente nuevo.",
       ],
       the_work: [
-        'El nombre lo dijo todo desde el principio. "Tan tán", esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan", se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser. Desde ahí construimos un sistema de identidad completo: un logotipo con carácter propio que mezcla peso retro con frescura contemporánea, ilustraciones que habitan la marca con humor sin perder elegancia, y una paleta que balancea el verde esmeralda profundo con el naranja encendido, seria cuando tiene que serlo, eléctrica cuando la noche lo pide. El sistema se desplegó en cada punto de contacto, todo ejecutable desde el día uno, todo coherente, todo con esa vibra de lugar que ya conoces aunque sea tu primera vez.',
+        'El nombre lo dijo todo desde el principio. "Tan tán", esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan", se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser.',
+        "Desde ahí construimos un sistema de identidad completo: un logotipo con carácter propio que mezcla peso retro con frescura contemporánea, ilustraciones que habitan la marca con humor sin perder elegancia, y una paleta que balancea el verde esmeralda profundo con el naranja encendido, seria cuando tiene que serlo, eléctrica cuando la noche lo pide.",
+        "El sistema se desplegó en cada punto de contacto, todo ejecutable desde el día uno, todo coherente, todo con esa vibra de lugar que ya conoces aunque sea tu primera vez.",
       ],
     },
     en: {
@@ -223,7 +228,9 @@ const projects: InteriorProject[] = [
         "The project arrived with no name, no identity, and no local references. Building from zero in a market where competition isn't direct but context carries real weight: Marina Las Hadas has its own history, and any new brand has to earn its place there without disguising itself as part of the setting. The challenge was creating something that felt like it had always existed, while being completely new.",
       ],
       the_work: [
-        'The name said it all from the start. "Tan tán," that Mexican expression for the exact right point, "ni muy muy ni tan tán," became the concept that ordered everything else. There was no need to invent a personality: we just had to name what the place already wanted to be. From there we built a complete identity system: a logotype with its own character that blends retro weight with contemporary freshness, illustrations that live in the brand with humor without losing elegance, and a palette that balances deep emerald green with bright orange, serious when it needs to be, electric when the night calls for it. The system was deployed across every touchpoint, ready from day one, coherent throughout, carrying that feeling of a place you already know even on your first visit.',
+        'The name said it all from the start. "Tan tán," that Mexican expression for the exact right point, "ni muy muy ni tan tán," became the concept that ordered everything else. There was no need to invent a personality: we just had to name what the place already wanted to be.',
+        "From there we built a complete identity system: a logotype with its own character that blends retro weight with contemporary freshness, illustrations that live in the brand with humor without losing elegance, and a palette that balances deep emerald green with bright orange, serious when it needs to be, electric when the night calls for it.",
+        "The system was deployed across every touchpoint, ready from day one, coherent throughout, carrying that feeling of a place you already know even on your first visit.",
       ],
     },
   },
@@ -247,7 +254,9 @@ const projects: InteriorProject[] = [
         "El reto no era diseñar una marca de joyería más. Era construir una identidad con significado propio, una marca capaz de conectar con mujeres que buscan piezas versátiles, accesibles y atemporales, alejándose tanto de la comunicación aspiracional del lujo como de la estética efímera de las tendencias.",
       ],
       the_work: [
-        "Partimos de una pregunta simple: ¿qué representa realmente regalarse joyería? La respuesta nos llevó a construir un territorio centrado en el auto regalo como un acto de ritual, conexión y consentimiento personal. Desde ahí desarrollamos una identidad verbal cómplice, sensorial y cercana, capaz de hablar sobre estilo, rutina y significado sin caer en clichés ni excesos. Visualmente diseñamos un sistema minimalista, cálido y orgánico que refleja la naturalidad de la marca, construido para acompañar momentos cotidianos y elevar la percepción de cada pieza sin depender del lenguaje tradicional del lujo.",
+        "Partimos de una pregunta simple: ¿qué representa realmente regalarse joyería? La respuesta nos llevó a construir un territorio centrado en el auto regalo como un acto de ritual, conexión y consentimiento personal.",
+        "Desde ahí desarrollamos una identidad verbal cómplice, sensorial y cercana, capaz de hablar sobre estilo, rutina y significado sin caer en clichés ni excesos.",
+        "Visualmente diseñamos un sistema minimalista, cálido y orgánico que refleja la naturalidad de la marca, construido para acompañar momentos cotidianos y elevar la percepción de cada pieza sin depender del lenguaje tradicional del lujo.",
       ],
     },
     en: {
@@ -260,7 +269,9 @@ const projects: InteriorProject[] = [
         "The challenge wasn't designing one more jewelry brand. It was building an identity with meaning of its own, one able to connect with women looking for versatile, accessible, timeless pieces, moving away from both the aspirational language of luxury and the fleeting aesthetic of trends.",
       ],
       the_work: [
-        "We started from a simple question: what does it really mean to give yourself jewelry? The answer led us to build a territory centered on self gifting as an act of ritual, connection, and personal permission. From there we developed a verbal identity that's warm, sensory, and close, able to speak about style, routine, and meaning without falling into cliché or excess. Visually we designed a minimalist, warm, organic system that reflects the brand's natural quality, built to accompany everyday moments and elevate the perception of each piece without relying on traditional luxury language.",
+        "We started from a simple question: what does it really mean to give yourself jewelry? The answer led us to build a territory centered on self gifting as an act of ritual, connection, and personal permission.",
+        "From there we developed a verbal identity that's warm, sensory, and close, able to speak about style, routine, and meaning without falling into cliché or excess.",
+        "Visually we designed a minimalist, warm, organic system that reflects the brand's natural quality, built to accompany everyday moments and elevate the perception of each piece without relying on traditional luxury language.",
       ],
     },
   },
@@ -319,7 +330,8 @@ const projects: InteriorProject[] = [
         "El acceso ya no era el diferenciador. La percepción sí. La marca corría el riesgo de ser vista como una reventa informal en lugar de una plataforma confiable para descubrir productos y tendencias internacionales.",
       ],
       the_work: [
-        "Construimos una identidad editorial diseñada para ordenar la complejidad. Creamos un sistema visual capaz de integrar cinco categorías distintas bajo un mismo lenguaje, manteniendo claridad, coherencia y reconocimiento en cada punto de contacto. Más que una nueva imagen, desarrollamos una arquitectura de marca que permite crecer con consistencia. Una identidad con la formalidad de una empresa consolidada y la sensibilidad de un referente de tendencias.",
+        "Construimos una identidad editorial diseñada para ordenar la complejidad. Creamos un sistema visual capaz de integrar cinco categorías distintas bajo un mismo lenguaje, manteniendo claridad, coherencia y reconocimiento en cada punto de contacto. ",
+        "Más que una nueva imagen, desarrollamos una arquitectura de marca que permite crecer con consistencia. Una identidad con la formalidad de una empresa consolidada y la sensibilidad de un referente de tendencias.",
       ],
     },
     en: {
@@ -332,7 +344,8 @@ const projects: InteriorProject[] = [
         "Access was no longer the differentiator. Perception was. The brand risked being seen as an informal resale operation instead of a trusted platform for discovering international products and trends.",
       ],
       the_work: [
-        "We built an editorial identity designed to bring order to complexity. We created a visual system able to unite five distinct categories under one language, with clarity, coherence, and recognition at every touchpoint. More than a new image, we developed a brand architecture that allows growth with consistency, an identity with the formality of an established company and the sensibility of a trend authority.",
+        "We built an editorial identity designed to bring order to complexity. We created a visual system able to unite five distinct categories under one language, with clarity, coherence, and recognition at every touchpoint. ",
+        "More than a new image, we developed a brand architecture that allows growth with consistency, an identity with the formality of an established company and the sensibility of a trend authority.",
       ],
     },
   },
@@ -398,7 +411,9 @@ const projects: InteriorProject[] = [
         "El reto no era solo nombrar a Meteoro, era dotarla de una identidad que hiciera tangible algo intangible: la diferencia entre un capital que acompaña y uno que transforma. Había que construir una marca capaz de hablarle al emprendedor que busca más que dinero, sin caer en el discurso motivacional vacío. Una identidad que transmitiera estructura y visión de largo plazo, pero que al mismo tiempo se sintiera dinámica, real y con criterio propio.",
       ],
       the_work: [
-        'El punto de partida fue encontrar el territorio de sentido que justificara todo lo demás. Ese territorio fue el impacto: no como promesa, sino como dirección. Un meteoro no avisa, no pide permiso, aparece, genera cambio y deja marca. De ahí nació el claim "Impulsamos ideas que cambian industrias", una declaración que no describe lo que Meteoro hace, sino lo que Meteoro mueve. El lenguaje de la marca se construyó desde la misma lógica: preciso, estratégico, sin adornos. La identidad visual tomó ese mismo impulso: una tipografía geométrica y limpia que combina solidez con modernidad, y un símbolo que abstrae la trayectoria del meteoro. Meteoro salió al mundo con una identidad que no necesita explicación. Se presenta sola.',
+        "El punto de partida fue encontrar el territorio de sentido que justificara todo lo demás. Ese territorio fue el impacto: no como promesa, sino como dirección. Un meteoro no avisa, no pide permiso, aparece, genera cambio y deja marca.",
+        'De ahí nació el claim "Impulsamos ideas que cambian industrias", una declaración que no describe lo que Meteoro hace, sino lo que Meteoro mueve. El lenguaje de la marca se construyó desde la misma lógica: preciso, estratégico, sin adornos.',
+        "La identidad visual tomó ese mismo impulso: una tipografía geométrica y limpia que combina solidez con modernidad, y un símbolo que abstrae la trayectoria del meteoro. Meteoro salió al mundo con una identidad que no necesita explicación. Se presenta sola.",
       ],
     },
     en: {
@@ -411,7 +426,9 @@ const projects: InteriorProject[] = [
         "The challenge wasn't just naming Meteoro, it was giving it an identity that made something intangible tangible: the difference between capital that accompanies and capital that transforms. The brand had to speak to entrepreneurs looking for more than money, without falling into empty motivational language. An identity that carried structure and long term vision while still feeling dynamic, real, and driven by its own judgment.",
       ],
       the_work: [
-        "The starting point was finding the territory of meaning that could justify everything else. That territory was impact, not as a promise, but as a direction. A meteor doesn't announce itself, doesn't ask permission, it appears, creates change, and leaves a mark. From there came the claim \"We drive ideas that change industries,\" a statement that describes not what Meteoro does, but what Meteoro moves. The brand's language was built on the same logic: precise, strategic, no ornament. The visual identity carried that same momentum: a clean, geometric typeface that combines solidity with modernity, and a symbol that abstracts the meteor's trajectory. Meteoro went out into the world with an identity that needs no explanation. It speaks for itself.",
+        "The starting point was finding the territory of meaning that could justify everything else. That territory was impact, not as a promise, but as a direction. A meteor doesn't announce itself, doesn't ask permission, it appears, creates change, and leaves a mark.",
+        "From there came the claim \"We drive ideas that change industries,\" a statement that describes not what Meteoro does, but what Meteoro moves. The brand's language was built on the same logic: precise, strategic, no ornament.",
+        "The visual identity carried that same momentum: a clean, geometric typeface that combines solidity with modernity, and a symbol that abstracts the meteor's trajectory. Meteoro went out into the world with an identity that needs no explanation. It speaks for itself.",
       ],
     },
   },
@@ -428,13 +445,16 @@ const projects: InteriorProject[] = [
     es: {
       description: "Diseñar un sistema operativo para líderes que ejecutan.",
       context: [
-        "Las empresas tecnológicas crecen cada vez más rápido, pero muchas siguen enfrentando el mismo problema: la estrategia vive en documentos, juntas y presentaciones, mientras la operación diaria avanza por otro camino. Strategy OS nace para cerrar esa brecha, una plataforma impulsada por AI diseñada para founders, C levels y líderes que necesitan visibilidad, estructura y claridad para conectar la estrategia con la ejecución.",
+        "Las empresas tecnológicas crecen cada vez más rápido, pero muchas siguen enfrentando el mismo problema: la estrategia vive en documentos, juntas y presentaciones, mientras la operación diaria avanza por otro camino. ",
+        "Strategy OS nace para cerrar esa brecha, una plataforma impulsada por AI diseñada para founders, C levels y líderes que necesitan visibilidad, estructura y claridad para conectar la estrategia con la ejecución.",
       ],
       challenge: [
         "El reto no era presentar otra herramienta de planeación. Era construir una marca capaz de reclamar un territorio propio: convertir la estrategia en un sistema vivo, medible y presente en el día a día. La identidad debía transmitir inteligencia y capacidad analítica sin caer en el lenguaje frío de software corporativo.",
       ],
       the_work: [
-        'Partimos de una idea central: la claridad es el motor de la ejecución. De ahí nació el territorio narrativo "Where Clarity Drives Execution", una plataforma estratégica que transforma la claridad en una ventaja competitiva. Construimos una identidad verbal basada en tres arquetipos de marca, un lenguaje inteligente, técnico pero accesible, capaz de comunicar profundidad sin recurrir al hype tecnológico. Visualmente desarrollamos un sistema limpio, numérico y contemporáneo que refleja exactamente lo que el producto promete: orden, estructura, visibilidad y foco.',
+        'Partimos de una idea central: la claridad es el motor de la ejecución. De ahí nació el territorio narrativo "Where Clarity Drives Execution", una plataforma estratégica que transforma la claridad en una ventaja competitiva.',
+        "Construimos una identidad verbal basada en tres arquetipos de marca, un lenguaje inteligente, técnico pero accesible, capaz de comunicar profundidad sin recurrir al hype tecnológico.",
+        "Visualmente desarrollamos un sistema limpio, numérico y contemporáneo que refleja exactamente lo que el producto promete: orden, estructura, visibilidad y foco.",
       ],
     },
     en: {
@@ -447,7 +467,9 @@ const projects: InteriorProject[] = [
         "The challenge wasn't presenting another planning tool. It was building a brand capable of claiming its own territory: turning strategy into a living, measurable system present in day to day work. The identity needed to convey intelligence and analytical capability without falling into cold corporate software language.",
       ],
       the_work: [
-        'We started from a central idea: clarity is the engine of execution. From there came the narrative territory "Where Clarity Drives Execution," a strategic platform that turns clarity into a competitive advantage. We built a verbal identity based on three brand archetypes, a language that\'s intelligent and technical but accessible, able to communicate depth without leaning on tech hype. Visually we developed a clean, numeric, contemporary system that reflects exactly what the product promises: order, structure, visibility, and focus.',
+        'We started from a central idea: clarity is the engine of execution. From there came the narrative territory "Where Clarity Drives Execution," a strategic platform that turns clarity into a competitive advantage.',
+        "We built a verbal identity based on three brand archetypes, a language that's intelligent and technical but accessible, able to communicate depth without leaning on tech hype.",
+        "Visually we developed a clean, numeric, contemporary system that reflects exactly what the product promises: order, structure, visibility, and focus.",
       ],
     },
   },
@@ -471,7 +493,9 @@ const projects: InteriorProject[] = [
         "El mercado de la hospitalidad boutique está saturado de marcas que prometen experiencias únicas y terminan diciendo lo mismo. El reto no era crear una marca de hotel, era crear un territorio de pertenencia: un nombre que pudiera viajar, adaptarse a nuevos destinos y seguir siendo reconocible sin perder su alma. Y hacerlo sin caer en el lujo performativo ni en la autenticidad forzada.",
       ],
       the_work: [
-        'El punto de partida fue el nombre. SERES no describe un lugar, describe a quienes lo habitan. Desde ahí se construyó todo: un concepto creativo anclado en la conexión humana, la vulnerabilidad como fuerza y la comunidad como arquitectura social. La identidad verbal se desarrolló desde la filosofía "la simplicidad es la mayor de las sofisticaciones", traducida en un sistema de lenguaje que celebra lo local, lo humano y lo presente. El sistema visual respondió al mismo principio: propuestas que habitan el espacio entre lo contemporáneo y lo artesanal, entre la serenidad del retiro y la energía del beach club. El resultado es una marca diseñada para expandirse a nuevos destinos, Tulum, Puerto Escondido y más, sin perder lo que hace a SERES reconocible.',
+        "El punto de partida fue el nombre. SERES no describe un lugar, describe a quienes lo habitan. Desde ahí se construyó todo: un concepto creativo anclado en la conexión humana, la vulnerabilidad como fuerza y la comunidad como arquitectura social.",
+        'La identidad verbal se desarrolló desde la filosofía "la simplicidad es la mayor de las sofisticaciones", traducida en un sistema de lenguaje que celebra lo local, lo humano y lo presente. El sistema visual respondió al mismo principio: propuestas que habitan el espacio entre lo contemporáneo y lo artesanal, entre la serenidad del retiro y la energía del beach club.',
+        "El resultado es una marca diseñada para expandirse a nuevos destinos, Tulum, Puerto Escondido y más, sin perder lo que hace a SERES reconocible.",
       ],
     },
     en: {
@@ -484,7 +508,9 @@ const projects: InteriorProject[] = [
         "The boutique hospitality market is saturated with brands that promise unique experiences and end up saying the same thing. The challenge wasn't creating a hotel brand, it was creating a territory of belonging: a name that could travel, adapt to new destinations, and stay recognizable without losing its soul, all without falling into performative luxury or forced authenticity.",
       ],
       the_work: [
-        "The starting point was the name. SERES doesn't describe a place, it describes the people who inhabit it. From there everything else was built: a creative concept anchored in human connection, vulnerability as strength, and community as social architecture. The verbal identity was developed from the philosophy that simplicity is the highest form of sophistication, translated into a language that celebrates what's local, human, and present. The visual system followed the same principle: expressions that live between the contemporary and the artisanal, between the calm of a retreat and the energy of a beach club. The result is a brand designed to expand into new destinations, Tulum, Puerto Escondido, and beyond, without losing what makes SERES recognizable.",
+        "The starting point was the name. SERES doesn't describe a place, it describes the people who inhabit it. From there everything else was built: a creative concept anchored in human connection, vulnerability as strength, and community as social architecture.",
+        "The verbal identity was developed from the philosophy that simplicity is the highest form of sophistication, translated into a language that celebrates what's local, human, and present. The visual system followed the same principle: expressions that live between the contemporary and the artisanal, between the calm of a retreat and the energy of a beach club.",
+        "The result is a brand designed to expand into new destinations, Tulum, Puerto Escondido, and beyond, without losing what makes SERES recognizable.",
       ],
     },
   },
@@ -508,7 +534,9 @@ const projects: InteriorProject[] = [
         "El mercado de sal artesanal está lleno de productos que se esconden detrás del folclor o del packaging bonito sin decir nada real. El reto no era hacer que SALAR se viera premium, era hacer que se sintiera honesta: que quien la tuviera en la mano entendiera de dónde viene, quién la cosechó y por qué eso importa. Sin romantizar, sin exagerar.",
       ],
       the_work: [
-        "El territorio de marca se construyó desde una verdad simple: esto no se fabrica, se cosecha. De ahí nació un tono de voz directo y sin adornos, un sistema visual que habla de tierra, mar y sol, y un símbolo que retrata el instante exacto en que el agua se convierte en sal viva. El packaging se diseñó en dos versiones, pouch premium y pouch comercial, para que la marca pudiera vivir tanto en una cocina de autor como en un mercado local, sin perder coherencia ni carácter. Todo materializa la misma idea: una sal viva, honesta y hecha con paciencia.",
+        "El territorio de marca se construyó desde una verdad simple: esto no se fabrica, se cosecha. De ahí nació un tono de voz directo y sin adornos, un sistema visual que habla de tierra, mar y sol, y un símbolo que retrata el instante exacto en que el agua se convierte en sal viva.",
+        "El packaging se diseñó en dos versiones, pouch premium y pouch comercial, para que la marca pudiera vivir tanto en una cocina de autor como en un mercado local, sin perder coherencia ni carácter.",
+        "Todo materializa la misma idea: una sal viva, honesta y hecha con paciencia.",
       ],
     },
     en: {
@@ -521,7 +549,9 @@ const projects: InteriorProject[] = [
         "The artisanal salt market is full of products that hide behind folklore or pretty packaging without saying anything real. The challenge wasn't making SALAR look premium, it was making it feel honest: whoever held it in their hand needed to understand where it comes from, who harvested it, and why that matters. No romanticizing, no exaggeration.",
       ],
       the_work: [
-        "The brand territory was built on a simple truth: this isn't manufactured, it's harvested. From there came a direct, unadorned tone of voice, a visual system that speaks of land, sea, and sun, and a symbol that captures the exact instant water becomes living salt. The packaging was designed in two versions, a premium pouch and a commercial pouch, so the brand could live in both a chef's kitchen and a local market without losing coherence or character. Everything materializes the same idea: a salt that's alive, honest, and made with patience.",
+        "The brand territory was built on a simple truth: this isn't manufactured, it's harvested. From there came a direct, unadorned tone of voice, a visual system that speaks of land, sea, and sun, and a symbol that captures the exact instant water becomes living salt.",
+        "The packaging was designed in two versions, a premium pouch and a commercial pouch, so the brand could live in both a chef's kitchen and a local market without losing coherence or character.",
+        "Everything materializes the same idea: a salt that's alive, honest, and made with patience.",
       ],
     },
   },
@@ -544,7 +574,8 @@ const projects: InteriorProject[] = [
         "En una categoría donde la salud suele comunicar sacrificio, la oportunidad estaba en cambiar la conversación. La marca necesitaba una identidad capaz de equilibrar bienestar, innovación y deseo, con un lenguaje que transmitiera calidad y cercanía sin depender de los códigos tradicionales de la alimentación saludable, y un sistema preparado para crecer hacia un portafolio de submarcas.",
       ],
       the_work: [
-        "Desarrollamos una plataforma de marca construida alrededor de una idea central: transformando el sabor de lo saludable. A partir de ahí creamos una identidad verbal optimista, cercana y llena de energía, que posiciona a manna foods como una marca que convierte ingredientes cotidianos en experiencias sorprendentes. Visualmente diseñamos un sistema limpio, contemporáneo y altamente flexible que comunica frescura, calidad e innovación, con una arquitectura preparada para acompañar el crecimiento de la marca manteniendo consistencia en cada punto de contacto.",
+        "Desarrollamos una plataforma de marca construida alrededor de una idea central: transformando el sabor de lo saludable. A partir de ahí creamos una identidad verbal optimista, cercana y llena de energía, que posiciona a manna foods como una marca que convierte ingredientes cotidianos en experiencias sorprendentes.",
+        "Visualmente diseñamos un sistema limpio, contemporáneo y altamente flexible que comunica frescura, calidad e innovación, con una arquitectura preparada para acompañar el crecimiento de la marca manteniendo consistencia en cada punto de contacto.",
       ],
     },
     en: {
@@ -556,7 +587,8 @@ const projects: InteriorProject[] = [
         "In a category where health usually communicates sacrifice, the opportunity was to change the conversation. The brand needed an identity able to balance wellness, innovation, and desire, with a language that conveyed quality and warmth without relying on the traditional codes of healthy eating, and a system built to grow into a portfolio of sub brands.",
       ],
       the_work: [
-        "We developed a brand platform built around one central idea: transforming the flavor of healthy. From there we created an optimistic, warm, energetic verbal identity that positions manna foods as a brand that turns everyday ingredients into surprising experiences. Visually we designed a clean, contemporary, highly flexible system that communicates freshness, quality, and innovation, with an architecture built to support the brand's growth while keeping consistency at every touchpoint.",
+        "We developed a brand platform built around one central idea: transforming the flavor of healthy. From there we created an optimistic, warm, energetic verbal identity that positions manna foods as a brand that turns everyday ingredients into surprising experiences.",
+        "Visually we designed a clean, contemporary, highly flexible system that communicates freshness, quality, and innovation, with an architecture built to support the brand's growth while keeping consistency at every touchpoint.",
       ],
     },
   },
@@ -580,7 +612,8 @@ const projects: InteriorProject[] = [
         "La categoría suele comunicar lujo, estatus y aspiración. Pascal necesitaba diferenciarse construyendo una marca que acompañara emocionalmente a sus clientes durante uno de los momentos más importantes de sus vidas. La identidad debía transmitir confianza, cercanía y sofisticación, convirtiendo el proceso de elegir un diamante en una experiencia segura y profundamente personal.",
       ],
       the_work: [
-        "Construimos la estrategia alrededor de una idea central: celebrando hitos. Desde este territorio desarrollamos una identidad verbal que reconoce el esfuerzo, el compromiso y las decisiones valientes que existen detrás de cada compra. Visualmente diseñamos un sistema elegante y atemporal que equilibra sofisticación y calidez, alejándose de los códigos tradicionales del lujo para construir una experiencia más humana, transparente y cercana.",
+        "Construimos la estrategia alrededor de una idea central: celebrando hitos. Desde este territorio desarrollamos una identidad verbal que reconoce el esfuerzo, el compromiso y las decisiones valientes que existen detrás de cada compra.",
+        "Visualmente diseñamos un sistema elegante y atemporal que equilibra sofisticación y calidez, alejándose de los códigos tradicionales del lujo para construir una experiencia más humana, transparente y cercana.",
       ],
     },
     en: {
@@ -593,7 +626,8 @@ const projects: InteriorProject[] = [
         "The category usually communicates luxury, status, and aspiration. Pascal needed to differentiate by building a brand that could emotionally accompany its clients through one of the most important moments of their lives. The identity had to convey trust, warmth, and sophistication, turning the process of choosing a diamond into a safe, deeply personal experience.",
       ],
       the_work: [
-        "We built the strategy around one central idea: celebrating milestones. From this territory we developed a verbal identity that recognizes the effort, commitment, and brave decisions behind every purchase. Visually we designed an elegant, timeless system that balances sophistication and warmth, moving away from traditional luxury codes to build a more human, transparent, and approachable experience.",
+        "We built the strategy around one central idea: celebrating milestones. From this territory we developed a verbal identity that recognizes the effort, commitment, and brave decisions behind every purchase.",
+        "Visually we designed an elegant, timeless system that balances sophistication and warmth, moving away from traditional luxury codes to build a more human, transparent, and approachable experience.",
       ],
     },
   },
@@ -617,7 +651,8 @@ const projects: InteriorProject[] = [
         "La oportunidad no estaba en crear otra aplicación para jugadores de pádel. El verdadero desafío consistía en construir una marca capaz de integrar múltiples servicios bajo una sola experiencia, posicionando a AppPadel como el punto de encuentro de una comunidad global. La identidad debía comunicar cercanía, simplicidad e innovación sin perder el componente humano que define al deporte.",
       ],
       the_work: [
-        "Construimos la estrategia alrededor de un concepto central: la red del pádel. Desde este territorio desarrollamos una identidad que entiende el deporte como un espacio de conexión, más que una plataforma tecnológica. Diseñamos una identidad verbal cercana, optimista y colaborativa, acompañada de un sistema visual minimalista y flexible pensado para conectar con una comunidad global de jugadores.",
+        "Construimos la estrategia alrededor de un concepto central: la red del pádel. Desde este territorio desarrollamos una identidad que entiende el deporte como un espacio de conexión, más que una plataforma tecnológica.",
+        "Diseñamos una identidad verbal cercana, optimista y colaborativa, acompañada de un sistema visual minimalista y flexible pensado para conectar con una comunidad global de jugadores.",
       ],
     },
     en: {
@@ -630,7 +665,8 @@ const projects: InteriorProject[] = [
         "The opportunity wasn't creating another app for padel players. The real challenge was building a brand able to integrate multiple services under one experience, positioning AppPadel as the meeting point for a global community. The identity had to communicate closeness, simplicity, and innovation without losing the human component that defines the sport.",
       ],
       the_work: [
-        "We built the strategy around one central concept: the padel network. From this territory we developed an identity that understands the sport as a space for connection, more than a tech platform. We designed a verbal identity that's warm, optimistic, and collaborative, paired with a minimalist, flexible visual system built to connect with a global community of players.",
+        "We built the strategy around one central concept: the padel network. From this territory we developed an identity that understands the sport as a space for connection, more than a tech platform.",
+        "We designed a verbal identity that's warm, optimistic, and collaborative, paired with a minimalist, flexible visual system built to connect with a global community of players.",
       ],
     },
   },
@@ -653,7 +689,9 @@ const projects: InteriorProject[] = [
         "El mercado de tequila está saturado de marcas que compiten por quién grita más fuerte su legado o su exclusividad. La oportunidad estaba en encontrar un equilibrio entre lo tradicional y lo contemporáneo: una identidad genuina y cercana, que transmitiera un carácter artesanal real, y que diferenciara desde el primer golpe de vista sin depender del agave de siempre.",
       ],
       the_work: [
-        'Partimos del propio nombre como territorio de marca. "Buen Punto" nace de una expresión cotidiana que valida, coincide y continúa una conversación, una personalidad que invita al diálogo en lugar de dictar cómo celebrar. Visualmente construimos un sistema que equilibra tradición y modernidad: un logotipo de estructura clásica con guiños gráficos propios, y una reinterpretación abstracta del agave en lugar de la representación literal que domina la categoría. El sistema se extiende al packaging a través de una etiqueta que apela al tacto y a la vista, con papel texturizado y acabados que resaltan el punto sobre la ilustración de los volcanes, dejando que el olfato y el gusto queden a cargo del producto mismo.',
+        'Partimos del propio nombre como territorio de marca. "Buen Punto" nace de una expresión cotidiana que valida, coincide y continúa una conversación, una personalidad que invita al diálogo en lugar de dictar cómo celebrar.',
+        "Visualmente construimos un sistema que equilibra tradición y modernidad: un logotipo de estructura clásica con guiños gráficos propios, y una reinterpretación abstracta del agave en lugar de la representación literal que domina la categoría.",
+        "El sistema se extiende al packaging a través de una etiqueta que apela al tacto y a la vista, con papel texturizado y acabados que resaltan el punto sobre la ilustración de los volcanes, dejando que el olfato y el gusto queden a cargo del producto mismo.",
       ],
     },
     en: {
@@ -665,7 +703,9 @@ const projects: InteriorProject[] = [
         "The tequila market is saturated with brands competing over who shouts their heritage or exclusivity the loudest. The opportunity was finding a balance between tradition and the contemporary: an identity that felt genuine and approachable, carried real artisanal character, and stood out at first glance without relying on the usual agave imagery.",
       ],
       the_work: [
-        'We started from the name itself as brand territory. "Buen Punto" comes from an everyday phrase that validates, agrees, and carries a conversation forward, a personality that invites dialogue instead of dictating how to celebrate. Visually we built a system that balances tradition and modernity: a logotype with a classic structure carrying its own graphic details, and an abstract reinterpretation of agave instead of the literal imagery that dominates the category. The system extends into packaging through a label that appeals to touch and sight, with textured paper and finishes that highlight the point over an illustration of volcanoes, leaving smell and taste to the product itself.',
+        'We started from the name itself as brand territory. "Buen Punto" comes from an everyday phrase that validates, agrees, and carries a conversation forward, a personality that invites dialogue instead of dictating how to celebrate.',
+        "Visually we built a system that balances tradition and modernity: a logotype with a classic structure carrying its own graphic details, and an abstract reinterpretation of agave instead of the literal imagery that dominates the category.",
+        "The system extends into packaging through a label that appeals to touch and sight, with textured paper and finishes that highlight the point over an illustration of volcanoes, leaving smell and taste to the product itself.",
       ],
     },
   },
@@ -688,7 +728,10 @@ const projects: InteriorProject[] = [
         "El reto consistía en consolidar una arquitectura de marca que proyectara solidez y respaldo sin restar protagonismo a las marcas de vehículos con las que coexiste. Se necesitaba un sistema corporativo ordenado que garantizara coherencia en todas sus manifestaciones, transmitiendo legado, visión y confianza hacia el futuro.",
       ],
       the_work: [
-        'El punto de partida fue definir un concepto que pudiera hablar por todas las marcas al mismo tiempo: "Confianza que conduce el futuro". Una idea lo suficientemente sólida para sostener al grupo, y lo suficientemente flexible para no ahogar a las marcas que opera. Desde ahí construimos una identidad corporativa contemporánea, con negro de base y acentos en rojo, y recursos gráficos lineales construidos a partir de la silueta de la "R" que se superponen sobre los vehículos en contextos reales: la marca no describe los autos, los habita. La pieza más crítica fue el sistema de co branding. Grupo Rancagua opera marcas con identidades propias y reglas estrictas, y el reto era que el grupo pudiera aparecer junto a ellas sin competir ni diluirse. Establecimos jerarquías claras y proporciones definidas para que Grupo Rancagua funcione siempre como respaldo sólido: presente, reconocible, pero nunca por encima de la marca socia.',
+        'El punto de partida fue definir un concepto que pudiera hablar por todas las marcas al mismo tiempo: "Confianza que conduce el futuro". Una idea lo suficientemente sólida para sostener al grupo, y lo suficientemente flexible para no ahogar a las marcas que opera.',
+        'Desde ahí construimos una identidad corporativa contemporánea, con negro de base y acentos en rojo, y recursos gráficos lineales construidos a partir de la silueta de la "R" que se superponen sobre los vehículos en contextos reales: la marca no describe los autos, los habita.',
+        "La pieza más crítica fue el sistema de co branding. Grupo Rancagua opera marcas con identidades propias y reglas estrictas, y el reto era que el grupo pudiera aparecer junto a ellas sin competir ni diluirse.",
+        "Establecimos jerarquías claras y proporciones definidas para que Grupo Rancagua funcione siempre como respaldo sólido: presente, reconocible, pero nunca por encima de la marca socia.",
       ],
     },
     en: {
@@ -700,7 +743,10 @@ const projects: InteriorProject[] = [
         "The challenge was consolidating a brand architecture that projected strength and support without taking the spotlight away from the vehicle brands it coexists with. It needed an ordered corporate system that guaranteed coherence across every touchpoint, conveying legacy, vision, and confidence in the future.",
       ],
       the_work: [
-        'The starting point was defining a concept that could speak for every brand at once: "Confidence that drives the future." An idea solid enough to hold the group together, and flexible enough not to overshadow the brands it operates. From there we built a contemporary corporate identity, with black as its base and red accents, and linear graphic resources built from the silhouette of the "R" that overlay directly onto vehicles in real settings: the brand doesn\'t describe the cars, it inhabits them. The most critical piece was the co branding system. Grupo Rancagua operates brands with their own identities and strict rules, and the challenge was letting the group appear alongside them without competing or diluting them. We established clear hierarchies and defined proportions so Grupo Rancagua always functions as solid backing: present, recognizable, but never above the partner brand.',
+        'The starting point was defining a concept that could speak for every brand at once: "Confidence that drives the future." An idea solid enough to hold the group together, and flexible enough not to overshadow the brands it operates.',
+        'From there we built a contemporary corporate identity, with black as its base and red accents, and linear graphic resources built from the silhouette of the "R" that overlay directly onto vehicles in real settings: the brand doesn\'t describe the cars, it inhabits them.',
+        "The most critical piece was the co branding system. Grupo Rancagua operates brands with their own identities and strict rules, and the challenge was letting the group appear alongside them without competing or diluting them.",
+        "We established clear hierarchies and defined proportions so Grupo Rancagua always functions as solid backing: present, recognizable, but never above the partner brand.",
       ],
     },
   },
@@ -723,7 +769,8 @@ const projects: InteriorProject[] = [
         "La categoría estaba dominada por dos discursos opuestos: la rapidez o el bienestar. La oportunidad consistía en construir una marca capaz de reconciliar ambos mundos, eliminando los estigmas alrededor de la comida rápida saludable.",
       ],
       the_work: [
-        "Desarrollamos la estrategia alrededor de una idea central: healthy fast food. A partir de ahí construimos una identidad que redefine lo que significa la comida rápida, con un tono directo y cercano, y un concepto creativo, All In One Alternative, que comunica una solución completa para un estilo de vida en movimiento. Visualmente diseñamos un sistema contemporáneo con personalidad fresca y urbana, combinando recursos gráficos minimalistas con una paleta vibrante, pensado para romper con los códigos tradicionales de la categoría.",
+        "Desarrollamos la estrategia alrededor de una idea central: healthy fast food. A partir de ahí construimos una identidad que redefine lo que significa la comida rápida, con un tono directo y cercano, y un concepto creativo, All In One Alternative, que comunica una solución completa para un estilo de vida en movimiento.",
+        "Visualmente diseñamos un sistema contemporáneo con personalidad fresca y urbana, combinando recursos gráficos minimalistas con una paleta vibrante, pensado para romper con los códigos tradicionales de la categoría.",
       ],
     },
     en: {
@@ -735,7 +782,8 @@ const projects: InteriorProject[] = [
         "The category was dominated by two opposing narratives: speed or wellbeing. The opportunity was to build a brand able to reconcile both worlds, removing the stigma around healthy fast food.",
       ],
       the_work: [
-        "We built the strategy around one central idea: healthy fast food. From there we developed an identity that redefines what fast food means, with a direct, approachable tone and a creative concept, All In One Alternative, that communicates a complete solution for a life in motion. Visually we designed a contemporary system with a fresh, urban personality, combining minimalist graphic resources with a vibrant palette, built to break away from the category's traditional codes.",
+        "We built the strategy around one central idea: healthy fast food. From there we developed an identity that redefines what fast food means, with a direct, approachable tone and a creative concept, All In One Alternative, that communicates a complete solution for a life in motion.",
+        "Visually we designed a contemporary system with a fresh, urban personality, combining minimalist graphic resources with a vibrant palette, built to break away from the category's traditional codes.",
       ],
     },
   },

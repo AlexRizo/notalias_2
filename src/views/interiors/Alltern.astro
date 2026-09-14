@@ -108,7 +108,8 @@ const data = getInteriorContent("alltern", lang)!;
     <article>
       <h3>The Work</h3>
       <div class="grid-p p-02">
-        <p>{data.the_work[0]}</p>
+        <p class="[&:not(:last-child)]:mb-6!">{data.the_work[0]}</p>
+        <p class="[&:not(:last-child)]:mb-6!">{data.the_work[1]}</p>
         <img
           src="/assets/img/interiors/alltern/media-05.webp"
           loading="lazy"
