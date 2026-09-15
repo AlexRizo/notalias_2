@@ -73,7 +73,8 @@ const projects: InteriorProject[] = [
       description:
         "Del campo a la botella: convertir quince años de agroindustria en una marca que el consumidor elige por nombre.",
       context: [
-        "Grupo AGR lleva más de quince años operando en la industria citrícola mexicana. Campo, proceso, volumen, todo estaba ahí. Lo que no existía era la marca: un nombre, una identidad, una razón para que el consumidor final los eligiera sobre cualquier otra botella en el anaquel. El mercado de jugos de limón embotellados en México estaba dominado por marcas genéricas o productos con concentrado artificial.",
+        "Grupo AGR lleva más de quince años operando en la industria citrícola mexicana. Campo, proceso, volumen, todo estaba ahí. Lo que no existía era la marca: un nombre, una identidad, una razón para que el consumidor final los eligiera sobre cualquier otra botella en el anaquel. ",
+        "El mercado de jugos de limón embotellados en México estaba dominado por marcas genéricas o productos con concentrado artificial.",
       ],
       challenge: [
         "El reto no era el producto, era el salto: pasar de proveedor anónimo de la cadena agroindustrial a marca de consumo con presencia en retail y HORECA. La marca tenía que comunicar el origen mexicano, Tecomán, el campo y el limonero, sin caer en lo folclórico.",
@@ -88,7 +89,8 @@ const projects: InteriorProject[] = [
       description:
         "Transforming fifteen years of agricultural expertise into a consumer brand people choose by name.",
       context: [
-        "Grupo AGR has operated in Mexico's citrus industry for more than fifteen years. The land, the process, the volume, all of it was already there. What didn't exist was the brand: a name, an identity, a reason for the end consumer to choose them over any other bottle on the shelf. The bottled lemon juice market in Mexico was dominated by generic brands or products made with artificial concentrate.",
+        "Grupo AGR has operated in Mexico's citrus industry for more than fifteen years. The land, the process, the volume, all of it was already there. What didn't exist was the brand: a name, an identity, a reason for the end consumer to choose them over any other bottle on the shelf. ",
+        "The bottled lemon juice market in Mexico was dominated by generic brands or products made with artificial concentrate.",
       ],
       challenge: [
         "The challenge wasn't the product, it was the leap: moving from an anonymous supplier in the agro industrial chain to a consumer brand present in both retail and HORECA. The brand had to communicate its Mexican origin, Tecomán, the fields, the lemon tree, without falling into folklore.",
@@ -166,7 +168,8 @@ const projects: InteriorProject[] = [
       description:
         "La primera marca de electrolitos en México diseñada para los que nunca paran.",
       context: [
-        "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuando encuentra algo que se siente suyo, lo adopta como identidad. Esa persona no tenía una marca propia de electrolitos. Usaba lo que encontraba: importados caros, genéricos sin personalidad, o productos pensados para otro mercado. La categoría estaba vacante no por falta de producto, sino por falta de carácter e identidad.",
+        "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuando encuentra algo que se siente suyo, lo adopta como identidad. ",
+        "Esa persona no tenía una marca propia de electrolitos. Usaba lo que encontraba: importados caros, genéricos sin personalidad, o productos pensados para otro mercado. La categoría estaba vacante no por falta de producto, sino por falta de carácter e identidad.",
       ],
       challenge: [
         "El nombre lo decía todo desde el inicio: Nonstop. No es una descripción del producto, es una declaración de quien lo toma. El reto era que la identidad visual y verbal estuviera a la altura de ese nombre: directo, limpio y sin ruido, y que el sistema funcionara desde el primer día en packaging, digital, eventos y merchandising al mismo tiempo.",
@@ -181,7 +184,8 @@ const projects: InteriorProject[] = [
       description:
         "Building Mexico's first electrolyte brand designed for people who never slow down.",
       context: [
-        "There's a profile of person in Mexico that already exists: trains every day of the week, watches what they eat, wants to perform better and recover faster. Between 20 and 45 years old, buys out of conviction rather than price, and once something feels like theirs, they wear it as identity. That person didn't have their own electrolyte brand. They used whatever they could find: expensive imports, generic products with no personality, or items built for another market. The category was empty, not for lack of product, but for lack of character and identity.",
+        "There's a profile of person in Mexico that already exists: trains every day of the week, watches what they eat, wants to perform better and recover faster. Between 20 and 45 years old, buys out of conviction rather than price, and once something feels like theirs, they wear it as identity. ",
+        "That person didn't have their own electrolyte brand. They used whatever they could find: expensive imports, generic products with no personality, or items built for another market. The category was empty, not for lack of product, but for lack of character and identity.",
       ],
       challenge: [
         "The name said it all from the start: Nonstop. It's not a description of the product, it's a statement from whoever takes it. The challenge was making the visual and verbal identity live up to that name: direct, clean, no noise, and ready to work from day one across packaging, digital, events, and merchandise at once.",
@@ -207,7 +211,8 @@ const projects: InteriorProject[] = [
       description:
         "De la expresión al lugar: donde el vino y un vinilo se encuentran.",
       context: [
-        "En Manzanillo había muchos bares, pero lo que faltaba era un lugar donde desconectarte de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un espacio que te recibe con una buena copa, música que te hace sentir algo y conversación que vale la pena. Sin ruido innecesario, sin prisa. Un lugar para el que sabe que la mejor noche no siempre es la más loca, a veces es simplemente la que no quieres que termine.",
+        "En Manzanillo había muchos bares, pero lo que faltaba era un lugar donde desconectarte de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un espacio que te recibe con una buena copa, música que te hace sentir algo y conversación que vale la pena. Sin ruido innecesario, sin prisa.",
+        "Un lugar para el que sabe que la mejor noche no siempre es la más loca, a veces es simplemente la que no quieres que termine.",
       ],
       challenge: [
         "El proyecto llegó sin nombre, sin identidad y sin referentes locales. Construir desde cero en un mercado donde la competencia no es directa pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y cualquier marca nueva tiene que ganarse su lugar ahí dentro sin disfrazarse del entorno. El reto era crear algo que se sintiera como si siempre hubiera existido y, al mismo tiempo, completamente nuevo.",
@@ -222,7 +227,8 @@ const projects: InteriorProject[] = [
       description:
         "Creating a destination where great wine, vinyl records, and meaningful evenings come together.",
       context: [
-        "Manzanillo already had plenty of bars, but what it lacked was a place to truly disconnect. A place to leave work behind, set down the weight of the day, and walk into a space that greets you with a good drink, music that makes you feel something, and conversation worth having. No unnecessary noise, no rush. A place for anyone who knows the best night isn't always the wildest one, sometimes it's just the one you don't want to end.",
+        "Manzanillo already had plenty of bars, but what it lacked was a place to truly disconnect. A place to leave work behind, set down the weight of the day, and walk into a space that greets you with a good drink, music that makes you feel something, and conversation worth having. No unnecessary noise, no rush.",
+        "A place for anyone who knows the best night isn't always the wildest one, sometimes it's just the one you don't want to end.",
       ],
       challenge: [
         "The project arrived with no name, no identity, and no local references. Building from zero in a market where competition isn't direct but context carries real weight: Marina Las Hadas has its own history, and any new brand has to earn its place there without disguising itself as part of the setting. The challenge was creating something that felt like it had always existed, while being completely new.",
@@ -237,7 +243,7 @@ const projects: InteriorProject[] = [
   {
     slug: "amidemi",
     attributes: [
-      { label: "Client", value: ["AMÍDEMI"] },
+      { label: "Client", value: ["Amídemi"] },
       {
         label: "Services",
         value: ["Naming", "Visual System", "Packaging", "Launch Kit"],
@@ -254,8 +260,7 @@ const projects: InteriorProject[] = [
         "El reto no era diseñar una marca de joyería más. Era construir una identidad con significado propio, una marca capaz de conectar con mujeres que buscan piezas versátiles, accesibles y atemporales, alejándose tanto de la comunicación aspiracional del lujo como de la estética efímera de las tendencias.",
       ],
       the_work: [
-        "Partimos de una pregunta simple: ¿qué representa realmente regalarse joyería? La respuesta nos llevó a construir un territorio centrado en el auto regalo como un acto de ritual, conexión y consentimiento personal.",
-        "Desde ahí desarrollamos una identidad verbal cómplice, sensorial y cercana, capaz de hablar sobre estilo, rutina y significado sin caer en clichés ni excesos.",
+        "Partimos de una pregunta simple: ¿qué representa realmente regalarse joyería? La respuesta nos llevó a construir un territorio centrado en el auto regalo como un acto de ritual, conexión y consentimiento personal. Desde ahí desarrollamos una identidad verbal cómplice, sensorial y cercana, capaz de hablar sobre estilo, rutina y significado sin caer en clichés ni excesos.",
         "Visualmente diseñamos un sistema minimalista, cálido y orgánico que refleja la naturalidad de la marca, construido para acompañar momentos cotidianos y elevar la percepción de cada pieza sin depender del lenguaje tradicional del lujo.",
       ],
     },
@@ -269,8 +274,7 @@ const projects: InteriorProject[] = [
         "The challenge wasn't designing one more jewelry brand. It was building an identity with meaning of its own, one able to connect with women looking for versatile, accessible, timeless pieces, moving away from both the aspirational language of luxury and the fleeting aesthetic of trends.",
       ],
       the_work: [
-        "We started from a simple question: what does it really mean to give yourself jewelry? The answer led us to build a territory centered on self gifting as an act of ritual, connection, and personal permission.",
-        "From there we developed a verbal identity that's warm, sensory, and close, able to speak about style, routine, and meaning without falling into cliché or excess.",
+        "We started from a simple question: what does it really mean to give yourself jewelry? The answer led us to build a territory centered on self gifting as an act of ritual, connection, and personal permission. From there we developed a verbal identity that's warm, sensory, and close, able to speak about style, routine, and meaning without falling into cliché or excess.",
         "Visually we designed a minimalist, warm, organic system that reflects the brand's natural quality, built to accompany everyday moments and elevate the perception of each piece without relying on traditional luxury language.",
       ],
     },
@@ -294,7 +298,9 @@ const projects: InteriorProject[] = [
         "En una categoría dominada por mensajes de rendimiento extremo, SWAPPP tenía una oportunidad distinta: posicionarse alrededor de una energía más natural, cercana y contemporánea. La identidad debía reflejar esa diferencia.",
       ],
       the_work: [
-        "Desarrollamos una identidad visual construida alrededor de un principio simple: energía natural. Creamos un sistema gráfico minimalista, flexible y altamente reconocible, capaz de adaptarse a diferentes presentaciones de producto manteniendo una identidad consistente. Diseñamos además un sistema de packaging preparado para crecer junto con la marca, donde cada sabor encuentra una expresión propia sin perder reconocimiento dentro del portafolio. Good energy only.",
+        "Desarrollamos una identidad visual construida alrededor de un principio simple: energía natural. Creamos un sistema gráfico minimalista, flexible y altamente reconocible, capaz de adaptarse a diferentes presentaciones de producto manteniendo una identidad consistente.",
+        "Diseñamos además un sistema de packaging preparado para crecer junto con la marca, donde cada sabor encuentra una expresión propia sin perder reconocimiento dentro del portafolio.",
+        "GOOD ENERGY ONLY.",
       ],
     },
     en: {
@@ -306,14 +312,16 @@ const projects: InteriorProject[] = [
         "In a category dominated by extreme performance messaging, SWAPPP had a different opportunity: positioning itself around energy that's more natural, approachable, and contemporary. The identity had to reflect that difference.",
       ],
       the_work: [
-        "We developed a visual identity built around one simple principle: natural energy. We created a minimalist, flexible, highly recognizable graphic system able to adapt across different product formats while keeping the identity consistent. We also designed a packaging system built to grow with the brand, where each flavor finds its own expression without losing recognition within the portfolio. Good energy only.",
+        "We developed a visual identity built around one simple principle: natural energy. We created a minimalist, flexible, highly recognizable graphic system able to adapt across different product formats while keeping the identity consistent.",
+        "We also designed a packaging system built to grow with the brand, where each flavor finds its own expression without losing recognition within the portfolio.",
+        "GOOD ENERGY ONLY.",
       ],
     },
   },
   {
     slug: "blissify",
     attributes: [
-      { label: "Client", value: ["BLISSIFY"] },
+      { label: "Client", value: ["Blissify"] },
       {
         label: "Services",
         value: ["Rebranding", "Visual System", "Brand Applications"],
@@ -405,7 +413,8 @@ const projects: InteriorProject[] = [
       description:
         "Construir desde cero la identidad de quien construye desde cero.",
       context: [
-        "Meteoro nació con una misión clara: crear y potenciar negocios junto a emprendedores, conectando ideas, capital y talento para construir empresas que trascienden. Pero antes de salir al mundo a impulsar marcas de otros, tenía que resolver su propio reto de identidad. El ecosistema de venture studios y fondos de inversión en México está lleno de nombres que suenan parecido, prometen lo mismo y se presentan igual. Suits, cifras, retornos. Capital frío, lenguaje corporativo, distancia estratégica.",
+        "Meteoro nació con una misión clara: crear y potenciar negocios junto a emprendedores, conectando ideas, capital y talento para construir empresas que trascienden. Pero antes de salir al mundo a impulsar marcas de otros, tenía que resolver su propio reto de identidad.",
+        "El ecosistema de venture studios y fondos de inversión en México está lleno de nombres que suenan parecido, prometen lo mismo y se presentan igual. Suits, cifras, retornos. Capital frío, lenguaje corporativo, distancia estratégica.",
       ],
       challenge: [
         "El reto no era solo nombrar a Meteoro, era dotarla de una identidad que hiciera tangible algo intangible: la diferencia entre un capital que acompaña y uno que transforma. Había que construir una marca capaz de hablarle al emprendedor que busca más que dinero, sin caer en el discurso motivacional vacío. Una identidad que transmitiera estructura y visión de largo plazo, pero que al mismo tiempo se sintiera dinámica, real y con criterio propio.",
@@ -420,14 +429,15 @@ const projects: InteriorProject[] = [
       description:
         "Building the identity of a venture studio dedicated to building businesses from the ground up.",
       context: [
-        "Meteoro was born with a clear mission: creating and powering businesses alongside entrepreneurs, connecting ideas, capital, and talent to build companies that last. But before going out into the world to build brands for others, it had to solve its own identity challenge. Mexico's venture studio and investment fund ecosystem is full of names that sound alike, promise the same things, and present themselves the same way. Suits, numbers, returns. Cold capital, corporate language, strategic distance.",
+        "Meteoro was born with a clear mission: creating and powering businesses alongside entrepreneurs, connecting ideas, capital, and talent to build companies that last. But before going out into the world to build brands for others, it had to solve its own identity challenge.",
+        "Mexico's venture studio and investment fund ecosystem is full of names that sound alike, promise the same things, and present themselves the same way. Suits, numbers, returns. Cold capital, corporate language, strategic distance.",
       ],
       challenge: [
         "The challenge wasn't just naming Meteoro, it was giving it an identity that made something intangible tangible: the difference between capital that accompanies and capital that transforms. The brand had to speak to entrepreneurs looking for more than money, without falling into empty motivational language. An identity that carried structure and long term vision while still feeling dynamic, real, and driven by its own judgment.",
       ],
       the_work: [
         "The starting point was finding the territory of meaning that could justify everything else. That territory was impact, not as a promise, but as a direction. A meteor doesn't announce itself, doesn't ask permission, it appears, creates change, and leaves a mark.",
-        "From there came the claim \"We drive ideas that change industries,\" a statement that describes not what Meteoro does, but what Meteoro moves. The brand's language was built on the same logic: precise, strategic, no ornament.",
+        'From there came the claim "We drive ideas that change industries," a statement that describes not what Meteoro does, but what Meteoro moves. The brand\'s language was built on the same logic: precise, strategic, no ornament.',
         "The visual identity carried that same momentum: a clean, geometric typeface that combines solidity with modernity, and a symbol that abstracts the meteor's trajectory. Meteoro went out into the world with an identity that needs no explanation. It speaks for itself.",
       ],
     },
@@ -494,7 +504,8 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         "El punto de partida fue el nombre. SERES no describe un lugar, describe a quienes lo habitan. Desde ahí se construyó todo: un concepto creativo anclado en la conexión humana, la vulnerabilidad como fuerza y la comunidad como arquitectura social.",
-        'La identidad verbal se desarrolló desde la filosofía "la simplicidad es la mayor de las sofisticaciones", traducida en un sistema de lenguaje que celebra lo local, lo humano y lo presente. El sistema visual respondió al mismo principio: propuestas que habitan el espacio entre lo contemporáneo y lo artesanal, entre la serenidad del retiro y la energía del beach club.',
+        'La identidad verbal se desarrolló desde la filosofía "la simplicidad es la mayor de las sofisticaciones", traducida en un sistema de lenguaje que celebra lo',
+        "local, lo humano y lo presente. El sistema visual respondió al mismo principio: propuestas que habitan el espacio entre lo contemporáneo y lo artesanal, entre la serenidad del retiro y la energía del beach club.",
         "El resultado es una marca diseñada para expandirse a nuevos destinos, Tulum, Puerto Escondido y más, sin perder lo que hace a SERES reconocible.",
       ],
     },
@@ -535,8 +546,7 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         "El territorio de marca se construyó desde una verdad simple: esto no se fabrica, se cosecha. De ahí nació un tono de voz directo y sin adornos, un sistema visual que habla de tierra, mar y sol, y un símbolo que retrata el instante exacto en que el agua se convierte en sal viva.",
-        "El packaging se diseñó en dos versiones, pouch premium y pouch comercial, para que la marca pudiera vivir tanto en una cocina de autor como en un mercado local, sin perder coherencia ni carácter.",
-        "Todo materializa la misma idea: una sal viva, honesta y hecha con paciencia.",
+        "El packaging se diseñó en dos versiones, pouch premium y pouch comercial, para que la marca pudiera vivir tanto en una cocina de autor como en un mercado local, sin perder coherencia ni carácter. Todo materializa la misma idea: una sal viva, honesta y hecha con paciencia.",
       ],
     },
     en: {
@@ -550,15 +560,14 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         "The brand territory was built on a simple truth: this isn't manufactured, it's harvested. From there came a direct, unadorned tone of voice, a visual system that speaks of land, sea, and sun, and a symbol that captures the exact instant water becomes living salt.",
-        "The packaging was designed in two versions, a premium pouch and a commercial pouch, so the brand could live in both a chef's kitchen and a local market without losing coherence or character.",
-        "Everything materializes the same idea: a salt that's alive, honest, and made with patience.",
+        "The packaging was designed in two versions, a premium pouch and a commercial pouch, so the brand could live in both a chef's kitchen and a local market without losing coherence or character. Everything materializes the same idea: a salt that's alive, honest, and made with patience.",
       ],
     },
   },
   {
     slug: "manna-foods",
     attributes: [
-      { label: "Client", value: ["Manna Foods"] },
+      { label: "Client", value: ["manna foods"] },
       {
         label: "Services",
         value: ["Rebranding", "Packaging System", "Retail Kit"],
@@ -642,8 +651,7 @@ const projects: InteriorProject[] = [
       { label: "Industry", value: ["Sports Technology", "Mobile App"] },
     ],
     es: {
-      description:
-        "Unir la experiencia del pádel dentro de una sola plataforma.",
+      description: "Construir la red que conecta a todo el mundo del pádel.",
       context: [
         "El pádel ha dejado de ser únicamente un deporte para convertirse en una experiencia de comunidad. Cada partido genera nuevas conexiones entre jugadores, clubes, entrenadores, marcas y amigos, mientras el ecosistema digital continúa creciendo con soluciones independientes para cada necesidad. AppPadel nació para reunir todo ese universo en un solo lugar, construyendo una plataforma capaz de acompañar al jugador antes, durante y después de cada partido.",
       ],
@@ -690,7 +698,8 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         'Partimos del propio nombre como territorio de marca. "Buen Punto" nace de una expresión cotidiana que valida, coincide y continúa una conversación, una personalidad que invita al diálogo en lugar de dictar cómo celebrar.',
-        "Visualmente construimos un sistema que equilibra tradición y modernidad: un logotipo de estructura clásica con guiños gráficos propios, y una reinterpretación abstracta del agave en lugar de la representación literal que domina la categoría.",
+        "Visualmente construimos un sistema que equilibra tradición y modernidad: un logotipo de estructura clásica con guiños gráficos propios, y una ",
+        "reinterpretación abstracta del agave en lugar de la representación literal que domina la categoría.",
         "El sistema se extiende al packaging a través de una etiqueta que apela al tacto y a la vista, con papel texturizado y acabados que resaltan el punto sobre la ilustración de los volcanes, dejando que el olfato y el gusto queden a cargo del producto mismo.",
       ],
     },
@@ -729,9 +738,9 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         'El punto de partida fue definir un concepto que pudiera hablar por todas las marcas al mismo tiempo: "Confianza que conduce el futuro". Una idea lo suficientemente sólida para sostener al grupo, y lo suficientemente flexible para no ahogar a las marcas que opera.',
-        'Desde ahí construimos una identidad corporativa contemporánea, con negro de base y acentos en rojo, y recursos gráficos lineales construidos a partir de la silueta de la "R" que se superponen sobre los vehículos en contextos reales: la marca no describe los autos, los habita.',
-        "La pieza más crítica fue el sistema de co branding. Grupo Rancagua opera marcas con identidades propias y reglas estrictas, y el reto era que el grupo pudiera aparecer junto a ellas sin competir ni diluirse.",
-        "Establecimos jerarquías claras y proporciones definidas para que Grupo Rancagua funcione siempre como respaldo sólido: presente, reconocible, pero nunca por encima de la marca socia.",
+        'Desde ahí construimos una identidad corporativa contemporánea, con negro de base y acentos en rojo, y recursos gráficos lineales construidos a partir de la silueta de la "R" que se superponen sobre los vehículos',
+        "en contextos reales: la marca no describe los autos, los habita.",
+        "La pieza más crítica fue el sistema de co branding. Grupo Rancagua opera marcas con identidades propias y reglas estrictas, y el reto era que el grupo pudiera aparecer junto a ellas sin competir ni diluirse. Establecimos jerarquías claras y proporciones definidas para que Grupo Rancagua funcione siempre como respaldo sólido: presente, reconocible, pero nunca por encima de la marca socia.",
       ],
     },
     en: {

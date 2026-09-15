@@ -77,7 +77,7 @@ textarea {
     @apply space-y-10;
 
     article {
-      @apply lg:py-20;
+      @apply lg:py-10;
     }
 
     .p-02 {

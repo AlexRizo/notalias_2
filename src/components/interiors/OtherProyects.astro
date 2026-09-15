@@ -26,13 +26,13 @@ const nextSelector = "other-projects-next";
       type="button"
       class={cn(
         prevSelector,
-        "flex cursor-pointer text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+        "flex cursor-pointer text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
       )}
     >
       <img
         src="/assets/icons/arrow.svg"
         alt="<-"
-        class="rotate-180 mr-2 w-3.5! lg:hidden"
+        class="rotate-180 mr-2 w-3.5!"
       />
       PREVIOUS PROJECTS
     </button>
@@ -40,15 +40,11 @@ const nextSelector = "other-projects-next";
       type="button"
       class={cn(
         nextSelector,
-        "flex cursor-pointer text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4 lg:underline underline-offset-8",
+        "flex cursor-pointer text-xs text-primary lg:text-xl lg:font-light lg:decoration-1 lg:gap-4",
       )}
     >
       NEXT PROJECTS
-      <img
-        src="/assets/icons/arrow.svg"
-        alt="<-"
-        class="ml-2 w-3.5! lg:hidden"
-      />
+      <img src="/assets/icons/arrow.svg" alt="<-" class="ml-2 w-3.5!" />
     </button>
   </div>
   <OtherProjectsSlider

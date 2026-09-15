@@ -62,62 +62,51 @@ const data = getInteriorContent("alltern", lang)!;
       </p>
     </article>
 
-    <div class="grid-component">
-      <img
-        src="/assets/img/interiors/alltern/media-03.webp"
-        class="h-91 lg:h-173 object-cover lg:hidden"
-        loading="lazy"
-      />
-      <img
-        src="/assets/img/interiors/alltern/media-04.webp"
-        loading="lazy"
-        class="h-86 lg:h-200 object-cover object-center hidden lg:block"
-      />
-      <article>
-        <h3>Challenge</h3>
-        <p>
-          {
-            data.challenge.map((p, i) => (
-              <>
-                {i > 0 && (
-                  <>
-                    <br />
-                    <br />
-                  </>
-                )}
-                <span>{p}</span>
-              </>
-            ))
-          }
-        </p>
-      </article>
-    </div>
-
-    <img
-      src="/assets/img/interiors/alltern/media-05.webp"
-      loading="lazy"
-      class="lg:h-188 object-cover object-[0_60%] hidden lg:block"
-    />
-
     <img
       src="/assets/img/interiors/alltern/media-04.webp"
-      class="h-91 lg:h-173 object-cover lg:hidden"
+      class="h-91 lg:h-173 object-cover"
       loading="lazy"
     />
+
+    <article>
+      <h3>Challenge</h3>
+      <p>
+        {
+          data.challenge.map((p, i) => (
+            <>
+              {i > 0 && (
+                <>
+                  <br />
+                  <br />
+                </>
+              )}
+              <span>{p}</span>
+            </>
+          ))
+        }
+      </p>
+    </article>
+
+    <div class="grid-component">
+      <img
+        src="/assets/img/interiors/alltern/media-05.webp"
+        loading="lazy"
+        class="lg:h-188 object-cover object-[0_60%] hidden lg:block"
+      />
+      <img
+        src="/assets/img/interiors/alltern/media-06.webp"
+        loading="lazy"
+        class="lg:h-188 object-cover object-[75%_0] hidden lg:block"
+      />
+    </div>
 
     <article>
       <h3>The Work</h3>
       <div class="grid-p p-02">
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[0]}</p>
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[1]}</p>
-        <img
-          src="/assets/img/interiors/alltern/media-05.webp"
-          loading="lazy"
-          class="lg:h-188 object-cover object-[0_60%] lg:hidden my-6"
-        />
       </div>
     </article>
   </div>
-
   <OtherProyects currentSlug="alltern" />
 </section>

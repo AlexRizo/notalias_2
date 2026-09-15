@@ -3,6 +3,7 @@ import Attributes from "@/components/interiors/Attributes.astro";
 import OtherProyects from "@/components/interiors/OtherProyects.astro";
 import { getInteriorContent } from "@/i18n/interiors";
 import { getLangFromUrl } from "@/i18n/utils";
+import { Icon } from "astro-icon/components";
 
 const lang = getLangFromUrl(Astro.url);
 const data = getInteriorContent("salar", lang)!;
@@ -12,14 +13,14 @@ const data = getInteriorContent("salar", lang)!;
   <div>
     <h1 class="title">SALAR</h1>
 
-    <video
-      src="/assets/img/interiors/salar/media-01.webm"
-      class="h-54 lg:h-212 object-cover"
-      playsinline
-      muted
-      autoplay
-      loop
-      preload="none"></video>
+    <div class="relative h-54 lg:h-212 flex items-center justify-center">
+      <Icon name="salar" class="h-25 w-166 absolute z-5" />
+      <div class="size-full bg-black/20 absolute inset-0 z-3"></div>
+      <img
+        src="/assets/img/interiors/salar/media-01.webp"
+        class="object-cover w-full h-full"
+      />
+    </div>
   </div>
   <article class="mt-4 lg:mt-26">
     <h2 class="description">{data.description}</h2>
@@ -59,14 +60,11 @@ const data = getInteriorContent("salar", lang)!;
       </p>
     </article>
 
-    <video
-      src="/assets/img/interiors/salar/media-04.webm"
+    <img
+      src="/assets/img/interiors/salar/media-04.webp"
       class="lg:h-192 object-cover"
-      playsinline
-      muted
-      autoplay
-      loop
-      preload="none"></video>
+      loading="lazy"
+    />
 
     <article>
       <h3>Challenge</h3>
@@ -87,21 +85,11 @@ const data = getInteriorContent("salar", lang)!;
       </p>
     </article>
 
-    <div class="img-container">
-      <video
-        src="/assets/img/interiors/salar/media-05.webm"
-        class="h-86 lg:h-200 object-cover object-center"
-        playsinline
-        muted
-        autoplay
-        loop
-        preload="none"></video>
-      <img
-        src="/assets/img/interiors/salar/media-06.webp"
-        loading="lazy"
-        class="h-86 lg:h-200 object-cover object-center"
-      />
-    </div>
+    <img
+      src="/assets/img/interiors/salar/media-05.webp"
+      loading="lazy"
+      class="h-86 lg:h-200 object-cover object-center"
+    />
 
     <article>
       <h3>The Work</h3>
@@ -109,17 +97,14 @@ const data = getInteriorContent("salar", lang)!;
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[0]}</p>
         <p class="[&:not(:last-child)]:mb-6!">
           {data.the_work[1]}
-          <br />
-          <br />
-          {data.the_work[2]}
         </p>
       </div>
     </article>
 
     <img
-      src="/assets/img/interiors/salar/media-07.webp"
+      src="/assets/img/interiors/salar/media-06.webp"
       loading="lazy"
-      class="lg:h-188 object-cover object-[0_60%]"
+      class="h-86 lg:h-200 object-cover object-center"
     />
   </div>
 

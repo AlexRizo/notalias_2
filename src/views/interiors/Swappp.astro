@@ -87,14 +87,29 @@ const data = getInteriorContent("swappp", lang)!;
     </div>
 
     <div class="grid-component">
-      <img src="/assets/img/interiors/swappp/media-04.webp" loading="lazy" class="h-80 lg:h-auto object-cover"/>
+      <img
+        src="/assets/img/interiors/swappp/media-04.webp"
+        loading="lazy"
+        class="h-80 lg:h-184 object-cover"
+      />
       <article>
         <h3>The Work</h3>
         <p>{data.the_work[0]}</p>
       </article>
     </div>
 
-    <img src="/assets/img/interiors/swappp/media-05.webp" loading="lazy" />
+    <div class="grid-component">
+      <article>
+        <p>{data.the_work[1]}</p>
+        <br/>
+        <p>{data.the_work[2]}</p>
+      </article>
+      <img
+        src="/assets/img/interiors/swappp/media-05.webp"
+        loading="lazy"
+        class="h-184 object-cover"
+      />
+    </div>
   </div>
 
   <OtherProyects currentSlug="swappp" />

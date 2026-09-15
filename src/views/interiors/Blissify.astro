@@ -12,14 +12,10 @@ const data = getInteriorContent("blissify", lang)!;
   <div>
     <h1 class="title">Blissify</h1>
 
-    <video
-      src="/assets/img/interiors/blissify/media-01.webm"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="none"
-      class="h-54 lg:h-212 object-cover"></video>
+    <img
+      src="/assets/img/interiors/blissify/media-01.webp"
+      class="h-54 lg:h-212 object-cover"
+    />
   </div>
 
   <article class="mt-4 lg:mt-26">
@@ -86,10 +82,10 @@ const data = getInteriorContent("blissify", lang)!;
             data.challenge.map((p, i) => (
               <>
                 {i > 0 && (
-                  <>
+                  <span>
                     <br />
                     <br />
-                  </>
+                  </span>
                 )}
                 <span>{p}</span>
               </>
@@ -120,10 +116,10 @@ const data = getInteriorContent("blissify", lang)!;
             data.the_work.map((p, i) => (
               <>
                 {i > 0 && (
-                  <>
+                  <span>
                     <br />
                     <br />
-                  </>
+                  </span>
                 )}
                 <span>{p}</span>
               </>
@@ -133,16 +129,16 @@ const data = getInteriorContent("blissify", lang)!;
       </article>
 
       <img
-        src="/assets/img/interiors/blissify/media-06.webp"
+        src="/assets/img/interiors/blissify/media-05.webp"
         loading="lazy"
-        class="h-90.5 lg:h-173 object-cover"
+        class="h-90.5 lg:h-173 object-cover hidden lg:block"
       />
     </div>
 
     <img
-      src="/assets/img/interiors/blissify/media-05.webp"
+      src="/assets/img/interiors/blissify/media-06.webp"
       loading="lazy"
-      class="h-[259px] lg:h-218 object-cover hidden lg:block"
+      class="object-cover h-[259px] lg:h-218"
     />
   </div>
 

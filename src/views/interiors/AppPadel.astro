@@ -12,10 +12,13 @@ const data = getInteriorContent("apppadel", lang)!;
   <div>
     <h1 class="title">AppPadel</h1>
 
-    <img
-      src="/assets/img/interiors/apppadel/media-01.webp"
+    <video
+      src="/assets/img/interiors/apppadel/media-01.webm"
       class="h-54 lg:h-212 object-cover"
-    />
+      autoplay
+      muted
+      loop
+      playsinline></video>
   </div>
   <article class="mt-4 lg:mt-26">
     <h2 class="description">{data.description}</h2>
@@ -57,7 +60,7 @@ const data = getInteriorContent("apppadel", lang)!;
       <img
         src="/assets/img/interiors/apppadel/media-04.webp"
         loading="lazy"
-        class="h-114 lg:h-173 object-cover"
+        class="h-114 lg:h-173 object-cover object-[0_20%]"
       />
     </div>
 
@@ -80,18 +83,11 @@ const data = getInteriorContent("apppadel", lang)!;
       </p>
     </article>
 
-    <div class="img-container">
-      <img
-        src="/assets/img/interiors/apppadel/media-05.webp"
-        loading="lazy"
-        class="lg:h-173 object-cover"
-      />
-      <img
-        src="/assets/img/interiors/apppadel/media-06.webp"
-        loading="lazy"
-        class="h-114 lg:h-173 object-cover object-[0_35%] hidden lg:block"
-      />
-    </div>
+    <img
+      src="/assets/img/interiors/apppadel/media-05.webp"
+      loading="lazy"
+      class="object-cover"
+    />
 
     <article>
       <h3>The Work</h3>
@@ -105,12 +101,6 @@ const data = getInteriorContent("apppadel", lang)!;
         />
       </div>
     </article>
-
-    <img
-      src="/assets/img/interiors/apppadel/media-07.webp"
-      loading="lazy"
-      class="lg:h-180 object-cover"
-    />
   </div>
 
   <OtherProyects currentSlug="app-padel" />
