@@ -30,9 +30,9 @@ html.js img.img-loaded {
 }
 
 .swiper-pagination {
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
   bottom: 0 !important;
-  @apply pt-7.5 pb-2.5 lg:py-0;
+  @apply pt-4.5 pb-6.5 lg:py-0;
 }
 
 .swiper-pagination-bullet {

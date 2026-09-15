@@ -19,7 +19,7 @@ const ui = useTranslations(lang);
               <span class="font-semibold">{item.name}</span>
             </p>
 
-            <p class="accordion-description max-w-84 leading-relaxed lg:max-w-86">
+            <p class="accordion-description hidden max-h-0 max-w-84 leading-relaxed lg:block lg:max-w-86">
               {item.description}
             </p>
 
@@ -29,6 +29,12 @@ const ui = useTranslations(lang);
               alt="+"
             />
           </button>
+
+          <div class="accordion-description-mobile lg:hidden">
+            <p class="pl-19 pr-4 pb-5 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
         </div>
       </li>
     ))
@@ -52,6 +58,21 @@ const ui = useTranslations(lang);
     pointer-events: auto;
   }
 
+  .accordion-description-mobile {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease;
+  }
+
+  .accordion-item.open .accordion-description-mobile {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .accordion-item.open {
     background-color: var(--color-primary);
   }
@@ -64,6 +85,9 @@ const ui = useTranslations(lang);
   items.forEach((item) => {
     const trigger = item.querySelector<HTMLElement>(".accordion-trigger")!;
     const desc = item.querySelector<HTMLElement>(".accordion-description")!;
+    const mobileDesc = item.querySelector<HTMLElement>(
+      ".accordion-description-mobile"
+    )!;
 
     const expandedH = trigger.scrollHeight;
     const collapsedH = expandedH - desc.scrollHeight;
@@ -71,13 +95,19 @@ const ui = useTranslations(lang);
     trigger.dataset.expandedH = String(expandedH);
     trigger.dataset.collapsedH = String(collapsedH);
     trigger.style.height = collapsedH + "px";
+
+    mobileDesc.dataset.expandedH = String(mobileDesc.scrollHeight);
   });
 
   const closeItem = (item: HTMLElement) => {
     const trigger = item.querySelector<HTMLElement>(".accordion-trigger")!;
     const icon = item.querySelector<HTMLImageElement>(".accordion-icon")!;
+    const mobileDesc = item.querySelector<HTMLElement>(
+      ".accordion-description-mobile"
+    )!;
 
     trigger.style.height = trigger.dataset.collapsedH + "px";
+    mobileDesc.style.maxHeight = "0px";
     icon.src = "/assets/icons/plus-black.svg";
     icon.alt = "+";
     trigger.setAttribute("aria-expanded", "false");
@@ -87,6 +117,9 @@ const ui = useTranslations(lang);
   items.forEach((item) => {
     const trigger = item.querySelector<HTMLElement>(".accordion-trigger")!;
     const icon = trigger.querySelector<HTMLImageElement>(".accordion-icon")!;
+    const mobileDesc = item.querySelector<HTMLElement>(
+      ".accordion-description-mobile"
+    )!;
 
     trigger.addEventListener("click", () => {
       const isOpen = trigger.getAttribute("aria-expanded") === "true";
@@ -101,6 +134,7 @@ const ui = useTranslations(lang);
         });
 
         trigger.style.height = trigger.dataset.expandedH + "px";
+        mobileDesc.style.maxHeight = mobileDesc.dataset.expandedH + "px";
         icon.src = "/assets/icons/minus.svg";
         icon.alt = "-";
         trigger.setAttribute("aria-expanded", "true");

@@ -136,8 +136,8 @@ const sharedServices = {
 
 const sharedFooterSocial = {
   title: "Social",
-  instagram: { label: "Instagram", url: "" },
-  linkedin: { label: "LinkedIn", url: "" },
+  instagram: { label: "Instagram", url: "https://www.instagram.com/notalias__" },
+  linkedin: { label: "LinkedIn", url: "https://www.linkedin.com/company/notalias" },
 };
 
 const sharedFooterLocations = {
