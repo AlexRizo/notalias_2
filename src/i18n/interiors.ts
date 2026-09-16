@@ -168,7 +168,7 @@ const projects: InteriorProject[] = [
       description:
         "La primera marca de electrolitos en México diseñada para los que nunca paran.",
       context: [
-        "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuando encuentra algo que se siente suyo, lo adopta como identidad. ",
+        "Hay un perfil de persona en México que ya existe: entrena de lunes a lunes, cuida lo que come, busca rendir más y recuperarse mejor. Tiene entre 20 y 45 años, compra por convicción y no por precio, y cuando encuentra algo que se siente suyo, lo adopta como identidad.",
         "Esa persona no tenía una marca propia de electrolitos. Usaba lo que encontraba: importados caros, genéricos sin personalidad, o productos pensados para otro mercado. La categoría estaba vacante no por falta de producto, sino por falta de carácter e identidad.",
       ],
       challenge: [
@@ -184,7 +184,7 @@ const projects: InteriorProject[] = [
       description:
         "Building Mexico's first electrolyte brand designed for people who never slow down.",
       context: [
-        "There's a profile of person in Mexico that already exists: trains every day of the week, watches what they eat, wants to perform better and recover faster. Between 20 and 45 years old, buys out of conviction rather than price, and once something feels like theirs, they wear it as identity. ",
+        "There's a profile of person in Mexico that already exists: trains every day of the week, watches what they eat, wants to perform better and recover faster. Between 20 and 45 years old, buys out of conviction rather than price, and once something feels like theirs, they wear it as identity.",
         "That person didn't have their own electrolyte brand. They used whatever they could find: expensive imports, generic products with no personality, or items built for another market. The category was empty, not for lack of product, but for lack of character and identity.",
       ],
       challenge: [
@@ -370,10 +370,13 @@ const projects: InteriorProject[] = [
     es: {
       description: "Ponerle nombre y cara al tiempo bien vivido.",
       context: [
-        "El mercado de renta vacacional en México lleva años creciendo, pero sin madurar. Entre Airbnb y los portales de distribución, cualquiera puede listar una propiedad y eso se nota. El resultado: un mercado saturado de opciones que se parecen todas, donde el precio termina siendo el único diferenciador y la experiencia del huésped queda en segundo plano. Meteoro Ventures llegó con una lectura distinta. Vieron en ese desorden una oportunidad: crear una empresa de hospitalidad y property management que no compitiera por precio, sino por experiencia. Una plataforma que entendiera que detrás de cada reserva hay alguien buscando un ratito para desconectarse, para estar, para vivir algo que valga la pena recordar. La idea de negocio era sólida. Lo que no existía todavía era la marca.",
+        "El mercado de renta vacacional en México lleva años creciendo, pero sin madurar. Entre Airbnb y los portales de distribución, cualquiera puede listar una propiedad y eso se nota. El resultado: un mercado saturado de opciones que se parecen todas, donde el precio termina siendo el único diferenciador y la experiencia del huésped queda en segundo plano.",
+        "Meteoro Ventures llegó con una lectura distinta. Vieron en ese desorden una oportunidad: crear una empresa de hospitalidad y property management que no compitiera por precio, sino por experiencia. Una plataforma que entendiera que detrás de cada reserva hay alguien buscando un ratito para desconectarse, para estar, para vivir algo que valga la pena recordar.",
+        "La idea de negocio era sólida. Lo que no existía todavía era la marca.",
       ],
       challenge: [
-        "Crear desde cero la identidad de una empresa de hospitalidad que no quisiera verse como una empresa de hospitalidad. Ni hotel boutique aspiracional, ni plataforma tecnológica fría, ni el típico logo de casita con palmera que puebla la categoría. El reto era encontrar una personalidad que hiciera sentir al huésped que estaba eligiendo algo distinto antes de llegar a la propiedad, y convencer al propietario de que sus metros cuadrados estarían en manos de alguien que entiende lo que significa cuidar algo con criterio. Dos audiencias con necesidades opuestas. Una sola marca que tenía que funcionar para ambas.",
+        "Crear desde cero la identidad de una empresa de hospitalidad que no quisiera verse como una empresa de hospitalidad. Ni hotel boutique aspiracional, ni plataforma tecnológica fría, ni el típico logo de casita con palmera que puebla la categoría. El reto era encontrar una personalidad que hiciera sentir al huésped que estaba eligiendo algo distinto antes de llegar a la propiedad, y convencer al propietario de que sus metros cuadrados estarían en manos de alguien que entiende lo que significa cuidar algo con criterio.",
+        "Dos audiencias con necesidades opuestas. Una sola marca que tenía que funcionar para ambas.",
       ],
       the_work: [
         "El primer movimiento fue estratégico: encontrar el territorio emocional que pudiera contener todo lo que Ratito quería ser. Ese territorio fue el tiempo, no el tiempo como recurso escaso ni como lujo, sino el tiempo como experiencia. El instante que vale. El ratito que recuerdas. ",
@@ -386,10 +389,13 @@ const projects: InteriorProject[] = [
       description:
         "Naming and shaping a hospitality brand built around the value of time well spent.",
       context: [
-        "Mexico's vacation rental market has grown for years without maturing. Between Airbnb and distribution platforms, anyone can list a property, and it shows. The result: a market saturated with options that all look alike, where price ends up as the only differentiator and the guest experience takes a back seat. Meteoro Ventures arrived with a different read. They saw an opportunity in that disorder: building a hospitality and property management company that competed on experience, not price. A platform built on the understanding that behind every booking there's someone looking for a little while to disconnect, to be present, to live something worth remembering. The business idea was solid. What didn't exist yet was the brand.",
+        "Mexico's vacation rental market has grown for years without maturing. Between Airbnb and distribution platforms, anyone can list a property, and it shows. The result: a market saturated with options that all look alike, where price ends up as the only differentiator and the guest experience takes a back seat.",
+        "Meteoro Ventures arrived with a different read. They saw an opportunity in that disorder: building a hospitality and property management company that competed on experience, not price. A platform built on the understanding that behind every booking there's someone looking for a little while to disconnect, to be present, to live something worth remembering.",
+        "The business idea was solid. What didn't exist yet was the brand.",
       ],
       challenge: [
-        "Creating from scratch the identity of a hospitality company that didn't want to look like a hospitality company. Not an aspirational boutique hotel, not a cold tech platform, not the typical little house with a palm tree logo that fills the category. The challenge was finding a personality that made guests feel they were choosing something different before ever arriving at the property, while convincing owners that their square meters would be in the hands of someone who understands what it means to care for something with judgment. Two audiences with opposite needs. One brand that had to work for both.",
+        "Creating from scratch the identity of a hospitality company that didn't want to look like a hospitality company. Not an aspirational boutique hotel, not a cold tech platform, not the typical little house with a palm tree logo that fills the category. The challenge was finding a personality that made guests feel they were choosing something different before ever arriving at the property, while convincing owners that their square meters would be in the hands of someone who understands what it means to care for something with judgment.",
+        "Two audiences with opposite needs. One brand that had to work for both.",
       ],
       the_work: [
         "The first move was strategic: finding the emotional territory that could hold everything Ratito wanted to be. That territory was time, not time as a scarce resource or a luxury, but time as an experience. The moment that's worth it. The little while you remember. ",
@@ -437,6 +443,7 @@ const projects: InteriorProject[] = [
       ],
       the_work: [
         "The starting point was finding the territory of meaning that could justify everything else. That territory was impact, not as a promise, but as a direction. A meteor doesn't announce itself, doesn't ask permission, it appears, creates change, and leaves a mark.",
+        'From there came the claim "We drive ideas that change industries," a statement that describes not what Meteoro does, but what Meteoro moves. The brand\'s language was built on the same logic: precise, strategic, no ornament.',
         'From there came the claim "We drive ideas that change industries," a statement that describes not what Meteoro does, but what Meteoro moves. The brand\'s language was built on the same logic: precise, strategic, no ornament.',
         "The visual identity carried that same momentum: a clean, geometric typeface that combines solidity with modernity, and a symbol that abstracts the meteor's trajectory. Meteoro went out into the world with an identity that needs no explanation. It speaks for itself.",
       ],
