@@ -109,16 +109,24 @@ const data = getInteriorContent("grupo-rancagua", lang)!;
       <h3>The Work</h3>
       <div class="p-02 mx-auto lg:columns-2 lg:gap-10">
         {
-          data.the_work.map((p) => (
-            <p class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6!">{p}</p>
-          ))
+          data.the_work.map((p, i) => {
+            return (
+              <div>
+                {i == 3 && (
+                  <img
+                    src="/assets/img/interiors/grupo-rancagua/media-05.webp"
+                    loading="lazy"
+                    class="object-cover object-[0_60%] lg:hidden my-6"
+                  />
+                )}
+                <p class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6!">
+                  {p}
+                </p>
+              </div>
+            );
+          })
         }
       </div>
-      <img
-        src="/assets/img/interiors/grupo-rancagua/media-05.webp"
-        loading="lazy"
-        class="lg:h-188 object-cover object-[0_60%] lg:hidden my-6"
-      />
     </article>
   </div>
 

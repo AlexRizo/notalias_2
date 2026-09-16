@@ -55,12 +55,12 @@ const data = getInteriorContent("apppadel", lang)!;
       <img
         src="/assets/img/interiors/apppadel/media-03.webp"
         loading="lazy"
-        class="lg:h-173 object-cover object-right object-size-[110%]"
+        class="h-96 lg:h-173 object-cover object-right object-size-[110%]"
       />
       <img
         src="/assets/img/interiors/apppadel/media-04.webp"
         loading="lazy"
-        class="h-114 lg:h-173 object-cover object-[0_20%]"
+        class="h-114 lg:h-173 object-cover object-[0_20%] hidden lg:block"
       />
     </div>
 
@@ -84,20 +84,31 @@ const data = getInteriorContent("apppadel", lang)!;
     </article>
 
     <img
+      src="/assets/img/interiors/apppadel/media-04.webp"
+      loading="lazy"
+      class="h-114 lg:h-173 object-cover object-[0_20%] lg:hidden"
+    />
+
+    <img
       src="/assets/img/interiors/apppadel/media-05.webp"
       loading="lazy"
-      class="object-cover"
+      class="object-cover hidden lg:block"
     />
 
     <article>
       <h3>The Work</h3>
       <div class="grid-p p-02">
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[0]}</p>
+        <img
+          src="/assets/img/interiors/apppadel/media-044.webp"
+          loading="lazy"
+          class="object-cover lg:hidden mb-6"
+        />
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[1]}</p>
         <img
-          src="/assets/img/interiors/apppadel/media-06.webp"
+          src="/assets/img/interiors/apppadel/media-05.webp"
           loading="lazy"
-          class="h-84 lg:h-173 object-cover lg:hidden mb-6"
+          class="object-cover lg:hidden mb-6"
         />
       </div>
     </article>

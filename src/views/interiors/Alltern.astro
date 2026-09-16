@@ -64,7 +64,13 @@ const data = getInteriorContent("alltern", lang)!;
 
     <img
       src="/assets/img/interiors/alltern/media-04.webp"
-      class="h-91 lg:h-173 object-cover"
+      class="h-91 lg:h-173 object-cover hidden lg:block"
+      loading="lazy"
+    />
+
+    <img
+      src="/assets/img/interiors/alltern/media-03.webp"
+      class="object-cover lg:hidden"
       loading="lazy"
     />
 
@@ -87,26 +93,44 @@ const data = getInteriorContent("alltern", lang)!;
       </p>
     </article>
 
-    <div class="grid-component">
-      <img
-        src="/assets/img/interiors/alltern/media-05.webp"
-        loading="lazy"
-        class="lg:h-188 object-cover object-[0_60%] hidden lg:block"
-      />
-      <img
-        src="/assets/img/interiors/alltern/media-06.webp"
-        loading="lazy"
-        class="lg:h-188 object-cover object-[75%_0] hidden lg:block"
-      />
+    <img
+      src="/assets/img/interiors/alltern/media-04.webp"
+      class="object-cover lg:hidden"
+      loading="lazy"
+    />
+
+    <div class="hidden lg:block">
+      <div class="grid-component">
+        <img
+          src="/assets/img/interiors/alltern/media-05.webp"
+          loading="lazy"
+          class="lg:h-188 object-cover object-[0_60%]"
+        />
+        <img
+          src="/assets/img/interiors/alltern/media-06.webp"
+          loading="lazy"
+          class="lg:h-188 object-cover object-[75%_0]"
+        />
+      </div>
     </div>
 
     <article>
       <h3>The Work</h3>
       <div class="grid-p p-02">
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[0]}</p>
+        <img
+          src="/assets/img/interiors/alltern/media-06.webp"
+          loading="lazy"
+          class="h-96 object-cover object-[75%_0] my-10 lg:hidden"
+        />
         <p class="[&:not(:last-child)]:mb-6!">{data.the_work[1]}</p>
       </div>
     </article>
+    <img
+      src="/assets/img/interiors/alltern/media-05.webp"
+      loading="lazy"
+      class="h-90 object-cover object-[0_45%] lg:hidden"
+    />
   </div>
   <OtherProyects currentSlug="alltern" />
 </section>
