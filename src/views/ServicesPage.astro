@@ -8,7 +8,7 @@ const ui = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
-  <section class="mt-8 max-w-96 mx-auto lg:container">
+  <section class="mt-8 max-w-96 mx-auto custom-section">
     <h2
       class="text-[#7B7B7B] text-center font-normal uppercase mt-16 mb-6 lg:text-left text-lg lg:text-xl"
     >
@@ -47,18 +47,20 @@ const ui = useTranslations(lang);
   </section>
 
   <section
-    class="bg-[#F6F6F6] py-16 lg:py-14 lg:grid lg:grid-cols-2 lg:justify-around lg:items-center lg:gap-2"
+    class="bg-[#F6F6F6] py-16 lg:py-14"
   >
-    <h1
-      class="font-crimson text-3xl text-center lg:text-6xl lg:w-96 lg:ml-auto lg:leading-none lg:text-left"
-    >
-      {ui.services_page.our_services.title}
-    </h1>
-    <p
-      class="text-lg text-center font-light w-78 mx-auto leading-tight mt-4 lg:text-lg lg:w-[490px] lg:mt-0 lg:text-left lg:mr-auto lg:ml-0"
-    >
-      {ui.services_page.our_services.description}
-    </p>
+    <article class="container mx-auto lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-2">
+      <h1
+        class="font-crimson text-3xl text-center lg:text-6xl lg:w-96 lg:leading-none lg:text-left lg:pl-22"
+      >
+        {ui.services_page.our_services.title}
+      </h1>
+      <p
+        class="text-lg text-center font-light w-78 mx-auto lg:ml-0 leading-tight mt-4 lg:text-lg lg:w-[490px] lg:mt-0 lg:text-left lg:mr-[17%] "
+      >
+        {ui.services_page.our_services.description}
+      </p>
+    </article>
   </section>
 
   <section class="max-w-96 mx-auto lg:max-w-full">

@@ -46,6 +46,10 @@ html.js img.img-loaded {
   @apply size-[5px] lg:size-3.5;
 }
 
+.custom-section {
+  @apply lg:max-w-[1920px] lg:w-full lg:mx-auto lg:px-8
+}
+
 input,
 textarea,
 select {
