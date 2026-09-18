@@ -95,11 +95,33 @@ const data = getInteriorContent("seres", lang)!;
     <article>
       <h3>The Work</h3>
       <div class="p-02 mx-auto lg:columns-2 lg:gap-10">
-        {
-          data.the_work.map((p) => (
-            <p class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6!">{p}</p>
-          ))
-        }
+        <p
+          class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6!"
+        >
+          {data.the_work[0]}
+        </p>
+        <p
+          class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6! hidden lg:block"
+        >
+          {data.the_work[1]}
+        </p>
+        <p
+          class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6! hidden lg:block"
+        >
+          {data.the_work[2]}
+        </p>
+        <p
+          class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6! lg:hidden"
+        >
+          {data.the_work[1]}
+          {data.the_work[2]}
+        </p>
+
+        <p
+          class="lg:text-left! lg:max-w-none! lg:mx-0! [&:not(:last-child)]:mb-6!"
+        >
+          {data.the_work[3]}
+        </p>
       </div>
     </article>
 
