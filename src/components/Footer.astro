@@ -89,9 +89,15 @@ const ui = useTranslations(lang);
     <div class="grid gap-y-12 justify-end lg:gap-y-3 lg:hidden">
       <div>
         <h1 class="footer-s-title">{ui.footer.social.title}</h1>
-        <p class="footer-s-text">{ui.footer.social.instagram.label}</p>
-        <p class="footer-s-text">{ui.footer.social.linkedin.label}</p>
-        <!-- <p class="footer-s-text">{ui.footer.social.behance.label}</p> -->
+        <a href={ui.footer.social.instagram.url} class="footer-s-text"
+          >{ui.footer.social.instagram.label}</a
+        >
+        <a href={ui.footer.social.linkedin.url} class="footer-s-text"
+          >{ui.footer.social.linkedin.label}</a
+        >
+        <!-- <a href={ui.footer.social.behance.url} class="footer-s-text"
+          >{ui.footer.social.behance.label}</a
+        > -->
       </div>
 
       <div class="mt-3">

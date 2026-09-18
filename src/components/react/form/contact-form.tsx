@@ -7,6 +7,7 @@ import { FormSended } from "./form-sended";
 
 interface Props {
   lang: "es" | "en";
+  backgroundColor?: boolean;
 }
 
 export interface FormData {
@@ -18,7 +19,7 @@ export interface FormData {
   message: string;
 }
 
-export const ContactForm = ({ lang }: Props) => {
+export const ContactForm = ({ lang, backgroundColor }: Props) => {
   const ui = useTranslations(lang);
 
   const ladaRef = useRef<HTMLSelectElement>(null);

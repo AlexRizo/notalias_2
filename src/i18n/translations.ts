@@ -35,7 +35,7 @@ const projectItems = [
     name: "Blissify",
     slug: "blissify",
     description: "Rebranding · Visual System · Brand Applications",
-    video_path: "/assets/img/interiors/blissify/media-02.webm",
+    video_path: "/assets/img/interiors/blissify/media-00.webm",
   },
   {
     name: "Strategy OS",

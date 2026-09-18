@@ -56,6 +56,12 @@ select {
   @apply bg-white rounded-full px-4 lg:px-6 py-3 text-sm outline-none lg:text-[15px];
 }
 
+.gray-background {
+  input, textarea, select {
+    @apply bg-[#F3F3F3]!;
+  }
+}
+
 textarea {
   @apply rounded-lg!;
 }

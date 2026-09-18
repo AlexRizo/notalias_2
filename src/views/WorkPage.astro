@@ -16,7 +16,7 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 <Layout lang={lang}>
   <section class="custom-section">
     <h2
-      class="text-[#7B7B7B] text-center font-normal uppercase mt-16 mb-6 lg:text-left text-lg lg:text-xl"
+      class="text-[#7B7B7B] text-center font-normal uppercase mt-16 mb-6 lg:text-left lg:text-xl"
     >
       {ui.selected_work.work_page_title}
     </h2>
@@ -44,9 +44,9 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     {totalPages > 1 && <Paginator pages={pageNumbers} />}
   </section>
   <section
-    class="bg-[#F3F3F3] flex flex-col justify-center items-center pt-10 pb-18 lg:py-30"
+    class="bg-[#F3F3F3] flex flex-col justify-center items-center p-18 lg:py-30"
   >
-    <img src="/assets/icons/ovni-blue.svg" alt="Ojo" class="lg:w-37" />
+    <img src="/assets/icons/ovni-blue.svg" alt="Ojo" class="w-20 lg:w-37" />
     <h1
       class="text-3xl font-crimson text-center w-71 mt-6 mb-8 lg:mb-10 lg:text-6xl lg:w-150 lg:leading-[1.10]"
     >
