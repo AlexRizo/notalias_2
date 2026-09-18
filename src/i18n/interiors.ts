@@ -71,7 +71,7 @@ const projects: InteriorProject[] = [
     ],
     es: {
       description:
-        "Del campo a la botella: convertir quince años de agroindustria en una marca que el consumidor elige por nombre.",
+        "Del campo a la botella: convertir años de agroindustria en una marca que el consumidor elige por nombre.",
       context: [
         "Grupo AGR lleva más de quince años operando en la industria citrícola mexicana. Campo, proceso, volumen, todo estaba ahí. Lo que no existía era la marca: un nombre, una identidad, una razón para que el consumidor final los eligiera sobre cualquier otra botella en el anaquel. ",
         "El mercado de jugos de limón embotellados en México estaba dominado por marcas genéricas o productos con concentrado artificial.",
@@ -209,7 +209,7 @@ const projects: InteriorProject[] = [
     ],
     es: {
       description:
-        "De la expresión al lugar: donde el vino y un vinilo se encuentran.",
+        "Darle nombre, cara y alma al bar que Manzanillo no sabía que necesitaba.",
       context: [
         "En Manzanillo había muchos bares, pero lo que faltaba era un lugar donde desconectarte de verdad. Donde salir del trabajo, soltar el peso del día y entrar a un espacio que te recibe con una buena copa, música que te hace sentir algo y conversación que vale la pena. Sin ruido innecesario, sin prisa.",
         "Un lugar para el que sabe que la mejor noche no siempre es la más loca, a veces es simplemente la que no quieres que termine.",
@@ -330,7 +330,7 @@ const projects: InteriorProject[] = [
     ],
     es: {
       description:
-        "Transformar el acceso a tendencias globales en una experiencia de marca.",
+        "Convertir un servicio de personal shopping en una marca que inspira confianza.",
       context: [
         "Blissify acerca tendencias globales a México a través de una experiencia de personal shopping. Moda, skincare, cosméticos, wellness y tecnología convivían dentro de una misma oferta, pero sin un sistema capaz de comunicarlo de manera consistente.",
       ],
