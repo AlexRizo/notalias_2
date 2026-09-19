@@ -15,7 +15,10 @@ const isImage = imageExtensions.includes(extension);
 ---
 
 <div class="mx-auto w-min lg:w-full">
-  <div class="relative w-91 h-111 overflow-hidden lg:w-full lg:h-[845px]">
+  <div
+    class="relative w-91 h-111 overflow-hidden rounded-lg lg:w-full lg:h-[845px]"
+    style="-webkit-mask-image: -webkit-radial-gradient(white, black);"
+  >
     <a
       href={url}
       class="glass-button absolute z-10 px-2 py-2 text-sm text-white right-3 top-2.5 flex items-center gap-1 lg:flex-row-reverse lg:gap-0 lg:text-xl lg:px-5.5"
