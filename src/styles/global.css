@@ -91,7 +91,7 @@ textarea {
     }
 
     .p-02 {
-      @apply lg:max-w-221;
+      @apply lg:max-w-222;
     }
 
     h3 {
