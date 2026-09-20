@@ -11,7 +11,7 @@ export const AboutCarrouselSlide = ({ slide, reverse }: Props) => {
     <div className="flex flex-col mb-20 max-w-91 mx-auto pb-4 lg:flex-row-reverse lg:max-w-[1424px] lg:justify-center lg:mb-7">
       <div className="relative overflow-hidden h-93 w-full max-w-91 mx-auto rounded-lg lg:max-w-[692px] lg:h-[709px] lg:mx-0">
         <video
-          className="object-cover absolute w-full h-full object-[center_-60px] left-0 top-0 lg:object-center"
+          className="object-cover absolute size-full lg:object-center inset-0"
           src={slide.media_path}
           autoPlay
           muted
