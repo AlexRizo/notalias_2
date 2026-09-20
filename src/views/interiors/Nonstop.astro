@@ -121,15 +121,11 @@ const data = getInteriorContent("nonstop", lang)!;
                 )}
                 <span>{p}</span>
                 {i === 1 && (
-                  <span class="lg:hidden">
-                    <br />
-                    <br />
-                    <img
-                      src="/assets/img/interiors/nonstop/media-066.webp"
-                      class="h-113.5 object-cover object-[0_75%]"
-                      loading="lazy"
-                    />
-                  </span>
+                  <img
+                    src="/assets/img/interiors/nonstop/media-066.webp"
+                    class="h-113.5 object-cover object-[0_75%] inline-media lg:hidden"
+                    loading="lazy"
+                  />
                 )}
               </>
             ))
