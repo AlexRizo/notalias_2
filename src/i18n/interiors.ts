@@ -24,7 +24,7 @@ const projects: InteriorProject[] = [
       { label: "Client", value: ["Eterno Centinela"] },
       {
         label: "Services",
-        value: ["Visual System", "Art Direction"],
+        value: ["Brand Strategy", "Brand Identity", "Creative Direction"],
       },
       { label: "Industry", value: ["Wine & Spirits"] },
     ],
