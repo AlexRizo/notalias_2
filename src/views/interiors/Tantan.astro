@@ -46,8 +46,8 @@ const data = getInteriorContent("tantan", lang)!;
             <>
               {i > 0 && (
                 <>
-                  <br />
-                  <br />
+                  <br class="hidden lg:block" />
+                  <br class="hidden lg:block" />
                 </>
               )}
               <span>{p}</span>
@@ -103,16 +103,16 @@ const data = getInteriorContent("tantan", lang)!;
       class="h-106 lg:h-173 object-cover lg:hidden"
     />
 
-    <div class="img-container">
+    <div class="img-container hidden lg:block">
       <img
         src="/assets/img/interiors/tantan/media-05.webp"
         loading="lazy"
-        class="h-173 object-cover hidden lg:block"
+        class="h-173 object-cover"
       />
       <img
         src="/assets/img/interiors/tantan/media-06.webp"
         loading="lazy"
-        class="h-173 object-cover hidden lg:block"
+        class="h-173 object-cover"
       />
     </div>
 

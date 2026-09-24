@@ -50,7 +50,7 @@ const projectItems = [
     video_path: "/assets/videos/projects/amidemi.webm",
   },
   {
-    name: "Tan Tan",
+    name: "Tan Tán",
     slug: "tantan",
     description: "Visual System · Brand Applications",
     video_path: "/assets/videos/projects/tantan.webm",

@@ -218,7 +218,7 @@ const projects: InteriorProject[] = [
         "El proyecto llegó sin nombre, sin identidad y sin referentes locales. Construir desde cero en un mercado donde la competencia no es directa pero el contexto sí pesa: la Marina Las Hadas tiene historia propia, y cualquier marca nueva tiene que ganarse su lugar ahí dentro sin disfrazarse del entorno. El reto era crear algo que se sintiera como si siempre hubiera existido y, al mismo tiempo, completamente nuevo.",
       ],
       the_work: [
-        'El nombre lo dijo todo desde el principio. "Tan tán", esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan", se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser.',
+        'El nombre lo dijo todo desde el principio. "Tan Tán", esa expresión mexicana del punto justo, del equilibrio perfecto, del "ni muy muy ni tan tan", se convirtió en el concepto que ordenó todo lo demás. No había que inventar una personalidad: había que nombrar lo que el lugar ya quería ser.',
         "Desde ahí construimos un sistema de identidad completo: un logotipo con carácter propio que mezcla peso retro con frescura contemporánea, ilustraciones que habitan la marca con humor sin perder elegancia, y una paleta que balancea el verde esmeralda profundo con el naranja encendido, seria cuando tiene que serlo, eléctrica cuando la noche lo pide.",
         "El sistema se desplegó en cada punto de contacto, todo ejecutable desde el día uno, todo coherente, todo con esa vibra de lugar que ya conoces aunque sea tu primera vez.",
       ],
