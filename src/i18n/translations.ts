@@ -145,10 +145,6 @@ const sharedFooterLocations = {
     title: "Guadalajara",
     address: "Av. de las Américas 1930, Country Club, 44668 Guadalajara, Jal.",
   },
-  madrid: {
-    title: "Madrid",
-    address: "C. de Manuela Malasaña, 21, Centro, 28004 Madrid, España",
-  },
 };
 
 const sharedTeam = {
@@ -169,11 +165,6 @@ const sharedTeam = {
       role: "Chief Growth Officer & Partner",
       image_path: "/assets/img/about/team/brando_rosales.webp",
     },
-    {
-      name: "Ed Carrasco",
-      role: "Strategy Director",
-      image_path: "/assets/img/about/team/ed_carrasco.webp",
-    },
   ],
 };
 
@@ -192,7 +183,7 @@ const howWorkImagePaths = [
 
 const sharedWhyNotalias = {
   title: ["Why", "Not Alias?"],
-  locations: "Guadalajara - Madrid",
+  locations: "Guadalajara",
 };
 
 const servicesPageTitle = "Where strategy meets craft";
